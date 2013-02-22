@@ -1,0 +1,29 @@
+
+Mr. Ashby: 
+The best idea is to keep track of your project progress on the wiki page of our github project for you.
+
+As a test, try to create a wiki page at:
+https://github.com/apseyed/SemantGeo/wiki
+
+Slides on Gaz and Envo ontology:
+http://www.comp.leeds.ac.uk/ontology/FOGI-WS/presentations/Norman-Morrison.pdf
+
+Website for the GAZ project: (#9 talks about the different relationships, think about how these might be used in search)
+http://gensc.org/gc_wiki/index.php/GAZ_Project
+
+Paper on using Gazateers and other knowledge sources for search:
+http://www.ai.sri.com/pubs/files/993.pdf
+
+http://apseyed.wordpress.com/2013/01/03/dataone-symlinking-current-status/
+password: dataone
+
+then go down to:
+http://apseyed.wordpress.com/2013/01/03/dataone-symlinking-current-status/#three
+
+and read about 
+Geospatial Example: Partonomic/Containment Example (from GAZ ontology) and
+Geospatial Example: Geo Feature Instance->Type Example (from ENVO ontology)
+
+Note that in SemantEco we have for each observation data record, we have lat/long, county code, and state, but we don't have a way to access and search data relative to descriptive geospatial features within county, state, etc., and we don't have modeling of relationships like "contained in", "tributary of", etc.
+
+
