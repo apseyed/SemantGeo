@@ -26,4 +26,6 @@ Geospatial Example: Geo Feature Instance->Type Example (from ENVO ontology)
 
 Note that in SemantEco we have for each observation data record, we have lat/long, county code, and state, but we don't have a way to access and search data relative to descriptive geospatial features within county, state, etc., and we don't have modeling of relationships like "contained in", "tributary of", etc.
 
-
+Free GIS programs:
+There are free software programs with similar functions, such as GRASS GIS:
+http://grass.osgeo.org/ and Quantum GIS: http://www.qgis.org/
