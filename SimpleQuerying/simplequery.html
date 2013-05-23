@@ -1,0 +1,282 @@
+
+<html>
+  <head>
+  	<!-- Stylesheets -->
+  	<link href="../media/select2.css" rel="stylesheet" type="text/css"/>
+  	<link href="./style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    	google.load('visualization', '1', {'packages':['annotatedtimeline', 'motionchart', 'lineChart', 'corechart']});
+    </script>
+
+  </head>
+
+  <body>
+  	<div id="lakeItems">
+  		<a href="#" class="queryLakes">Query Lakes</a>
+	  	<select id="lakeSelect" style="width: 380px;"></select>
+	</div>
+
+	<div id="columnItems">
+  		<a href="#" class="queryColumns">Query Columns on Lake</a>
+  		<a href="#" class="queryDataOnLake">Query Lake Data fro Columns</a>
+	</div>
+
+    <div id="visualization" style="width: 1000px; height: 800px;"></div>
+    <div id="chart_div" style="width: 600px; height: 1000px;"></div>
+
+    <!-- Javascript Block -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../media/select2.min.js"></script>
+    <script type="text/javascript">
+    var results;
+    var plotData;
+    var aLakeName = "Brooktrout";
+    var serverSPARQLLocal = "http://192.168.1.101:8890/sparql"; // local
+    var serverSPARQLRemote = "http://ashbyb.stu.rpi.edu:8890/sparql"; // Remote
+    var serverEndpoint = serverSPARQLRemote;
+    var globalColumnList = [];
+
+    // Define out queries
+    //var query2 = "select ?Concept where {[] a ?Concept} LIMIT 1000";
+	var queryColumns = "prefix void: <http://rdfs.org/ns/void#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix foaf: <http://xmlns.com/foaf/0.1/>\n\nSELECT DISTINCT ?label\nWHERE {\n ?sample void:inDataset <http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/version/2013-mar-22> .\n ?sample foaf:isPrimaryTopicOf \"" + aLakeName + "\" .\n ?sample ?property ?value .\n ?property rdfs:label ?label\n}";
+	var queryLakes = "prefix void: <http://rdfs.org/ns/void#>\nprefix foaf: <http://xmlns.com/foaf/0.1/>\n\nSELECT DISTINCT ?lake\nWHERE {\n ?sample void:inDataset <http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/version/2013-mar-22> .\n ?sample foaf:isPrimaryTopicOf ?lake\n}"
+	var queryPhAncDateOnLake = "prefix void: <http://rdfs.org/ns/void#>\nprefix foaf: <http://xmlns.com/foaf/0.1/>\nprefix e1: <http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/>\n\nSELECT ?ph ?anc ?date\nWHERE {\n ?sample void:inDataset <http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/version/2013-mar-22> .\n ?sample foaf:isPrimaryTopicOf \"" + aLakeName + "\" .\n ?sample e1:ph_air_eq ?ph .\n ?sample e1:anc_ueq_l ?anc .\n ?sample e1:date ?date\n}"
+
+	$(document).ready(function(){
+	    
+	    // Parse lake select input using select2
+		$("#lakeSelect").select2({
+			placeholder: "Select a lake after filling with data"
+			//matcher: function(term, text, opt) { return text.toUpperCase().indexOf(term.toUpperCase())>=0 || opt.attr("alt").toUpperCase().indexOf(term.toUpperCase())>=0; }
+		});
+
+		// Parse
+		
+	});
+
+
+	$('.queryLakes').click(function(){
+		// query lakes
+		$.get(serverEndpoint, { query: queryLakes, format: "application/json" }, function (data) {
+			console.log(data.results.bindings);
+			data = data.results.bindings;
+			var lakeList = [];
+			for(var i = 0; i < data.length; i++) {
+				console.log("Lake: " + data[i].lake.value);
+				lakeList.push({id: i, text: data[i].lake.value });
+			}
+			console.log(lakeList);
+			$('#lakeSelect').append( $.map(lakeList, function(v, i){ return $('<option>', { val: i, text: v.text }); }) );
+			//$("#lakeSelect").select2({data:lakeList});
+			//data:[{id:0,text:'enhancement'},{id:1,text:'bug'},{id:2,text:'duplicate'},{id:3,text:'invalid'},{id:4,text:'wontfix'}]
+		});
+
+
+	});
+
+	// Listen and handle events fired by nominate select input
+	$("#lakeSelect").on("change", function(e) {
+	});
+
+	// clicking on query columns
+	$('.queryColumns').click(function(){
+		$.get(serverEndpoint, { query: queryColumns, format: "application/json" }, function (data) {
+			console.log(data.results.bindings);
+			data = data.results.bindings;
+			var columnList = [];
+			for(var i = 0; i < data.length; i++) {
+				console.log("Column: " + data[i].label.value);
+				globalColumnList.push(data[i].label.value);
+				$("#columnItems").append("<div class=\"columnCheckbox\"><span>"+data[i].label.value+"</span><input type=\"checkbox\" name=\"columnsForLake\" value=\""+i+"\" /></div>");
+			}
+			//console.log(lakeList);
+			//$('#lakeSelect').append( $.map(lakeList, function(v, i){ return $('<option>', { val: i, text: v.text }); }) );
+			//$("#lakeSelect").select2({data:lakeList});
+			//data:[{id:0,text:'enhancement'},{id:1,text:'bug'},{id:2,text:'duplicate'},{id:3,text:'invalid'},{id:4,text:'wontfix'}]
+		});
+	});
+
+	// clicking on query data on columns
+	$('.queryDataOnLake').click(function(){
+		var checked = getChecked();
+		for(var i = 0; i < checked.length; i++) {
+			console.log("Column Checked:" + globalColumnList[checked[i]]);
+		}
+
+		// Lets do a standard query 
+		$.get(serverEndpoint, { query: queryPhAncDateOnLake, format: "application/json" }, function (data) {
+			console.log(data.results.bindings);
+			data = data.results.bindings;
+			var plotData = [['x', 'pH over eq (pH units)', 'ANC (ueq/L)']];
+			for(var i = 0; i < data.length; i++) {
+				//console.log("Data: " + data[i]);
+				plotData.push([data[i].date.value, parseFloat(data[i].ph.value), parseFloat(data[i].anc.value)]);
+			}
+			console.log(plotData);
+
+			// Lets plot!
+			var data = new google.visualization.arrayToDataTable(plotData);
+			
+			// Create and draw the visualization.
+			var phAncPlot = new google.visualization.LineChart(document.getElementById('visualization'));
+			phAncPlot.draw(data, {curveType: "function", width: 1000, height: 800, title: 'ANC and pH vs Time - Brooktrout',  
+				vAxes: {0: {logScale: false}, 1: {logScale: false, maxValue: 10}},
+		    	series:{
+		       			0:{targetAxisIndex:0},
+		       			1:{targetAxisIndex:1}}}
+		    );
+			
+			//console.log(lakeList);
+			//$('#lakeSelect').append( $.map(lakeList, function(v, i){ return $('<option>', { val: i, text: v.text }); }) );
+			//$("#lakeSelect").select2({data:lakeList});
+			//data:[{id:0,text:'enhancement'},{id:1,text:'bug'},{id:2,text:'duplicate'},{id:3,text:'invalid'},{id:4,text:'wontfix'}]
+		});
+	});
+
+	function getChecked(){
+
+		// build list of check boxes
+		var checked = []
+		$("input[name='columnsForLake']:checked").each(function (){
+		    checked.push(parseInt($(this).val()));
+		});
+		return checked;
+	}
+
+    function drawChart() {
+    		console.log("Drawing Chart");
+	        var data = google.visualization.arrayToDataTable(plotData);
+	        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+	        chart.draw(data, {title: 'Plotting concepts', width: 600, height:1000});
+      	}
+
+    function drawVisualization() {
+		// Create and populate the data table.
+		var data = new google.visualization.arrayToDataTable([
+		    ['x', 'pH over eq (pH units)', 'ANC (ueq/L)'],
+		    ['13-Jul-94',   5.13,       -2.4,],
+		    ['26-Jul-94',   5.20,       -1.10],
+		    ['22-Aug-94',   5.08,       -4.70],
+		    ['12-Jun-95',   5.12,       -16.90],
+		    ['14-Aug-95',   5.19,       1.80],
+		    ['5-Sep-95',   5.33,       4.50],
+		    ['27-Jun-96',   6.17,       -5.70],
+		    ['17-Jul-96',   5.19,       -16.56],
+		    ['13-Aug-96',   5.15,       0.88],
+		    ['7-Jul-97',   6.07,     -10.50],
+		    ['11-Aug-97',   5.75,       2.00],
+		    ['7-Jul-98',   5.61,     -0.47],
+		    ['12-Aug-98',   5.91,       -2.37],
+		    ['6-Jul-99',   5.67,       -0.06],
+		    ['16-Aug-99',   5.817,       -4.96],
+		    ['11-Jul-00',   5.56,       1.41]
+		  ]);
+
+
+		// Create and draw the visualization.
+		var chart2 = new google.visualization.LineChart(document.getElementById('visualization'));
+		chart2.draw(data, {curveType: "function", width: 700, height: 400, title: 'ANC and pH vs Time - Brooktrout', vAxis: {maxValue: 10}});
+		}
+	
+	function sparqlQuery(query, baseURL, format) {
+		if(!format)
+			format="application/json";
+		var params={
+			"default-graph": "", "should-sponge": "soft", "query": query,
+			"debug": "on", "timeout": "", "format": format,
+			"save": "display", "fname": ""
+		};
+		
+		var querypart="";
+		for(var k in params) {
+			querypart+=k+"="+encodeURIComponent(params[k])+"&";
+		}
+		var queryURL=baseURL + '?' + querypart;
+		
+		$.ajax({
+		  type: 'GET',
+		  url: queryURL,
+		  data: {},
+		  success:function(aData){
+		  	//console.log(data);
+		  	//console.log(data['results']);
+		  	console.log(aData.results.bindings);
+		  	//console.log(typeof data);
+		    //return $.parseJSON(data);
+		    results = aData.results.bindings;
+		    visualize();
+		  },
+		  error:function(){
+		    console.log("failure to query for data!");
+		  }
+		});
+	}
+
+	/*
+	setting Data Source Name (DSN)
+	*/
+
+	var dsn="http://dbpedia.org/resource/DBpedia";
+
+	/*
+	Virtuoso pragma "DEFINE get:soft "replace" instructs Virtuoso SPARQL engine to perform an HTTP GET using the IRI in FROM clause as Data Source URL with regards to 
+	DBMS record inserts
+	*/
+
+	//var query="DEFINE get:soft \"replace\"\nSELECT DISTINCT * FROM <"+dsn+"> WHERE {?s ?p ?o}"; 
+	//var query2 = "select ?Concept where {[] a ?Concept} LIMIT 1000";
+	//var results = sparqlQuery(query2, "http://localhost:8080/sparql");
+	//var data2=sparqlQuery(query2, "http://aquarius.tw.rpi.edu:8890/sparql/");
+
+	function visualize(){
+		conceptValues = [];
+		plotData = [['Concept Value', 'Occurances']];
+		for(var i = 0; i < results.length; i++) {
+			console.log("Concept: " + results[i].Concept.type + ':' + results[i].Concept.value);
+			conceptValues.push(results[i].Concept.value);
+		}
+
+		// Build uniques
+		var uniqueNames = [];
+		$.each(results, function(i, el){
+    		if($.inArray(el.Concept.value, uniqueNames) === -1) uniqueNames.push(el.Concept.value);
+		});
+
+
+		// build occurances
+		var occurances = foo(conceptValues);
+
+		// build out formatted array for plotting
+		for(var i = 0; i < uniqueNames.length; i++) {
+			plotData.push([occurances[0][i], occurances[1][i]]);
+		}
+
+		// build plots
+		console.log("Plotting");
+		console.log(plotData);
+		
+      	drawChart();
+      	drawVisualization();
+	}
+
+	function foo(arr) {
+	    var a = [], b = [], prev;
+	    
+	    arr.sort();
+	    for ( var i = 0; i < arr.length; i++ ) {
+	        if ( arr[i] !== prev ) {
+	            a.push(arr[i]);
+	            b.push(1);
+	        } else {
+	            b[b.length-1]++;
+	        }
+	        prev = arr[i];
+	    }
+	    
+	    return [a, b];
+	}
+
+	</script>
+  </body>
+</html>
