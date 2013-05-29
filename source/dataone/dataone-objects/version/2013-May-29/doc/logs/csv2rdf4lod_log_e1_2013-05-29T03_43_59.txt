@@ -1,0 +1,79 @@
+2013-05-29T03:43:59-04:00
+423 rows in source/dataone.csv
+E1 CONVERSION
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-Jan-16 initiated:
+fileName:                     source/dataone.csv
+sampleLimit:                  10
+enhancementParametersURL:     manual/dataone.csv.e1.params.ttl
+VoIDDumpExtensions:           ttl.gz
+outputFileName:               automatic/dataone.csv.e1.sample.ttl
+converterIdentifier:          csv2rdf4lod_96add9a1c2a9b862527cd8d6e795a606
+==============================
+manual/dataone.csv.e1.params.ttl
+org.openrdf.rio.RDFParseException: Expected '.', found '@' [line 35]
+	at org.openrdf.rio.helpers.RDFParserBase.reportError(RDFParserBase.java:464)
+	at org.openrdf.rio.turtle.TurtleParser.reportError(TurtleParser.java:1093)
+	at org.openrdf.rio.turtle.TurtleParser.verifyCharacter(TurtleParser.java:996)
+	at org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:203)
+	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:184)
+	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:129)
+	at org.openrdf.repository.base.RepositoryConnectionBase.addInputStreamOrReader(RepositoryConnectionBase.java:354)
+	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:243)
+	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:203)
+	at edu.rpi.tw.data.rdf.utils.pipes.starts.Cat.load(Cat.java:175)
+	at edu.rpi.tw.data.rdf.utils.pipes.starts.Cat.load(Cat.java:124)
+	at edu.rpi.tw.data.csv.CSVtoRDF.main(CSVtoRDF.java:429)
+ERROR; invalid RDF syntax in manual/dataone.csv.e1.params.ttl
+Finished converting -sample 10 sample rows.
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-Jan-16 initiated:
+fileName:                     source/dataone.csv
+enhancementParametersURL:     manual/dataone.csv.e1.params.ttl
+VoIDDumpExtensions:           ttl.gz
+outputFileName:               automatic/dataone.csv.e1.ttl
+metaOutputFileName:           automatic/dataone.csv.e1.void.ttl
+converterIdentifier:          csv2rdf4lod_96add9a1c2a9b862527cd8d6e795a606
+==============================
+manual/dataone.csv.e1.params.ttl
+org.openrdf.rio.RDFParseException: Expected '.', found '@' [line 35]
+	at org.openrdf.rio.helpers.RDFParserBase.reportError(RDFParserBase.java:464)
+	at org.openrdf.rio.turtle.TurtleParser.reportError(TurtleParser.java:1093)
+	at org.openrdf.rio.turtle.TurtleParser.verifyCharacter(TurtleParser.java:996)
+	at org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:203)
+	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:184)
+	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:129)
+	at org.openrdf.repository.base.RepositoryConnectionBase.addInputStreamOrReader(RepositoryConnectionBase.java:354)
+	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:243)
+	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:203)
+	at edu.rpi.tw.data.rdf.utils.pipes.starts.Cat.load(Cat.java:175)
+	at edu.rpi.tw.data.rdf.utils.pipes.starts.Cat.load(Cat.java:124)
+	at edu.rpi.tw.data.csv.CSVtoRDF.main(CSVtoRDF.java:429)
+ERROR; invalid RDF syntax in manual/dataone.csv.e1.params.ttl
+   convert.sh done
+convert-aggregate.sh publishing raw and enhancements.
+publish/dataone-dataone-objects-2013-May-29.raw.ttl
+publish/dataone-dataone-objects-2013-May-29.raw.sample.ttl
+publish/dataone-dataone-objects-2013-May-29.e1.ttl
+publish/dataone-dataone-objects-2013-May-29.e1.sample.ttl
+publish/dataone-dataone-objects-2013-May-29.pml.ttl
+publish/dataone-dataone-objects-2013-May-29.void.ttl
+  (including automatic/dataone.csv.e1.void.ttl)
+  (including automatic/dataone.csv.raw.void.ttl)
+  (including publish/dataone-dataone-objects-2013-May-29.pml.ttl)
+publish/dataone-dataone-objects-2013-May-29.ttl
+  (including publish/dataone-dataone-objects-2013-May-29.e1.ttl)
+  (including publish/dataone-dataone-objects-2013-May-29.raw.ttl)
+  (including publish/dataone-dataone-objects-2013-May-29.void.ttl)
+publish/dataone-dataone-objects-2013-May-29.nt - skipping; set CSV2RDF4LOD_PUBLISH_NT=true in source-me.sh to publish N-Triples.
+publish/dataone-dataone-objects-2013-May-29.sameas.nt - skipping; no owl:sameAs in publish/dataone-dataone-objects-2013-May-29.ttl.
+publish/dataone-dataone-objects-2013-May-29.rdf - skipping; set CSV2RDF4LOD_PUBLISH_RDFXML=true in source-me.sh to publish RDF/XML.
+publish/dataone-dataone-objects-2013-May-29.e1.ttl.gz (will delete uncompressed version at end of processing)
+publish/dataone-dataone-objects-2013-May-29.ttl.gz (will delete uncompressed version at end of processing)
+publish/bin/ln-to-www-root-dataone-dataone-objects-2013-May-29.sh
+ - skipping. Set CSV2RDF4LOD_PUBLISH_VARWWW_DUMP_FILES=true and CSV2RDF4LOD_PUBLISH_LOD_MATERIALIZATION_WWW_ROOT to /var/www
+publish/tdb/     - skipping; set CSV2RDF4LOD_PUBLISH_TDB=true in source-me.sh to load conversions into publish/tdb/.
+                 - or run publish/bin/tdbloader-dataone-dataone-objects-2013-May-29.sh.
+                 - then run $TDBROOT/bin/rdfserver with publish/bin/joseki-config-anterior-dataone-dataone-objects-2013-May-29.ttl.
+publish/lod-mat/ - skipping; set CSV2RDF4LOD_PUBLISH_LOD_MATERIALIZATION=true in source-me.sh to load conversions into publish/lod-mat/,
+                 - or run automatic/lod-materialize-dataone-dataone-objects-2013-May-29.sh.
+publish/dataone-dataone-objects-2013-May-29.e1.ttl - removed b/c $CSV2RDF4LOD_PUBLISH_COMPRESS="true"
+publish/dataone-dataone-objects-2013-May-29.ttl - removed b/c $CSV2RDF4LOD_PUBLISH_COMPRESS="true"

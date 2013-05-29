@@ -1,0 +1,657 @@
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix todo:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix vann:          <http://purl.org/vocab/vann/> .
+@prefix skos:          <http://www.w3.org/2004/02/skos/core#> .
+@prefix time:          <http://www.w3.org/2006/time#> .
+@prefix wgs:           <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geonames:      <http://www.geonames.org/ontology#> .
+@prefix geonamesid:    <http://sws.geonames.org/> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix dbpedia:       <http://dbpedia.org/resource/> .
+@prefix dbpediaprop:   <http://dbpedia.org/property/> .
+@prefix dbpediaowl:    <http://dbpedia.org/ontology/> .
+@prefix con:           <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix muo:           <http://purl.oclc.org/NET/muo/muo#> .
+@prefix vs:            <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix frbr:          <http://purl.org/vocab/frbr/core#> .
+@prefix bibo:          <http://purl.org/ontology/bibo/> .
+@prefix prov:          <http://www.w3.org/ns/prov#> .
+@prefix doap:          <http://usefulinc.com/ns/doap#> .
+@prefix nfo:           <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix sio:           <http://semanticscience.org/resource/> .
+@prefix qb:            <http://purl.org/linked-data/cube#> .
+@prefix dgtwc:         <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix dcterms:       <http://purl.org/dc/terms/> .
+@prefix void:          <http://rdfs.org/ns/void#> .
+@prefix scovo:         <http://purl.org/NET/scovo#> .
+@prefix sioc:          <http://rdfs.org/sioc/ns#> .
+@prefix foaf:          <http://xmlns.com/foaf/0.1/> .
+@prefix ov:            <http://open.vocab.org/terms/> .
+@prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix :              <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/params/enhancement/1/> .
+
+
+#:a_bundle
+#   a conversion:ImplicitBundle;
+#   conversion:property_name "a_property"; # Can also be a URI, e.g. dcterms:title.
+#   #conversion:type_name     "My Class";   # Can also be a URI, e.g. foaf:Person.
+#.
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/enhancement/1>
+   a conversion:LayerDataset, void:Dataset;
+
+   conversion:base_uri           "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#"^^xsd:anyURI;
+   conversion:source_identifier  "dataone";
+   conversion:dataset_identifier "dataone-objects";
+   conversion:version_identifier "2013-May-29";
+   conversion:enhancement_identifier "1";
+
+   conversion:conversion_process [
+      a conversion:EnhancementConversionProcess;
+      conversion:enhancement_identifier "1";
+
+      dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "apseyed" ];
+      dcterms:created "2013-05-29T03:52:57-04:00"^^xsd:dateTime;
+
+      conversion:delimits_cell ",";
+      #conversion:delimits_cell "	"; # tab
+      #conversion:delimits_cell "|";   # pipe
+      #conversion:delimits_cell ",";   # comma
+
+      #conversion:interpret [
+      #   conversion:symbol        "";
+      #   conversion:interpretation conversion:null; 
+      #];
+      #conversion:enhance [
+      #   conversion:domain_template "thing_[r]";
+      #   conversion:domain_name     "Thing";
+      #];
+      #conversion:enhance [
+      #   conversion:class_name "Thing";
+      #   conversion:subclass_of <http://purl.org/...>;
+      #];
+      conversion:enhance [
+         ov:csvCol          1;
+         ov:csvHeader       "abstract";
+         #conversion:label   "abstract";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          2;
+         ov:csvHeader       "author";
+         #conversion:label   "author";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          3;
+         ov:csvHeader       "authoritativeMN";
+         #conversion:label   "authoritativeMN";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          4;
+         ov:csvHeader       "authorLastName";
+         #conversion:label   "authorLastName";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          5;
+         ov:csvHeader       "beginDate";
+         #conversion:label   "beginDate";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          6;
+         ov:csvHeader       "";
+         #conversion:label   "";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          7;
+         ov:csvHeader       "";
+         #conversion:label   "";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          8;
+         ov:csvHeader       "";
+         #conversion:label   "";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          9;
+         ov:csvHeader       "blockedReplicationMN";
+         #conversion:label   "blockedReplicationMN";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          10;
+         ov:csvHeader       "changePermission";
+         #conversion:label   "changePermission";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          11;
+         ov:csvHeader       "checksum";
+         #conversion:label   "checksum";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          12;
+         ov:csvHeader       "checksumAlgorithm";
+         #conversion:label   "checksumAlgorithm";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          13;
+         ov:csvHeader       "class";
+         #conversion:label   "class";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          14;
+         ov:csvHeader       "contactOrganization";
+         #conversion:label   "contactOrganization";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          15;
+         ov:csvHeader       "datasource";
+         #conversion:label   "datasource";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+	         conversion:equivalent_property dcat:distribution;
+      ];
+      conversion:enhance [
+         ov:csvCol          16;
+         ov:csvHeader       "dataUrl";
+         #conversion:label   "dataUrl";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          17;
+         ov:csvHeader       "dateModified";
+         #conversion:label   "dateModified";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          18;
+         ov:csvHeader       "datePublished";
+         #conversion:label   "datePublished";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          19;
+         ov:csvHeader       "dateUploaded";
+         #conversion:label   "dateUploaded";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          20;
+         ov:csvHeader       "decade";
+         #conversion:label   "decade";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          21;
+         ov:csvHeader       "documents";
+         #conversion:label   "documents";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          22;
+         ov:csvHeader       "eastBoundCoord";
+         #conversion:label   "eastBoundCoord";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          23;
+         ov:csvHeader       "edition";
+         #conversion:label   "edition";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          24;
+         ov:csvHeader       "endDate";
+         #conversion:label   "endDate";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          25;
+         ov:csvHeader       "family";
+         #conversion:label   "family";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          26;
+         ov:csvHeader       "fileID";
+         #conversion:label   "fileID";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          27;
+         ov:csvHeader       "formatId";
+         #conversion:label   "formatId";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          28;
+         ov:csvHeader       "formatType";
+         #conversion:label   "formatType";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          29;
+         ov:csvHeader       "gcmdKeyword";
+         #conversion:label   "gcmdKeyword";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          30;
+         ov:csvHeader       "genus";
+         #conversion:label   "genus";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          31;
+         ov:csvHeader       "geoform";
+         #conversion:label   "geoform";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          32;
+         ov:csvHeader       "id";
+         #conversion:label   "id";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          33;
+         ov:csvHeader       "identifier";
+         #conversion:label   "identifier";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          34;
+         ov:csvHeader       "investigator";
+         #conversion:label   "investigator";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          35;
+         ov:csvHeader       "isDocumentedBy";
+         #conversion:label   "isDocumentedBy";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          36;
+         ov:csvHeader       "isPublic";
+         #conversion:label   "isPublic";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          37;
+         ov:csvHeader       "isSpatial";
+         #conversion:label   "isSpatial";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          38;
+         ov:csvHeader       "keyConcept";
+         #conversion:label   "keyConcept";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          39;
+         ov:csvHeader       "keywords";
+         #conversion:label   "keywords";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          40;
+         ov:csvHeader       "kingdom";
+         #conversion:label   "kingdom";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          41;
+         ov:csvHeader       "LTERSite";
+         #conversion:label   "LTERSite";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          42;
+         ov:csvHeader       "namedLocation";
+         #conversion:label   "namedLocation";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          43;
+         ov:csvHeader       "noBoundingBox";
+         #conversion:label   "noBoundingBox";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          44;
+         ov:csvHeader       "northBoundCoord";
+         #conversion:label   "northBoundCoord";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          45;
+         ov:csvHeader       "numberReplicas";
+         #conversion:label   "numberReplicas";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          46;
+         ov:csvHeader       "obsoletedBy";
+         #conversion:label   "obsoletedBy";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          47;
+         ov:csvHeader       "obsoletes";
+         #conversion:label   "obsoletes";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          48;
+         ov:csvHeader       "ogcUrl";
+         #conversion:label   "ogcUrl";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          49;
+         ov:csvHeader       "order";
+         #conversion:label   "order";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          50;
+         ov:csvHeader       "origin";
+         #conversion:label   "origin";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          51;
+         ov:csvHeader       "originator";
+         #conversion:label   "originator";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          52;
+         ov:csvHeader       "parameter";
+         #conversion:label   "parameter";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          53;
+         ov:csvHeader       "phylum";
+         #conversion:label   "phylum";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          54;
+         ov:csvHeader       "placeKey";
+         #conversion:label   "placeKey";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          55;
+         ov:csvHeader       "preferredReplicationMN";
+         #conversion:label   "preferredReplicationMN";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          56;
+         ov:csvHeader       "presentationCat";
+         #conversion:label   "presentationCat";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          57;
+         ov:csvHeader       "project";
+         #conversion:label   "project";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          58;
+         ov:csvHeader       "pubDate";
+         #conversion:label   "pubDate";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          59;
+         ov:csvHeader       "purpose";
+         #conversion:label   "purpose";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          60;
+         ov:csvHeader       "readPermission";
+         #conversion:label   "readPermission";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          61;
+         ov:csvHeader       "relatedOrganizations";
+         #conversion:label   "relatedOrganizations";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          62;
+         ov:csvHeader       "replicaMN";
+         #conversion:label   "replicaMN";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          63;
+         ov:csvHeader       "replicationAllowed";
+         #conversion:label   "replicationAllowed";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          64;
+         ov:csvHeader       "replicaVerifiedDate";
+         #conversion:label   "replicaVerifiedDate";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          65;
+         ov:csvHeader       "resourceMap";
+         #conversion:label   "resourceMap";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          66;
+         ov:csvHeader       "rightsHolder";
+         #conversion:label   "rightsHolder";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          67;
+         ov:csvHeader       "scientificName";
+         #conversion:label   "scientificName";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          68;
+         ov:csvHeader       "sensor";
+         #conversion:label   "sensor";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          69;
+         ov:csvHeader       "site";
+         #conversion:label   "site";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          70;
+         ov:csvHeader       "size";
+         #conversion:label   "size";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          71;
+         ov:csvHeader       "sku";
+         #conversion:label   "sku";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          72;
+         ov:csvHeader       "source";
+         #conversion:label   "source";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          73;
+         ov:csvHeader       "southBoundCoord";
+         #conversion:label   "southBoundCoord";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          74;
+         ov:csvHeader       "species";
+         #conversion:label   "species";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          75;
+         ov:csvHeader       "submitter";
+         #conversion:label   "submitter";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          76;
+         ov:csvHeader       "term";
+         #conversion:label   "term";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          77;
+         ov:csvHeader       "title";
+         #conversion:label   "title";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          78;
+         ov:csvHeader       "topic";
+         #conversion:label   "topic";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          79;
+         ov:csvHeader       "updateDate";
+         #conversion:label   "updateDate";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          80;
+         ov:csvHeader       "webUrl";
+         #conversion:label   "webUrl";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          81;
+         ov:csvHeader       "westBoundCoord";
+         #conversion:label   "westBoundCoord";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          82;
+         ov:csvHeader       "writePermission";
+         #conversion:label   "writePermission";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      #conversion:enhance [            
+      #   ov:csvRow 3,4,5;             
+      #   a conversion:ExampleResource;
+      #];                              
+   ];
+.

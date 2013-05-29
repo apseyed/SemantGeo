@@ -1,0 +1,431 @@
+2013-05-29T03:55:39-04:00
+423 rows in source/dataone.csv
+E1 CONVERSION
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-Jan-16 initiated:
+fileName:                     source/dataone.csv
+sampleLimit:                  10
+enhancementParametersURL:     manual/dataone.csv.e1.params.ttl
+VoIDDumpExtensions:           ttl.gz
+outputFileName:               automatic/dataone.csv.e1.sample.ttl
+converterIdentifier:          csv2rdf4lod_96add9a1c2a9b862527cd8d6e795a606
+==============================
+BaseURIQuerylet(*) .https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#.
+SourceIdentifierQuerylet(*) .dataone.
+DatasetIdentifierQuerylet(*) .dataone-objects.
+VersionIdentifierQuerylet(*) .2013-May-29.
+
+subjectNS:   dataone-objects:  https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/
+predicateNS: e1:  https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/
+objectNS:    dataone-objects_global_value:  https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/
+
+CellDelimiterQuerylet(*) .,.
+headers present at row 1: abstract,author,authoritativeMN,authorLastName,beginDate,"
+",,blockedReplicationMN,changePermission,checksum,checksumAlgorithm,class,contactOrganization,datasource,dataUrl,dateModified,datePublished,dateUploaded,decade,documents,eastBoundCoord,edition,endDate,family,fileID,formatId,formatType,gcmdKeyword,genus,geoform,id,identifier,investigator,isDocumentedBy,isPublic,isSpatial,keyConcept,keywords,kingdom,LTERSite,namedLocation,noBoundingBox,northBoundCoord,numberReplicas,obsoletedBy,obsoletes,ogcUrl,order,origin,originator,parameter,phylum,placeKey,preferredReplicationMN,presentationCat,project,pubDate,purpose,readPermission,relatedOrganizations,replicaMN,replicationAllowed,replicaVerifiedDate,resourceMap,rightsHolder,scientificName,sensor,site,size,sku,source,southBoundCoord,species,submitter,term,title,topic,updateDate,webUrl,westBoundCoord,writePermission
+
+1: "abstract" -> "abstract" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/abstract (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+2: "author" -> "author" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/author (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+3: "authoritativeMN" -> "authoritativeMN" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/authoritativemn (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+4: "authorLastName" -> "authorLastName" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/authorlastname (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+5: "beginDate" -> "beginDate" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/begindate (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+6: "
+" -> "" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/ (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+7: "" -> "column_7" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/column_7 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+8: "blockedReplicationMN" -> "blockedReplicationMN" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/blockedreplicationmn (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+9: "changePermission" -> "changePermission" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/changepermission (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+10: "checksum" -> "checksum" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/checksum (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+11: "checksumAlgorithm" -> "checksumAlgorithm" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/checksumalgorithm (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+12: "class" -> "class" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/class (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+13: "contactOrganization" -> "contactOrganization" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/contactorganization (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+14: "datasource" -> "datasource" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/datasource (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       EquivalentPropertyQuerylet(15) .http://www.w3.org/ns/dcat#distribution.
+15: "dataUrl" -> "dataUrl" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/dataurl (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+16: "dateModified" -> "dateModified" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/datemodified (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+17: "datePublished" -> "datePublished" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/datepublished (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+18: "dateUploaded" -> "dateUploaded" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/dateuploaded (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+19: "decade" -> "decade" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/decade (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+20: "documents" -> "documents" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/documents (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+21: "eastBoundCoord" -> "eastBoundCoord" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/eastboundcoord (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+22: "edition" -> "edition" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/edition (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+23: "endDate" -> "endDate" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/enddate (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+24: "family" -> "family" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/family (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+25: "fileID" -> "fileID" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/fileid (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+26: "formatId" -> "formatId" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/formatid (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+27: "formatType" -> "formatType" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/formattype (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+28: "gcmdKeyword" -> "gcmdKeyword" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/gcmdkeyword (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+29: "genus" -> "genus" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/genus (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+30: "geoform" -> "geoform" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/geoform (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+31: "id" -> "id" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/id (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+32: "identifier" -> "identifier" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/identifier (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+33: "investigator" -> "investigator" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/investigator (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+34: "isDocumentedBy" -> "isDocumentedBy" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/isdocumentedby (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+35: "isPublic" -> "isPublic" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/ispublic (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+36: "isSpatial" -> "isSpatial" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/isspatial (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+37: "keyConcept" -> "keyConcept" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/keyconcept (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+38: "keywords" -> "keywords" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/keywords (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+39: "kingdom" -> "kingdom" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/kingdom (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+40: "LTERSite" -> "LTERSite" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/ltersite (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+41: "namedLocation" -> "namedLocation" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/namedlocation (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+42: "noBoundingBox" -> "noBoundingBox" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/noboundingbox (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+43: "northBoundCoord" -> "northBoundCoord" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/northboundcoord (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+44: "numberReplicas" -> "numberReplicas" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/numberreplicas (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+45: "obsoletedBy" -> "obsoletedBy" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/obsoletedby (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+46: "obsoletes" -> "obsoletes" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/obsoletes (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+47: "ogcUrl" -> "ogcUrl" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/ogcurl (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+48: "order" -> "order" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/order (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+49: "origin" -> "origin" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/origin (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+50: "originator" -> "originator" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/originator (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+51: "parameter" -> "parameter" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/parameter (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+52: "phylum" -> "phylum" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/phylum (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+53: "placeKey" -> "placeKey" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/placekey (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+54: "preferredReplicationMN" -> "preferredReplicationMN" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/preferredreplicationmn (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+55: "presentationCat" -> "presentationCat" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/presentationcat (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+56: "project" -> "project" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/project (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+57: "pubDate" -> "pubDate" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/pubdate (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+58: "purpose" -> "purpose" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/purpose (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+59: "readPermission" -> "readPermission" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/readpermission (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+60: "relatedOrganizations" -> "relatedOrganizations" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/relatedorganizations (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+61: "replicaMN" -> "replicaMN" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/replicamn (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+62: "replicationAllowed" -> "replicationAllowed" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/replicationallowed (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+63: "replicaVerifiedDate" -> "replicaVerifiedDate" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/replicaverifieddate (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+64: "resourceMap" -> "resourceMap" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/resourcemap (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+65: "rightsHolder" -> "rightsHolder" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/rightsholder (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+66: "scientificName" -> "scientificName" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/scientificname (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+67: "sensor" -> "sensor" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/sensor (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+68: "site" -> "site" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/site (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+69: "size" -> "size" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/size (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+70: "sku" -> "sku" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/sku (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+71: "source" -> "source" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/source (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+72: "southBoundCoord" -> "southBoundCoord" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/southboundcoord (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+73: "species" -> "species" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/species (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+74: "submitter" -> "submitter" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/submitter (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+75: "term" -> "term" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/term (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+76: "title" -> "title" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/title (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+77: "topic" -> "topic" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/topic (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+78: "updateDate" -> "updateDate" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/updatedate (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+79: "webUrl" -> "webUrl" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/weburl (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+80: "westBoundCoord" -> "westBoundCoord" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/westboundcoord (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+81: "writePermission" -> "writePermission" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/writepermission (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+
+
+TODO: add dcterms format for extension .ttl.gz
+TODO: add dcterms format for extension .ttl.gz
+LayerDatasetDescriptionsQuerylet(D) .http://purl.org/twc/vocab/conversion/enhancement_identifier. ."1".
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://purl.org/twc/vocab/conversion/LayerDataset.
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+TODO: add dcterms format for extension .ttl.gz
+TODO: add dcterms format for extension .ttl.gz
+Resulting size: 1574 triples
+Generated 1574 triples in 0 min. ( 111895.7 triples/min )
+May 29, 2013 3:55:43 AM edu.rpi.tw.data.csv.CSVtoRDF toRDF
+INFO: writing metadata to same file as data automatic/dataone.csv.e1.sample.ttl
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+Finished converting -sample 10 sample rows.
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-Jan-16 initiated:
+fileName:                     source/dataone.csv
+enhancementParametersURL:     manual/dataone.csv.e1.params.ttl
+VoIDDumpExtensions:           ttl.gz
+outputFileName:               automatic/dataone.csv.e1.ttl
+metaOutputFileName:           automatic/dataone.csv.e1.void.ttl
+converterIdentifier:          csv2rdf4lod_96add9a1c2a9b862527cd8d6e795a606
+==============================
+BaseURIQuerylet(*) .https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#.
+SourceIdentifierQuerylet(*) .dataone.
+DatasetIdentifierQuerylet(*) .dataone-objects.
+VersionIdentifierQuerylet(*) .2013-May-29.
+
+subjectNS:   dataone-objects:  https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/
+predicateNS: e1:  https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/
+objectNS:    dataone-objects_global_value:  https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/
+
+CellDelimiterQuerylet(*) .,.
+headers present at row 1: abstract,author,authoritativeMN,authorLastName,beginDate,"
+",,blockedReplicationMN,changePermission,checksum,checksumAlgorithm,class,contactOrganization,datasource,dataUrl,dateModified,datePublished,dateUploaded,decade,documents,eastBoundCoord,edition,endDate,family,fileID,formatId,formatType,gcmdKeyword,genus,geoform,id,identifier,investigator,isDocumentedBy,isPublic,isSpatial,keyConcept,keywords,kingdom,LTERSite,namedLocation,noBoundingBox,northBoundCoord,numberReplicas,obsoletedBy,obsoletes,ogcUrl,order,origin,originator,parameter,phylum,placeKey,preferredReplicationMN,presentationCat,project,pubDate,purpose,readPermission,relatedOrganizations,replicaMN,replicationAllowed,replicaVerifiedDate,resourceMap,rightsHolder,scientificName,sensor,site,size,sku,source,southBoundCoord,species,submitter,term,title,topic,updateDate,webUrl,westBoundCoord,writePermission
+
+1: "abstract" -> "abstract" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/abstract (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+2: "author" -> "author" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/author (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+3: "authoritativeMN" -> "authoritativeMN" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/authoritativemn (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+4: "authorLastName" -> "authorLastName" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/authorlastname (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+5: "beginDate" -> "beginDate" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/begindate (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+6: "
+" -> "" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/ (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+7: "" -> "column_7" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/column_7 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+8: "blockedReplicationMN" -> "blockedReplicationMN" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/blockedreplicationmn (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+9: "changePermission" -> "changePermission" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/changepermission (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+10: "checksum" -> "checksum" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/checksum (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+11: "checksumAlgorithm" -> "checksumAlgorithm" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/checksumalgorithm (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+12: "class" -> "class" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/class (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+13: "contactOrganization" -> "contactOrganization" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/contactorganization (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+14: "datasource" -> "datasource" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/datasource (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       EquivalentPropertyQuerylet(15) .http://www.w3.org/ns/dcat#distribution.
+15: "dataUrl" -> "dataUrl" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/dataurl (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+16: "dateModified" -> "dateModified" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/datemodified (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+17: "datePublished" -> "datePublished" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/datepublished (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+18: "dateUploaded" -> "dateUploaded" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/dateuploaded (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+19: "decade" -> "decade" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/decade (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+20: "documents" -> "documents" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/documents (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+21: "eastBoundCoord" -> "eastBoundCoord" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/eastboundcoord (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+22: "edition" -> "edition" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/edition (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+23: "endDate" -> "endDate" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/enddate (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+24: "family" -> "family" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/family (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+25: "fileID" -> "fileID" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/fileid (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+26: "formatId" -> "formatId" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/formatid (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+27: "formatType" -> "formatType" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/formattype (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+28: "gcmdKeyword" -> "gcmdKeyword" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/gcmdkeyword (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+29: "genus" -> "genus" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/genus (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+30: "geoform" -> "geoform" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/geoform (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+31: "id" -> "id" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/id (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+32: "identifier" -> "identifier" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/identifier (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+33: "investigator" -> "investigator" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/investigator (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+34: "isDocumentedBy" -> "isDocumentedBy" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/isdocumentedby (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+35: "isPublic" -> "isPublic" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/ispublic (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+36: "isSpatial" -> "isSpatial" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/isspatial (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+37: "keyConcept" -> "keyConcept" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/keyconcept (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+38: "keywords" -> "keywords" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/keywords (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+39: "kingdom" -> "kingdom" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/kingdom (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+40: "LTERSite" -> "LTERSite" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/ltersite (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+41: "namedLocation" -> "namedLocation" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/namedlocation (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+42: "noBoundingBox" -> "noBoundingBox" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/noboundingbox (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+43: "northBoundCoord" -> "northBoundCoord" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/northboundcoord (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+44: "numberReplicas" -> "numberReplicas" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/numberreplicas (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+45: "obsoletedBy" -> "obsoletedBy" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/obsoletedby (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+46: "obsoletes" -> "obsoletes" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/obsoletes (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+47: "ogcUrl" -> "ogcUrl" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/ogcurl (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+48: "order" -> "order" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/order (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+49: "origin" -> "origin" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/origin (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+50: "originator" -> "originator" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/originator (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+51: "parameter" -> "parameter" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/parameter (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+52: "phylum" -> "phylum" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/phylum (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+53: "placeKey" -> "placeKey" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/placekey (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+54: "preferredReplicationMN" -> "preferredReplicationMN" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/preferredreplicationmn (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+55: "presentationCat" -> "presentationCat" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/presentationcat (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+56: "project" -> "project" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/project (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+57: "pubDate" -> "pubDate" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/pubdate (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+58: "purpose" -> "purpose" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/purpose (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+59: "readPermission" -> "readPermission" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/readpermission (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+60: "relatedOrganizations" -> "relatedOrganizations" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/relatedorganizations (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+61: "replicaMN" -> "replicaMN" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/replicamn (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+62: "replicationAllowed" -> "replicationAllowed" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/replicationallowed (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+63: "replicaVerifiedDate" -> "replicaVerifiedDate" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/replicaverifieddate (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+64: "resourceMap" -> "resourceMap" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/resourcemap (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+65: "rightsHolder" -> "rightsHolder" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/rightsholder (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+66: "scientificName" -> "scientificName" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/scientificname (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+67: "sensor" -> "sensor" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/sensor (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+68: "site" -> "site" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/site (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+69: "size" -> "size" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/size (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+70: "sku" -> "sku" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/sku (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+71: "source" -> "source" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/source (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+72: "southBoundCoord" -> "southBoundCoord" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/southboundcoord (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+73: "species" -> "species" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/species (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+74: "submitter" -> "submitter" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/submitter (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+75: "term" -> "term" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/term (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+76: "title" -> "title" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/title (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+77: "topic" -> "topic" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/topic (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+78: "updateDate" -> "updateDate" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/updatedate (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+79: "webUrl" -> "webUrl" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/weburl (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+80: "westBoundCoord" -> "westBoundCoord" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/westboundcoord (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+81: "writePermission" -> "writePermission" -> https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/enhancement/1/writepermission (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+
+
+TODO: add dcterms format for extension .ttl.gz
+TODO: add dcterms format for extension .ttl.gz
+LayerDatasetDescriptionsQuerylet(D) .http://purl.org/twc/vocab/conversion/enhancement_identifier. ."1".
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://purl.org/twc/vocab/conversion/LayerDataset.
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+TODO: add dcterms format for extension .ttl.gz
+TODO: add dcterms format for extension .ttl.gz
+Resulting size: 9134 triples
+Generated 9134 triples in 0 min. ( 427488.3 triples/min )
+May 29, 2013 3:55:46 AM edu.rpi.tw.data.csv.CSVtoRDF toRDF
+INFO: writing metadata to separate file from data automatic/dataone.csv.e1.void.ttl
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+   convert.sh done
+convert-aggregate.sh publishing raw and enhancements.
+publish/dataone-dataone-objects-2013-May-29.raw.ttl
+publish/dataone-dataone-objects-2013-May-29.raw.sample.ttl
+publish/dataone-dataone-objects-2013-May-29.e1.ttl
+publish/dataone-dataone-objects-2013-May-29.e1.sample.ttl
+publish/dataone-dataone-objects-2013-May-29.pml.ttl
+publish/dataone-dataone-objects-2013-May-29.void.ttl
+  (including automatic/dataone.csv.e1.void.ttl)
+  (including automatic/dataone.csv.raw.void.ttl)
+  (including publish/dataone-dataone-objects-2013-May-29.pml.ttl)
+publish/dataone-dataone-objects-2013-May-29.ttl
+  (including publish/dataone-dataone-objects-2013-May-29.e1.ttl)
+  (including publish/dataone-dataone-objects-2013-May-29.raw.ttl)
+  (including publish/dataone-dataone-objects-2013-May-29.void.ttl)
+publish/dataone-dataone-objects-2013-May-29.nt - skipping; set CSV2RDF4LOD_PUBLISH_NT=true in source-me.sh to publish N-Triples.
+publish/dataone-dataone-objects-2013-May-29.sameas.nt - skipping; no owl:sameAs in publish/dataone-dataone-objects-2013-May-29.ttl.
+publish/dataone-dataone-objects-2013-May-29.rdf - skipping; set CSV2RDF4LOD_PUBLISH_RDFXML=true in source-me.sh to publish RDF/XML.
+publish/dataone-dataone-objects-2013-May-29.e1.ttl.gz (will delete uncompressed version at end of processing)
+publish/dataone-dataone-objects-2013-May-29.ttl.gz (will delete uncompressed version at end of processing)
+publish/bin/ln-to-www-root-dataone-dataone-objects-2013-May-29.sh
+ - skipping. Set CSV2RDF4LOD_PUBLISH_VARWWW_DUMP_FILES=true and CSV2RDF4LOD_PUBLISH_LOD_MATERIALIZATION_WWW_ROOT to /var/www
+publish/tdb/     - skipping; set CSV2RDF4LOD_PUBLISH_TDB=true in source-me.sh to load conversions into publish/tdb/.
+                 - or run publish/bin/tdbloader-dataone-dataone-objects-2013-May-29.sh.
+                 - then run $TDBROOT/bin/rdfserver with publish/bin/joseki-config-anterior-dataone-dataone-objects-2013-May-29.ttl.
+publish/lod-mat/ - skipping; set CSV2RDF4LOD_PUBLISH_LOD_MATERIALIZATION=true in source-me.sh to load conversions into publish/lod-mat/,
+                 - or run automatic/lod-materialize-dataone-dataone-objects-2013-May-29.sh.
+publish/dataone-dataone-objects-2013-May-29.e1.ttl - removed b/c $CSV2RDF4LOD_PUBLISH_COMPRESS="true"
+publish/dataone-dataone-objects-2013-May-29.ttl - removed b/c $CSV2RDF4LOD_PUBLISH_COMPRESS="true"

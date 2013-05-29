@@ -1,0 +1,3500 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-Jan-16/> .
+@prefix provenance_raw: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/provenance/dataone-objects/version/2013-May-29/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix dataone-objects: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/> .
+@prefix dataone_vocab: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/vocab/> .
+@prefix base_vocab: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/vocab/> .
+@prefix dataone-objects_vocab: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/> .
+@prefix raw: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> .
+@prefix dataone-objects_global_value: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+raw:abstract a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "abstract" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "abstract" ;
+	rdfs:range rdfs:Literal .
+
+raw:author a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "author" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "author" ;
+	rdfs:range rdfs:Literal .
+
+raw:authoritativemn a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "authoritativeMN" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "authoritativeMN" ;
+	rdfs:range rdfs:Literal .
+
+raw:authorlastname a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "authorLastName" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "authorLastName" ;
+	rdfs:range rdfs:Literal .
+
+raw:begindate a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "beginDate" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "beginDate" ;
+	rdfs:range rdfs:Literal .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "\n" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "" ;
+	rdfs:range rdfs:Literal .
+
+raw:column_7 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "column_7" ;
+	rdfs:range rdfs:Literal .
+
+raw:blockedreplicationmn a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "blockedReplicationMN" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "blockedReplicationMN" ;
+	rdfs:range rdfs:Literal .
+
+raw:changepermission a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "changePermission" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "changePermission" ;
+	rdfs:range rdfs:Literal .
+
+raw:checksum a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "checksum" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "checksum" ;
+	rdfs:range rdfs:Literal .
+
+raw:checksumalgorithm a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "checksumAlgorithm" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "checksumAlgorithm" ;
+	rdfs:range rdfs:Literal .
+
+raw:class a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "class" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "class" ;
+	rdfs:range rdfs:Literal .
+
+raw:contactorganization a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "contactOrganization" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "contactOrganization" ;
+	rdfs:range rdfs:Literal .
+
+raw:datasource a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "datasource" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "datasource" ;
+	rdfs:range rdfs:Literal .
+
+raw:dataurl a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "dataUrl" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "dataUrl" ;
+	rdfs:range rdfs:Literal .
+
+raw:datemodified a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "dateModified" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "dateModified" ;
+	rdfs:range rdfs:Literal .
+
+raw:datepublished a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "datePublished" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "datePublished" ;
+	rdfs:range rdfs:Literal .
+
+raw:dateuploaded a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "dateUploaded" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "dateUploaded" ;
+	rdfs:range rdfs:Literal .
+
+raw:decade a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "decade" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "decade" ;
+	rdfs:range rdfs:Literal .
+
+raw:documents a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "20"^^xsd:integer ;
+	ov:csvHeader "documents" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "documents" ;
+	rdfs:range rdfs:Literal .
+
+raw:eastboundcoord a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "21"^^xsd:integer ;
+	ov:csvHeader "eastBoundCoord" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "eastBoundCoord" ;
+	rdfs:range rdfs:Literal .
+
+raw:edition a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "22"^^xsd:integer ;
+	ov:csvHeader "edition" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "edition" ;
+	rdfs:range rdfs:Literal .
+
+raw:enddate a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "23"^^xsd:integer ;
+	ov:csvHeader "endDate" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "endDate" ;
+	rdfs:range rdfs:Literal .
+
+raw:family a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "24"^^xsd:integer ;
+	ov:csvHeader "family" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "family" ;
+	rdfs:range rdfs:Literal .
+
+raw:fileid a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "25"^^xsd:integer ;
+	ov:csvHeader "fileID" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "fileID" ;
+	rdfs:range rdfs:Literal .
+
+raw:formatid a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "26"^^xsd:integer ;
+	ov:csvHeader "formatId" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "formatId" ;
+	rdfs:range rdfs:Literal .
+
+raw:formattype a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "27"^^xsd:integer ;
+	ov:csvHeader "formatType" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "formatType" ;
+	rdfs:range rdfs:Literal .
+
+raw:gcmdkeyword a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "28"^^xsd:integer ;
+	ov:csvHeader "gcmdKeyword" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "gcmdKeyword" ;
+	rdfs:range rdfs:Literal .
+
+raw:genus a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "29"^^xsd:integer ;
+	ov:csvHeader "genus" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "genus" ;
+	rdfs:range rdfs:Literal .
+
+raw:geoform a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "30"^^xsd:integer ;
+	ov:csvHeader "geoform" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "geoform" ;
+	rdfs:range rdfs:Literal .
+
+raw:id a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "31"^^xsd:integer ;
+	ov:csvHeader "id" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "id" ;
+	rdfs:range rdfs:Literal .
+
+raw:identifier a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "32"^^xsd:integer ;
+	ov:csvHeader "identifier" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "identifier" ;
+	rdfs:range rdfs:Literal .
+
+raw:investigator a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "33"^^xsd:integer ;
+	ov:csvHeader "investigator" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "investigator" ;
+	rdfs:range rdfs:Literal .
+
+raw:isdocumentedby a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "34"^^xsd:integer ;
+	ov:csvHeader "isDocumentedBy" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "isDocumentedBy" ;
+	rdfs:range rdfs:Literal .
+
+raw:ispublic a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "35"^^xsd:integer ;
+	ov:csvHeader "isPublic" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "isPublic" ;
+	rdfs:range rdfs:Literal .
+
+raw:isspatial a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "36"^^xsd:integer ;
+	ov:csvHeader "isSpatial" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "isSpatial" ;
+	rdfs:range rdfs:Literal .
+
+raw:keyconcept a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "37"^^xsd:integer ;
+	ov:csvHeader "keyConcept" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "keyConcept" ;
+	rdfs:range rdfs:Literal .
+
+raw:keywords a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "38"^^xsd:integer ;
+	ov:csvHeader "keywords" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "keywords" ;
+	rdfs:range rdfs:Literal .
+
+raw:kingdom a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "39"^^xsd:integer ;
+	ov:csvHeader "kingdom" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "kingdom" ;
+	rdfs:range rdfs:Literal .
+
+raw:ltersite a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "40"^^xsd:integer ;
+	ov:csvHeader "LTERSite" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "LTERSite" ;
+	rdfs:range rdfs:Literal .
+
+raw:namedlocation a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "41"^^xsd:integer ;
+	ov:csvHeader "namedLocation" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "namedLocation" ;
+	rdfs:range rdfs:Literal .
+
+raw:noboundingbox a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "42"^^xsd:integer ;
+	ov:csvHeader "noBoundingBox" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "noBoundingBox" ;
+	rdfs:range rdfs:Literal .
+
+raw:northboundcoord a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "43"^^xsd:integer ;
+	ov:csvHeader "northBoundCoord" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "northBoundCoord" ;
+	rdfs:range rdfs:Literal .
+
+raw:numberreplicas a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "44"^^xsd:integer ;
+	ov:csvHeader "numberReplicas" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "numberReplicas" ;
+	rdfs:range rdfs:Literal .
+
+raw:obsoletedby a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "45"^^xsd:integer ;
+	ov:csvHeader "obsoletedBy" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "obsoletedBy" ;
+	rdfs:range rdfs:Literal .
+
+raw:obsoletes a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "46"^^xsd:integer ;
+	ov:csvHeader "obsoletes" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "obsoletes" ;
+	rdfs:range rdfs:Literal .
+
+raw:ogcurl a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "47"^^xsd:integer ;
+	ov:csvHeader "ogcUrl" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "ogcUrl" ;
+	rdfs:range rdfs:Literal .
+
+raw:order a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "48"^^xsd:integer ;
+	ov:csvHeader "order" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "order" ;
+	rdfs:range rdfs:Literal .
+
+raw:origin a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "49"^^xsd:integer ;
+	ov:csvHeader "origin" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "origin" ;
+	rdfs:range rdfs:Literal .
+
+raw:originator a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "50"^^xsd:integer ;
+	ov:csvHeader "originator" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "originator" ;
+	rdfs:range rdfs:Literal .
+
+raw:parameter a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "51"^^xsd:integer ;
+	ov:csvHeader "parameter" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "parameter" ;
+	rdfs:range rdfs:Literal .
+
+raw:phylum a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "52"^^xsd:integer ;
+	ov:csvHeader "phylum" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "phylum" ;
+	rdfs:range rdfs:Literal .
+
+raw:placekey a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "53"^^xsd:integer ;
+	ov:csvHeader "placeKey" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "placeKey" ;
+	rdfs:range rdfs:Literal .
+
+raw:preferredreplicationmn a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "54"^^xsd:integer ;
+	ov:csvHeader "preferredReplicationMN" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "preferredReplicationMN" ;
+	rdfs:range rdfs:Literal .
+
+raw:presentationcat a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "55"^^xsd:integer ;
+	ov:csvHeader "presentationCat" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "presentationCat" ;
+	rdfs:range rdfs:Literal .
+
+raw:project a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "56"^^xsd:integer ;
+	ov:csvHeader "project" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "project" ;
+	rdfs:range rdfs:Literal .
+
+raw:pubdate a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "57"^^xsd:integer ;
+	ov:csvHeader "pubDate" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "pubDate" ;
+	rdfs:range rdfs:Literal .
+
+raw:purpose a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "58"^^xsd:integer ;
+	ov:csvHeader "purpose" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "purpose" ;
+	rdfs:range rdfs:Literal .
+
+raw:readpermission a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "59"^^xsd:integer ;
+	ov:csvHeader "readPermission" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "readPermission" ;
+	rdfs:range rdfs:Literal .
+
+raw:relatedorganizations a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "60"^^xsd:integer ;
+	ov:csvHeader "relatedOrganizations" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "relatedOrganizations" ;
+	rdfs:range rdfs:Literal .
+
+raw:replicamn a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "61"^^xsd:integer ;
+	ov:csvHeader "replicaMN" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "replicaMN" ;
+	rdfs:range rdfs:Literal .
+
+raw:replicationallowed a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "62"^^xsd:integer ;
+	ov:csvHeader "replicationAllowed" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "replicationAllowed" ;
+	rdfs:range rdfs:Literal .
+
+raw:replicaverifieddate a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "63"^^xsd:integer ;
+	ov:csvHeader "replicaVerifiedDate" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "replicaVerifiedDate" ;
+	rdfs:range rdfs:Literal .
+
+raw:resourcemap a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "64"^^xsd:integer ;
+	ov:csvHeader "resourceMap" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "resourceMap" ;
+	rdfs:range rdfs:Literal .
+
+raw:rightsholder a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "65"^^xsd:integer ;
+	ov:csvHeader "rightsHolder" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "rightsHolder" ;
+	rdfs:range rdfs:Literal .
+
+raw:scientificname a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "66"^^xsd:integer ;
+	ov:csvHeader "scientificName" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "scientificName" ;
+	rdfs:range rdfs:Literal .
+
+raw:sensor a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "67"^^xsd:integer ;
+	ov:csvHeader "sensor" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "sensor" ;
+	rdfs:range rdfs:Literal .
+
+raw:site a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "68"^^xsd:integer ;
+	ov:csvHeader "site" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "site" ;
+	rdfs:range rdfs:Literal .
+
+raw:size a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "69"^^xsd:integer ;
+	ov:csvHeader "size" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "size" ;
+	rdfs:range rdfs:Literal .
+
+raw:sku a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "70"^^xsd:integer ;
+	ov:csvHeader "sku" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "sku" ;
+	rdfs:range rdfs:Literal .
+
+raw:source a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "71"^^xsd:integer ;
+	ov:csvHeader "source" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "source" ;
+	rdfs:range rdfs:Literal .
+
+raw:southboundcoord a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "72"^^xsd:integer ;
+	ov:csvHeader "southBoundCoord" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "southBoundCoord" ;
+	rdfs:range rdfs:Literal .
+
+raw:species a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "73"^^xsd:integer ;
+	ov:csvHeader "species" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "species" ;
+	rdfs:range rdfs:Literal .
+
+raw:submitter a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "74"^^xsd:integer ;
+	ov:csvHeader "submitter" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "submitter" ;
+	rdfs:range rdfs:Literal .
+
+raw:term a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "75"^^xsd:integer ;
+	ov:csvHeader "term" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "term" ;
+	rdfs:range rdfs:Literal .
+
+raw:title a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "76"^^xsd:integer ;
+	ov:csvHeader "title" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "title" ;
+	rdfs:range rdfs:Literal .
+
+raw:topic a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "77"^^xsd:integer ;
+	ov:csvHeader "topic" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "topic" ;
+	rdfs:range rdfs:Literal .
+
+raw:updatedate a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "78"^^xsd:integer ;
+	ov:csvHeader "updateDate" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "updateDate" ;
+	rdfs:range rdfs:Literal .
+
+raw:weburl a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "79"^^xsd:integer ;
+	ov:csvHeader "webUrl" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "webUrl" ;
+	rdfs:range rdfs:Literal .
+
+raw:westboundcoord a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "80"^^xsd:integer ;
+	ov:csvHeader "westBoundCoord" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "westBoundCoord" ;
+	rdfs:range rdfs:Literal .
+
+raw:writepermission a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "81"^^xsd:integer ;
+	ov:csvHeader "writePermission" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "writePermission" ;
+	rdfs:range rdfs:Literal .
+
+dataone-objects:thing_2 dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	void:inDataset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	raw:abstract "The purpose of this experiment is to measure how initially disturbing an area and adding nitrogen over a long time will affect the number of species, the type of species present, the amount of annual growth, and the change from year to year in the growth of each species in a plant community which is also relieved of grazing by large and small mammals. This experiment is conducted within fields (A, B, and C) which were initially low in soil nutrients. The ground was disturbed by thoroughly disking the area prior to establishment of the experiment. There are 8 different levels of nitrogen addition with other nutrients added to ensure that nitrogen remains the limiting nutrient, and a control which receives no nutrients. Nitrogen fertilizer (NH4NO3) is applied twice per year, once in early May and once in late June. There are six replicates of each treatment per field. The treatments were randomly assigned to plots of size 4 by 4 meters. The plots are in 6 plot by 9 plot grids with 1 meter aisles between plots. The plot grids are enclosed by a fence to keep out mammalian herbivores. Gophers are trapped and removed as they appear. In the spring of 1992, subexperiments E097 and E098 were established. E097 is in fields A and C where randomly selected plots within each treatment no longer receive fertilizer. E098 is in field B where randomly selected plots within each treatment are burned. Note that the design of E002 is similar to E001 except E002 was thoroughly disked prior to establishment." ;
+	raw:author "David Tilman" ;
+	raw:authoritativemn "urn:node:LTER" ;
+	raw:authorlastname "Tilman" ;
+	raw:begindate "1982-01-01T00:00:00Z" ;
+	<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> "" ;
+	raw:column_7 "" ;
+	raw:blockedreplicationmn "" ;
+	raw:changepermission "uid=CDR\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:checksum "6749820d30cec642b5b85aef3b879717" ;
+	raw:checksumalgorithm "MD5" ;
+	raw:class "" ;
+	raw:contactorganization "" ;
+	raw:datasource "urn:node:LTER" ;
+	raw:dataurl "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-cdr.157002.122" ;
+	raw:datemodified "2012-06-26T15:12:06.971Z" ;
+	raw:datepublished "2012-04-24T00:00:00Z" ;
+	raw:dateuploaded "2012-03-12T23:00:00Z" ;
+	raw:decade "" ;
+	raw:documents "" ;
+	raw:eastboundcoord "-93.16289" ;
+	raw:edition "" ;
+	raw:enddate "2009-01-01T00:00:00Z" ;
+	raw:family "" ;
+	raw:fileid "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-cdr.157002.122" ;
+	raw:formatid "eml://ecoinformatics.org/eml-2.1.0" ;
+	raw:formattype "METADATA" ;
+	raw:gcmdkeyword "" ;
+	raw:genus "" ;
+	raw:geoform "" ;
+	raw:id "doi:10.6073/AA/knb-lter-cdr.157002.122" ;
+	raw:identifier "doi:10.6073/AA/knb-lter-cdr.157002.122" ;
+	raw:investigator "Tilman" ;
+	raw:isdocumentedby "" ;
+	raw:ispublic "true" ;
+	raw:isspatial "" ;
+	raw:keyconcept "" ;
+	raw:keywords "carbon,ecology,ecosystems,nitrogen,nutrients,soil,species" ;
+	raw:kingdom "" ;
+	raw:ltersite "" ;
+	raw:namedlocation "" ;
+	raw:noboundingbox "" ;
+	raw:northboundcoord "45.44138" ;
+	raw:numberreplicas "" ;
+	raw:obsoletedby "doi:10.6073/AA/knb-lter-cdr.157002.123" ;
+	raw:obsoletes "doi:10.6073/AA/knb-lter-cdr.157002.121" ;
+	raw:ogcurl "" ;
+	raw:order "" ;
+	raw:origin "David Tilman" ;
+	raw:originator "" ;
+	raw:parameter "" ;
+	raw:phylum "" ;
+	raw:placekey "" ;
+	raw:preferredreplicationmn "" ;
+	raw:presentationcat "" ;
+	raw:project "" ;
+	raw:pubdate "2012-04-24T00:00:00Z" ;
+	raw:purpose "" ;
+	raw:readpermission "public,uid=CDR\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:relatedorganizations "" ;
+	raw:replicamn "urn:node:LTER,urn:node:CN" ;
+	raw:replicationallowed "false" ;
+	raw:replicaverifieddate "2012-06-26T00:00:00Z,2012-06-26T00:00:00Z" ;
+	raw:resourcemap "" ;
+	raw:rightsholder "uid=CDR,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:scientificname "" ;
+	raw:sensor "" ;
+	raw:site "" ;
+	raw:size "11138" ;
+	raw:sku "doi:10.6073/AA/knb-lter-cdr.157002.122" ;
+	raw:source "" ;
+	raw:southboundcoord "45.384865" ;
+	raw:species "" ;
+	raw:submitter "uid=CDR,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:term "" ;
+	raw:title "Soil carbon" ;
+	raw:topic "" ;
+	raw:updatedate "2012-03-12T23:00:00Z" ;
+	raw:weburl "" ;
+	raw:westboundcoord "-93.22445" ;
+	raw:writepermission "uid=CDR\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	ov:csvRow "2"^^xsd:integer .
+
+dataone-objects:thing_3 dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	void:inDataset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	raw:abstract """Location
+Lat. 39� 24' 49\", long. 76� 33' 11\"
+Directions
+
+   1. 695 to Exit 29 Cromwell Bridge Rd towards Loch Raven High School
+   2. Past Loch Raven high school
+   3. Take the first entrance to the park - Sherwood House
+   4. Follow entrance towards house
+   5. Gauge is located just inside electric fence surrounding garden on left of road 
+
+USGS Quadrangle - Towson
+Potential Hazards - Electric Fence
+Establishment - October 2001
+Datum of Station - To be determined soon!
+Equipment - J& S Tipping Bucket rain gauge with HOBO Data recorder 
+History
+
+    * 31 October 2001 Gauge is installed in public gardens just inside of electric fence
+    * Window screening is installed around gauge to prevent organisms from occupying it. The screening is taped around outside of gauge and stapled to platform it sets on. Refer to pictures for further illustration. This has been done sometime after installation. 
+
+Panorama - This gauge is in a relatively open field bounded by forest
+Calibration Measurements -Calibration Measurements - Calibration of this gauge should be preformed as described in the users manual. Each bucket should hold 8.24 mL of water before tipping. This should occur five consecutive times. Adjust calibration screws as needed.
+Extreme Events No extreme events have been observed at this station to date.
+Winter Records - Rain gauge is not heated and is subject to freezing.
+Accuracy - Data should be ran through a quality control algorithm before use.
+Cooperation - Baltimore Ecosystem Study and University of Maryland, Baltimore County; Cromwell Valley Park, Baltimore County
+Photographs - Print collections may be available. Contact the MD-DE-DC District Office about any collections in the official station records.    See Baltimore Ecosystem Study Meteorology Overview here: http://beslter.org/frame7-page_1p.html .""" ;
+	raw:author "Peter Groffman ,     Email: groffmanp@caryinstitute.org, Gordon M. Heisler, gheisler@fs.fed.us" ;
+	raw:authoritativemn "urn:node:LTER" ;
+	raw:authorlastname "Peter Groffman \\,     Email: groffmanp@caryinstitute.org\\, Gordon M. Heisler\\, gheisler@fs.fed.us" ;
+	raw:begindate "" ;
+	<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> "" ;
+	raw:column_7 "" ;
+	raw:blockedreplicationmn "" ;
+	raw:changepermission "uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:checksum "eac9f2b24009fe84d369f442f26be0e9" ;
+	raw:checksumalgorithm "MD5" ;
+	raw:class "" ;
+	raw:contactorganization "" ;
+	raw:datasource "urn:node:LTER" ;
+	raw:dataurl "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-bes.449.43" ;
+	raw:datemodified "2012-06-26T11:07:35.432Z" ;
+	raw:datepublished "2010-01-07T00:00:00Z" ;
+	raw:dateuploaded "2010-01-08T00:00:00Z" ;
+	raw:decade "" ;
+	raw:documents "" ;
+	raw:eastboundcoord "-76.01201" ;
+	raw:edition "" ;
+	raw:enddate "" ;
+	raw:family "" ;
+	raw:fileid "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-bes.449.43" ;
+	raw:formatid "eml://ecoinformatics.org/eml-2.0.1" ;
+	raw:formattype "METADATA" ;
+	raw:gcmdkeyword "" ;
+	raw:genus "" ;
+	raw:geoform "" ;
+	raw:id "doi:10.6073/AA/knb-lter-bes.449.43" ;
+	raw:identifier "doi:10.6073/AA/knb-lter-bes.449.43" ;
+	raw:investigator "Peter Groffman \\,     Email: groffmanp@caryinstitute.org\\, Gordon M. Heisler\\, gheisler@fs.fed.us" ;
+	raw:isdocumentedby "" ;
+	raw:ispublic "true" ;
+	raw:isspatial "" ;
+	raw:keyconcept "" ;
+	raw:keywords "atmospheric science\\,  ecology\\,  air pollution\\,  rainfall\\,  gauge\\,  rain,Baltimore\\, MD\\, Washington\\, D.C\\, Chesapeake Bay\\, Baltimore-Washington\\, Maryland" ;
+	raw:kingdom "" ;
+	raw:ltersite "" ;
+	raw:namedlocation "" ;
+	raw:noboundingbox "" ;
+	raw:northboundcoord "39.724846" ;
+	raw:numberreplicas "" ;
+	raw:obsoletedby "doi:10.6073/AA/knb-lter-bes.449.44" ;
+	raw:obsoletes "doi:10.6073/AA/knb-lter-bes.449.42" ;
+	raw:ogcurl "" ;
+	raw:order "" ;
+	raw:origin "Peter Groffman \\,     Email: groffmanp@caryinstitute.org\\, Gordon M. Heisler\\, gheisler@fs.fed.us" ;
+	raw:originator "" ;
+	raw:parameter "" ;
+	raw:phylum "" ;
+	raw:placekey "" ;
+	raw:preferredreplicationmn "" ;
+	raw:presentationcat "" ;
+	raw:project "" ;
+	raw:pubdate "2010-01-07T00:00:00Z" ;
+	raw:purpose "" ;
+	raw:readpermission "public,uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:relatedorganizations "" ;
+	raw:replicamn "urn:node:LTER,urn:node:CN" ;
+	raw:replicationallowed "false" ;
+	raw:replicaverifieddate "2012-06-26T00:00:00Z,2012-06-26T00:00:00Z" ;
+	raw:resourcemap "" ;
+	raw:rightsholder "uid=BES,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:scientificname "" ;
+	raw:sensor "" ;
+	raw:site "" ;
+	raw:size "6114" ;
+	raw:sku "doi:10.6073/AA/knb-lter-bes.449.43" ;
+	raw:source "" ;
+	raw:southboundcoord "38.708366" ;
+	raw:species "" ;
+	raw:submitter "uid=BES,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:term "" ;
+	raw:title "Climate and Meteorology, Precipitation Data, Station Locations, Photographs, Equipment (USGS): Station: Rain Gauge at Cromwell Valley Park near Glen Arm, MD (CVPG) BES ID 449-" ;
+	raw:topic "" ;
+	raw:updatedate "2010-01-08T00:00:00Z" ;
+	raw:weburl "" ;
+	raw:westboundcoord "-77.314186" ;
+	raw:writepermission "uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	ov:csvRow "3"^^xsd:integer .
+
+dataone-objects:thing_4 dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	void:inDataset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	raw:abstract "Surface water samples were collected during low tide survays near ten Georgia Coastal Ecosystem LTER sampling sites in May, 2004. The incorporation of tritiated leucine in unfiltered samples during one hour incubations was measured using a standard microcentrifuge method to estimate bacterial productivity in each sample. This study was part of the GCE-LTER hydrographic monitoring program, and will be repeated quarterly." ;
+	raw:author "Robert E. Hodson" ;
+	raw:authoritativemn "urn:node:LTER" ;
+	raw:authorlastname "Hodson" ;
+	raw:begindate "2004-05-27T00:00:00Z" ;
+	<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> "" ;
+	raw:column_7 "" ;
+	raw:blockedreplicationmn "" ;
+	raw:changepermission "uid=GCE\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:checksum "8103a4742203609524b9a6b21e801701" ;
+	raw:checksumalgorithm "MD5" ;
+	raw:class "" ;
+	raw:contactorganization "Georgia Coastal Ecosystems LTER Project,University of Georgia" ;
+	raw:datasource "urn:node:LTER" ;
+	raw:dataurl "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-gce.272.21" ;
+	raw:datemodified "2012-06-26T13:58:22.819Z" ;
+	raw:datepublished "2005-01-01T00:00:00Z" ;
+	raw:dateuploaded "2005-11-22T00:00:00Z" ;
+	raw:decade "" ;
+	raw:documents "" ;
+	raw:eastboundcoord "-81.208" ;
+	raw:edition "" ;
+	raw:enddate "2004-05-31T00:00:00Z" ;
+	raw:family "" ;
+	raw:fileid "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-gce.272.21" ;
+	raw:formatid "eml://ecoinformatics.org/eml-2.1.0" ;
+	raw:formattype "METADATA" ;
+	raw:gcmdkeyword "" ;
+	raw:genus "" ;
+	raw:geoform "" ;
+	raw:id "doi:10.6073/AA/knb-lter-gce.272.21" ;
+	raw:identifier "doi:10.6073/AA/knb-lter-gce.272.21" ;
+	raw:investigator "Hodson" ;
+	raw:isdocumentedby "" ;
+	raw:ispublic "true" ;
+	raw:isspatial "" ;
+	raw:keyconcept "" ;
+	raw:keywords "Sapelo Island,Georgia,USA,GCE,LTER,Populations,bacteria,bacterial production,leucine,microbial ecology" ;
+	raw:kingdom "" ;
+	raw:ltersite "" ;
+	raw:namedlocation "" ;
+	raw:noboundingbox "" ;
+	raw:northboundcoord "31.54233" ;
+	raw:numberreplicas "" ;
+	raw:obsoletedby "doi:10.6073/AA/knb-lter-gce.272.22" ;
+	raw:obsoletes "doi:10.6073/AA/knb-lter-gce.272.20" ;
+	raw:ogcurl "" ;
+	raw:order "" ;
+	raw:origin "Georgia Coastal Ecosystems LTER Project,Robert E. Hodson" ;
+	raw:originator "" ;
+	raw:parameter "" ;
+	raw:phylum "" ;
+	raw:placekey "" ;
+	raw:preferredreplicationmn "" ;
+	raw:presentationcat "" ;
+	raw:project "Georgia Coastal Ecosystems LTER Project" ;
+	raw:pubdate "2005-01-01T00:00:00Z" ;
+	raw:purpose "" ;
+	raw:readpermission "public,uid=GCE\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:relatedorganizations "" ;
+	raw:replicamn "urn:node:LTER,urn:node:CN" ;
+	raw:replicationallowed "false" ;
+	raw:replicaverifieddate "2012-06-26T00:00:00Z,2012-06-26T00:00:00Z" ;
+	raw:resourcemap "" ;
+	raw:rightsholder "uid=GCE,o=lter,dc=ecoinformatics,dc=org" ;
+	raw:scientificname "" ;
+	raw:sensor "" ;
+	raw:site "" ;
+	raw:size "43827" ;
+	raw:sku "doi:10.6073/AA/knb-lter-gce.272.21" ;
+	raw:source "" ;
+	raw:southboundcoord "31.30663" ;
+	raw:species "" ;
+	raw:submitter "uid=GCE,o=lter,dc=ecoinformatics,dc=org" ;
+	raw:term "" ;
+	raw:title "May 2004 surface water bacterial productivity at ten Georgia Coastal Ecosystems LTER sampling sites" ;
+	raw:topic "" ;
+	raw:updatedate "2005-11-22T00:00:00Z" ;
+	raw:weburl "" ;
+	raw:westboundcoord "-81.47462" ;
+	raw:writepermission "uid=GCE\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	ov:csvRow "4"^^xsd:integer .
+
+dataone-objects:thing_5 dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	void:inDataset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	raw:abstract "The biomass of plants surveyed in permanent plots at 10 GCE LTER sampling sites in October 2004 was estimated based on allometric relationships between biomass and shoot height and flowering status derived for each site, zone, and species in October 2002. Biomass was only calculated for dominant species, including Spartina alterniflora, S. cynosuroides, Juncus roemerianus, and Zizaniopsis miliacea. This data set is based on GCE plant monitoring survey data set PLT-GCEM-0501a, and allometric relationships were based on GCE data set PLT-GCEM-0211b." ;
+	raw:author "Steven C. Pennings" ;
+	raw:authoritativemn "urn:node:LTER" ;
+	raw:authorlastname "Pennings" ;
+	raw:begindate "2004-10-22T00:00:00Z" ;
+	<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> "" ;
+	raw:column_7 "" ;
+	raw:blockedreplicationmn "" ;
+	raw:changepermission "uid=GCE\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:checksum "4c6e921e7d65672eed570fea37cd86ae" ;
+	raw:checksumalgorithm "MD5" ;
+	raw:class "" ;
+	raw:contactorganization "Georgia Coastal Ecosystems LTER Project,University of Houston" ;
+	raw:datasource "urn:node:LTER" ;
+	raw:dataurl "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-gce.231.7" ;
+	raw:datemodified "2012-06-26T13:44:52.489Z" ;
+	raw:datepublished "2006-01-01T00:00:00Z" ;
+	raw:dateuploaded "2005-07-27T23:00:00Z" ;
+	raw:decade "" ;
+	raw:documents "" ;
+	raw:eastboundcoord "-81.194084" ;
+	raw:edition "" ;
+	raw:enddate "2004-10-25T00:00:00Z" ;
+	raw:family "" ;
+	raw:fileid "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-gce.231.7" ;
+	raw:formatid "eml://ecoinformatics.org/eml-2.0.1" ;
+	raw:formattype "METADATA" ;
+	raw:gcmdkeyword "" ;
+	raw:genus "" ;
+	raw:geoform "" ;
+	raw:id "doi:10.6073/AA/knb-lter-gce.231.7" ;
+	raw:identifier "doi:10.6073/AA/knb-lter-gce.231.7" ;
+	raw:investigator "Pennings" ;
+	raw:isdocumentedby "" ;
+	raw:ispublic "true" ;
+	raw:isspatial "" ;
+	raw:keyconcept "" ;
+	raw:keywords "Sapelo Island,Georgia,USA,GCE,LTER,Primary Production,biomass,flowering,Juncus Roemerianus,marsh,Panicum,plant ecology,Scirpus,shoot height,Spartina alterniflora,Spartina cynosuroides,Typha,Zizaniopsis miliacea" ;
+	raw:kingdom "" ;
+	raw:ltersite "" ;
+	raw:namedlocation "" ;
+	raw:noboundingbox "" ;
+	raw:northboundcoord "31.55025" ;
+	raw:numberreplicas "" ;
+	raw:obsoletedby "doi:10.6073/AA/knb-lter-gce.231.16" ;
+	raw:obsoletes "doi:10.6073/AA/knb-lter-gce.231.6" ;
+	raw:ogcurl "" ;
+	raw:order "" ;
+	raw:origin "Georgia Coastal Ecosystems LTER Project,Steven C. Pennings" ;
+	raw:originator "" ;
+	raw:parameter "" ;
+	raw:phylum "" ;
+	raw:placekey "" ;
+	raw:preferredreplicationmn "" ;
+	raw:presentationcat "" ;
+	raw:project "Georgia Coastal Ecosystems LTER Project" ;
+	raw:pubdate "2006-01-01T00:00:00Z" ;
+	raw:purpose "" ;
+	raw:readpermission "uid=GCE\\,o=lter\\,dc=ecoinformatics\\,dc=org,public" ;
+	raw:relatedorganizations "" ;
+	raw:replicamn "urn:node:LTER,urn:node:CN" ;
+	raw:replicationallowed "false" ;
+	raw:replicaverifieddate "2012-06-26T00:00:00Z,2012-06-26T00:00:00Z" ;
+	raw:resourcemap "" ;
+	raw:rightsholder "uid=GCE,o=lter,dc=ecoinformatics,dc=org" ;
+	raw:scientificname "" ;
+	raw:sensor "" ;
+	raw:site "" ;
+	raw:size "43405" ;
+	raw:sku "doi:10.6073/AA/knb-lter-gce.231.7" ;
+	raw:source "" ;
+	raw:southboundcoord "31.303976" ;
+	raw:species "" ;
+	raw:submitter "uid=GCE,o=lter,dc=ecoinformatics,dc=org" ;
+	raw:term "" ;
+	raw:title "Fall 2004 plant monitoring survey -- biomass calculated from shoot height and flowering status of plants in permanent plots at GCE sampling sites 1-10" ;
+	raw:topic "" ;
+	raw:updatedate "2005-07-27T23:00:00Z" ;
+	raw:weburl "" ;
+	raw:westboundcoord "-81.494225" ;
+	raw:writepermission "uid=GCE\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	ov:csvRow "5"^^xsd:integer .
+
+dataone-objects:thing_6 dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	void:inDataset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	raw:abstract "Process-based models of plant litter decomposition typically underestimate the rates of decomposition in arid and semi-arid grasslands. Recent research, including our field studies, suggests that photodegradation, the decomposition of material through solar radiation, may play an important role in arid and semi-arid grassland ecosystems. The contribution of photodegradation to overall rates of decomposition is not well understood or quantified. The goal of this project is to investigate the effects of ultraviolet radiation on rates of plant litter decomposition for two grass species, Andropogon gerardii and Bouteloua gracilis, in three grassland sites: Cedar Creek (MN), Shortgrass Steppe (CO), and Sevilleta (NM)." ;
+	raw:author "Leslie Brandt" ;
+	raw:authoritativemn "urn:node:LTER" ;
+	raw:authorlastname "Brandt" ;
+	raw:begindate "2006-01-01T00:00:00Z" ;
+	<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> "" ;
+	raw:column_7 "" ;
+	raw:blockedreplicationmn "" ;
+	raw:changepermission "uid=CDR\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:checksum "a916ca856694b6ffab85236706b9ac98" ;
+	raw:checksumalgorithm "MD5" ;
+	raw:class "" ;
+	raw:contactorganization "" ;
+	raw:datasource "urn:node:LTER" ;
+	raw:dataurl "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-cdr.166219.122" ;
+	raw:datemodified "2013-03-08T16:53:40.334Z" ;
+	raw:datepublished "2012-04-24T00:00:00Z" ;
+	raw:dateuploaded "2012-05-06T23:00:00Z" ;
+	raw:decade "" ;
+	raw:documents "" ;
+	raw:eastboundcoord "-93.16289" ;
+	raw:edition "" ;
+	raw:enddate "2008-01-01T00:00:00Z" ;
+	raw:family "" ;
+	raw:fileid "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-cdr.166219.122" ;
+	raw:formatid "eml://ecoinformatics.org/eml-2.1.0" ;
+	raw:formattype "METADATA" ;
+	raw:gcmdkeyword "" ;
+	raw:genus "" ;
+	raw:geoform "" ;
+	raw:id "doi:10.6073/AA/knb-lter-cdr.166219.122" ;
+	raw:identifier "doi:10.6073/AA/knb-lter-cdr.166219.122" ;
+	raw:investigator "Brandt" ;
+	raw:isdocumentedby "" ;
+	raw:ispublic "true" ;
+	raw:isspatial "" ;
+	raw:keyconcept "" ;
+	raw:keywords "ecology,ecosystems,grasses,grasslands,litter,litter decomposition,radiation,species" ;
+	raw:kingdom "" ;
+	raw:ltersite "" ;
+	raw:namedlocation "" ;
+	raw:noboundingbox "" ;
+	raw:northboundcoord "45.44138" ;
+	raw:numberreplicas "" ;
+	raw:obsoletedby "knb-lter-cdr.166219.123" ;
+	raw:obsoletes "" ;
+	raw:ogcurl "" ;
+	raw:order "" ;
+	raw:origin "Leslie Brandt" ;
+	raw:originator "" ;
+	raw:parameter "" ;
+	raw:phylum "" ;
+	raw:placekey "" ;
+	raw:preferredreplicationmn "" ;
+	raw:presentationcat "" ;
+	raw:project "" ;
+	raw:pubdate "2012-04-24T00:00:00Z" ;
+	raw:purpose "" ;
+	raw:readpermission "public,uid=CDR\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:relatedorganizations "" ;
+	raw:replicamn "urn:node:LTER,urn:node:CN" ;
+	raw:replicationallowed "false" ;
+	raw:replicaverifieddate "2012-06-26T00:00:00Z,2012-06-26T00:00:00Z" ;
+	raw:resourcemap "" ;
+	raw:rightsholder "uid=CDR,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:scientificname "" ;
+	raw:sensor "" ;
+	raw:site "" ;
+	raw:size "12574" ;
+	raw:sku "doi:10.6073/AA/knb-lter-cdr.166219.122" ;
+	raw:source "" ;
+	raw:southboundcoord "45.384865" ;
+	raw:species "" ;
+	raw:submitter "uid=CDR,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:term "" ;
+	raw:title "UV Litter Decomposition" ;
+	raw:topic "" ;
+	raw:updatedate "2012-05-06T23:00:00Z" ;
+	raw:weburl "" ;
+	raw:westboundcoord "-93.22445" ;
+	raw:writepermission "uid=CDR\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	ov:csvRow "6"^^xsd:integer .
+
+dataone-objects:thing_7 dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	void:inDataset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	raw:abstract "A quadrat survey was conducted in October 2003 to measure the species and size distribution of plants at 10 GCE LTER sampling sites.  The quadrats were established as permanent plots at GCE sampling sites in October 2000 by placing wooden stakes at random locations across two nominal zones at each site, designated based on marsh structure (creekbank and high marsh).  Several new plots were also added in October 2001, 2002 and 2003 to replace those lost due to catastrophic wrack disturbance or creek bank erosion.  The plots were visually surveyed and the species, shoot height, and flowering status was recorded individually for each shoot over 10 cm in height present in each plot.  Observations from plots exhibiting signs of disturbance were noted in the data set.  This survey will be repeated annually to assess changes in plant distribution and biomass in relation to environmental changes documented by other GCE LTER monitoring efforts." ;
+	raw:author "Steven C. Pennings" ;
+	raw:authoritativemn "urn:node:LTER" ;
+	raw:authorlastname "Pennings" ;
+	raw:begindate "2003-10-17T00:00:00Z" ;
+	<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> "" ;
+	raw:column_7 "" ;
+	raw:blockedreplicationmn "" ;
+	raw:changepermission "uid=GCE\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:checksum "614eead504d562bb0de01b1967945839" ;
+	raw:checksumalgorithm "MD5" ;
+	raw:class "" ;
+	raw:contactorganization "Georgia Coastal Ecosystems LTER Project,University of Houston" ;
+	raw:datasource "urn:node:LTER" ;
+	raw:dataurl "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-gce.178.18" ;
+	raw:datemodified "2012-06-26T13:23:32.735Z" ;
+	raw:datepublished "2004-01-01T00:00:00Z" ;
+	raw:dateuploaded "2005-07-27T23:00:00Z" ;
+	raw:decade "" ;
+	raw:documents "" ;
+	raw:eastboundcoord "-81.19566" ;
+	raw:edition "" ;
+	raw:enddate "2003-10-19T00:00:00Z" ;
+	raw:family "" ;
+	raw:fileid "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-gce.178.18" ;
+	raw:formatid "eml://ecoinformatics.org/eml-2.1.0" ;
+	raw:formattype "METADATA" ;
+	raw:gcmdkeyword "" ;
+	raw:genus "" ;
+	raw:geoform "" ;
+	raw:id "doi:10.6073/AA/knb-lter-gce.178.18" ;
+	raw:identifier "doi:10.6073/AA/knb-lter-gce.178.18" ;
+	raw:investigator "Pennings" ;
+	raw:isdocumentedby "" ;
+	raw:ispublic "true" ;
+	raw:isspatial "" ;
+	raw:keyconcept "" ;
+	raw:keywords "Georgia,Sapelo Island,USA,Juncus roemerianus,Panicum,plants,Scirpus,Spartina alterniflora,Spartina cynosuroides,Typha,Zizaniopsis miliacea,GCE,LTER,flowering,marshes,monitoring,permanent plots,plant communities,plant cover,plant ecology,primary productivity,shoot height,Primary Production" ;
+	raw:kingdom "" ;
+	raw:ltersite "" ;
+	raw:namedlocation "" ;
+	raw:noboundingbox "" ;
+	raw:northboundcoord "31.552553" ;
+	raw:numberreplicas "" ;
+	raw:obsoletedby "" ;
+	raw:obsoletes "doi:10.6073/AA/knb-lter-gce.178.17" ;
+	raw:ogcurl "" ;
+	raw:order "" ;
+	raw:origin "Georgia Coastal Ecosystems LTER Project,Steven C. Pennings" ;
+	raw:originator "" ;
+	raw:parameter "" ;
+	raw:phylum "" ;
+	raw:placekey "" ;
+	raw:preferredreplicationmn "" ;
+	raw:presentationcat "" ;
+	raw:project "Georgia Coastal Ecosystems LTER Project" ;
+	raw:pubdate "2004-01-01T00:00:00Z" ;
+	raw:purpose "" ;
+	raw:readpermission "public,uid=GCE\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:relatedorganizations "" ;
+	raw:replicamn "urn:node:LTER,urn:node:CN" ;
+	raw:replicationallowed "false" ;
+	raw:replicaverifieddate "2012-06-26T00:00:00Z,2012-06-26T00:00:00Z" ;
+	raw:resourcemap "" ;
+	raw:rightsholder "uid=GCE,o=lter,dc=ecoinformatics,dc=org" ;
+	raw:scientificname "" ;
+	raw:sensor "" ;
+	raw:site "" ;
+	raw:size "84877" ;
+	raw:sku "doi:10.6073/AA/knb-lter-gce.178.18" ;
+	raw:source "" ;
+	raw:southboundcoord "31.304064" ;
+	raw:species "" ;
+	raw:submitter "uid=GCE,o=lter,dc=ecoinformatics,dc=org" ;
+	raw:term "" ;
+	raw:title "Fall 2003 plant monitoring survey -- shoot height and flowering status of plants in permanent plots at GCE sampling sites 1-10" ;
+	raw:topic "" ;
+	raw:updatedate "2005-07-27T23:00:00Z" ;
+	raw:weburl "" ;
+	raw:westboundcoord "-81.4935" ;
+	raw:writepermission "uid=GCE\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	ov:csvRow "7"^^xsd:integer .
+
+dataone-objects:thing_8 dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	void:inDataset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	raw:abstract "Permanent plots are a powerful tool for understanding systems over the long term because of the rigorous quantification of patterns in a spatially refined way and because of the comparability of numerous variables measured in the same place. In 1998, 7 plots were surveyed into 3 forests in the study region of the Baltimore Ecosystem Study (BES): Oregon Ridge Park (4 plots), Hillsdale Park (1 plot), and Leakin Park (2 plots). Plots were surveyed in to correct for slope and to achieve an accuracy of plot side length to within 0.5 cm. Plots are 1600 m2 with the exception of the Hillsdale plot which is 900 m2. The Hillsdale plot is smaller to fit within the confines of the forest patch. Sites were selected 1) to represent urban and non-urban forests, 2) away from obvious habitat boundaries or edges, 3) with consistent drainage lines within the plot, and 4) with at least 80 % continuous tree canopy. All vegetation layers were sampled in order to characterize the structure and composition of the plant community. A variety of sampling methods were used for the different layers but all layers were quantified with a high level of detail to minimize variation and to best characterize the plot." ;
+	raw:author """M. L. Cadenasso, Cary Institute of Ecosystem Studies, Millbrook, New York
+S.T.A. Pickett, Cary Institute of Ecosystem Studies, Millbrook, New York""" ;
+	raw:authoritativemn "urn:node:LTER" ;
+	raw:authorlastname "M. L. Cadenasso\\, Cary Institute of Ecosystem Studies\\, Millbrook\\, New York\\nS.T.A. Pickett\\, Cary Institute of Ecosystem Studies\\, Millbrook\\, New York" ;
+	raw:begindate "" ;
+	<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> "" ;
+	raw:column_7 "" ;
+	raw:blockedreplicationmn "" ;
+	raw:changepermission "uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:checksum "a52e8fa0ca250e3c1a2e8bbdbfc5c3e5" ;
+	raw:checksumalgorithm "MD5" ;
+	raw:class "" ;
+	raw:contactorganization "" ;
+	raw:datasource "urn:node:LTER" ;
+	raw:dataurl "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-bes.520.37" ;
+	raw:datemodified "2012-06-26T10:38:39.41Z" ;
+	raw:datepublished "2003-03-01T00:00:00Z" ;
+	raw:dateuploaded "2010-03-06T00:00:00Z" ;
+	raw:decade "" ;
+	raw:documents "" ;
+	raw:eastboundcoord "-76.01201" ;
+	raw:edition "" ;
+	raw:enddate "" ;
+	raw:family "" ;
+	raw:fileid "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-bes.520.37" ;
+	raw:formatid "eml://ecoinformatics.org/eml-2.0.1" ;
+	raw:formattype "METADATA" ;
+	raw:gcmdkeyword "" ;
+	raw:genus "" ;
+	raw:geoform "" ;
+	raw:id "doi:10.6073/AA/knb-lter-bes.520.37" ;
+	raw:identifier "doi:10.6073/AA/knb-lter-bes.520.37" ;
+	raw:investigator "M. L. Cadenasso\\, Cary Institute of Ecosystem Studies\\, Millbrook\\, New York\\nS.T.A. Pickett\\, Cary Institute of Ecosystem Studies\\, Millbrook\\, New York" ;
+	raw:isdocumentedby "" ;
+	raw:ispublic "true" ;
+	raw:isspatial "" ;
+	raw:keyconcept "" ;
+	raw:keywords "Environmental\\, vegetation\\, urban ecology\\, riparian\\, biodiversity\\, baltimore\\, riparian vegetation\\, rural-urban gradient\\, hydrology\\, exotics\\, diversity,Baltimore\\, MD\\, Washington\\, D.C\\, Chesapeake Bay\\, Baltimore-Washington\\, Maryland" ;
+	raw:kingdom "" ;
+	raw:ltersite "" ;
+	raw:namedlocation "" ;
+	raw:noboundingbox "" ;
+	raw:northboundcoord "39.724846" ;
+	raw:numberreplicas "" ;
+	raw:obsoletedby "doi:10.6073/AA/knb-lter-bes.520.38" ;
+	raw:obsoletes "doi:10.6073/AA/knb-lter-bes.520.36" ;
+	raw:ogcurl "" ;
+	raw:order "" ;
+	raw:origin "M. L. Cadenasso\\, Cary Institute of Ecosystem Studies\\, Millbrook\\, New York\\nS.T.A. Pickett\\, Cary Institute of Ecosystem Studies\\, Millbrook\\, New York" ;
+	raw:originator "" ;
+	raw:parameter "" ;
+	raw:phylum "" ;
+	raw:placekey "" ;
+	raw:preferredreplicationmn "" ;
+	raw:presentationcat "" ;
+	raw:project "" ;
+	raw:pubdate "2003-03-01T00:00:00Z" ;
+	raw:purpose "" ;
+	raw:readpermission "public,uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:relatedorganizations "" ;
+	raw:replicamn "urn:node:LTER,urn:node:CN" ;
+	raw:replicationallowed "false" ;
+	raw:replicaverifieddate "2012-06-26T00:00:00Z,2012-06-26T00:00:00Z" ;
+	raw:resourcemap "" ;
+	raw:rightsholder "uid=BES,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:scientificname "" ;
+	raw:sensor "" ;
+	raw:site "" ;
+	raw:size "5458" ;
+	raw:sku "doi:10.6073/AA/knb-lter-bes.520.37" ;
+	raw:source "" ;
+	raw:southboundcoord "38.708366" ;
+	raw:species "" ;
+	raw:submitter "uid=BES,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:term "" ;
+	raw:title "Vegetation - Permanent Plots - Saplings BES ID 520-" ;
+	raw:topic "" ;
+	raw:updatedate "2010-03-06T00:00:00Z" ;
+	raw:weburl "" ;
+	raw:westboundcoord "-77.314186" ;
+	raw:writepermission "uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	ov:csvRow "8"^^xsd:integer .
+
+dataone-objects:thing_9 dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	void:inDataset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	raw:abstract "CUAHSI Water Data Service for Baltimore Waters Test Bed Ground Water Level Data" ;
+	raw:author "Michael McGuire" ;
+	raw:authoritativemn "urn:node:LTER" ;
+	raw:authorlastname "Michael McGuire" ;
+	raw:begindate "" ;
+	<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> "" ;
+	raw:column_7 "" ;
+	raw:blockedreplicationmn "" ;
+	raw:changepermission "uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:checksum "8f780091775313bab0a0404b251e5a89" ;
+	raw:checksumalgorithm "MD5" ;
+	raw:class "" ;
+	raw:contactorganization "" ;
+	raw:datasource "urn:node:LTER" ;
+	raw:dataurl "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-bes.481.37" ;
+	raw:datemodified "2012-06-26T11:34:42.234Z" ;
+	raw:datepublished "2010-01-26T00:00:00Z" ;
+	raw:dateuploaded "2010-02-05T00:00:00Z" ;
+	raw:decade "" ;
+	raw:documents "" ;
+	raw:eastboundcoord "-76.01201" ;
+	raw:edition "" ;
+	raw:enddate "" ;
+	raw:family "" ;
+	raw:fileid "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-bes.481.37" ;
+	raw:formatid "eml://ecoinformatics.org/eml-2.0.1" ;
+	raw:formattype "METADATA" ;
+	raw:gcmdkeyword "" ;
+	raw:genus "" ;
+	raw:geoform "" ;
+	raw:id "doi:10.6073/AA/knb-lter-bes.481.37" ;
+	raw:identifier "doi:10.6073/AA/knb-lter-bes.481.37" ;
+	raw:investigator "Michael McGuire" ;
+	raw:isdocumentedby "" ;
+	raw:ispublic "true" ;
+	raw:isspatial "" ;
+	raw:keyconcept "" ;
+	raw:keywords "atmospheric science\\,  ecology\\,  air pollution\\,  rainfall\\,  gauge\\,  rain,Baltimore\\, MD\\, Washington\\, D.C\\, Chesapeake Bay\\, Baltimore-Washington\\, Maryland" ;
+	raw:kingdom "" ;
+	raw:ltersite "" ;
+	raw:namedlocation "" ;
+	raw:noboundingbox "" ;
+	raw:northboundcoord "39.724846" ;
+	raw:numberreplicas "" ;
+	raw:obsoletedby "doi:10.6073/AA/knb-lter-bes.481.38" ;
+	raw:obsoletes "doi:10.6073/AA/knb-lter-bes.481.36" ;
+	raw:ogcurl "" ;
+	raw:order "" ;
+	raw:origin "Michael McGuire" ;
+	raw:originator "" ;
+	raw:parameter "" ;
+	raw:phylum "" ;
+	raw:placekey "" ;
+	raw:preferredreplicationmn "" ;
+	raw:presentationcat "" ;
+	raw:project "" ;
+	raw:pubdate "2010-01-26T00:00:00Z" ;
+	raw:purpose "" ;
+	raw:readpermission "public,uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:relatedorganizations "" ;
+	raw:replicamn "urn:node:LTER,urn:node:CN" ;
+	raw:replicationallowed "false" ;
+	raw:replicaverifieddate "2012-06-26T00:00:00Z,2012-06-26T00:00:00Z" ;
+	raw:resourcemap "" ;
+	raw:rightsholder "uid=BES,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:scientificname "" ;
+	raw:sensor "" ;
+	raw:site "" ;
+	raw:size "4138" ;
+	raw:sku "doi:10.6073/AA/knb-lter-bes.481.37" ;
+	raw:source "" ;
+	raw:southboundcoord "38.708366" ;
+	raw:species "" ;
+	raw:submitter "uid=BES,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:term "" ;
+	raw:title "Baltimore Waters Test Bed Ground Water Level Data BES ID 481-" ;
+	raw:topic "" ;
+	raw:updatedate "2010-02-05T00:00:00Z" ;
+	raw:weburl "" ;
+	raw:westboundcoord "-77.314186" ;
+	raw:writepermission "uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	ov:csvRow "9"^^xsd:integer .
+
+dataone-objects:thing_10 dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	void:inDataset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	raw:abstract "CUAHSI Water Data Service for Baltimore Ecosystem Study Precipitation Data" ;
+	raw:author "Michael McGuire" ;
+	raw:authoritativemn "urn:node:LTER" ;
+	raw:authorlastname "Michael McGuire" ;
+	raw:begindate "" ;
+	<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> "" ;
+	raw:column_7 "" ;
+	raw:blockedreplicationmn "" ;
+	raw:changepermission "uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:checksum "e805bc6d81281a3bcefb18a819936ed1" ;
+	raw:checksumalgorithm "MD5" ;
+	raw:class "" ;
+	raw:contactorganization "" ;
+	raw:datasource "urn:node:LTER" ;
+	raw:dataurl "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-bes.478.48" ;
+	raw:datemodified "2012-06-26T11:32:02.833Z" ;
+	raw:datepublished "2010-01-26T00:00:00Z" ;
+	raw:dateuploaded "2010-02-05T00:00:00Z" ;
+	raw:decade "" ;
+	raw:documents "" ;
+	raw:eastboundcoord "-76.01201" ;
+	raw:edition "" ;
+	raw:enddate "" ;
+	raw:family "" ;
+	raw:fileid "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-bes.478.48" ;
+	raw:formatid "eml://ecoinformatics.org/eml-2.0.1" ;
+	raw:formattype "METADATA" ;
+	raw:gcmdkeyword "" ;
+	raw:genus "" ;
+	raw:geoform "" ;
+	raw:id "doi:10.6073/AA/knb-lter-bes.478.48" ;
+	raw:identifier "doi:10.6073/AA/knb-lter-bes.478.48" ;
+	raw:investigator "Michael McGuire" ;
+	raw:isdocumentedby "" ;
+	raw:ispublic "true" ;
+	raw:isspatial "" ;
+	raw:keyconcept "" ;
+	raw:keywords "atmospheric science\\,  ecology\\,  air pollution\\,  rainfall\\,  gauge\\,  rain,Baltimore\\, MD\\, Washington\\, D.C\\, Chesapeake Bay\\, Baltimore-Washington\\, Maryland" ;
+	raw:kingdom "" ;
+	raw:ltersite "" ;
+	raw:namedlocation "" ;
+	raw:noboundingbox "" ;
+	raw:northboundcoord "39.724846" ;
+	raw:numberreplicas "" ;
+	raw:obsoletedby "doi:10.6073/AA/knb-lter-bes.478.49" ;
+	raw:obsoletes "doi:10.6073/AA/knb-lter-bes.478.47" ;
+	raw:ogcurl "" ;
+	raw:order "" ;
+	raw:origin "Michael McGuire" ;
+	raw:originator "" ;
+	raw:parameter "" ;
+	raw:phylum "" ;
+	raw:placekey "" ;
+	raw:preferredreplicationmn "" ;
+	raw:presentationcat "" ;
+	raw:project "" ;
+	raw:pubdate "2010-01-26T00:00:00Z" ;
+	raw:purpose "" ;
+	raw:readpermission "public,uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:relatedorganizations "" ;
+	raw:replicamn "urn:node:LTER,urn:node:CN" ;
+	raw:replicationallowed "false" ;
+	raw:replicaverifieddate "2012-06-26T00:00:00Z,2012-06-26T00:00:00Z" ;
+	raw:resourcemap "" ;
+	raw:rightsholder "uid=BES,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:scientificname "" ;
+	raw:sensor "" ;
+	raw:site "" ;
+	raw:size "4156" ;
+	raw:sku "doi:10.6073/AA/knb-lter-bes.478.48" ;
+	raw:source "" ;
+	raw:southboundcoord "38.708366" ;
+	raw:species "" ;
+	raw:submitter "uid=BES,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:term "" ;
+	raw:title "CUAHSI Water Data Service: Baltimore Ecosystem Study Precipitation Data BES ID 478-" ;
+	raw:topic "" ;
+	raw:updatedate "2010-02-05T00:00:00Z" ;
+	raw:weburl "" ;
+	raw:westboundcoord "-77.314186" ;
+	raw:writepermission "uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	ov:csvRow "10"^^xsd:integer .
+
+dataone-objects:thing_11 dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	void:inDataset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> ;
+	raw:abstract "Permanent plots are a powerful tool for understanding systems over the long term because of the rigorous quantification of patterns in a spatially refined way and because of the comparability of numerous variables measured in the same place. In 1998, 7 plots were surveyed into 3 forests in the study region of the Baltimore Ecosystem Study (BES): Oregon Ridge Park (4 plots), Hillsdale Park (1 plot), and Leakin Park (2 plots). Plots were surveyed in to correct for slope and to achieve an accuracy of plot side length to within 0.5 cm. Plots are 1600 m2 with the exception of the Hillsdale plot which is 900 m2. The Hillsdale plot is smaller to fit within the confines of the forest patch. Sites were selected 1) to represent urban and non-urban forests, 2) away from obvious habitat boundaries or edges, 3) with consistent drainage lines within the plot, and 4) with at least 80 % continuous tree canopy. All vegetation layers were sampled in order to characterize the structure and composition of the plant community. A variety of sampling methods were used for the different layers but all layers were quantified with a high level of detail to minimize variation and to best characterize the plot." ;
+	raw:author """M. L. Cadenasso, Cary Institute of Ecosystem Studies, Millbrook, New York
+S.T.A. Pickett, Cary Institute of Ecosystem Studies, Millbrook, New York""" ;
+	raw:authoritativemn "urn:node:LTER" ;
+	raw:authorlastname "M. L. Cadenasso\\, Cary Institute of Ecosystem Studies\\, Millbrook\\, New York\\nS.T.A. Pickett\\, Cary Institute of Ecosystem Studies\\, Millbrook\\, New York" ;
+	raw:begindate "" ;
+	<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> "" ;
+	raw:column_7 "" ;
+	raw:blockedreplicationmn "" ;
+	raw:changepermission "uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:checksum "b67c92058b7885590e0d3984fb83733b" ;
+	raw:checksumalgorithm "MD5" ;
+	raw:class "" ;
+	raw:contactorganization "" ;
+	raw:datasource "urn:node:LTER" ;
+	raw:dataurl "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-bes.522.42" ;
+	raw:datemodified "2012-06-26T10:27:12.51Z" ;
+	raw:datepublished "2003-03-01T00:00:00Z" ;
+	raw:dateuploaded "2010-03-06T00:00:00Z" ;
+	raw:decade "" ;
+	raw:documents "" ;
+	raw:eastboundcoord "-76.01201" ;
+	raw:edition "" ;
+	raw:enddate "" ;
+	raw:family "" ;
+	raw:fileid "https://cn.dataone.org/cn/v1/resolve/doi%3A10.6073%2FAA%2Fknb-lter-bes.522.42" ;
+	raw:formatid "eml://ecoinformatics.org/eml-2.0.1" ;
+	raw:formattype "METADATA" ;
+	raw:gcmdkeyword "" ;
+	raw:genus "" ;
+	raw:geoform "" ;
+	raw:id "doi:10.6073/AA/knb-lter-bes.522.42" ;
+	raw:identifier "doi:10.6073/AA/knb-lter-bes.522.42" ;
+	raw:investigator "M. L. Cadenasso\\, Cary Institute of Ecosystem Studies\\, Millbrook\\, New York\\nS.T.A. Pickett\\, Cary Institute of Ecosystem Studies\\, Millbrook\\, New York" ;
+	raw:isdocumentedby "" ;
+	raw:ispublic "true" ;
+	raw:isspatial "" ;
+	raw:keyconcept "" ;
+	raw:keywords "Environmental\\, vegetation\\, urban ecology\\, riparian\\, biodiversity\\, baltimore\\, riparian vegetation\\, rural-urban gradient\\, hydrology\\, exotics\\, diversity,Baltimore\\, MD\\, Washington\\, D.C\\, Chesapeake Bay\\, Baltimore-Washington\\, Maryland" ;
+	raw:kingdom "" ;
+	raw:ltersite "" ;
+	raw:namedlocation "" ;
+	raw:noboundingbox "" ;
+	raw:northboundcoord "39.724846" ;
+	raw:numberreplicas "" ;
+	raw:obsoletedby "doi:10.6073/AA/knb-lter-bes.522.43" ;
+	raw:obsoletes "doi:10.6073/AA/knb-lter-bes.522.41" ;
+	raw:ogcurl "" ;
+	raw:order "" ;
+	raw:origin "M. L. Cadenasso\\, Cary Institute of Ecosystem Studies\\, Millbrook\\, New York\\nS.T.A. Pickett\\, Cary Institute of Ecosystem Studies\\, Millbrook\\, New York" ;
+	raw:originator "" ;
+	raw:parameter "" ;
+	raw:phylum "" ;
+	raw:placekey "" ;
+	raw:preferredreplicationmn "" ;
+	raw:presentationcat "" ;
+	raw:project "" ;
+	raw:pubdate "2003-03-01T00:00:00Z" ;
+	raw:purpose "" ;
+	raw:readpermission "public,uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	raw:relatedorganizations "" ;
+	raw:replicamn "urn:node:LTER,urn:node:CN" ;
+	raw:replicationallowed "false" ;
+	raw:replicaverifieddate "2012-06-26T00:00:00Z,2012-06-26T00:00:00Z" ;
+	raw:resourcemap "" ;
+	raw:rightsholder "uid=BES,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:scientificname "" ;
+	raw:sensor "" ;
+	raw:site "" ;
+	raw:size "5479" ;
+	raw:sku "doi:10.6073/AA/knb-lter-bes.522.42" ;
+	raw:source "" ;
+	raw:southboundcoord "38.708366" ;
+	raw:species "" ;
+	raw:submitter "uid=BES,o=LTER,dc=ecoinformatics,dc=org" ;
+	raw:term "" ;
+	raw:title "Vegetation - Permanent Plots - Woody Vegetation Height BES ID 522-" ;
+	raw:topic "" ;
+	raw:updatedate "2010-03-06T00:00:00Z" ;
+	raw:weburl "" ;
+	raw:westboundcoord "-77.314186" ;
+	raw:writepermission "uid=\"BES\"\\,o=lter\\,dc=ecoinformatics\\,dc=org" ;
+	ov:csvRow "11"^^xsd:integer .
+
+# CSV2RDF4LOD DATASET METADATA (reproduced from above):
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-Jan-16/> .
+@prefix provenance_raw: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/provenance/dataone-objects/version/2013-May-29/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix dataone-objects: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/> .
+@prefix dataone_vocab: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/vocab/> .
+@prefix base_vocab: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/vocab/> .
+@prefix dataone-objects_vocab: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/> .
+@prefix raw: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> .
+@prefix dataone-objects_global_value: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+raw:abstract a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "abstract" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "abstract" ;
+	rdfs:range rdfs:Literal .
+
+raw:author a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "author" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "author" ;
+	rdfs:range rdfs:Literal .
+
+raw:authoritativemn a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "authoritativeMN" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "authoritativeMN" ;
+	rdfs:range rdfs:Literal .
+
+raw:authorlastname a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "authorLastName" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "authorLastName" ;
+	rdfs:range rdfs:Literal .
+
+raw:begindate a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "beginDate" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "beginDate" ;
+	rdfs:range rdfs:Literal .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "\n" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "" ;
+	rdfs:range rdfs:Literal .
+
+raw:column_7 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "column_7" ;
+	rdfs:range rdfs:Literal .
+
+raw:blockedreplicationmn a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "blockedReplicationMN" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "blockedReplicationMN" ;
+	rdfs:range rdfs:Literal .
+
+raw:changepermission a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "changePermission" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "changePermission" ;
+	rdfs:range rdfs:Literal .
+
+raw:checksum a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "checksum" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "checksum" ;
+	rdfs:range rdfs:Literal .
+
+raw:checksumalgorithm a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "checksumAlgorithm" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "checksumAlgorithm" ;
+	rdfs:range rdfs:Literal .
+
+raw:class a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "class" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "class" ;
+	rdfs:range rdfs:Literal .
+
+raw:contactorganization a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "contactOrganization" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "contactOrganization" ;
+	rdfs:range rdfs:Literal .
+
+raw:datasource a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "datasource" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "datasource" ;
+	rdfs:range rdfs:Literal .
+
+raw:dataurl a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "dataUrl" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "dataUrl" ;
+	rdfs:range rdfs:Literal .
+
+raw:datemodified a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "dateModified" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "dateModified" ;
+	rdfs:range rdfs:Literal .
+
+raw:datepublished a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "datePublished" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "datePublished" ;
+	rdfs:range rdfs:Literal .
+
+raw:dateuploaded a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "dateUploaded" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "dateUploaded" ;
+	rdfs:range rdfs:Literal .
+
+raw:decade a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "decade" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "decade" ;
+	rdfs:range rdfs:Literal .
+
+raw:documents a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "20"^^xsd:integer ;
+	ov:csvHeader "documents" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "documents" ;
+	rdfs:range rdfs:Literal .
+
+raw:eastboundcoord a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "21"^^xsd:integer ;
+	ov:csvHeader "eastBoundCoord" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "eastBoundCoord" ;
+	rdfs:range rdfs:Literal .
+
+raw:edition a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "22"^^xsd:integer ;
+	ov:csvHeader "edition" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "edition" ;
+	rdfs:range rdfs:Literal .
+
+raw:enddate a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "23"^^xsd:integer ;
+	ov:csvHeader "endDate" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "endDate" ;
+	rdfs:range rdfs:Literal .
+
+raw:family a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "24"^^xsd:integer ;
+	ov:csvHeader "family" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "family" ;
+	rdfs:range rdfs:Literal .
+
+raw:fileid a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "25"^^xsd:integer ;
+	ov:csvHeader "fileID" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "fileID" ;
+	rdfs:range rdfs:Literal .
+
+raw:formatid a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "26"^^xsd:integer ;
+	ov:csvHeader "formatId" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "formatId" ;
+	rdfs:range rdfs:Literal .
+
+raw:formattype a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "27"^^xsd:integer ;
+	ov:csvHeader "formatType" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "formatType" ;
+	rdfs:range rdfs:Literal .
+
+raw:gcmdkeyword a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "28"^^xsd:integer ;
+	ov:csvHeader "gcmdKeyword" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "gcmdKeyword" ;
+	rdfs:range rdfs:Literal .
+
+raw:genus a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "29"^^xsd:integer ;
+	ov:csvHeader "genus" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "genus" ;
+	rdfs:range rdfs:Literal .
+
+raw:geoform a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "30"^^xsd:integer ;
+	ov:csvHeader "geoform" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "geoform" ;
+	rdfs:range rdfs:Literal .
+
+raw:id a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "31"^^xsd:integer ;
+	ov:csvHeader "id" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "id" ;
+	rdfs:range rdfs:Literal .
+
+raw:identifier a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "32"^^xsd:integer ;
+	ov:csvHeader "identifier" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "identifier" ;
+	rdfs:range rdfs:Literal .
+
+raw:investigator a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "33"^^xsd:integer ;
+	ov:csvHeader "investigator" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "investigator" ;
+	rdfs:range rdfs:Literal .
+
+raw:isdocumentedby a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "34"^^xsd:integer ;
+	ov:csvHeader "isDocumentedBy" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "isDocumentedBy" ;
+	rdfs:range rdfs:Literal .
+
+raw:ispublic a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "35"^^xsd:integer ;
+	ov:csvHeader "isPublic" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "isPublic" ;
+	rdfs:range rdfs:Literal .
+
+raw:isspatial a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "36"^^xsd:integer ;
+	ov:csvHeader "isSpatial" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "isSpatial" ;
+	rdfs:range rdfs:Literal .
+
+raw:keyconcept a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "37"^^xsd:integer ;
+	ov:csvHeader "keyConcept" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "keyConcept" ;
+	rdfs:range rdfs:Literal .
+
+raw:keywords a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "38"^^xsd:integer ;
+	ov:csvHeader "keywords" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "keywords" ;
+	rdfs:range rdfs:Literal .
+
+raw:kingdom a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "39"^^xsd:integer ;
+	ov:csvHeader "kingdom" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "kingdom" ;
+	rdfs:range rdfs:Literal .
+
+raw:ltersite a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "40"^^xsd:integer ;
+	ov:csvHeader "LTERSite" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "LTERSite" ;
+	rdfs:range rdfs:Literal .
+
+raw:namedlocation a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "41"^^xsd:integer ;
+	ov:csvHeader "namedLocation" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "namedLocation" ;
+	rdfs:range rdfs:Literal .
+
+raw:noboundingbox a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "42"^^xsd:integer ;
+	ov:csvHeader "noBoundingBox" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "noBoundingBox" ;
+	rdfs:range rdfs:Literal .
+
+raw:northboundcoord a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "43"^^xsd:integer ;
+	ov:csvHeader "northBoundCoord" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "northBoundCoord" ;
+	rdfs:range rdfs:Literal .
+
+raw:numberreplicas a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "44"^^xsd:integer ;
+	ov:csvHeader "numberReplicas" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "numberReplicas" ;
+	rdfs:range rdfs:Literal .
+
+raw:obsoletedby a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "45"^^xsd:integer ;
+	ov:csvHeader "obsoletedBy" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "obsoletedBy" ;
+	rdfs:range rdfs:Literal .
+
+raw:obsoletes a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "46"^^xsd:integer ;
+	ov:csvHeader "obsoletes" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "obsoletes" ;
+	rdfs:range rdfs:Literal .
+
+raw:ogcurl a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "47"^^xsd:integer ;
+	ov:csvHeader "ogcUrl" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "ogcUrl" ;
+	rdfs:range rdfs:Literal .
+
+raw:order a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "48"^^xsd:integer ;
+	ov:csvHeader "order" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "order" ;
+	rdfs:range rdfs:Literal .
+
+raw:origin a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "49"^^xsd:integer ;
+	ov:csvHeader "origin" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "origin" ;
+	rdfs:range rdfs:Literal .
+
+raw:originator a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "50"^^xsd:integer ;
+	ov:csvHeader "originator" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "originator" ;
+	rdfs:range rdfs:Literal .
+
+raw:parameter a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "51"^^xsd:integer ;
+	ov:csvHeader "parameter" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "parameter" ;
+	rdfs:range rdfs:Literal .
+
+raw:phylum a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "52"^^xsd:integer ;
+	ov:csvHeader "phylum" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "phylum" ;
+	rdfs:range rdfs:Literal .
+
+raw:placekey a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "53"^^xsd:integer ;
+	ov:csvHeader "placeKey" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "placeKey" ;
+	rdfs:range rdfs:Literal .
+
+raw:preferredreplicationmn a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "54"^^xsd:integer ;
+	ov:csvHeader "preferredReplicationMN" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "preferredReplicationMN" ;
+	rdfs:range rdfs:Literal .
+
+raw:presentationcat a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "55"^^xsd:integer ;
+	ov:csvHeader "presentationCat" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "presentationCat" ;
+	rdfs:range rdfs:Literal .
+
+raw:project a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "56"^^xsd:integer ;
+	ov:csvHeader "project" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "project" ;
+	rdfs:range rdfs:Literal .
+
+raw:pubdate a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "57"^^xsd:integer ;
+	ov:csvHeader "pubDate" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "pubDate" ;
+	rdfs:range rdfs:Literal .
+
+raw:purpose a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "58"^^xsd:integer ;
+	ov:csvHeader "purpose" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "purpose" ;
+	rdfs:range rdfs:Literal .
+
+raw:readpermission a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "59"^^xsd:integer ;
+	ov:csvHeader "readPermission" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "readPermission" ;
+	rdfs:range rdfs:Literal .
+
+raw:relatedorganizations a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "60"^^xsd:integer ;
+	ov:csvHeader "relatedOrganizations" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "relatedOrganizations" ;
+	rdfs:range rdfs:Literal .
+
+raw:replicamn a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "61"^^xsd:integer ;
+	ov:csvHeader "replicaMN" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "replicaMN" ;
+	rdfs:range rdfs:Literal .
+
+raw:replicationallowed a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "62"^^xsd:integer ;
+	ov:csvHeader "replicationAllowed" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "replicationAllowed" ;
+	rdfs:range rdfs:Literal .
+
+raw:replicaverifieddate a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "63"^^xsd:integer ;
+	ov:csvHeader "replicaVerifiedDate" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "replicaVerifiedDate" ;
+	rdfs:range rdfs:Literal .
+
+raw:resourcemap a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "64"^^xsd:integer ;
+	ov:csvHeader "resourceMap" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "resourceMap" ;
+	rdfs:range rdfs:Literal .
+
+raw:rightsholder a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "65"^^xsd:integer ;
+	ov:csvHeader "rightsHolder" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "rightsHolder" ;
+	rdfs:range rdfs:Literal .
+
+raw:scientificname a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "66"^^xsd:integer ;
+	ov:csvHeader "scientificName" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "scientificName" ;
+	rdfs:range rdfs:Literal .
+
+raw:sensor a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "67"^^xsd:integer ;
+	ov:csvHeader "sensor" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "sensor" ;
+	rdfs:range rdfs:Literal .
+
+raw:site a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "68"^^xsd:integer ;
+	ov:csvHeader "site" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "site" ;
+	rdfs:range rdfs:Literal .
+
+raw:size a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "69"^^xsd:integer ;
+	ov:csvHeader "size" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "size" ;
+	rdfs:range rdfs:Literal .
+
+raw:sku a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "70"^^xsd:integer ;
+	ov:csvHeader "sku" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "sku" ;
+	rdfs:range rdfs:Literal .
+
+raw:source a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "71"^^xsd:integer ;
+	ov:csvHeader "source" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "source" ;
+	rdfs:range rdfs:Literal .
+
+raw:southboundcoord a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "72"^^xsd:integer ;
+	ov:csvHeader "southBoundCoord" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "southBoundCoord" ;
+	rdfs:range rdfs:Literal .
+
+raw:species a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "73"^^xsd:integer ;
+	ov:csvHeader "species" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "species" ;
+	rdfs:range rdfs:Literal .
+
+raw:submitter a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "74"^^xsd:integer ;
+	ov:csvHeader "submitter" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "submitter" ;
+	rdfs:range rdfs:Literal .
+
+raw:term a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "75"^^xsd:integer ;
+	ov:csvHeader "term" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "term" ;
+	rdfs:range rdfs:Literal .
+
+raw:title a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "76"^^xsd:integer ;
+	ov:csvHeader "title" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "title" ;
+	rdfs:range rdfs:Literal .
+
+raw:topic a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "77"^^xsd:integer ;
+	ov:csvHeader "topic" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "topic" ;
+	rdfs:range rdfs:Literal .
+
+raw:updatedate a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "78"^^xsd:integer ;
+	ov:csvHeader "updateDate" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "updateDate" ;
+	rdfs:range rdfs:Literal .
+
+raw:weburl a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "79"^^xsd:integer ;
+	ov:csvHeader "webUrl" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "webUrl" ;
+	rdfs:range rdfs:Literal .
+
+raw:westboundcoord a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "80"^^xsd:integer ;
+	ov:csvHeader "westBoundCoord" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "westBoundCoord" ;
+	rdfs:range rdfs:Literal .
+
+raw:writepermission a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "81"^^xsd:integer ;
+	ov:csvHeader "writePermission" ;
+	dcterms:isReferencedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> ;
+	rdfs:label "writePermission" ;
+	rdfs:range rdfs:Literal .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-Jan-16/> .
+@prefix provenance_raw: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/provenance/dataone-objects/version/2013-May-29/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix dataone-objects: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/> .
+@prefix dataone_vocab: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/vocab/> .
+@prefix base_vocab: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/vocab/> .
+@prefix dataone-objects_vocab: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/> .
+@prefix raw: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> .
+@prefix dataone-objects_global_value: <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/void.ttl> a void:DatasetDescription ;
+	foaf:topic <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects> ;
+	foaf:primaryTopic <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/void> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/void> a void:Dataset ;
+	void:subset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects> a dataone_vocab:Dataset , conversion:Dataset , conversion:AbstractDataset , void:Dataset ;
+	conversion:base_uri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#" ;
+	conversion:source_identifier "dataone" ;
+	conversion:dataset_identifier "dataone-objects" ;
+	dcterms:contributor <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone> ;
+	dcterms:identifier "dataone dataone-objects" ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset_page/dataone-objects> ;
+	void:subset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> , <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/subset/meta> ;
+	dcterms:modified "2013-05-29T03:53:00.096-05:00"^^xsd:dateTime .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29> a dataone_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset ;
+	conversion:base_uri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#" ;
+	conversion:source_identifier "dataone" ;
+	conversion:dataset_identifier "dataone-objects" ;
+	conversion:version_identifier "2013-May-29" ;
+	conversion:dataset_version "2013-May-29" ;
+	dcterms:contributor <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone> ;
+	dcterms:identifier "dataone dataone-objects 2013-May-29" ;
+	dcterms:modified "2013-05-29T03:53:00.096-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset_page/dataone-objects/version/2013-May-29> ;
+	void:dataDump <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/file/dataone-objects/version/2013-May-29/conversion/dataone-dataone-objects-2013-May-29.ttl.gz> ;
+	void:subset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> a dataone_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset , conversion:RawDataset ;
+	dcterms:modified "2013-05-29T03:53:00.096-05:00"^^xsd:dateTime ;
+	conversion:base_uri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#" ;
+	conversion:source_identifier "dataone" ;
+	conversion:dataset_identifier "dataone-objects" ;
+	conversion:version_identifier "2013-May-29" ;
+	conversion:dataset_version "2013-May-29" ;
+	conversion:conversion_identifier "raw" ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset_page/dataone-objects/version/2013-May-29/conversion/raw> ;
+	void:dataDump <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/file/dataone-objects/version/2013-May-29/conversion/dataone-dataone-objects-2013-May-29.raw.ttl.gz> ;
+	void:subset <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw/subset/sample> ;
+	conversion:uses_predicate raw:formattype , raw:geoform , ov:csvRow , raw:author , raw:column_7 , raw:datasource , raw:genus , raw:family , raw:placekey , raw:authorlastname , raw:preferredreplicationmn , raw:changepermission , raw:project , raw:northboundcoord , raw:presentationcat , raw:updatedate , raw:blockedreplicationmn , raw:site , raw:eastboundcoord , raw:documents , raw:noboundingbox , raw:checksum , raw:identifier , raw:writepermission , raw:gcmdkeyword , raw:begindate , raw:sensor , raw:purpose , raw:keywords , raw:kingdom , raw:size , raw:datepublished , raw:order , raw:fileid , raw:southboundcoord , raw:dataurl , raw:authoritativemn , raw:westboundcoord , raw:resourcemap , raw:replicaverifieddate , raw:obsoletedby , raw:source , raw:term , raw:class , raw:obsoletes , void:inDataset , raw:datemodified , raw:abstract , raw:weburl , raw:species , raw:topic , raw:enddate , dcterms:isReferencedBy , raw:namedlocation , raw:numberreplicas , raw:decade , raw:ltersite , raw:title , raw:replicationallowed , <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> , raw:phylum , raw:ogcurl , raw:sku , raw:isdocumentedby , raw:dateuploaded , raw:formatid , raw:ispublic , raw:replicamn , raw:pubdate , raw:edition , raw:checksumalgorithm , raw:isspatial , raw:id , raw:readpermission , raw:keyconcept , raw:rightsholder , raw:relatedorganizations , raw:originator , raw:investigator , raw:origin , raw:parameter , raw:scientificname , raw:submitter , raw:contactorganization ;
+	void:vocabulary <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> , <http://open.vocab.org/terms/> , <http://rdfs.org/ns/void#> , <http://purl.org/dc/terms/> .
+
+raw:formattype rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:geoform rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+ov:csvRow rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://open.vocab.org> .
+
+raw:author rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:column_7 rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:datasource rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:genus rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:family rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:placekey rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:authorlastname rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:preferredreplicationmn rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:changepermission rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:project rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:northboundcoord rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:presentationcat rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:updatedate rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:blockedreplicationmn rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:site rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:eastboundcoord rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:documents rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:noboundingbox rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:checksum rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:identifier rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:writepermission rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:gcmdkeyword rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:begindate rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:sensor rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:purpose rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:keywords rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:kingdom rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:size rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:datepublished rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:order rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:fileid rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:southboundcoord rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:dataurl rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:authoritativemn rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:westboundcoord rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:resourcemap rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:replicaverifieddate rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:obsoletedby rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:source rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:term rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:class rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:obsoletes rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+void:inDataset rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+raw:datemodified rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:abstract rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:weburl rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:species rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:topic rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:enddate rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+dcterms:isReferencedBy rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+raw:namedlocation rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:numberreplicas rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:decade rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:ltersite rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:title rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:replicationallowed rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:phylum rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:ogcurl rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:sku rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:isdocumentedby rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:dateuploaded rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:formatid rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:ispublic rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:replicamn rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:pubdate rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:edition rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:checksumalgorithm rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:isspatial rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:id rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:readpermission rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:keyconcept rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:rightsholder rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:relatedorganizations rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:originator rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:investigator rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:origin rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:parameter rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:scientificname rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:submitter rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+raw:contactorganization rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> void:exampleResource dataone-objects:thing_2 , dataone-objects:thing_11 ;
+	dcterms:created "2013-05-29T03:52:59.287-05:00"^^xsd:dateTime ;
+	dcterms:contributor <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone> ;
+	dcterms:identifier "dataone dataone-objects 2013-May-29 raw" .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw/subset/sample> a dataone_vocab:Dataset , conversion:Dataset , conversion:DatasetSample , void:Dataset ;
+	conversion:base_uri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#" ;
+	conversion:source_identifier "dataone" ;
+	conversion:dataset_identifier "dataone-objects" ;
+	conversion:version_identifier "2013-May-29" ;
+	conversion:dataset_version "2013-May-29" ;
+	conversion:conversion_identifier "raw" ;
+	dcterms:modified "2013-05-29T03:53:00.096-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset_page/dataone-objects/version/2013-May-29/conversion/raw/subset/sample> ;
+	void:dataDump <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/file/dataone-objects/version/2013-May-29/conversion/dataone-dataone-objects-2013-May-29.raw.sample.ttl> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/file/dataone-objects/version/2013-May-29/conversion/dataone-dataone-objects-2013-May-29.raw.sample.ttl> dcterms:format <http://www.w3.org/ns/formats/Turtle> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone> a foaf:Agent ;
+	dcterms:identifier "dataone" ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source_page/dataone> .
+
+_:node17rnkd350x2 vann:preferredNamespacePrefix "rdf" ;
+	vann:preferredNamespaceUri "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+
+_:node17rnkd350x3 vann:preferredNamespacePrefix "rdfs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
+
+_:node17rnkd350x4 vann:preferredNamespacePrefix "xsd" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#" .
+
+_:node17rnkd350x5 vann:preferredNamespacePrefix "xsd2" ;
+	vann:preferredNamespaceUri "http://www.w3.org/TR/xmlschema-2/#" .
+
+_:node17rnkd350x6 vann:preferredNamespacePrefix "owl" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#" .
+
+_:node17rnkd350x7 vann:preferredNamespacePrefix "pmlp" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-provenance.owl#" .
+
+_:node17rnkd350x8 vann:preferredNamespacePrefix "pmlj" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-justification.owl#" .
+
+_:node17rnkd350x9 vann:preferredNamespacePrefix "tw_service" ;
+	vann:preferredNamespaceUri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/tw-rpi-edu/service/" .
+
+_:node17rnkd350x10 vann:preferredNamespacePrefix "tw_converter" ;
+	vann:preferredNamespaceUri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-Jan-16/" .
+
+_:node17rnkd350x11 vann:preferredNamespacePrefix "provenance_raw" ;
+	vann:preferredNamespaceUri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/provenance/dataone-objects/version/2013-May-29/conversion/raw/" .
+
+_:node17rnkd350x12 vann:preferredNamespacePrefix "conversion" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/vocab/conversion/" .
+
+_:node17rnkd350x13 vann:preferredNamespacePrefix "ov" ;
+	vann:preferredNamespaceUri "http://open.vocab.org/terms/" .
+
+_:node17rnkd350x14 vann:preferredNamespacePrefix "dcterms" ;
+	vann:preferredNamespaceUri "http://purl.org/dc/terms/" .
+
+_:node17rnkd350x15 vann:preferredNamespacePrefix "foaf" ;
+	vann:preferredNamespaceUri "http://xmlns.com/foaf/0.1/" .
+
+_:node17rnkd350x16 vann:preferredNamespacePrefix "void" ;
+	vann:preferredNamespaceUri "http://rdfs.org/ns/void#" .
+
+_:node17rnkd350x17 vann:preferredNamespacePrefix "doap" ;
+	vann:preferredNamespaceUri "http://usefulinc.com/ns/doap#" .
+
+_:node17rnkd350x18 vann:preferredNamespacePrefix "scovo" ;
+	vann:preferredNamespaceUri "http://purl.org/NET/scovo#" .
+
+_:node17rnkd350x19 vann:preferredNamespacePrefix "qb" ;
+	vann:preferredNamespaceUri "http://purl.org/linked-data/cube#" .
+
+_:node17rnkd350x20 vann:preferredNamespacePrefix "vann" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/vann/" .
+
+_:node17rnkd350x21 vann:preferredNamespacePrefix "frbrcore" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/frbr/core#" .
+
+_:node17rnkd350x22 vann:preferredNamespacePrefix "coin" ;
+	vann:preferredNamespaceUri "http://purl.org/court/def/2009/coin#" .
+
+_:node17rnkd350x23 vann:preferredNamespacePrefix "dataone-objects" ;
+	vann:preferredNamespaceUri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/" .
+
+_:node17rnkd350x24 vann:preferredNamespacePrefix "dataone_vocab" ;
+	vann:preferredNamespaceUri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/vocab/" .
+
+_:node17rnkd350x25 vann:preferredNamespacePrefix "base_vocab" ;
+	vann:preferredNamespaceUri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/vocab/" .
+
+_:node17rnkd350x26 vann:preferredNamespacePrefix "dataone-objects_vocab" ;
+	vann:preferredNamespaceUri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/" .
+
+_:node17rnkd350x27 vann:preferredNamespacePrefix "raw" ;
+	vann:preferredNamespaceUri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/" .
+
+_:node17rnkd350x28 vann:preferredNamespacePrefix "dataone-objects_global_value" ;
+	vann:preferredNamespaceUri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/" .
+
+_:node17rnkd350x29 vann:preferredNamespacePrefix "sioc" ;
+	vann:preferredNamespaceUri "http://rdfs.org/sioc/ns#" .
+
+_:node17rnkd350x1 rdfs:seeAlso _:node17rnkd350x2 , _:node17rnkd350x3 , _:node17rnkd350x4 , _:node17rnkd350x5 , _:node17rnkd350x6 , _:node17rnkd350x7 , _:node17rnkd350x8 , _:node17rnkd350x9 , _:node17rnkd350x10 , _:node17rnkd350x11 , _:node17rnkd350x12 , _:node17rnkd350x13 , _:node17rnkd350x14 , _:node17rnkd350x15 , _:node17rnkd350x16 , _:node17rnkd350x17 , _:node17rnkd350x18 , _:node17rnkd350x19 , _:node17rnkd350x20 , _:node17rnkd350x21 , _:node17rnkd350x22 , _:node17rnkd350x23 , _:node17rnkd350x24 , _:node17rnkd350x25 , _:node17rnkd350x26 , _:node17rnkd350x27 , _:node17rnkd350x28 , _:node17rnkd350x29 .
+
+provenance_raw:nodeset_1 a pmlj:NodeSet ;
+	pmlj:hasConclusion <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/file/dataone-objects/version/2013-May-29/conversion/dataone-dataone-objects-2013-May-29.raw.sample.ttl> ;
+	pmlj:isConsequentOf provenance_raw:infstep_1 .
+
+provenance_raw:nodeset_2 a pmlj:NodeSet ;
+	pmlj:hasConclusion <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/file/dataone-objects/version/2013-May-29/conversion/dataone-dataone-objects-2013-May-29.ttl.gz> ;
+	pmlj:isConsequentOf provenance_raw:infstep_1 .
+
+provenance_raw:nodeset_3 a pmlj:NodeSet ;
+	pmlj:hasConclusion <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/file/dataone-objects/version/2013-May-29/conversion/dataone-dataone-objects-2013-May-29.raw.ttl.gz> ;
+	pmlj:isConsequentOf provenance_raw:infstep_1 .
+
+provenance_raw:infstep_1 a pmlj:InferenceStep ;
+	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_96add9a1c2a9b862527cd8d6e795a606 ;
+	pmlj:hasAntecedentList _:node17rnkd350x30 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node17rnkd350x32 , _:node17rnkd350x31 .
+
+<http://purl.org/twc/id/software/csv2rdf4lod> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> tw_converter:csv2rdf4lod_96add9a1c2a9b862527cd8d6e795a606 .
+
+<http://data.lod2.eu/2011/tools/CSV2RDF4LOD> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> tw_converter:csv2rdf4lod_96add9a1c2a9b862527cd8d6e795a606 .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> tw_converter:csv2rdf4lod_96add9a1c2a9b862527cd8d6e795a606 .
+
+tw_converter:csv2rdf4lod_96add9a1c2a9b862527cd8d6e795a606 a pmlp:InferenceEngine , doap:Version ;
+	dcterms:identifier "csv2rdf4lod_96add9a1c2a9b862527cd8d6e795a606" ;
+	dcterms:version "2013-Jan-16" ;
+	doap:revision "2013-Jan-16" ;
+	doap:platform "Java" ;
+	<http://www.w3.org/ns/prov#specializationOf> <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> .
+
+<http://purl.org/twc/id/software/csv2rdf4lod> rdfs:seeAlso <https://github.com/timrdf/csv2rdf4lod-automation/wiki> .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> a doap:Project ;
+	doap:implements <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/URI_design_for_RDF_conversion_of_CSV-based_data> , <http://purl.org/twc/vocab/conversion/> ;
+	dcterms:author <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:developer <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/GregoryToddWilliams> , <http://kasei.us/about/foaf.xrdf#greg> , <http://tw.rpi.edu/instances/JamesMcCusker> , <http://tw.rpi.edu/instances/ZhenningShangguan> ;
+	doap:maintainer <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:documenter <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/JohannaFlores> , <http://tw.rpi.edu/instances/LiDing> , <http://tw.rpi.edu/instances/GinoGervasio> ;
+	doap:helper <http://tw.rpi.edu/instances/AlvaroGraves> , <http://tw.rpi.edu/instances/DominicDiFranzo> , <http://tw.rpi.edu/instances/GinoGervasio> , <http://tw.rpi.edu/instances/PingWang> , <http://tw.rpi.edu/instances/XianLi> , <http://tw.rpi.edu/instances/JamesMcCusker> , <http://www.w3.org/People/Eric/ericP-foaf#ericP> , <http://tw.rpi.edu/instances/AnkitSrivastava> , <http://purl.org/twc/id/person/Maryam_Fazel-Zarandi> , <http://tw.rpi.edu/instances/AlexanderLahuerta> ;
+	doap:homepage <https://github.com/timrdf/csv2rdf4lod-automation/wiki> ;
+	doap:audience "Data modelers and architects that need (potentially non-RDB) tabular data encoded within the Resource Description Framework." ;
+	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
+	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
+
+_:node17rnkd350x33 a doap:GitRepository ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
+	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
+
+<http://tw.rpi.edu/instances/GregoryToddWilliams> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> <http://kasei.us/about/foaf.xrdf#greg> .
+
+<http://tw.rpi.edu/instances/AlvaroGraves> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> <http://alvaro.graves.cl> .
+
+<http://purl.org/twc/id/person/TimLebo> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://tw.rpi.edu/wiki/Special:URIResolver/Tim_Lebo> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://www.cs.rpi.edu/~weavej3/r/Tim_Lebo> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://purl.org/twc/id/person/Maryam_Fazel-Zarandi> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> <http://tw.rpi.edu/instances/MaryamFazel-Zarandi> .
+
+_:node17rnkd350x30 a rdf:List ;
+	rdf:first provenance_raw:nodeset_4 .
+
+provenance_raw:nodeset_4 a pmlj:NodeSet ;
+	pmlj:hasConclusion <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/filedataone-objects/version/2013-May-29/source/dataone.csv> .
+
+_:node17rnkd350x30 rdf:rest _:node17rnkd350x34 .
+
+_:node17rnkd350x34 a rdf:List ;
+	rdf:first provenance_raw:nodeset_5 .
+
+provenance_raw:nodeset_5 a pmlj:NodeSet ;
+	pmlj:hasConclusion <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/filedataone-objects/version/2013-May-29/automatic/dataone.csv.raw.params.ttl> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/filedataone-objects/version/2013-May-29/source/dataone.csv> a pmlp:Information .
+
+_:node17rnkd350x34 rdf:rest rdf:nil .
+
+_:node17rnkd350x32 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/filedataone-objects/version/2013-May-29/automatic/dataone.csv.raw.params.ttl> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
+
+_:node17rnkd350x31 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/filedataone-objects/version/2013-May-29/source/dataone.csv> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/filedataone-objects/version/2013-May-29/source/dataone.csv> pmlp:hasFormat <http://iw.cs.utep.edu/registry/FMT/text/CSV.owl#CSV> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/filedataone-objects/version/2013-May-29/automatic/dataone.csv.raw.params.ttl> a pmlp:Information ;
+	pmlp:hasFormat <http://inference-web.org/registry/FMT/RDFAbstractSyntax.owl#RDFAbstractSyntax> .
+
+conversion:SameAsDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_class rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:has_version rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:MetaDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:num_triples rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhances rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhancement_layer rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:DatasetSample rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:source_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:VersionedDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:LayerDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:base_uri rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_predicate rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:interpretation rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:symbol rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:dataset_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:conversion_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:AbstractDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:null rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:subject_discriminator rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:Dataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:version_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> conversion:base_uri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#"^^xsd:anyURI .
+
+_:node17rnkd363x1 a conversion:RawConversionProcess ;
+	conversion:conversion_identifier "raw" .
+
+_:node17rnkd363x2 a foaf:OnlineAccount ;
+	foaf:accountName "apseyed" .
+
+_:node17rnkd363x1 dcterms:creator _:node17rnkd363x2 ;
+	dcterms:created "2013-05-29T03:52:57-04:00"^^xsd:dateTime ;
+	conversion:delimits_cell "," .
+
+_:node17rnkd363x3 ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "abstract" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x3 .
+
+_:node17rnkd363x4 ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "author" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x4 .
+
+_:node17rnkd363x5 ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "authoritativeMN" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x5 .
+
+_:node17rnkd363x6 ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "authorLastName" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x6 .
+
+_:node17rnkd363x7 ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "beginDate" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x7 .
+
+_:node17rnkd363x8 ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x8 .
+
+_:node17rnkd363x9 ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x9 .
+
+_:node17rnkd363x10 ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x10 .
+
+_:node17rnkd363x11 ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "blockedReplicationMN" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x11 .
+
+_:node17rnkd363x12 ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "changePermission" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x12 .
+
+_:node17rnkd363x13 ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "checksum" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x13 .
+
+_:node17rnkd363x14 ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "checksumAlgorithm" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x14 .
+
+_:node17rnkd363x15 ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "class" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x15 .
+
+_:node17rnkd363x16 ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "contactOrganization" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x16 .
+
+_:node17rnkd363x17 ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "datasource" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x17 .
+
+_:node17rnkd363x18 ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "dataUrl" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x18 .
+
+_:node17rnkd363x19 ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "dateModified" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x19 .
+
+_:node17rnkd363x20 ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "datePublished" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x20 .
+
+_:node17rnkd363x21 ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "dateUploaded" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x21 .
+
+_:node17rnkd363x22 ov:csvCol "20"^^xsd:integer ;
+	ov:csvHeader "decade" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x22 .
+
+_:node17rnkd363x23 ov:csvCol "21"^^xsd:integer ;
+	ov:csvHeader "documents" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x23 .
+
+_:node17rnkd363x24 ov:csvCol "22"^^xsd:integer ;
+	ov:csvHeader "eastBoundCoord" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x24 .
+
+_:node17rnkd363x25 ov:csvCol "23"^^xsd:integer ;
+	ov:csvHeader "edition" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x25 .
+
+_:node17rnkd363x26 ov:csvCol "24"^^xsd:integer ;
+	ov:csvHeader "endDate" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x26 .
+
+_:node17rnkd363x27 ov:csvCol "25"^^xsd:integer ;
+	ov:csvHeader "family" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x27 .
+
+_:node17rnkd363x28 ov:csvCol "26"^^xsd:integer ;
+	ov:csvHeader "fileID" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x28 .
+
+_:node17rnkd363x29 ov:csvCol "27"^^xsd:integer ;
+	ov:csvHeader "formatId" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x29 .
+
+_:node17rnkd363x30 ov:csvCol "28"^^xsd:integer ;
+	ov:csvHeader "formatType" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x30 .
+
+_:node17rnkd363x31 ov:csvCol "29"^^xsd:integer ;
+	ov:csvHeader "gcmdKeyword" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x31 .
+
+_:node17rnkd363x32 ov:csvCol "30"^^xsd:integer ;
+	ov:csvHeader "genus" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x32 .
+
+_:node17rnkd363x33 ov:csvCol "31"^^xsd:integer ;
+	ov:csvHeader "geoform" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x33 .
+
+_:node17rnkd363x34 ov:csvCol "32"^^xsd:integer ;
+	ov:csvHeader "id" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x34 .
+
+_:node17rnkd363x35 ov:csvCol "33"^^xsd:integer ;
+	ov:csvHeader "identifier" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x35 .
+
+_:node17rnkd363x36 ov:csvCol "34"^^xsd:integer ;
+	ov:csvHeader "investigator" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x36 .
+
+_:node17rnkd363x37 ov:csvCol "35"^^xsd:integer ;
+	ov:csvHeader "isDocumentedBy" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x37 .
+
+_:node17rnkd363x38 ov:csvCol "36"^^xsd:integer ;
+	ov:csvHeader "isPublic" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x38 .
+
+_:node17rnkd363x39 ov:csvCol "37"^^xsd:integer ;
+	ov:csvHeader "isSpatial" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x39 .
+
+_:node17rnkd363x40 ov:csvCol "38"^^xsd:integer ;
+	ov:csvHeader "keyConcept" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x40 .
+
+_:node17rnkd363x41 ov:csvCol "39"^^xsd:integer ;
+	ov:csvHeader "keywords" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x41 .
+
+_:node17rnkd363x42 ov:csvCol "40"^^xsd:integer ;
+	ov:csvHeader "kingdom" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x42 .
+
+_:node17rnkd363x43 ov:csvCol "41"^^xsd:integer ;
+	ov:csvHeader "LTERSite" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x43 .
+
+_:node17rnkd363x44 ov:csvCol "42"^^xsd:integer ;
+	ov:csvHeader "namedLocation" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x44 .
+
+_:node17rnkd363x45 ov:csvCol "43"^^xsd:integer ;
+	ov:csvHeader "noBoundingBox" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x45 .
+
+_:node17rnkd363x46 ov:csvCol "44"^^xsd:integer ;
+	ov:csvHeader "northBoundCoord" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x46 .
+
+_:node17rnkd363x47 ov:csvCol "45"^^xsd:integer ;
+	ov:csvHeader "numberReplicas" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x47 .
+
+_:node17rnkd363x48 ov:csvCol "46"^^xsd:integer ;
+	ov:csvHeader "obsoletedBy" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x48 .
+
+_:node17rnkd363x49 ov:csvCol "47"^^xsd:integer ;
+	ov:csvHeader "obsoletes" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x49 .
+
+_:node17rnkd363x50 ov:csvCol "48"^^xsd:integer ;
+	ov:csvHeader "ogcUrl" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x50 .
+
+_:node17rnkd363x51 ov:csvCol "49"^^xsd:integer ;
+	ov:csvHeader "order" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x51 .
+
+_:node17rnkd363x52 ov:csvCol "50"^^xsd:integer ;
+	ov:csvHeader "origin" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x52 .
+
+_:node17rnkd363x53 ov:csvCol "51"^^xsd:integer ;
+	ov:csvHeader "originator" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x53 .
+
+_:node17rnkd363x54 ov:csvCol "52"^^xsd:integer ;
+	ov:csvHeader "parameter" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x54 .
+
+_:node17rnkd363x55 ov:csvCol "53"^^xsd:integer ;
+	ov:csvHeader "phylum" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x55 .
+
+_:node17rnkd363x56 ov:csvCol "54"^^xsd:integer ;
+	ov:csvHeader "placeKey" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x56 .
+
+_:node17rnkd363x57 ov:csvCol "55"^^xsd:integer ;
+	ov:csvHeader "preferredReplicationMN" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x57 .
+
+_:node17rnkd363x58 ov:csvCol "56"^^xsd:integer ;
+	ov:csvHeader "presentationCat" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x58 .
+
+_:node17rnkd363x59 ov:csvCol "57"^^xsd:integer ;
+	ov:csvHeader "project" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x59 .
+
+_:node17rnkd363x60 ov:csvCol "58"^^xsd:integer ;
+	ov:csvHeader "pubDate" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x60 .
+
+_:node17rnkd363x61 ov:csvCol "59"^^xsd:integer ;
+	ov:csvHeader "purpose" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x61 .
+
+_:node17rnkd363x62 ov:csvCol "60"^^xsd:integer ;
+	ov:csvHeader "readPermission" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x62 .
+
+_:node17rnkd363x63 ov:csvCol "61"^^xsd:integer ;
+	ov:csvHeader "relatedOrganizations" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x63 .
+
+_:node17rnkd363x64 ov:csvCol "62"^^xsd:integer ;
+	ov:csvHeader "replicaMN" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x64 .
+
+_:node17rnkd363x65 ov:csvCol "63"^^xsd:integer ;
+	ov:csvHeader "replicationAllowed" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x65 .
+
+_:node17rnkd363x66 ov:csvCol "64"^^xsd:integer ;
+	ov:csvHeader "replicaVerifiedDate" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x66 .
+
+_:node17rnkd363x67 ov:csvCol "65"^^xsd:integer ;
+	ov:csvHeader "resourceMap" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x67 .
+
+_:node17rnkd363x68 ov:csvCol "66"^^xsd:integer ;
+	ov:csvHeader "rightsHolder" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x68 .
+
+_:node17rnkd363x69 ov:csvCol "67"^^xsd:integer ;
+	ov:csvHeader "scientificName" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x69 .
+
+_:node17rnkd363x70 ov:csvCol "68"^^xsd:integer ;
+	ov:csvHeader "sensor" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x70 .
+
+_:node17rnkd363x71 ov:csvCol "69"^^xsd:integer ;
+	ov:csvHeader "site" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x71 .
+
+_:node17rnkd363x72 ov:csvCol "70"^^xsd:integer ;
+	ov:csvHeader "size" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x72 .
+
+_:node17rnkd363x73 ov:csvCol "71"^^xsd:integer ;
+	ov:csvHeader "sku" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x73 .
+
+_:node17rnkd363x74 ov:csvCol "72"^^xsd:integer ;
+	ov:csvHeader "source" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x74 .
+
+_:node17rnkd363x75 ov:csvCol "73"^^xsd:integer ;
+	ov:csvHeader "southBoundCoord" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x75 .
+
+_:node17rnkd363x76 ov:csvCol "74"^^xsd:integer ;
+	ov:csvHeader "species" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x76 .
+
+_:node17rnkd363x77 ov:csvCol "75"^^xsd:integer ;
+	ov:csvHeader "submitter" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x77 .
+
+_:node17rnkd363x78 ov:csvCol "76"^^xsd:integer ;
+	ov:csvHeader "term" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x78 .
+
+_:node17rnkd363x79 ov:csvCol "77"^^xsd:integer ;
+	ov:csvHeader "title" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x79 .
+
+_:node17rnkd363x80 ov:csvCol "78"^^xsd:integer ;
+	ov:csvHeader "topic" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x80 .
+
+_:node17rnkd363x81 ov:csvCol "79"^^xsd:integer ;
+	ov:csvHeader "updateDate" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x81 .
+
+_:node17rnkd363x82 ov:csvCol "80"^^xsd:integer ;
+	ov:csvHeader "webUrl" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x82 .
+
+_:node17rnkd363x83 ov:csvCol "81"^^xsd:integer ;
+	ov:csvHeader "westBoundCoord" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x83 .
+
+_:node17rnkd363x84 ov:csvCol "82"^^xsd:integer ;
+	ov:csvHeader "writePermission" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17rnkd363x1 conversion:enhance _:node17rnkd363x84 .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> conversion:conversion_process _:node17rnkd363x1 .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/subset/meta> a dataone_vocab:Dataset , conversion:Dataset , conversion:MetaDataset , void:Dataset ;
+	conversion:base_uri "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#" ;
+	conversion:source_identifier "dataone" ;
+	conversion:dataset_identifier "dataone-objects" ;
+	dcterms:modified "2013-05-29T03:53:00.096-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset_page/dataone-objects/subset/meta> ;
+	void:dataDump <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/file/dataone-objects/version/2013-May-29/conversion/dataone-dataone-objects-2013-May-29.void.ttl.gz> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> conversion:num_triples "1412"^^xsd:integer ;
+	void:triples "1412"^^xsd:integer ;
+	<http://www.w3.org/ns/prov#wasGeneratedBy> provenance_raw:translationActivity_ad6c94f4-903d-4779-9d96-3b77c3319d68 .
+
+provenance_raw:translationActivity_ad6c94f4-903d-4779-9d96-3b77c3319d68 a <http://www.w3.org/ns/prov#Activity> , <http://provenanceweb.org/ns/pml#TranslationActivity> ;
+	conversion:triples_per_minute "104851.48514851485"^^xsd:double ;
+	<http://www.w3.org/ns/prov#used> raw:formattype , raw:geoform , ov:csvRow , raw:author , raw:column_7 , raw:datasource , raw:genus , raw:family , raw:placekey , raw:authorlastname , raw:preferredreplicationmn , raw:changepermission , raw:project , raw:northboundcoord , raw:presentationcat , raw:updatedate , raw:blockedreplicationmn , raw:site , raw:eastboundcoord , raw:documents , raw:noboundingbox , raw:checksum , raw:identifier , raw:writepermission , raw:gcmdkeyword , raw:begindate , raw:sensor , raw:purpose , raw:keywords , raw:kingdom , raw:size , raw:datepublished , raw:order , raw:fileid , raw:southboundcoord , raw:dataurl , raw:authoritativemn , raw:westboundcoord , raw:resourcemap , raw:replicaverifieddate , raw:obsoletedby , raw:source , raw:term , raw:class , raw:obsoletes , void:inDataset , raw:datemodified , raw:abstract , raw:weburl , raw:species , raw:topic , raw:enddate , dcterms:isReferencedBy , raw:namedlocation , raw:numberreplicas , raw:decade , raw:ltersite , raw:title , raw:replicationallowed , <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/vocab/raw/> , raw:phylum , raw:ogcurl , raw:sku , raw:isdocumentedby , raw:dateuploaded , raw:formatid , raw:ispublic , raw:replicamn , raw:pubdate , raw:edition , raw:checksumalgorithm , raw:isspatial , raw:id , raw:readpermission , raw:keyconcept , raw:rightsholder , raw:relatedorganizations , raw:originator , raw:investigator , raw:origin , raw:parameter , raw:scientificname , raw:submitter , raw:contactorganization ;
+	void:vocabulary <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> , <http://open.vocab.org/terms/> , <http://rdfs.org/ns/void#> , <http://purl.org/dc/terms/> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/subset/meta> conversion:uses_predicate ov:csvRow , <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> , void:dataDump , conversion:VersionedDataset , rdfs:label , foaf:topic , foaf:isPrimaryTopicOf , dcterms:author , doap:implements , pmlj:hasInferenceEngine , dcterms:identifier , doap:revision , dcterms:modified , vann:preferredNamespaceUri , rdfs:isDefinedBy , doap:helper , conversion:uses_predicate , ov:csvCol , doap:audience , doap:description , dcterms:format , doap:documenter , conversion:conversion_identifier , rdfs:range , conversion:version_identifier , pmlp:hasFormat , doap:homepage , conversion:num_triples , doap:shortdesc , pmlj:hasConclusion , dcterms:isReferencedBy , pmlj:hasAntecedentList , foaf:primaryTopic , conversion:base_uri , <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> , void:exampleResource , conversion:dataset_identifier , rdf:type , void:subset , <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> , void:triples , doap:browse , doap:developer , ov:csvHeader , rdfs:seeAlso , doap:maintainer , conversion:source_identifier , conversion:LayerDataset , dcterms:contributor , doap:platform , vann:preferredNamespacePrefix , pmlj:isConsequentOf , <http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> , void:vocabulary , dcterms:version ;
+	void:vocabulary <http://open.vocab.org/terms/> , <http://inference-web.org/2.1exper/pml-provenance.owl#> , <http://rdfs.org/ns/void#> , <http://purl.org/twc/vocab/conversion/> , <http://www.w3.org/2000/01/rdf-schema#> , <http://xmlns.com/foaf/0.1/> , <http://purl.org/dc/terms/> , <http://usefulinc.com/ns/doap#> , <http://inference-web.org/2.0/pml-justification.owl#> , <http://purl.org/vocab/vann/> , <http://inference-web.org/2.0/pml-provenance.owl#> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#> , <http://www.w3.org/2000/10/swap/pim/contact#> .
+
+<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> rdfs:isDefinedBy <http://inference-web.org/2.1exper/pml-provenance.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+void:dataDump rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+conversion:VersionedDataset <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+rdfs:label rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org> .
+
+foaf:topic rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://xmlns.com> .
+
+foaf:isPrimaryTopicOf rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://xmlns.com> .
+
+dcterms:author rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+doap:implements rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+pmlj:hasInferenceEngine rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+dcterms:identifier rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+doap:revision rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+dcterms:modified rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+vann:preferredNamespaceUri rdfs:isDefinedBy <http://purl.org/vocab/vann/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/vocab> .
+
+rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org> .
+
+doap:helper rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+conversion:uses_predicate <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+ov:csvCol rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://open.vocab.org> .
+
+doap:audience rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+doap:description rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+dcterms:format rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+doap:documenter rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+conversion:conversion_identifier <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+rdfs:range rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org> .
+
+conversion:version_identifier <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+pmlp:hasFormat rdfs:isDefinedBy <http://inference-web.org/2.0/pml-provenance.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+doap:homepage rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+conversion:num_triples <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+doap:shortdesc rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+pmlj:hasConclusion rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+pmlj:hasAntecedentList rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+foaf:primaryTopic rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://xmlns.com> .
+
+conversion:base_uri <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> rdfs:isDefinedBy <http://inference-web.org/2.1exper/pml-provenance.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+void:exampleResource rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+conversion:dataset_identifier <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+rdf:type rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org> .
+
+void:subset rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+<http://www.w3.org/2000/10/swap/pim/contact#preferredURI> rdfs:isDefinedBy <http://www.w3.org/2000/10/swap/pim/contact#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org> .
+
+void:triples rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+doap:browse rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+doap:developer rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+ov:csvHeader rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://open.vocab.org> .
+
+rdfs:seeAlso rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org> .
+
+doap:maintainer rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+conversion:source_identifier <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+conversion:LayerDataset <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+dcterms:contributor rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+doap:platform rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+vann:preferredNamespacePrefix rdfs:isDefinedBy <http://purl.org/vocab/vann/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/vocab> .
+
+pmlj:isConsequentOf rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> rdfs:isDefinedBy <http://inference-web.org/2.1exper/pml-provenance.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+void:vocabulary rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+dcterms:version rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/subset/meta> conversion:uses_class void:Dataset , foaf:Agent , conversion:MetaDataset , conversion:DatasetSample , conversion:AbstractDataset , dataone_vocab:Dataset , void:DatasetDescription , conversion:Dataset ;
+	void:vocabulary <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+void:Dataset rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+foaf:Agent rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://xmlns.com> .
+
+conversion:MetaDataset <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+conversion:DatasetSample <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+conversion:AbstractDataset <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+dataone_vocab:Dataset rdfs:isDefinedBy <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#> .
+
+void:DatasetDescription rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+conversion:Dataset <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/dataone/dataset/dataone-objects/version/2013-May-29/conversion/raw> rdfs:comment "hash: 2b199edbae6b595da02244e0a779c9eb44297cec07a" .
