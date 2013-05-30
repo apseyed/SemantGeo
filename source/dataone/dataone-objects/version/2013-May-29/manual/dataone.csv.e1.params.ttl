@@ -66,10 +66,10 @@
       #   conversion:symbol        "";
       #   conversion:interpretation conversion:null; 
       #];
-      #conversion:enhance [
-      #   conversion:domain_template "thing_[r]";
+      conversion:enhance [
+         conversion:domain_template "[#31]";
       #   conversion:domain_name     "Thing";
-      #];
+      ];
       #conversion:enhance [
       #   conversion:class_name "Thing";
       #   conversion:subclass_of <http://purl.org/...>;
@@ -287,15 +287,26 @@
       ];
       conversion:enhance [
          ov:csvCol          31;
-         ov:csvHeader       "geoform";
-         #conversion:label   "geoform";
+         ov:csvHeader       "id"; # Renamed based on the off-by-one header.
+         #conversion:label   "id";
          conversion:comment "";
-         conversion:range   todo:Literal;
+         conversion:equivalent_property dcterms:identifier;
+         conversion:range   rdfs:Literal;
+         conversion:object_search [
+            conversion:regex     "^doi:(.+)*$";
+            conversion:predicate prov:generalizationOf;
+            conversion:object    "http://doi.org/[\\1]";
+         ];
+         conversion:object_search [
+            conversion:regex     "^doi:(.+)*$";
+            conversion:predicate bibo:doi, dcterms:identifier;
+            conversion:object    "[\\1]";
+         ];
       ];
       conversion:enhance [
          ov:csvCol          32;
-         ov:csvHeader       "id";
-         #conversion:label   "id";
+         ov:csvHeader       "";
+         #conversion:label   "";
          conversion:comment "";
          conversion:range   todo:Literal;
       ];
