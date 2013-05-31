@@ -89,7 +89,7 @@
       #   conversion:interpretation conversion:null; 
       #];
       conversion:enhance [
-         conversion:domain_template "[#2]";
+         conversion:domain_template "http://dx.doi.org/[#2]";
       #   conversion:domain_name     "Thing";
       ];
       #conversion:enhance [
@@ -107,22 +107,15 @@
       ];
       conversion:enhance [
          ov:csvCol          2;
-         ov:csvHeader       "doi:10.6073/AA/knb-lter-cdr.157002.122";
-         #conversion:label   "doi:10.6073/AA/knb-lter-cdr.157002.122";
-         conversion:equivalent_property dcterms:identifier;
+         ov:csvHeader       "doi";
+         #conversion:label   "doi";
+         conversion:equivalent_property bibo:doi;
          conversion:comment "";
+         conversion:interpret [
+            conversion:regex          "^doi:";
+            conversion:interpretation "";
+         ];
          conversion:range   rdfs:Literal;
-         a conversion:URISafe;
-         conversion:object_search [
-            conversion:regex     "^doi:(.+)*$";
-            conversion:predicate prov:generalizationOf;
-            conversion:object    "http://doi.org/[\\1]";
-         ];
-         conversion:object_search [
-            conversion:regex     "^doi:(.+)*$";
-            conversion:predicate bibo:doi;
-            conversion:object    "[\\1]";
-         ];
       ];
       #conversion:enhance [            
       #   ov:csvRow 3,4,5;             
