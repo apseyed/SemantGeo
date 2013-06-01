@@ -1,0 +1,2548 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://purl.org/twc/semmdd/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://purl.org/twc/semmdd/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-Jan-16/> .
+@prefix provenance_1: <http://purl.org/twc/semmdd/source/aeap_nys/provenance/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix dfw_lake_samples: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/> .
+@prefix aeap_nys_vocab: <http://purl.org/twc/semmdd/source/aeap_nys/vocab/> .
+@prefix base_vocab: <http://purl.org/twc/semmdd/vocab/> .
+@prefix dfw_lake_samples_vocab: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/> .
+@prefix raw: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/> .
+@prefix e1: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> .
+@prefix : <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/> .
+@prefix ns1: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+
+dfw_lake_samples:aeap-crust-web-v3 rdfs:label "aeap-crust-web-v3" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24> .
+
+e1:lake_name a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "lake Name" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "lake Name" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:lake_name .
+
+e1:date a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "DATE" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "DATE" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:date .
+
+e1:year a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "YEAR" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "YEAR" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:year .
+
+e1:col a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "COL #" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "COL #" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:col .
+
+e1:unknown_cyclopoid_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "Unknown cyclopoid Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Unknown cyclopoid Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:unknown_cyclopoid_total .
+
+e1:unknown_cyclopoid_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Unknown cyclopoid Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Unknown cyclopoid Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:unknown_cyclopoid_adult .
+
+e1:cyclopoid_unknown_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Cyclopoid Unknown-Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Cyclopoid Unknown-Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cyclopoid_unknown_immature .
+
+e1:cyclops_scutifer_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "Cyclops scutifer Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Cyclops scutifer Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cyclops_scutifer_total .
+
+e1:cyclops_scutifer_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Cyclops scutifer Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Cyclops scutifer Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cyclops_scutifer_adult .
+
+e1:cyclops_scutifer_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Cyclops scutifer Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Cyclops scutifer Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cyclops_scutifer_immature .
+
+e1:tropocyclops_extensus_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "Tropocyclops extensus Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Tropocyclops extensus Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:tropocyclops_extensus_total .
+
+e1:tropocyclops_extensus_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Tropocyclops extensus Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Tropocyclops extensus Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:tropocyclops_extensus_adult .
+
+e1:tropocyclops_extensus_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "Tropocyclops extensus Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Tropocyclops extensus Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:tropocyclops_extensus_immature .
+
+e1:mesocyclops_edax_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Mesocyclops edax Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Mesocyclops edax Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:mesocyclops_edax_total .
+
+e1:mesocyclops_edax a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Mesocyclops edax" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Mesocyclops edax" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:mesocyclops_edax .
+
+e1:mesocyclops_edax_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Mesocyclops edax Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Mesocyclops edax Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:mesocyclops_edax_immature .
+
+e1:orthocyclops_modesti_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "Orthocyclops modesti Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Orthocyclops modesti Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:orthocyclops_modesti_total .
+
+e1:orthocyclops_modesti_adults a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "Orthocyclops modesti Adults" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Orthocyclops modesti Adults" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:orthocyclops_modesti_adults .
+
+e1:orthocyclops_modesti_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "Orthocyclops modesti Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Orthocyclops modesti Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:orthocyclops_modesti_immature .
+
+e1:cyclopoid_copepidids a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "20"^^xsd:integer ;
+	ov:csvHeader "Cyclopoid copepidids" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Cyclopoid copepidids" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cyclopoid_copepidids .
+
+e1:cycopep a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "21"^^xsd:integer ;
+	ov:csvHeader "CYCOPEP" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "CYCOPEP" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cycopep .
+
+e1:leptodiaptomus_minutus_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "22"^^xsd:integer ;
+	ov:csvHeader "Leptodiaptomus minutus Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Leptodiaptomus minutus Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:leptodiaptomus_minutus_total .
+
+e1:leptodiaptomus_minutus a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "23"^^xsd:integer ;
+	ov:csvHeader "Leptodiaptomus minutus" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Leptodiaptomus minutus" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:leptodiaptomus_minutus .
+
+e1:leptodiaptomus_minutus_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "24"^^xsd:integer ;
+	ov:csvHeader "Leptodiaptomus minutus Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Leptodiaptomus minutus Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:leptodiaptomus_minutus_immature .
+
+e1:aglaodiaptomus_leptopus_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "25"^^xsd:integer ;
+	ov:csvHeader "Aglaodiaptomus leptopus Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Aglaodiaptomus leptopus Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:aglaodiaptomus_leptopus_total .
+
+e1:aglaodiaptomus_leptopus_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "26"^^xsd:integer ;
+	ov:csvHeader "Aglaodiaptomus leptopus Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Aglaodiaptomus leptopus Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:aglaodiaptomus_leptopus_adult .
+
+e1:aglaodiaptomus_leptopus_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "27"^^xsd:integer ;
+	ov:csvHeader "Aglaodiaptomus leptopus Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Aglaodiaptomus leptopus Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:aglaodiaptomus_leptopus_immature .
+
+e1:skistidiaptomus_oregonensis_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "28"^^xsd:integer ;
+	ov:csvHeader "Skistidiaptomus oregonensis-Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Skistidiaptomus oregonensis-Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:skistidiaptomus_oregonensis_adult .
+
+e1:skistidiaptomus_oregonensis_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "29"^^xsd:integer ;
+	ov:csvHeader "Skistidiaptomus oregonensis-Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Skistidiaptomus oregonensis-Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:skistidiaptomus_oregonensis_immature .
+
+e1:skistodiaptomus_oregonensis_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "30"^^xsd:integer ;
+	ov:csvHeader "Skistodiaptomus oregonensis Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Skistodiaptomus oregonensis Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:skistodiaptomus_oregonensis_total .
+
+e1:skistodiaptomus_oregonensis_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "31"^^xsd:integer ;
+	ov:csvHeader "Skistodiaptomus oregonensis Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Skistodiaptomus oregonensis Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:skistodiaptomus_oregonensis_adult .
+
+e1:skistodiaptomus_oregonensis_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "32"^^xsd:integer ;
+	ov:csvHeader "Skistodiaptomus oregonensis Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Skistodiaptomus oregonensis Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:skistodiaptomus_oregonensis_immature .
+
+e1:epischura_lacustris_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "33"^^xsd:integer ;
+	ov:csvHeader "Epischura lacustris Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Epischura lacustris Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:epischura_lacustris_total .
+
+e1:epischura_lacustris_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "34"^^xsd:integer ;
+	ov:csvHeader "Epischura lacustris Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Epischura lacustris Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:epischura_lacustris_adult .
+
+e1:epischura_lacustris_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "35"^^xsd:integer ;
+	ov:csvHeader "Epischura lacustris Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Epischura lacustris Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:epischura_lacustris_immature .
+
+e1:daphnia_mendotae a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "36"^^xsd:integer ;
+	ov:csvHeader "Daphnia mendotae" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia mendotae" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_mendotae .
+
+e1:daphnia_pulicaria a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "37"^^xsd:integer ;
+	ov:csvHeader "Daphnia pulicaria" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia pulicaria" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_pulicaria .
+
+e1:daphnia_retrocurva a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "38"^^xsd:integer ;
+	ov:csvHeader "Daphnia retrocurva" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia retrocurva" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_retrocurva .
+
+e1:daphnia_dubia a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "39"^^xsd:integer ;
+	ov:csvHeader "Daphnia dubia" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia dubia" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_dubia .
+
+e1:daphnia_catawba a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "40"^^xsd:integer ;
+	ov:csvHeader "Daphnia catawba" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia catawba" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_catawba .
+
+e1:daphnia_ambigua a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "41"^^xsd:integer ;
+	ov:csvHeader "Daphnia ambigua" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia ambigua" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_ambigua .
+
+e1:daphnia_pulex a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "42"^^xsd:integer ;
+	ov:csvHeader "Daphnia pulex" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia pulex" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_pulex .
+
+e1:daphnia_parvula a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "43"^^xsd:integer ;
+	ov:csvHeader "Daphnia parvula" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia parvula" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_parvula .
+
+e1:bosmina_longirostris a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "44"^^xsd:integer ;
+	ov:csvHeader "Bosmina longirostris" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Bosmina longirostris" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:bosmina_longirostris .
+
+e1:eubosmina a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "45"^^xsd:integer ;
+	ov:csvHeader "Eubosmina" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Eubosmina" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:eubosmina .
+
+e1:diaphanosoma_brachyurum a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "46"^^xsd:integer ;
+	ov:csvHeader "Diaphanosoma brachyurum" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Diaphanosoma brachyurum" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:diaphanosoma_brachyurum .
+
+e1:diaphanosoma_bergei a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "47"^^xsd:integer ;
+	ov:csvHeader "Diaphanosoma bergei" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Diaphanosoma bergei" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:diaphanosoma_bergei .
+
+e1:holopedium_gibberum a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "48"^^xsd:integer ;
+	ov:csvHeader "Holopedium gibberum" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Holopedium gibberum" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:holopedium_gibberum .
+
+e1:polyphemus_pediculus a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "49"^^xsd:integer ;
+	ov:csvHeader "Polyphemus pediculus" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Polyphemus pediculus" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:polyphemus_pediculus .
+
+e1:ceriodaphnia_quadrangular a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "50"^^xsd:integer ;
+	ov:csvHeader "Ceriodaphnia quadrangular" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Ceriodaphnia quadrangular" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:ceriodaphnia_quadrangular .
+
+e1:chydoris_species a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "51"^^xsd:integer ;
+	ov:csvHeader "Chydoris species" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Chydoris species" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:chydoris_species .
+
+e1:leptodora_kindti a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "52"^^xsd:integer ;
+	ov:csvHeader "Leptodora kindti" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Leptodora kindti" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:leptodora_kindti .
+
+e1:alona_sp a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "53"^^xsd:integer ;
+	ov:csvHeader "Alona sp." ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Alona sp." ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:alona_sp .
+
+e1:sida_crystallina a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "54"^^xsd:integer ;
+	ov:csvHeader "Sida crystallina" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Sida crystallina" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:sida_crystallina .
+
+e1:column_55 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "55"^^xsd:integer ;
+	ov:csvHeader "" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "column_55" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:column_55 .
+
+e1:column_56 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "56"^^xsd:integer ;
+	ov:csvHeader "" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "column_56" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:column_56 .
+
+:thing_2 dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24> ;
+	void:inDataset <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24> ;
+	e1:lake_name "Big Moose" ;
+	e1:date "6/30/1994" ;
+	e1:year "1994" ;
+	e1:col "1" ;
+	e1:unknown_cyclopoid_total "0.00" ;
+	e1:unknown_cyclopoid_adult "0.00" ;
+	e1:cyclopoid_unknown_immature "0.00" ;
+	e1:cyclops_scutifer_total "0.00" ;
+	e1:cyclops_scutifer_adult "0.00" ;
+	e1:cyclops_scutifer_immature "0.00" ;
+	e1:tropocyclops_extensus_total "1037.96" ;
+	e1:tropocyclops_extensus_adult "932.41" ;
+	e1:tropocyclops_extensus_immature "105.56" ;
+	e1:mesocyclops_edax_total "369.44" ;
+	e1:mesocyclops_edax "263.89" ;
+	e1:mesocyclops_edax_immature "105.56" ;
+	e1:orthocyclops_modesti_total "0.00" ;
+	e1:orthocyclops_modesti_adults "0.00" ;
+	e1:orthocyclops_modesti_immature "0.00" ;
+	e1:cyclopoid_copepidids "0.00" ;
+	e1:cycopep "0.00" ;
+	e1:leptodiaptomus_minutus_total "27338.93" ;
+	e1:leptodiaptomus_minutus "20460.22" ;
+	e1:leptodiaptomus_minutus_immature "6878.71" ;
+	e1:aglaodiaptomus_leptopus_total "0.00" ;
+	e1:aglaodiaptomus_leptopus_adult "0.00" ;
+	e1:aglaodiaptomus_leptopus_immature "0.00" ;
+	e1:skistidiaptomus_oregonensis_adult "0.00" ;
+	e1:skistidiaptomus_oregonensis_immature "0.00" ;
+	e1:skistodiaptomus_oregonensis_total "0.00" ;
+	e1:skistodiaptomus_oregonensis_adult "0.00" ;
+	e1:skistodiaptomus_oregonensis_immature "0.00" ;
+	e1:epischura_lacustris_total "0.00" ;
+	e1:epischura_lacustris_adult "0.00" ;
+	e1:epischura_lacustris_immature "0.00" ;
+	e1:daphnia_mendotae "0.00" ;
+	e1:daphnia_pulicaria "0.00" ;
+	e1:daphnia_retrocurva "0.00" ;
+	e1:daphnia_dubia "0.00" ;
+	e1:daphnia_catawba "1636.11" ;
+	e1:daphnia_ambigua "0.00" ;
+	e1:daphnia_pulex "0.00" ;
+	e1:daphnia_parvula "0.00" ;
+	e1:bosmina_longirostris "29291.71" ;
+	e1:eubosmina "0.00" ;
+	e1:diaphanosoma_brachyurum "0.00" ;
+	e1:diaphanosoma_bergei "0.00" ;
+	e1:holopedium_gibberum "0.00" ;
+	e1:polyphemus_pediculus "193.52" ;
+	e1:ceriodaphnia_quadrangular "0.00" ;
+	e1:chydoris_species "0.00" ;
+	e1:leptodora_kindti "0.00" ;
+	e1:alona_sp "0.00" ;
+	e1:sida_crystallina "0.00" ;
+	e1:column_55 "" ;
+	e1:column_56 "" ;
+	ov:subjectDiscriminator dfw_lake_samples:aeap-crust-web-v3 ;
+	dcterms:isReferencedBy dfw_lake_samples:aeap-crust-web-v3 ;
+	ov:csvRow "2"^^xsd:integer .
+
+:thing_3 dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24> ;
+	void:inDataset <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24> ;
+	e1:lake_name "Big Moose" ;
+	e1:date "7/25/1994" ;
+	e1:year "1994" ;
+	e1:col "2" ;
+	e1:unknown_cyclopoid_total "0.00" ;
+	e1:unknown_cyclopoid_adult "0.00" ;
+	e1:cyclopoid_unknown_immature "0.00" ;
+	e1:cyclops_scutifer_total "0.00" ;
+	e1:cyclops_scutifer_adult "0.00" ;
+	e1:cyclops_scutifer_immature "0.00" ;
+	e1:tropocyclops_extensus_total "0.00" ;
+	e1:tropocyclops_extensus_adult "0.00" ;
+	e1:tropocyclops_extensus_immature "0.00" ;
+	e1:mesocyclops_edax_total "1952.52" ;
+	e1:mesocyclops_edax "1572.27" ;
+	e1:mesocyclops_edax_immature "380.25" ;
+	e1:orthocyclops_modesti_total "0.00" ;
+	e1:orthocyclops_modesti_adults "0.00" ;
+	e1:orthocyclops_modesti_immature "0.00" ;
+	e1:cyclopoid_copepidids "0.00" ;
+	e1:cycopep "0.00" ;
+	e1:leptodiaptomus_minutus_total "5170.68" ;
+	e1:leptodiaptomus_minutus "4933.40" ;
+	e1:leptodiaptomus_minutus_immature "237.29" ;
+	e1:aglaodiaptomus_leptopus_total "0.00" ;
+	e1:aglaodiaptomus_leptopus_adult "0.00" ;
+	e1:aglaodiaptomus_leptopus_immature "0.00" ;
+	e1:skistidiaptomus_oregonensis_adult "0.00" ;
+	e1:skistidiaptomus_oregonensis_immature "0.00" ;
+	e1:skistodiaptomus_oregonensis_total "0.00" ;
+	e1:skistodiaptomus_oregonensis_adult "0.00" ;
+	e1:skistodiaptomus_oregonensis_immature "0.00" ;
+	e1:epischura_lacustris_total "0.00" ;
+	e1:epischura_lacustris_adult "0.00" ;
+	e1:epischura_lacustris_immature "0.00" ;
+	e1:daphnia_mendotae "0.00" ;
+	e1:daphnia_pulicaria "0.00" ;
+	e1:daphnia_retrocurva "0.00" ;
+	e1:daphnia_dubia "0.00" ;
+	e1:daphnia_catawba "1081.59" ;
+	e1:daphnia_ambigua "0.00" ;
+	e1:daphnia_pulex "0.00" ;
+	e1:daphnia_parvula "0.00" ;
+	e1:bosmina_longirostris "5957.15" ;
+	e1:eubosmina "0.00" ;
+	e1:diaphanosoma_brachyurum "14.46" ;
+	e1:diaphanosoma_bergei "0.00" ;
+	e1:holopedium_gibberum "0.00" ;
+	e1:polyphemus_pediculus "14.46" ;
+	e1:ceriodaphnia_quadrangular "0.00" ;
+	e1:chydoris_species "0.00" ;
+	e1:leptodora_kindti "0.00" ;
+	e1:alona_sp "0.00" ;
+	e1:sida_crystallina "0.00" ;
+	e1:column_55 "" ;
+	e1:column_56 "" ;
+	ov:subjectDiscriminator dfw_lake_samples:aeap-crust-web-v3 ;
+	dcterms:isReferencedBy dfw_lake_samples:aeap-crust-web-v3 ;
+	ov:csvRow "3"^^xsd:integer .
+
+# CSV2RDF4LOD DATASET METADATA (reproduced from above):
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://purl.org/twc/semmdd/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://purl.org/twc/semmdd/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-Jan-16/> .
+@prefix provenance_1: <http://purl.org/twc/semmdd/source/aeap_nys/provenance/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix dfw_lake_samples: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/> .
+@prefix aeap_nys_vocab: <http://purl.org/twc/semmdd/source/aeap_nys/vocab/> .
+@prefix base_vocab: <http://purl.org/twc/semmdd/vocab/> .
+@prefix dfw_lake_samples_vocab: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/> .
+@prefix raw: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/> .
+@prefix e1: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> .
+@prefix : <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/> .
+@prefix ns1: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+
+e1:lake_name a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "lake Name" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "lake Name" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:lake_name .
+
+e1:date a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "DATE" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "DATE" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:date .
+
+e1:year a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "YEAR" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "YEAR" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:year .
+
+e1:col a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "COL #" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "COL #" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:col .
+
+e1:unknown_cyclopoid_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "Unknown cyclopoid Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Unknown cyclopoid Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:unknown_cyclopoid_total .
+
+e1:unknown_cyclopoid_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Unknown cyclopoid Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Unknown cyclopoid Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:unknown_cyclopoid_adult .
+
+e1:cyclopoid_unknown_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Cyclopoid Unknown-Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Cyclopoid Unknown-Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cyclopoid_unknown_immature .
+
+e1:cyclops_scutifer_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "Cyclops scutifer Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Cyclops scutifer Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cyclops_scutifer_total .
+
+e1:cyclops_scutifer_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Cyclops scutifer Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Cyclops scutifer Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cyclops_scutifer_adult .
+
+e1:cyclops_scutifer_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Cyclops scutifer Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Cyclops scutifer Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cyclops_scutifer_immature .
+
+e1:tropocyclops_extensus_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "Tropocyclops extensus Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Tropocyclops extensus Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:tropocyclops_extensus_total .
+
+e1:tropocyclops_extensus_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Tropocyclops extensus Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Tropocyclops extensus Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:tropocyclops_extensus_adult .
+
+e1:tropocyclops_extensus_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "Tropocyclops extensus Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Tropocyclops extensus Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:tropocyclops_extensus_immature .
+
+e1:mesocyclops_edax_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Mesocyclops edax Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Mesocyclops edax Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:mesocyclops_edax_total .
+
+e1:mesocyclops_edax a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Mesocyclops edax" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Mesocyclops edax" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:mesocyclops_edax .
+
+e1:mesocyclops_edax_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Mesocyclops edax Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Mesocyclops edax Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:mesocyclops_edax_immature .
+
+e1:orthocyclops_modesti_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "Orthocyclops modesti Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Orthocyclops modesti Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:orthocyclops_modesti_total .
+
+e1:orthocyclops_modesti_adults a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "Orthocyclops modesti Adults" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Orthocyclops modesti Adults" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:orthocyclops_modesti_adults .
+
+e1:orthocyclops_modesti_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "Orthocyclops modesti Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Orthocyclops modesti Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:orthocyclops_modesti_immature .
+
+e1:cyclopoid_copepidids a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "20"^^xsd:integer ;
+	ov:csvHeader "Cyclopoid copepidids" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Cyclopoid copepidids" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cyclopoid_copepidids .
+
+e1:cycopep a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "21"^^xsd:integer ;
+	ov:csvHeader "CYCOPEP" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "CYCOPEP" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cycopep .
+
+e1:leptodiaptomus_minutus_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "22"^^xsd:integer ;
+	ov:csvHeader "Leptodiaptomus minutus Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Leptodiaptomus minutus Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:leptodiaptomus_minutus_total .
+
+e1:leptodiaptomus_minutus a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "23"^^xsd:integer ;
+	ov:csvHeader "Leptodiaptomus minutus" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Leptodiaptomus minutus" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:leptodiaptomus_minutus .
+
+e1:leptodiaptomus_minutus_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "24"^^xsd:integer ;
+	ov:csvHeader "Leptodiaptomus minutus Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Leptodiaptomus minutus Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:leptodiaptomus_minutus_immature .
+
+e1:aglaodiaptomus_leptopus_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "25"^^xsd:integer ;
+	ov:csvHeader "Aglaodiaptomus leptopus Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Aglaodiaptomus leptopus Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:aglaodiaptomus_leptopus_total .
+
+e1:aglaodiaptomus_leptopus_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "26"^^xsd:integer ;
+	ov:csvHeader "Aglaodiaptomus leptopus Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Aglaodiaptomus leptopus Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:aglaodiaptomus_leptopus_adult .
+
+e1:aglaodiaptomus_leptopus_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "27"^^xsd:integer ;
+	ov:csvHeader "Aglaodiaptomus leptopus Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Aglaodiaptomus leptopus Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:aglaodiaptomus_leptopus_immature .
+
+e1:skistidiaptomus_oregonensis_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "28"^^xsd:integer ;
+	ov:csvHeader "Skistidiaptomus oregonensis-Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Skistidiaptomus oregonensis-Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:skistidiaptomus_oregonensis_adult .
+
+e1:skistidiaptomus_oregonensis_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "29"^^xsd:integer ;
+	ov:csvHeader "Skistidiaptomus oregonensis-Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Skistidiaptomus oregonensis-Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:skistidiaptomus_oregonensis_immature .
+
+e1:skistodiaptomus_oregonensis_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "30"^^xsd:integer ;
+	ov:csvHeader "Skistodiaptomus oregonensis Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Skistodiaptomus oregonensis Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:skistodiaptomus_oregonensis_total .
+
+e1:skistodiaptomus_oregonensis_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "31"^^xsd:integer ;
+	ov:csvHeader "Skistodiaptomus oregonensis Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Skistodiaptomus oregonensis Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:skistodiaptomus_oregonensis_adult .
+
+e1:skistodiaptomus_oregonensis_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "32"^^xsd:integer ;
+	ov:csvHeader "Skistodiaptomus oregonensis Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Skistodiaptomus oregonensis Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:skistodiaptomus_oregonensis_immature .
+
+e1:epischura_lacustris_total a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "33"^^xsd:integer ;
+	ov:csvHeader "Epischura lacustris Total" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Epischura lacustris Total" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:epischura_lacustris_total .
+
+e1:epischura_lacustris_adult a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "34"^^xsd:integer ;
+	ov:csvHeader "Epischura lacustris Adult" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Epischura lacustris Adult" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:epischura_lacustris_adult .
+
+e1:epischura_lacustris_immature a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "35"^^xsd:integer ;
+	ov:csvHeader "Epischura lacustris Immature" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Epischura lacustris Immature" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:epischura_lacustris_immature .
+
+e1:daphnia_mendotae a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "36"^^xsd:integer ;
+	ov:csvHeader "Daphnia mendotae" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia mendotae" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_mendotae .
+
+e1:daphnia_pulicaria a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "37"^^xsd:integer ;
+	ov:csvHeader "Daphnia pulicaria" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia pulicaria" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_pulicaria .
+
+e1:daphnia_retrocurva a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "38"^^xsd:integer ;
+	ov:csvHeader "Daphnia retrocurva" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia retrocurva" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_retrocurva .
+
+e1:daphnia_dubia a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "39"^^xsd:integer ;
+	ov:csvHeader "Daphnia dubia" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia dubia" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_dubia .
+
+e1:daphnia_catawba a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "40"^^xsd:integer ;
+	ov:csvHeader "Daphnia catawba" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia catawba" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_catawba .
+
+e1:daphnia_ambigua a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "41"^^xsd:integer ;
+	ov:csvHeader "Daphnia ambigua" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia ambigua" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_ambigua .
+
+e1:daphnia_pulex a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "42"^^xsd:integer ;
+	ov:csvHeader "Daphnia pulex" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia pulex" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_pulex .
+
+e1:daphnia_parvula a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "43"^^xsd:integer ;
+	ov:csvHeader "Daphnia parvula" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Daphnia parvula" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:daphnia_parvula .
+
+e1:bosmina_longirostris a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "44"^^xsd:integer ;
+	ov:csvHeader "Bosmina longirostris" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Bosmina longirostris" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:bosmina_longirostris .
+
+e1:eubosmina a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "45"^^xsd:integer ;
+	ov:csvHeader "Eubosmina" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Eubosmina" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:eubosmina .
+
+e1:diaphanosoma_brachyurum a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "46"^^xsd:integer ;
+	ov:csvHeader "Diaphanosoma brachyurum" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Diaphanosoma brachyurum" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:diaphanosoma_brachyurum .
+
+e1:diaphanosoma_bergei a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "47"^^xsd:integer ;
+	ov:csvHeader "Diaphanosoma bergei" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Diaphanosoma bergei" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:diaphanosoma_bergei .
+
+e1:holopedium_gibberum a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "48"^^xsd:integer ;
+	ov:csvHeader "Holopedium gibberum" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Holopedium gibberum" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:holopedium_gibberum .
+
+e1:polyphemus_pediculus a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "49"^^xsd:integer ;
+	ov:csvHeader "Polyphemus pediculus" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Polyphemus pediculus" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:polyphemus_pediculus .
+
+e1:ceriodaphnia_quadrangular a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "50"^^xsd:integer ;
+	ov:csvHeader "Ceriodaphnia quadrangular" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Ceriodaphnia quadrangular" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:ceriodaphnia_quadrangular .
+
+e1:chydoris_species a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "51"^^xsd:integer ;
+	ov:csvHeader "Chydoris species" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Chydoris species" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:chydoris_species .
+
+e1:leptodora_kindti a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "52"^^xsd:integer ;
+	ov:csvHeader "Leptodora kindti" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Leptodora kindti" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:leptodora_kindti .
+
+e1:alona_sp a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "53"^^xsd:integer ;
+	ov:csvHeader "Alona sp." ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Alona sp." ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:alona_sp .
+
+e1:sida_crystallina a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "54"^^xsd:integer ;
+	ov:csvHeader "Sida crystallina" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Sida crystallina" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:sida_crystallina .
+
+e1:column_55 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "55"^^xsd:integer ;
+	ov:csvHeader "" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "column_55" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:column_55 .
+
+e1:column_56 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "56"^^xsd:integer ;
+	ov:csvHeader "" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "column_56" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:column_56 .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://purl.org/twc/semmdd/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://purl.org/twc/semmdd/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-Jan-16/> .
+@prefix provenance_1: <http://purl.org/twc/semmdd/source/aeap_nys/provenance/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix dfw_lake_samples: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/> .
+@prefix aeap_nys_vocab: <http://purl.org/twc/semmdd/source/aeap_nys/vocab/> .
+@prefix base_vocab: <http://purl.org/twc/semmdd/vocab/> .
+@prefix dfw_lake_samples_vocab: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/> .
+@prefix raw: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/> .
+@prefix e1: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> .
+@prefix : <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/> .
+@prefix ns1: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+
+<http://purl.org/twc/semmdd/void.ttl> a void:DatasetDescription ;
+	foaf:topic <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples> ;
+	foaf:primaryTopic <http://purl.org/twc/semmdd/void> .
+
+<http://purl.org/twc/semmdd/void> a void:Dataset ;
+	void:subset <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples> a aeap_nys_vocab:Dataset , conversion:Dataset , conversion:AbstractDataset , void:Dataset , conversion:EnhancedDataset ;
+	conversion:base_uri "http://purl.org/twc/semmdd" ;
+	conversion:source_identifier "aeap_nys" ;
+	conversion:dataset_identifier "dfw_lake_samples" ;
+	dcterms:contributor <http://purl.org/twc/semmdd/source/aeap_nys> ;
+	dcterms:identifier "aeap_nys dfw_lake_samples" ;
+	foaf:isPrimaryTopicOf <http://purl.org/twc/semmdd/source/aeap_nys/dataset_page/dfw_lake_samples> ;
+	void:subset <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24> , <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/subset/meta> ;
+	dcterms:modified "2013-06-01T00:47:47.735-05:00"^^xsd:dateTime .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24> a aeap_nys_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset , conversion:EnhancedDataset ;
+	conversion:base_uri "http://purl.org/twc/semmdd" ;
+	conversion:source_identifier "aeap_nys" ;
+	conversion:dataset_identifier "dfw_lake_samples" ;
+	conversion:version_identifier "2013-April-24" ;
+	conversion:dataset_version "2013-April-24" ;
+	dcterms:contributor <http://purl.org/twc/semmdd/source/aeap_nys> ;
+	dcterms:identifier "aeap_nys dfw_lake_samples 2013-April-24" ;
+	dcterms:modified "2013-06-01T00:47:47.735-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://purl.org/twc/semmdd/source/aeap_nys/dataset_page/dfw_lake_samples/version/2013-April-24> ;
+	void:dataDump <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24> ;
+	void:subset <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> a aeap_nys_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset , conversion:EnhancedDataset ;
+	dcterms:modified "2013-06-01T00:47:47.735-05:00"^^xsd:dateTime ;
+	conversion:base_uri "http://purl.org/twc/semmdd" ;
+	conversion:source_identifier "aeap_nys" ;
+	conversion:dataset_identifier "dfw_lake_samples" ;
+	conversion:version_identifier "2013-April-24" ;
+	conversion:dataset_version "2013-April-24" ;
+	conversion:conversion_identifier "enhancement/1" ;
+	foaf:isPrimaryTopicOf <http://purl.org/twc/semmdd/source/aeap_nys/dataset_page/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	void:dataDump <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.e1> ;
+	void:subset <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1/subset/sample> ;
+	conversion:uses_predicate e1:lake_name , e1:diaphanosoma_brachyurum , ov:csvRow , e1:daphnia_retrocurva , ov:subjectDiscriminator , e1:diaphanosoma_bergei , e1:eubosmina , e1:leptodiaptomus_minutus_immature , e1:orthocyclops_modesti_adults , e1:aglaodiaptomus_leptopus_adult , e1:cyclopoid_copepidids , e1:daphnia_dubia , e1:holopedium_gibberum , e1:skistodiaptomus_oregonensis_immature , e1:epischura_lacustris_immature , e1:tropocyclops_extensus_adult , e1:skistidiaptomus_oregonensis_immature , e1:leptodora_kindti , e1:cycopep , e1:daphnia_ambigua , e1:col , e1:mesocyclops_edax , e1:cyclops_scutifer_immature , e1:epischura_lacustris_adult , e1:leptodiaptomus_minutus_total , e1:date , e1:leptodiaptomus_minutus , e1:aglaodiaptomus_leptopus_total , e1:column_55 , e1:daphnia_catawba , e1:column_56 , e1:mesocyclops_edax_total , e1:cyclopoid_unknown_immature , e1:daphnia_pulex , void:inDataset , e1:cyclops_scutifer_adult , e1:tropocyclops_extensus_total , dcterms:isReferencedBy , e1:ceriodaphnia_quadrangular , e1:unknown_cyclopoid_adult , e1:sida_crystallina , e1:orthocyclops_modesti_total , e1:chydoris_species , e1:tropocyclops_extensus_immature , e1:polyphemus_pediculus , e1:year , e1:bosmina_longirostris , e1:daphnia_parvula , e1:skistidiaptomus_oregonensis_adult , e1:skistodiaptomus_oregonensis_adult , e1:orthocyclops_modesti_immature , e1:unknown_cyclopoid_total , e1:daphnia_mendotae , e1:cyclops_scutifer_total , e1:daphnia_pulicaria , e1:mesocyclops_edax_immature , e1:aglaodiaptomus_leptopus_immature , e1:skistodiaptomus_oregonensis_total , e1:alona_sp , e1:epischura_lacustris_total ;
+	void:vocabulary <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> , <http://open.vocab.org/terms/> , <http://rdfs.org/ns/void#> , <http://purl.org/dc/terms/> .
+
+e1:lake_name rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:diaphanosoma_brachyurum rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+ov:csvRow rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	prov:wasAttributedTo <http://open.vocab.org> .
+
+e1:daphnia_retrocurva rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+ov:subjectDiscriminator rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	prov:wasAttributedTo <http://open.vocab.org> .
+
+e1:diaphanosoma_bergei rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:eubosmina rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:leptodiaptomus_minutus_immature rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:orthocyclops_modesti_adults rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:aglaodiaptomus_leptopus_adult rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:cyclopoid_copepidids rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:daphnia_dubia rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:holopedium_gibberum rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:skistodiaptomus_oregonensis_immature rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:epischura_lacustris_immature rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:tropocyclops_extensus_adult rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:skistidiaptomus_oregonensis_immature rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:leptodora_kindti rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:cycopep rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:daphnia_ambigua rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:col rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:mesocyclops_edax rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:cyclops_scutifer_immature rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:epischura_lacustris_adult rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:leptodiaptomus_minutus_total rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:date rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:leptodiaptomus_minutus rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:aglaodiaptomus_leptopus_total rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:column_55 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:daphnia_catawba rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:column_56 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:mesocyclops_edax_total rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:cyclopoid_unknown_immature rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:daphnia_pulex rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+void:inDataset rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+e1:cyclops_scutifer_adult rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:tropocyclops_extensus_total rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+dcterms:isReferencedBy rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+e1:ceriodaphnia_quadrangular rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:unknown_cyclopoid_adult rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:sida_crystallina rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:orthocyclops_modesti_total rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:chydoris_species rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:tropocyclops_extensus_immature rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:polyphemus_pediculus rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:year rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:bosmina_longirostris rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:daphnia_parvula rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:skistidiaptomus_oregonensis_adult rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:skistodiaptomus_oregonensis_adult rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:orthocyclops_modesti_immature rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:unknown_cyclopoid_total rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:daphnia_mendotae rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:cyclops_scutifer_total rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:daphnia_pulicaria rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:mesocyclops_edax_immature rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:aglaodiaptomus_leptopus_immature rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:skistodiaptomus_oregonensis_total rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:alona_sp rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:epischura_lacustris_total rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> void:exampleResource :thing_2 , :thing_3 ;
+	conversion:enhancement_identifier "1" ;
+	dcterms:contributor <http://purl.org/twc/semmdd/source/aeap_nys> ;
+	dcterms:identifier "aeap_nys dfw_lake_samples 2013-April-24 e1" ;
+	void:subset <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/conversion/enhancement/1> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/conversion/enhancement/1> a aeap_nys_vocab:Dataset , conversion:Dataset , void:Dataset , conversion:EnhancedDataset ;
+	dcterms:contributor <http://purl.org/twc/semmdd/source/aeap_nys> ;
+	dcterms:created "2013-06-01T00:47:47.013-05:00"^^xsd:dateTime ;
+	dcterms:modified "2013-06-01T00:47:47.735-05:00"^^xsd:dateTime ;
+	conversion:base_uri "http://purl.org/twc/semmdd" ;
+	conversion:source_identifier "aeap_nys" ;
+	conversion:dataset_identifier "dfw_lake_samples" ;
+	conversion:subject_discriminator "aeap-crust-web-v3" ;
+	conversion:version_identifier "2013-April-24" ;
+	conversion:dataset_version "2013-April-24" ;
+	conversion:conversion_identifier "enhancement/1" ;
+	dcterms:identifier "aeap_nys dfw_lake_samples aeap-crust-web-v3 2013-April-24 e1" .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1/subset/sample> a aeap_nys_vocab:Dataset , conversion:Dataset , conversion:DatasetSample , void:Dataset ;
+	conversion:base_uri "http://purl.org/twc/semmdd" ;
+	conversion:source_identifier "aeap_nys" ;
+	conversion:dataset_identifier "dfw_lake_samples" ;
+	conversion:version_identifier "2013-April-24" ;
+	conversion:dataset_version "2013-April-24" ;
+	conversion:conversion_identifier "enhancement/1" ;
+	dcterms:modified "2013-06-01T00:47:47.735-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://purl.org/twc/semmdd/source/aeap_nys/dataset_page/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1/subset/sample> ;
+	void:dataDump <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.e1.sample.ttl> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.e1.sample.ttl> dcterms:format <http://www.w3.org/ns/formats/Turtle> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys> a foaf:Agent ;
+	dcterms:identifier "aeap_nys" ;
+	foaf:isPrimaryTopicOf <http://purl.org/twc/semmdd/source_page/aeap_nys> .
+
+_:node17ruj8lp4x2 vann:preferredNamespacePrefix "rdf" ;
+	vann:preferredNamespaceUri "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+
+_:node17ruj8lp4x3 vann:preferredNamespacePrefix "rdfs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
+
+_:node17ruj8lp4x4 vann:preferredNamespacePrefix "xsd" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#" .
+
+_:node17ruj8lp4x5 vann:preferredNamespacePrefix "xsd2" ;
+	vann:preferredNamespaceUri "http://www.w3.org/TR/xmlschema-2/#" .
+
+_:node17ruj8lp4x6 vann:preferredNamespacePrefix "owl" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#" .
+
+_:node17ruj8lp4x7 vann:preferredNamespacePrefix "pmlp" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-provenance.owl#" .
+
+_:node17ruj8lp4x8 vann:preferredNamespacePrefix "pmlj" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-justification.owl#" .
+
+_:node17ruj8lp4x9 vann:preferredNamespacePrefix "tw_service" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/tw-rpi-edu/service/" .
+
+_:node17ruj8lp4x10 vann:preferredNamespacePrefix "tw_converter" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-Jan-16/" .
+
+_:node17ruj8lp4x11 vann:preferredNamespacePrefix "provenance_1" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/provenance/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/conversion/enhancement/1/" .
+
+_:node17ruj8lp4x12 vann:preferredNamespacePrefix "conversion" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/vocab/conversion/" .
+
+_:node17ruj8lp4x13 vann:preferredNamespacePrefix "ov" ;
+	vann:preferredNamespaceUri "http://open.vocab.org/terms/" .
+
+_:node17ruj8lp4x14 vann:preferredNamespacePrefix "dcterms" ;
+	vann:preferredNamespaceUri "http://purl.org/dc/terms/" .
+
+_:node17ruj8lp4x15 vann:preferredNamespacePrefix "foaf" ;
+	vann:preferredNamespaceUri "http://xmlns.com/foaf/0.1/" .
+
+_:node17ruj8lp4x16 vann:preferredNamespacePrefix "void" ;
+	vann:preferredNamespaceUri "http://rdfs.org/ns/void#" .
+
+_:node17ruj8lp4x17 vann:preferredNamespacePrefix "doap" ;
+	vann:preferredNamespaceUri "http://usefulinc.com/ns/doap#" .
+
+_:node17ruj8lp4x18 vann:preferredNamespacePrefix "scovo" ;
+	vann:preferredNamespaceUri "http://purl.org/NET/scovo#" .
+
+_:node17ruj8lp4x19 vann:preferredNamespacePrefix "qb" ;
+	vann:preferredNamespaceUri "http://purl.org/linked-data/cube#" .
+
+_:node17ruj8lp4x20 vann:preferredNamespacePrefix "vann" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/vann/" .
+
+_:node17ruj8lp4x21 vann:preferredNamespacePrefix "frbrcore" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/frbr/core#" .
+
+_:node17ruj8lp4x22 vann:preferredNamespacePrefix "coin" ;
+	vann:preferredNamespaceUri "http://purl.org/court/def/2009/coin#" .
+
+_:node17ruj8lp4x23 vann:preferredNamespacePrefix "dfw_lake_samples" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/" .
+
+_:node17ruj8lp4x24 vann:preferredNamespacePrefix "aeap_nys_vocab" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/vocab/" .
+
+_:node17ruj8lp4x25 vann:preferredNamespacePrefix "base_vocab" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/vocab/" .
+
+_:node17ruj8lp4x26 vann:preferredNamespacePrefix "dfw_lake_samples_vocab" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/" .
+
+_:node17ruj8lp4x27 vann:preferredNamespacePrefix "raw" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/" .
+
+_:node17ruj8lp4x28 vann:preferredNamespacePrefix "e1" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/" .
+
+_:node17ruj8lp4x29 vann:preferredNamespacePrefix "" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/" .
+
+_:node17ruj8lp4x30 vann:preferredNamespacePrefix "_global_value" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/" .
+
+_:node17ruj8lp4x31 vann:preferredNamespacePrefix "prov" ;
+	vann:preferredNamespaceUri "http://www.w3.org/ns/prov#" .
+
+_:node17ruj8lp4x32 vann:preferredNamespacePrefix "dbpediaprop" ;
+	vann:preferredNamespaceUri "http://dbpedia.org/property/" .
+
+_:node17ruj8lp4x33 vann:preferredNamespacePrefix "nfo" ;
+	vann:preferredNamespaceUri "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#" .
+
+_:node17ruj8lp4x34 vann:preferredNamespacePrefix "wgs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2003/01/geo/wgs84_pos#" .
+
+_:node17ruj8lp4x35 vann:preferredNamespacePrefix "vs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2003/06/sw-vocab-status/ns#" .
+
+_:node17ruj8lp4x36 vann:preferredNamespacePrefix "muo" ;
+	vann:preferredNamespaceUri "http://purl.oclc.org/NET/muo/muo#" .
+
+_:node17ruj8lp4x37 vann:preferredNamespacePrefix "time" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2006/time#" .
+
+_:node17ruj8lp4x38 vann:preferredNamespacePrefix "sio" ;
+	vann:preferredNamespaceUri "http://semanticscience.org/resource/" .
+
+_:node17ruj8lp4x39 vann:preferredNamespacePrefix "sioc" ;
+	vann:preferredNamespaceUri "http://rdfs.org/sioc/ns#" .
+
+_:node17ruj8lp4x40 vann:preferredNamespacePrefix "dbpedia" ;
+	vann:preferredNamespaceUri "http://dbpedia.org/resource/" .
+
+_:node17ruj8lp4x41 vann:preferredNamespacePrefix "con" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/10/swap/pim/contact#" .
+
+_:node17ruj8lp4x42 vann:preferredNamespacePrefix "frbr" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/frbr/core#" .
+
+_:node17ruj8lp4x43 vann:preferredNamespacePrefix "todo" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
+
+_:node17ruj8lp4x44 vann:preferredNamespacePrefix "dbpediaowl" ;
+	vann:preferredNamespaceUri "http://dbpedia.org/ontology/" .
+
+_:node17ruj8lp4x45 vann:preferredNamespacePrefix "skos" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2004/02/skos/core#" .
+
+_:node17ruj8lp4x46 vann:preferredNamespacePrefix "geonames" ;
+	vann:preferredNamespaceUri "http://www.geonames.org/ontology#" .
+
+_:node17ruj8lp4x47 vann:preferredNamespacePrefix "dgtwc" ;
+	vann:preferredNamespaceUri "http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#" .
+
+_:node17ruj8lp4x48 vann:preferredNamespacePrefix "govtrackusgov" ;
+	vann:preferredNamespaceUri "http://www.rdfabout.com/rdf/usgov/geo/us/" .
+
+_:node17ruj8lp4x49 vann:preferredNamespacePrefix "bibo" ;
+	vann:preferredNamespaceUri "http://purl.org/ontology/bibo/" .
+
+_:node17ruj8lp4x50 vann:preferredNamespacePrefix "geonamesid" ;
+	vann:preferredNamespaceUri "http://sws.geonames.org/" .
+
+_:node17ruj8lp4x1 rdfs:seeAlso _:node17ruj8lp4x2 , _:node17ruj8lp4x3 , _:node17ruj8lp4x4 , _:node17ruj8lp4x5 , _:node17ruj8lp4x6 , _:node17ruj8lp4x7 , _:node17ruj8lp4x8 , _:node17ruj8lp4x9 , _:node17ruj8lp4x10 , _:node17ruj8lp4x11 , _:node17ruj8lp4x12 , _:node17ruj8lp4x13 , _:node17ruj8lp4x14 , _:node17ruj8lp4x15 , _:node17ruj8lp4x16 , _:node17ruj8lp4x17 , _:node17ruj8lp4x18 , _:node17ruj8lp4x19 , _:node17ruj8lp4x20 , _:node17ruj8lp4x21 , _:node17ruj8lp4x22 , _:node17ruj8lp4x23 , _:node17ruj8lp4x24 , _:node17ruj8lp4x25 , _:node17ruj8lp4x26 , _:node17ruj8lp4x27 , _:node17ruj8lp4x28 , _:node17ruj8lp4x29 , _:node17ruj8lp4x30 , _:node17ruj8lp4x31 , _:node17ruj8lp4x32 , _:node17ruj8lp4x33 , _:node17ruj8lp4x34 , _:node17ruj8lp4x35 , _:node17ruj8lp4x36 , _:node17ruj8lp4x37 , _:node17ruj8lp4x38 , _:node17ruj8lp4x39 , _:node17ruj8lp4x40 , _:node17ruj8lp4x41 , _:node17ruj8lp4x42 , _:node17ruj8lp4x43 , _:node17ruj8lp4x44 , _:node17ruj8lp4x45 , _:node17ruj8lp4x46 , _:node17ruj8lp4x47 , _:node17ruj8lp4x48 , _:node17ruj8lp4x49 , _:node17ruj8lp4x50 .
+
+provenance_1:nodeset_1 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24> ;
+	pmlj:isConsequentOf provenance_1:infstep_1 .
+
+provenance_1:nodeset_2 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.e1> ;
+	pmlj:isConsequentOf provenance_1:infstep_1 .
+
+provenance_1:nodeset_3 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.e1.sample.ttl> ;
+	pmlj:isConsequentOf provenance_1:infstep_1 .
+
+provenance_1:infstep_1 a pmlj:InferenceStep ;
+	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_383025bc5d2760793ff770a7c534207c ;
+	pmlj:hasAntecedentList _:node17ruj8lp4x51 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node17ruj8lp4x53 , _:node17ruj8lp4x52 .
+
+<http://purl.org/twc/id/software/csv2rdf4lod> con:preferredURI tw_converter:csv2rdf4lod_383025bc5d2760793ff770a7c534207c .
+
+<http://data.lod2.eu/2011/tools/CSV2RDF4LOD> con:preferredURI tw_converter:csv2rdf4lod_383025bc5d2760793ff770a7c534207c .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> con:preferredURI tw_converter:csv2rdf4lod_383025bc5d2760793ff770a7c534207c .
+
+tw_converter:csv2rdf4lod_383025bc5d2760793ff770a7c534207c a pmlp:InferenceEngine , doap:Version ;
+	dcterms:identifier "csv2rdf4lod_383025bc5d2760793ff770a7c534207c" ;
+	dcterms:version "2013-Jan-16" ;
+	doap:revision "2013-Jan-16" ;
+	doap:platform "Java" ;
+	prov:specializationOf <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> .
+
+<http://purl.org/twc/id/software/csv2rdf4lod> rdfs:seeAlso <https://github.com/timrdf/csv2rdf4lod-automation/wiki> .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> a doap:Project ;
+	doap:implements <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/URI_design_for_RDF_conversion_of_CSV-based_data> , <http://purl.org/twc/vocab/conversion/> ;
+	dcterms:author <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:developer <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/GregoryToddWilliams> , <http://kasei.us/about/foaf.xrdf#greg> , <http://tw.rpi.edu/instances/JamesMcCusker> , <http://tw.rpi.edu/instances/ZhenningShangguan> ;
+	doap:maintainer <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:documenter <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/JohannaFlores> , <http://tw.rpi.edu/instances/LiDing> , <http://tw.rpi.edu/instances/GinoGervasio> ;
+	doap:helper <http://tw.rpi.edu/instances/AlvaroGraves> , <http://tw.rpi.edu/instances/DominicDiFranzo> , <http://tw.rpi.edu/instances/GinoGervasio> , <http://tw.rpi.edu/instances/PingWang> , <http://tw.rpi.edu/instances/XianLi> , <http://tw.rpi.edu/instances/JamesMcCusker> , <http://www.w3.org/People/Eric/ericP-foaf#ericP> , <http://tw.rpi.edu/instances/AnkitSrivastava> , <http://purl.org/twc/id/person/Maryam_Fazel-Zarandi> , <http://tw.rpi.edu/instances/AlexanderLahuerta> ;
+	doap:homepage <https://github.com/timrdf/csv2rdf4lod-automation/wiki> ;
+	doap:audience "Data modelers and architects that need (potentially non-RDB) tabular data encoded within the Resource Description Framework." ;
+	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
+	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
+
+_:node17ruj8lp4x54 a doap:GitRepository ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
+	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
+
+<http://tw.rpi.edu/instances/GregoryToddWilliams> con:preferredURI <http://kasei.us/about/foaf.xrdf#greg> .
+
+<http://tw.rpi.edu/instances/AlvaroGraves> con:preferredURI <http://alvaro.graves.cl> .
+
+<http://purl.org/twc/id/person/TimLebo> con:preferredURI <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://tw.rpi.edu/wiki/Special:URIResolver/Tim_Lebo> con:preferredURI <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://www.cs.rpi.edu/~weavej3/r/Tim_Lebo> con:preferredURI <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://purl.org/twc/id/person/Maryam_Fazel-Zarandi> con:preferredURI <http://tw.rpi.edu/instances/MaryamFazel-Zarandi> .
+
+_:node17ruj8lp4x51 a rdf:List ;
+	rdf:first provenance_1:nodeset_4 .
+
+provenance_1:nodeset_4 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://purl.org/twc/semmdd/source/aeap_nys/filedfw_lake_samples/version/2013-April-24/manual/AEAP_crust_web_v3.csv> .
+
+_:node17ruj8lp4x51 rdf:rest _:node17ruj8lp4x55 .
+
+_:node17ruj8lp4x55 a rdf:List ;
+	rdf:first provenance_1:nodeset_5 .
+
+provenance_1:nodeset_5 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://purl.org/twc/semmdd/source/aeap_nys/filedfw_lake_samples/version/2013-April-24/manual/AEAP_crust_web_v3.csv.e1.params.ttl> .
+
+_:node17ruj8lp4x53 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> .
+
+_:node17ruj8lp4x55 rdf:rest rdf:nil .
+
+_:node17ruj8lp4x53 <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://purl.org/twc/semmdd/source/aeap_nys/filedfw_lake_samples/version/2013-April-24/manual/AEAP_crust_web_v3.csv.e1.params.ttl> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
+
+_:node17ruj8lp4x52 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://purl.org/twc/semmdd/source/aeap_nys/filedfw_lake_samples/version/2013-April-24/manual/AEAP_crust_web_v3.csv> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/filedfw_lake_samples/version/2013-April-24/manual/AEAP_crust_web_v3.csv> a pmlp:Information ;
+	pmlp:hasFormat <http://iw.cs.utep.edu/registry/FMT/text/CSV.owl#CSV> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/filedfw_lake_samples/version/2013-April-24/manual/AEAP_crust_web_v3.csv.e1.params.ttl> a pmlp:Information ;
+	pmlp:hasFormat <http://inference-web.org/registry/FMT/RDFAbstractSyntax.owl#RDFAbstractSyntax> .
+
+conversion:SameAsDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_class rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:has_version rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:MetaDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:num_triples rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhances rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhancement_layer rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:DatasetSample rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:source_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:VersionedDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:LayerDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:base_uri rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_predicate rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:interpretation rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:symbol rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:dataset_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:conversion_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:AbstractDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:null rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:subject_discriminator rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:Dataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:version_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+<http://tw.rpi.edu/instances/BrendanAshby> dcterms:identifier "ashbyb" .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> conversion:base_uri "http://purl.org/twc/semmdd"^^xsd:anyURI .
+
+_:node17ruj8lqbx1 a conversion:EnhancementConversionProcess ;
+	conversion:enhancement_identifier "1" ;
+	conversion:subject_discriminator "aeap-crust-web-v3" .
+
+_:node17ruj8lqbx2 a foaf:OnlineAccount ;
+	foaf:accountName "ashbyb" ;
+	sioc:account_of <http://tw.rpi.edu/instances/BrendanAshby> .
+
+_:node17ruj8lqbx1 dcterms:creator _:node17ruj8lqbx2 ;
+	dcterms:created "2013-05-28T17:30:00+00:00"^^xsd:dateTime ;
+	conversion:delimits_cell "," .
+
+_:node17ruj8lqbx3 ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "lake Name" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx3 .
+
+_:node17ruj8lqbx4 ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "DATE" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx4 .
+
+_:node17ruj8lqbx5 ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "YEAR" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx5 .
+
+_:node17ruj8lqbx6 ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "COL #" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx6 .
+
+_:node17ruj8lqbx7 ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "Unknown cyclopoid Total" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx7 .
+
+_:node17ruj8lqbx8 ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Unknown cyclopoid Adult" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx8 .
+
+_:node17ruj8lqbx9 ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Cyclopoid Unknown-Immature" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx9 .
+
+_:node17ruj8lqbx10 ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "Cyclops scutifer Total" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx10 .
+
+_:node17ruj8lqbx11 ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Cyclops scutifer Adult" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx11 .
+
+_:node17ruj8lqbx12 ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Cyclops scutifer Immature" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx12 .
+
+_:node17ruj8lqbx13 ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "Tropocyclops extensus Total" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx13 .
+
+_:node17ruj8lqbx14 ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Tropocyclops extensus Adult" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx14 .
+
+_:node17ruj8lqbx15 ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "Tropocyclops extensus Immature" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx15 .
+
+_:node17ruj8lqbx16 ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Mesocyclops edax Total" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx16 .
+
+_:node17ruj8lqbx17 ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Mesocyclops edax" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx17 .
+
+_:node17ruj8lqbx18 ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Mesocyclops edax Immature" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx18 .
+
+_:node17ruj8lqbx19 ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "Orthocyclops modesti Total" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx19 .
+
+_:node17ruj8lqbx20 ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "Orthocyclops modesti Adults" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx20 .
+
+_:node17ruj8lqbx21 ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "Orthocyclops modesti Immature" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx21 .
+
+_:node17ruj8lqbx22 ov:csvCol "20"^^xsd:integer ;
+	ov:csvHeader "Cyclopoid copepidids" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx22 .
+
+_:node17ruj8lqbx23 ov:csvCol "21"^^xsd:integer ;
+	ov:csvHeader "CYCOPEP" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx23 .
+
+_:node17ruj8lqbx24 ov:csvCol "22"^^xsd:integer ;
+	ov:csvHeader "Leptodiaptomus minutus Total" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx24 .
+
+_:node17ruj8lqbx25 ov:csvCol "23"^^xsd:integer ;
+	ov:csvHeader "Leptodiaptomus minutus" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx25 .
+
+_:node17ruj8lqbx26 ov:csvCol "24"^^xsd:integer ;
+	ov:csvHeader "Leptodiaptomus minutus Immature" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx26 .
+
+_:node17ruj8lqbx27 ov:csvCol "25"^^xsd:integer ;
+	ov:csvHeader "Aglaodiaptomus leptopus Total" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx27 .
+
+_:node17ruj8lqbx28 ov:csvCol "26"^^xsd:integer ;
+	ov:csvHeader "Aglaodiaptomus leptopus Adult" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx28 .
+
+_:node17ruj8lqbx29 ov:csvCol "27"^^xsd:integer ;
+	ov:csvHeader "Aglaodiaptomus leptopus Immature" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx29 .
+
+_:node17ruj8lqbx30 ov:csvCol "28"^^xsd:integer ;
+	ov:csvHeader "Skistidiaptomus oregonensis-Adult" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx30 .
+
+_:node17ruj8lqbx31 ov:csvCol "29"^^xsd:integer ;
+	ov:csvHeader "Skistidiaptomus oregonensis-Immature" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx31 .
+
+_:node17ruj8lqbx32 ov:csvCol "30"^^xsd:integer ;
+	ov:csvHeader "Skistodiaptomus oregonensis Total" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx32 .
+
+_:node17ruj8lqbx33 ov:csvCol "31"^^xsd:integer ;
+	ov:csvHeader "Skistodiaptomus oregonensis Adult" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx33 .
+
+_:node17ruj8lqbx34 ov:csvCol "32"^^xsd:integer ;
+	ov:csvHeader "Skistodiaptomus oregonensis Immature" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx34 .
+
+_:node17ruj8lqbx35 ov:csvCol "33"^^xsd:integer ;
+	ov:csvHeader "Epischura lacustris Total" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx35 .
+
+_:node17ruj8lqbx36 ov:csvCol "34"^^xsd:integer ;
+	ov:csvHeader "Epischura lacustris Adult" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx36 .
+
+_:node17ruj8lqbx37 ov:csvCol "35"^^xsd:integer ;
+	ov:csvHeader "Epischura lacustris Immature" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx37 .
+
+_:node17ruj8lqbx38 ov:csvCol "36"^^xsd:integer ;
+	ov:csvHeader "Daphnia mendotae" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx38 .
+
+_:node17ruj8lqbx39 ov:csvCol "37"^^xsd:integer ;
+	ov:csvHeader "Daphnia pulicaria" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx39 .
+
+_:node17ruj8lqbx40 ov:csvCol "38"^^xsd:integer ;
+	ov:csvHeader "Daphnia retrocurva" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx40 .
+
+_:node17ruj8lqbx41 ov:csvCol "39"^^xsd:integer ;
+	ov:csvHeader "Daphnia dubia" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx41 .
+
+_:node17ruj8lqbx42 ov:csvCol "40"^^xsd:integer ;
+	ov:csvHeader "Daphnia catawba" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx42 .
+
+_:node17ruj8lqbx43 ov:csvCol "41"^^xsd:integer ;
+	ov:csvHeader "Daphnia ambigua" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx43 .
+
+_:node17ruj8lqbx44 ov:csvCol "42"^^xsd:integer ;
+	ov:csvHeader "Daphnia pulex" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx44 .
+
+_:node17ruj8lqbx45 ov:csvCol "43"^^xsd:integer ;
+	ov:csvHeader "Daphnia parvula" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx45 .
+
+_:node17ruj8lqbx46 ov:csvCol "44"^^xsd:integer ;
+	ov:csvHeader "Bosmina longirostris" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx46 .
+
+_:node17ruj8lqbx47 ov:csvCol "45"^^xsd:integer ;
+	ov:csvHeader "Eubosmina" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx47 .
+
+_:node17ruj8lqbx48 ov:csvCol "46"^^xsd:integer ;
+	ov:csvHeader "Diaphanosoma brachyurum" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx48 .
+
+_:node17ruj8lqbx49 ov:csvCol "47"^^xsd:integer ;
+	ov:csvHeader "Diaphanosoma bergei" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx49 .
+
+_:node17ruj8lqbx50 ov:csvCol "48"^^xsd:integer ;
+	ov:csvHeader "Holopedium gibberum" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx50 .
+
+_:node17ruj8lqbx51 ov:csvCol "49"^^xsd:integer ;
+	ov:csvHeader "Polyphemus pediculus" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx51 .
+
+_:node17ruj8lqbx52 ov:csvCol "50"^^xsd:integer ;
+	ov:csvHeader "Ceriodaphnia quadrangular" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx52 .
+
+_:node17ruj8lqbx53 ov:csvCol "51"^^xsd:integer ;
+	ov:csvHeader "Chydoris species" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx53 .
+
+_:node17ruj8lqbx54 ov:csvCol "52"^^xsd:integer ;
+	ov:csvHeader "Leptodora kindti" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx54 .
+
+_:node17ruj8lqbx55 ov:csvCol "53"^^xsd:integer ;
+	ov:csvHeader "Alona sp." ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx55 .
+
+_:node17ruj8lqbx56 ov:csvCol "54"^^xsd:integer ;
+	ov:csvHeader "Sida crystallina" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx56 .
+
+_:node17ruj8lqbx57 ov:csvCol "55"^^xsd:integer ;
+	ov:csvHeader "" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx57 .
+
+_:node17ruj8lqbx58 ov:csvCol "56"^^xsd:integer ;
+	ov:csvHeader "" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj8lqbx1 conversion:enhance _:node17ruj8lqbx58 .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> conversion:conversion_process _:node17ruj8lqbx1 .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/subset/meta> a aeap_nys_vocab:Dataset , conversion:Dataset , conversion:MetaDataset , void:Dataset ;
+	conversion:base_uri "http://purl.org/twc/semmdd" ;
+	conversion:source_identifier "aeap_nys" ;
+	conversion:dataset_identifier "dfw_lake_samples" ;
+	dcterms:modified "2013-06-01T00:47:47.735-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://purl.org/twc/semmdd/source/aeap_nys/dataset_page/dfw_lake_samples/subset/meta> ;
+	void:dataDump <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.void> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/conversion/enhancement/1> conversion:num_triples "633"^^xsd:integer ;
+	void:triples "633"^^xsd:integer ;
+	prov:wasGeneratedBy provenance_1:translationActivity_4d0732c8-c36f-45ce-a0d4-45a6c2494da2 .
+
+provenance_1:translationActivity_4d0732c8-c36f-45ce-a0d4-45a6c2494da2 a prov:Activity , <http://provenanceweb.org/ns/pml#TranslationActivity> ;
+	conversion:triples_per_minute "50039.52569169961"^^xsd:double ;
+	prov:used e1:lake_name , e1:diaphanosoma_brachyurum , ov:csvRow , e1:daphnia_retrocurva , ov:subjectDiscriminator , e1:diaphanosoma_bergei , e1:eubosmina , e1:leptodiaptomus_minutus_immature , e1:orthocyclops_modesti_adults , e1:aglaodiaptomus_leptopus_adult , e1:cyclopoid_copepidids , e1:daphnia_dubia , e1:holopedium_gibberum , e1:skistodiaptomus_oregonensis_immature , e1:epischura_lacustris_immature , e1:tropocyclops_extensus_adult , e1:skistidiaptomus_oregonensis_immature , e1:leptodora_kindti , e1:cycopep , e1:daphnia_ambigua , e1:col , e1:mesocyclops_edax , e1:cyclops_scutifer_immature , e1:epischura_lacustris_adult , e1:leptodiaptomus_minutus_total , e1:date , e1:leptodiaptomus_minutus , e1:aglaodiaptomus_leptopus_total , e1:column_55 , e1:daphnia_catawba , e1:column_56 , e1:mesocyclops_edax_total , e1:cyclopoid_unknown_immature , e1:daphnia_pulex , void:inDataset , e1:cyclops_scutifer_adult , e1:tropocyclops_extensus_total , dcterms:isReferencedBy , e1:ceriodaphnia_quadrangular , e1:unknown_cyclopoid_adult , e1:sida_crystallina , e1:orthocyclops_modesti_total , e1:chydoris_species , e1:tropocyclops_extensus_immature , e1:polyphemus_pediculus , e1:year , e1:bosmina_longirostris , e1:daphnia_parvula , e1:skistidiaptomus_oregonensis_adult , e1:skistodiaptomus_oregonensis_adult , e1:orthocyclops_modesti_immature , e1:unknown_cyclopoid_total , e1:daphnia_mendotae , e1:cyclops_scutifer_total , e1:daphnia_pulicaria , e1:mesocyclops_edax_immature , e1:aglaodiaptomus_leptopus_immature , e1:skistodiaptomus_oregonensis_total , e1:alona_sp , e1:epischura_lacustris_total ;
+	void:vocabulary <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> , <http://open.vocab.org/terms/> , <http://rdfs.org/ns/void#> , <http://purl.org/dc/terms/> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/subset/meta> conversion:uses_predicate ov:csvRow , <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> , void:dataDump , conversion:VersionedDataset , rdfs:label , foaf:topic , foaf:isPrimaryTopicOf , dcterms:author , doap:implements , pmlj:hasInferenceEngine , dcterms:identifier , doap:revision , dcterms:modified , conversion:enhancement_layer , vann:preferredNamespaceUri , rdfs:isDefinedBy , doap:helper , conversion:uses_predicate , ov:csvCol , doap:audience , doap:description , dcterms:format , doap:documenter , conversion:conversion_identifier , rdfs:range , conversion:version_identifier , pmlp:hasFormat , doap:homepage , conversion:num_triples , doap:shortdesc , pmlj:hasConclusion , dcterms:isReferencedBy , pmlj:hasAntecedentList , foaf:primaryTopic , conversion:base_uri , <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> , void:exampleResource , conversion:dataset_identifier , conversion:enhancement_identifier , rdf:type , void:subset , con:preferredURI , void:triples , doap:browse , doap:developer , ov:csvHeader , rdfs:seeAlso , doap:maintainer , conversion:enhances , conversion:source_identifier , conversion:LayerDataset , dcterms:contributor , doap:platform , vann:preferredNamespacePrefix , pmlj:isConsequentOf , <http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> , void:vocabulary , conversion:subject_discriminator , dcterms:version ;
+	void:vocabulary <http://open.vocab.org/terms/> , <http://inference-web.org/2.1exper/pml-provenance.owl#> , <http://rdfs.org/ns/void#> , <http://purl.org/twc/vocab/conversion/> , <http://www.w3.org/2000/01/rdf-schema#> , <http://xmlns.com/foaf/0.1/> , <http://purl.org/dc/terms/> , <http://usefulinc.com/ns/doap#> , <http://inference-web.org/2.0/pml-justification.owl#> , <http://purl.org/vocab/vann/> , <http://inference-web.org/2.0/pml-provenance.owl#> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#> , <http://www.w3.org/2000/10/swap/pim/contact#> .
+
+<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> rdfs:isDefinedBy <http://inference-web.org/2.1exper/pml-provenance.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+void:dataDump rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+conversion:VersionedDataset prov:wasAttributedTo <http://purl.org/twc> .
+
+rdfs:label rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	prov:wasAttributedTo <http://www.w3.org> .
+
+foaf:topic rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	prov:wasAttributedTo <http://xmlns.com> .
+
+foaf:isPrimaryTopicOf rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	prov:wasAttributedTo <http://xmlns.com> .
+
+dcterms:author rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+doap:implements rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+pmlj:hasInferenceEngine rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+dcterms:identifier rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+doap:revision rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+dcterms:modified rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+conversion:enhancement_layer prov:wasAttributedTo <http://purl.org/twc> .
+
+vann:preferredNamespaceUri rdfs:isDefinedBy <http://purl.org/vocab/vann/> ;
+	prov:wasAttributedTo <http://purl.org/vocab> .
+
+rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	prov:wasAttributedTo <http://www.w3.org> .
+
+doap:helper rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+conversion:uses_predicate prov:wasAttributedTo <http://purl.org/twc> .
+
+ov:csvCol rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	prov:wasAttributedTo <http://open.vocab.org> .
+
+doap:audience rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+doap:description rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+dcterms:format rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+doap:documenter rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+conversion:conversion_identifier prov:wasAttributedTo <http://purl.org/twc> .
+
+rdfs:range rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	prov:wasAttributedTo <http://www.w3.org> .
+
+conversion:version_identifier prov:wasAttributedTo <http://purl.org/twc> .
+
+pmlp:hasFormat rdfs:isDefinedBy <http://inference-web.org/2.0/pml-provenance.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+doap:homepage rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+conversion:num_triples prov:wasAttributedTo <http://purl.org/twc> .
+
+doap:shortdesc rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+pmlj:hasConclusion rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+pmlj:hasAntecedentList rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+foaf:primaryTopic rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	prov:wasAttributedTo <http://xmlns.com> .
+
+conversion:base_uri prov:wasAttributedTo <http://purl.org/twc> .
+
+<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> rdfs:isDefinedBy <http://inference-web.org/2.1exper/pml-provenance.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+void:exampleResource rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+conversion:dataset_identifier prov:wasAttributedTo <http://purl.org/twc> .
+
+conversion:enhancement_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+rdf:type rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+	prov:wasAttributedTo <http://www.w3.org> .
+
+void:subset rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+con:preferredURI rdfs:isDefinedBy <http://www.w3.org/2000/10/swap/pim/contact#> ;
+	prov:wasAttributedTo <http://www.w3.org> .
+
+void:triples rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+doap:browse rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+doap:developer rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+ov:csvHeader rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	prov:wasAttributedTo <http://open.vocab.org> .
+
+rdfs:seeAlso rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	prov:wasAttributedTo <http://www.w3.org> .
+
+doap:maintainer rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+conversion:enhances prov:wasAttributedTo <http://purl.org/twc> .
+
+conversion:source_identifier prov:wasAttributedTo <http://purl.org/twc> .
+
+conversion:LayerDataset prov:wasAttributedTo <http://purl.org/twc> .
+
+dcterms:contributor rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+doap:platform rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+vann:preferredNamespacePrefix rdfs:isDefinedBy <http://purl.org/vocab/vann/> ;
+	prov:wasAttributedTo <http://purl.org/vocab> .
+
+pmlj:isConsequentOf rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> rdfs:isDefinedBy <http://inference-web.org/2.1exper/pml-provenance.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+void:vocabulary rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+conversion:subject_discriminator prov:wasAttributedTo <http://purl.org/twc> .
+
+dcterms:version rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/subset/meta> conversion:uses_class void:Dataset , foaf:Agent , conversion:MetaDataset , aeap_nys_vocab:Dataset , conversion:DatasetSample , conversion:AbstractDataset , void:DatasetDescription , conversion:Dataset ;
+	void:vocabulary <http://purl.org/twc/semmdd/source/aeap_nys/vocab/> .
+
+void:Dataset rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+foaf:Agent rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	prov:wasAttributedTo <http://xmlns.com> .
+
+conversion:MetaDataset prov:wasAttributedTo <http://purl.org/twc> .
+
+aeap_nys_vocab:Dataset rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/vocab/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+conversion:DatasetSample prov:wasAttributedTo <http://purl.org/twc> .
+
+conversion:AbstractDataset prov:wasAttributedTo <http://purl.org/twc> .
+
+void:DatasetDescription rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+conversion:Dataset prov:wasAttributedTo <http://purl.org/twc> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/conversion/enhancement/1> rdfs:comment "hash: 13705ce2d2b39d1dde26e6543895e07cdf07fdf2986" .

@@ -1,0 +1,4 @@
+manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv
+manual/AEAP_crust_web_v3.csv
+manual/AEAP_phyto_web.csv
+manual/AEAP_rotifers_web.csv

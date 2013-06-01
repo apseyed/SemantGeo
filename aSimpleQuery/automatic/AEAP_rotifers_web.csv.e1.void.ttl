@@ -1,0 +1,1911 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://purl.org/twc/semmdd/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://purl.org/twc/semmdd/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-Jan-16/> .
+@prefix provenance_1: <http://purl.org/twc/semmdd/source/aeap_nys/provenance/dfw_lake_samples/aeap-rotifers-web/version/2013-April-24/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix dfw_lake_samples: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/> .
+@prefix aeap_nys_vocab: <http://purl.org/twc/semmdd/source/aeap_nys/vocab/> .
+@prefix base_vocab: <http://purl.org/twc/semmdd/vocab/> .
+@prefix dfw_lake_samples_vocab: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/> .
+@prefix raw: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/> .
+@prefix e1: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> .
+@prefix : <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/version/2013-April-24/> .
+@prefix ns1: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+
+e1:lake_name a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "Lake Name" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Lake Name" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:lake_name .
+
+e1:date a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "Date" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Date" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:date .
+
+e1:anuraeopsis_fissa_gosse_1851 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "Anuraeopsis fissa Gosse 1851" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Anuraeopsis fissa Gosse 1851" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:anuraeopsis_fissa_gosse_1851 .
+
+e1:anuraeopsis_navicula_rousselet_1911 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "Anuraeopsis navicula�Rousselet, 1911" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Anuraeopsis navicula�Rousselet, 1911" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:anuraeopsis_navicula_rousselet_1911 .
+
+e1:ascomorpha_ecaudas_perty_1850 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "Ascomorpha ecaudas Perty 1850" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Ascomorpha ecaudas Perty 1850" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:ascomorpha_ecaudas_perty_1850 .
+
+e1:ascomorpha_ovalis_bergendal_1892 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Ascomorpha ovalis Bergendal 1892" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Ascomorpha ovalis Bergendal 1892" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:ascomorpha_ovalis_bergendal_1892 .
+
+e1:ascomorpha_saltans_bartsch_1870 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Ascomorpha saltans Bartsch 1870" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Ascomorpha saltans Bartsch 1870" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:ascomorpha_saltans_bartsch_1870 .
+
+e1:asplanchna_herricki_de_guerne_1888 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "Asplanchna herricki De Guerne 1888" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Asplanchna herricki De Guerne 1888" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:asplanchna_herricki_de_guerne_1888 .
+
+e1:asplanchna_priodonta_gosse_1850 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Asplanchna priodonta Gosse 1850" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Asplanchna priodonta Gosse 1850" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:asplanchna_priodonta_gosse_1850 .
+
+e1:cephalodella_gibba_ehrbg_1832 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Cephalodella gibba Ehrbg. 1832" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Cephalodella gibba Ehrbg. 1832" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:cephalodella_gibba_ehrbg_1832 .
+
+e1:collotheca_mutabilis_hudson_1885 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "Collotheca mutabilis Hudson 1885" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Collotheca mutabilis Hudson 1885" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:collotheca_mutabilis_hudson_1885 .
+
+e1:collurella_ucinata_muller_1773 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Collurella ucinata Muller 1773" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Collurella ucinata Muller 1773" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:collurella_ucinata_muller_1773 .
+
+e1:conochiloides_dossaurius_hudson_1885 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "Conochiloides dossaurius Hudson 1885" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Conochiloides dossaurius Hudson 1885" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:conochiloides_dossaurius_hudson_1885 .
+
+e1:conochilus_unicornis_rousselet_1892 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Conochilus unicornis Rousselet 1892" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Conochilus unicornis Rousselet 1892" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:conochilus_unicornis_rousselet_1892 .
+
+e1:encentrum_species a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Encentrum species" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Encentrum species" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:encentrum_species .
+
+e1:euchlanis_pellucida_harring_1921 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Euchlanis pellucida Harring 1921" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Euchlanis pellucida Harring 1921" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:euchlanis_pellucida_harring_1921 .
+
+e1:filinia_terminalis_platte_1886 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "Filinia terminalis Platte 1886" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Filinia terminalis Platte 1886" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:filinia_terminalis_platte_1886 .
+
+e1:gastropus_stylifer_imhoff_1891 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "Gastropus stylifer Imhoff 1891" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Gastropus stylifer Imhoff 1891" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:gastropus_stylifer_imhoff_1891 .
+
+e1:hexarthra_mira_hudson_1871 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "Hexarthra mira Hudson 1871" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Hexarthra mira Hudson 1871" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:hexarthra_mira_hudson_1871 .
+
+e1:kellicottia_bostonensis_rousselet_1892 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "20"^^xsd:integer ;
+	ov:csvHeader "Kellicottia bostonensis Rousselet 1892" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Kellicottia bostonensis Rousselet 1892" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:kellicottia_bostonensis_rousselet_1892 .
+
+e1:kellicottia_longispina_kelicott_1879 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "21"^^xsd:integer ;
+	ov:csvHeader "Kellicottia longispina Kelicott 1879" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Kellicottia longispina Kelicott 1879" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:kellicottia_longispina_kelicott_1879 .
+
+e1:keratella_cochlearis_gosse_1851 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "22"^^xsd:integer ;
+	ov:csvHeader "Keratella cochlearis Gosse 1851" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Keratella cochlearis Gosse 1851" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:keratella_cochlearis_gosse_1851 .
+
+e1:keratella_crassa_ahlstrom_1943 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "23"^^xsd:integer ;
+	ov:csvHeader "Keratella crassa Ahlstrom 1943" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Keratella crassa Ahlstrom 1943" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:keratella_crassa_ahlstrom_1943 .
+
+e1:keratella_earlinae_ahlstrom_1943 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "24"^^xsd:integer ;
+	ov:csvHeader "Keratella earlinae Ahlstrom 1943" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Keratella earlinae Ahlstrom 1943" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:keratella_earlinae_ahlstrom_1943 .
+
+e1:keratella_hiemalis_carlin_1943 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "25"^^xsd:integer ;
+	ov:csvHeader "Keratella hiemalis Carlin 1943" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Keratella hiemalis Carlin 1943" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:keratella_hiemalis_carlin_1943 .
+
+e1:keratella_serrulata_rylov_1926 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "26"^^xsd:integer ;
+	ov:csvHeader "Keratella serrulata Rylov 1926" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Keratella serrulata Rylov 1926" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:keratella_serrulata_rylov_1926 .
+
+e1:keratella_taurocephala_meyers_1938 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "27"^^xsd:integer ;
+	ov:csvHeader "Keratella taurocephala Meyers 1938" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Keratella taurocephala Meyers 1938" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:keratella_taurocephala_meyers_1938 .
+
+e1:keratella_tecta_gosse_1841 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "28"^^xsd:integer ;
+	ov:csvHeader "Keratella tecta Gosse 1841" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Keratella tecta Gosse 1841" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:keratella_tecta_gosse_1841 .
+
+e1:lapdella_sp a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "29"^^xsd:integer ;
+	ov:csvHeader "Lapdella sp" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Lapdella sp" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:lapdella_sp .
+
+e1:lecane_crepida_harring_1914 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "30"^^xsd:integer ;
+	ov:csvHeader "Lecane crepida  Harring 1914" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Lecane crepida  Harring 1914" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:lecane_crepida_harring_1914 .
+
+e1:lecane_flexilis_gosse_1886 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "31"^^xsd:integer ;
+	ov:csvHeader "Lecane flexilis Gosse 1886" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Lecane flexilis Gosse 1886" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:lecane_flexilis_gosse_1886 .
+
+e1:lecane_luna_muller_1776 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "32"^^xsd:integer ;
+	ov:csvHeader "Lecane luna Muller 1776" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Lecane luna Muller 1776" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:lecane_luna_muller_1776 .
+
+e1:lecane_mira_murray_1913 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "33"^^xsd:integer ;
+	ov:csvHeader "Lecane mira Murray 1913" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Lecane mira Murray 1913" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:lecane_mira_murray_1913 .
+
+e1:lecane_mucronata_harring_meyers_1926 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "34"^^xsd:integer ;
+	ov:csvHeader "Lecane mucronata Harring & Meyers 1926" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Lecane mucronata Harring & Meyers 1926" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:lecane_mucronata_harring_meyers_1926 .
+
+e1:lecane_species a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "35"^^xsd:integer ;
+	ov:csvHeader "Lecane species" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Lecane species" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:lecane_species .
+
+e1:lecane_tenuisetta_harring_1914 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "36"^^xsd:integer ;
+	ov:csvHeader "Lecane tenuisetta  Harring 1914" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Lecane tenuisetta  Harring 1914" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:lecane_tenuisetta_harring_1914 .
+
+e1:lecane_tudicola_harring_meyers_1926 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "37"^^xsd:integer ;
+	ov:csvHeader "lecane tudicola Harring & Meyers 1926" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "lecane tudicola Harring & Meyers 1926" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:lecane_tudicola_harring_meyers_1926 .
+
+e1:manfredium_eudactylotum_gosse_1886 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "38"^^xsd:integer ;
+	ov:csvHeader "Manfredium eudactylotum Gosse 1886" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Manfredium eudactylotum Gosse 1886" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:manfredium_eudactylotum_gosse_1886 .
+
+e1:microcodon_clavus a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "39"^^xsd:integer ;
+	ov:csvHeader "Microcodon clavus" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Microcodon clavus" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:microcodon_clavus .
+
+e1:monostyla_closterocerca_schmarda_1895 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "40"^^xsd:integer ;
+	ov:csvHeader "Monostyla closterocerca Schmarda 1895" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Monostyla closterocerca Schmarda 1895" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:monostyla_closterocerca_schmarda_1895 .
+
+e1:monostyla_copeis_harring_meyers_1926 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "41"^^xsd:integer ;
+	ov:csvHeader "Monostyla copeis Harring & Meyers 1926" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Monostyla copeis Harring & Meyers 1926" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:monostyla_copeis_harring_meyers_1926 .
+
+e1:monostyla_lunaris_ehrbg_1882 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "42"^^xsd:integer ;
+	ov:csvHeader "Monostyla lunaris Ehrbg. 1882" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Monostyla lunaris Ehrbg. 1882" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:monostyla_lunaris_ehrbg_1882 .
+
+e1:monostyla_obtusa_murray_1913 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "43"^^xsd:integer ;
+	ov:csvHeader "Monostyla obtusa Murray 1913" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Monostyla obtusa Murray 1913" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:monostyla_obtusa_murray_1913 .
+
+e1:ploesoma_truncatum_levander_1894 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "44"^^xsd:integer ;
+	ov:csvHeader "Ploesoma truncatum Levander 1894" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Ploesoma truncatum Levander 1894" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:ploesoma_truncatum_levander_1894 .
+
+e1:polyarthra_euryptera_wierzejski_1893 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "45"^^xsd:integer ;
+	ov:csvHeader "Polyarthra euryptera Wierzejski 1893" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Polyarthra euryptera Wierzejski 1893" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:polyarthra_euryptera_wierzejski_1893 .
+
+e1:polyarthra_major_burckhardt_1900 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "46"^^xsd:integer ;
+	ov:csvHeader "Polyarthra major Burckhardt 1900" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Polyarthra major Burckhardt 1900" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:polyarthra_major_burckhardt_1900 .
+
+e1:polyarthra_remata_skorikov_1896 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "47"^^xsd:integer ;
+	ov:csvHeader "Polyarthra remata Skorikov 1896" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Polyarthra remata Skorikov 1896" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:polyarthra_remata_skorikov_1896 .
+
+e1:polyarthra_vulgaris_carlin_1943 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "48"^^xsd:integer ;
+	ov:csvHeader "Polyarthra vulgaris Carlin 1943" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Polyarthra vulgaris Carlin 1943" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:polyarthra_vulgaris_carlin_1943 .
+
+e1:remove a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "49"^^xsd:integer ;
+	ov:csvHeader "remove" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "remove" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:remove .
+
+e1:synchaeta_pectinata_ehrbg_1892 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "50"^^xsd:integer ;
+	ov:csvHeader "Synchaeta pectinata Ehrbg.  1892" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Synchaeta pectinata Ehrbg.  1892" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:synchaeta_pectinata_ehrbg_1892 .
+
+e1:total_rotifers a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "51"^^xsd:integer ;
+	ov:csvHeader "Total Rotifers" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Total Rotifers" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:total_rotifers .
+
+e1:trichocerca_cyclindrica_imhoff_1981 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "52"^^xsd:integer ;
+	ov:csvHeader "Trichocerca cyclindrica Imhoff 1981" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Trichocerca cyclindrica Imhoff 1981" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:trichocerca_cyclindrica_imhoff_1981 .
+
+e1:trichocerca_elongata_gosse_1886 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "53"^^xsd:integer ;
+	ov:csvHeader "Trichocerca elongata Gosse 1886" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Trichocerca elongata Gosse 1886" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:trichocerca_elongata_gosse_1886 .
+
+e1:trichocerca_insignis_herrick_1885 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "54"^^xsd:integer ;
+	ov:csvHeader "Trichocerca insignis Herrick 1885" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Trichocerca insignis Herrick 1885" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:trichocerca_insignis_herrick_1885 .
+
+e1:trichocerca_multicrinis_kelicott_1897 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "55"^^xsd:integer ;
+	ov:csvHeader "Trichocerca multicrinis Kelicott 1897" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Trichocerca multicrinis Kelicott 1897" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:trichocerca_multicrinis_kelicott_1897 .
+
+e1:trichocerca_porcellus_gosse_1886 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "56"^^xsd:integer ;
+	ov:csvHeader "Trichocerca porcellus Gosse 1886" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Trichocerca porcellus Gosse 1886" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:trichocerca_porcellus_gosse_1886 .
+
+e1:trichocerca_pusilla_jennings_1993 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "57"^^xsd:integer ;
+	ov:csvHeader "Trichocerca pusilla Jennings 1993" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Trichocerca pusilla Jennings 1993" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:trichocerca_pusilla_jennings_1993 .
+
+e1:trichocerca_rousseleti_voight_1901 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "58"^^xsd:integer ;
+	ov:csvHeader "Trichocerca rousseleti Voight 1901" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Trichocerca rousseleti Voight 1901" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:trichocerca_rousseleti_voight_1901 .
+
+e1:trichocerca_sp a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "59"^^xsd:integer ;
+	ov:csvHeader "Trichocerca sp" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Trichocerca sp" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:trichocerca_sp .
+
+e1:trichotria_tetractis_tetractis_ehrenberg_1830 a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "60"^^xsd:integer ;
+	ov:csvHeader "Trichotria tetractis tetractis (Ehrenberg, 1830) " ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Trichotria tetractis tetractis Ehrenberg, 1830" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:trichotria_tetractis_tetractis_ehrenberg_1830 .
+
+e1:unknown_one_toe a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "61"^^xsd:integer ;
+	ov:csvHeader "Unknown one toe" ;
+	conversion:enhancement_layer "1" ;
+	dcterms:isReferencedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	rdfs:label "Unknown one toe" ;
+	rdfs:range rdfs:Literal ;
+	conversion:enhances raw:unknown_one_toe .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <http://purl.org/twc/semmdd/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <http://purl.org/twc/semmdd/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-Jan-16/> .
+@prefix provenance_1: <http://purl.org/twc/semmdd/source/aeap_nys/provenance/dfw_lake_samples/aeap-rotifers-web/version/2013-April-24/conversion/enhancement/1/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix dfw_lake_samples: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/> .
+@prefix aeap_nys_vocab: <http://purl.org/twc/semmdd/source/aeap_nys/vocab/> .
+@prefix base_vocab: <http://purl.org/twc/semmdd/vocab/> .
+@prefix dfw_lake_samples_vocab: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/> .
+@prefix raw: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/> .
+@prefix e1: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> .
+@prefix : <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/version/2013-April-24/> .
+@prefix ns1: <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix dbpediaowl: <http://dbpedia.org/ontology/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dgtwc: <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix geonamesid: <http://sws.geonames.org/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix muo: <http://purl.oclc.org/NET/muo/muo#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+
+<http://purl.org/twc/semmdd/void.ttl> a void:DatasetDescription ;
+	foaf:topic <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples> ;
+	foaf:primaryTopic <http://purl.org/twc/semmdd/void> .
+
+<http://purl.org/twc/semmdd/void> a void:Dataset ;
+	void:subset <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples> a aeap_nys_vocab:Dataset , conversion:Dataset , conversion:AbstractDataset , void:Dataset , conversion:EnhancedDataset ;
+	conversion:base_uri "http://purl.org/twc/semmdd" ;
+	conversion:source_identifier "aeap_nys" ;
+	conversion:dataset_identifier "dfw_lake_samples" ;
+	dcterms:contributor <http://purl.org/twc/semmdd/source/aeap_nys> ;
+	dcterms:identifier "aeap_nys dfw_lake_samples" ;
+	foaf:isPrimaryTopicOf <http://purl.org/twc/semmdd/source/aeap_nys/dataset_page/dfw_lake_samples> ;
+	void:subset <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24> , <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/subset/meta> ;
+	dcterms:modified "2013-06-01T00:48:02.555-05:00"^^xsd:dateTime .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24> a aeap_nys_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset , conversion:EnhancedDataset ;
+	conversion:base_uri "http://purl.org/twc/semmdd" ;
+	conversion:source_identifier "aeap_nys" ;
+	conversion:dataset_identifier "dfw_lake_samples" ;
+	conversion:version_identifier "2013-April-24" ;
+	conversion:dataset_version "2013-April-24" ;
+	dcterms:contributor <http://purl.org/twc/semmdd/source/aeap_nys> ;
+	dcterms:identifier "aeap_nys dfw_lake_samples 2013-April-24" ;
+	dcterms:modified "2013-06-01T00:48:02.555-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://purl.org/twc/semmdd/source/aeap_nys/dataset_page/dfw_lake_samples/version/2013-April-24> ;
+	void:dataDump <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24> ;
+	void:subset <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> a aeap_nys_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset , conversion:EnhancedDataset ;
+	dcterms:modified "2013-06-01T00:48:02.555-05:00"^^xsd:dateTime ;
+	conversion:base_uri "http://purl.org/twc/semmdd" ;
+	conversion:source_identifier "aeap_nys" ;
+	conversion:dataset_identifier "dfw_lake_samples" ;
+	conversion:version_identifier "2013-April-24" ;
+	conversion:dataset_version "2013-April-24" ;
+	conversion:conversion_identifier "enhancement/1" ;
+	foaf:isPrimaryTopicOf <http://purl.org/twc/semmdd/source/aeap_nys/dataset_page/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> ;
+	void:dataDump <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.e1> ;
+	void:subset <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1/subset/sample> ;
+	conversion:uses_predicate e1:lake_name , ov:csvRow , e1:lecane_crepida_harring_1914 , ov:subjectDiscriminator , e1:lecane_luna_muller_1776 , e1:trichocerca_cyclindrica_imhoff_1981 , e1:filinia_terminalis_platte_1886 , e1:lecane_mucronata_harring_meyers_1926 , e1:trichocerca_pusilla_jennings_1993 , e1:trichocerca_multicrinis_kelicott_1897 , e1:anuraeopsis_navicula_rousselet_1911 , e1:gastropus_stylifer_imhoff_1891 , e1:keratella_earlinae_ahlstrom_1943 , e1:anuraeopsis_fissa_gosse_1851 , e1:trichocerca_rousseleti_voight_1901 , e1:collurella_ucinata_muller_1773 , e1:asplanchna_priodonta_gosse_1850 , e1:keratella_serrulata_rylov_1926 , e1:monostyla_copeis_harring_meyers_1926 , e1:ascomorpha_ovalis_bergendal_1892 , e1:lecane_tenuisetta_harring_1914 , e1:monostyla_lunaris_ehrbg_1882 , e1:date , e1:synchaeta_pectinata_ehrbg_1892 , e1:polyarthra_euryptera_wierzejski_1893 , e1:microcodon_clavus , e1:euchlanis_pellucida_harring_1921 , e1:lecane_mira_murray_1913 , e1:keratella_hiemalis_carlin_1943 , e1:lapdella_sp , e1:trichocerca_porcellus_gosse_1886 , e1:trichotria_tetractis_tetractis_ehrenberg_1830 , void:inDataset , e1:polyarthra_major_burckhardt_1900 , e1:keratella_cochlearis_gosse_1851 , dcterms:isReferencedBy , e1:polyarthra_vulgaris_carlin_1943 , e1:ploesoma_truncatum_levander_1894 , e1:ascomorpha_ecaudas_perty_1850 , e1:keratella_taurocephala_meyers_1938 , e1:lecane_tudicola_harring_meyers_1926 , e1:conochilus_unicornis_rousselet_1892 , e1:cephalodella_gibba_ehrbg_1832 , e1:kellicottia_longispina_kelicott_1879 , e1:monostyla_obtusa_murray_1913 , e1:conochiloides_dossaurius_hudson_1885 , e1:trichocerca_elongata_gosse_1886 , e1:total_rotifers , e1:monostyla_closterocerca_schmarda_1895 , e1:encentrum_species , e1:polyarthra_remata_skorikov_1896 , e1:manfredium_eudactylotum_gosse_1886 , e1:unknown_one_toe , e1:lecane_flexilis_gosse_1886 , e1:kellicottia_bostonensis_rousselet_1892 , e1:hexarthra_mira_hudson_1871 , e1:asplanchna_herricki_de_guerne_1888 , e1:lecane_species , e1:trichocerca_insignis_herrick_1885 , e1:collotheca_mutabilis_hudson_1885 , e1:remove , e1:ascomorpha_saltans_bartsch_1870 , e1:keratella_tecta_gosse_1841 , e1:trichocerca_sp , e1:keratella_crassa_ahlstrom_1943 ;
+	void:vocabulary <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> , <http://open.vocab.org/terms/> , <http://rdfs.org/ns/void#> , <http://purl.org/dc/terms/> .
+
+e1:lake_name rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+ov:csvRow rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	prov:wasAttributedTo <http://open.vocab.org> .
+
+e1:lecane_crepida_harring_1914 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+ov:subjectDiscriminator rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	prov:wasAttributedTo <http://open.vocab.org> .
+
+e1:lecane_luna_muller_1776 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:trichocerca_cyclindrica_imhoff_1981 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:filinia_terminalis_platte_1886 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:lecane_mucronata_harring_meyers_1926 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:trichocerca_pusilla_jennings_1993 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:trichocerca_multicrinis_kelicott_1897 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:anuraeopsis_navicula_rousselet_1911 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:gastropus_stylifer_imhoff_1891 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:keratella_earlinae_ahlstrom_1943 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:anuraeopsis_fissa_gosse_1851 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:trichocerca_rousseleti_voight_1901 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:collurella_ucinata_muller_1773 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:asplanchna_priodonta_gosse_1850 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:keratella_serrulata_rylov_1926 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:monostyla_copeis_harring_meyers_1926 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:ascomorpha_ovalis_bergendal_1892 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:lecane_tenuisetta_harring_1914 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:monostyla_lunaris_ehrbg_1882 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:date rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:synchaeta_pectinata_ehrbg_1892 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:polyarthra_euryptera_wierzejski_1893 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:microcodon_clavus rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:euchlanis_pellucida_harring_1921 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:lecane_mira_murray_1913 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:keratella_hiemalis_carlin_1943 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:lapdella_sp rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:trichocerca_porcellus_gosse_1886 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:trichotria_tetractis_tetractis_ehrenberg_1830 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+void:inDataset rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+e1:polyarthra_major_burckhardt_1900 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:keratella_cochlearis_gosse_1851 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+dcterms:isReferencedBy rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+e1:polyarthra_vulgaris_carlin_1943 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:ploesoma_truncatum_levander_1894 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:ascomorpha_ecaudas_perty_1850 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:keratella_taurocephala_meyers_1938 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:lecane_tudicola_harring_meyers_1926 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:conochilus_unicornis_rousselet_1892 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:cephalodella_gibba_ehrbg_1832 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:kellicottia_longispina_kelicott_1879 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:monostyla_obtusa_murray_1913 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:conochiloides_dossaurius_hudson_1885 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:trichocerca_elongata_gosse_1886 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:total_rotifers rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:monostyla_closterocerca_schmarda_1895 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:encentrum_species rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:polyarthra_remata_skorikov_1896 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:manfredium_eudactylotum_gosse_1886 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:unknown_one_toe rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:lecane_flexilis_gosse_1886 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:kellicottia_bostonensis_rousselet_1892 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:hexarthra_mira_hudson_1871 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:asplanchna_herricki_de_guerne_1888 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:lecane_species rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:trichocerca_insignis_herrick_1885 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:collotheca_mutabilis_hudson_1885 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:remove rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:ascomorpha_saltans_bartsch_1870 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:keratella_tecta_gosse_1841 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:trichocerca_sp rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+e1:keratella_crassa_ahlstrom_1943 rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> void:exampleResource :thing_2 , :thing_1053 ;
+	conversion:enhancement_identifier "1" ;
+	dcterms:contributor <http://purl.org/twc/semmdd/source/aeap_nys> ;
+	dcterms:identifier "aeap_nys dfw_lake_samples 2013-April-24 e1" ;
+	void:subset <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/version/2013-April-24/conversion/enhancement/1> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/version/2013-April-24/conversion/enhancement/1> a aeap_nys_vocab:Dataset , conversion:Dataset , void:Dataset , conversion:EnhancedDataset ;
+	dcterms:contributor <http://purl.org/twc/semmdd/source/aeap_nys> ;
+	dcterms:created "2013-06-01T00:47:59.828-05:00"^^xsd:dateTime ;
+	dcterms:modified "2013-06-01T00:48:02.555-05:00"^^xsd:dateTime ;
+	conversion:base_uri "http://purl.org/twc/semmdd" ;
+	conversion:source_identifier "aeap_nys" ;
+	conversion:dataset_identifier "dfw_lake_samples" ;
+	conversion:subject_discriminator "aeap-rotifers-web" ;
+	conversion:version_identifier "2013-April-24" ;
+	conversion:dataset_version "2013-April-24" ;
+	conversion:conversion_identifier "enhancement/1" ;
+	dcterms:identifier "aeap_nys dfw_lake_samples aeap-rotifers-web 2013-April-24 e1" .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1/subset/sample> a aeap_nys_vocab:Dataset , conversion:Dataset , conversion:DatasetSample , void:Dataset ;
+	conversion:base_uri "http://purl.org/twc/semmdd" ;
+	conversion:source_identifier "aeap_nys" ;
+	conversion:dataset_identifier "dfw_lake_samples" ;
+	conversion:version_identifier "2013-April-24" ;
+	conversion:dataset_version "2013-April-24" ;
+	conversion:conversion_identifier "enhancement/1" ;
+	dcterms:modified "2013-06-01T00:48:02.555-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://purl.org/twc/semmdd/source/aeap_nys/dataset_page/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1/subset/sample> ;
+	void:dataDump <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.e1.sample.ttl> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.e1.sample.ttl> dcterms:format <http://www.w3.org/ns/formats/Turtle> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys> a foaf:Agent ;
+	dcterms:identifier "aeap_nys" ;
+	foaf:isPrimaryTopicOf <http://purl.org/twc/semmdd/source_page/aeap_nys> .
+
+_:node17ruj928vx2 vann:preferredNamespacePrefix "rdf" ;
+	vann:preferredNamespaceUri "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+
+_:node17ruj928vx3 vann:preferredNamespacePrefix "rdfs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
+
+_:node17ruj928vx4 vann:preferredNamespacePrefix "xsd" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#" .
+
+_:node17ruj928vx5 vann:preferredNamespacePrefix "xsd2" ;
+	vann:preferredNamespaceUri "http://www.w3.org/TR/xmlschema-2/#" .
+
+_:node17ruj928vx6 vann:preferredNamespacePrefix "owl" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#" .
+
+_:node17ruj928vx7 vann:preferredNamespacePrefix "pmlp" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-provenance.owl#" .
+
+_:node17ruj928vx8 vann:preferredNamespacePrefix "pmlj" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-justification.owl#" .
+
+_:node17ruj928vx9 vann:preferredNamespacePrefix "tw_service" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/tw-rpi-edu/service/" .
+
+_:node17ruj928vx10 vann:preferredNamespacePrefix "tw_converter" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-Jan-16/" .
+
+_:node17ruj928vx11 vann:preferredNamespacePrefix "provenance_1" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/provenance/dfw_lake_samples/aeap-rotifers-web/version/2013-April-24/conversion/enhancement/1/" .
+
+_:node17ruj928vx12 vann:preferredNamespacePrefix "conversion" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/vocab/conversion/" .
+
+_:node17ruj928vx13 vann:preferredNamespacePrefix "ov" ;
+	vann:preferredNamespaceUri "http://open.vocab.org/terms/" .
+
+_:node17ruj928vx14 vann:preferredNamespacePrefix "dcterms" ;
+	vann:preferredNamespaceUri "http://purl.org/dc/terms/" .
+
+_:node17ruj928vx15 vann:preferredNamespacePrefix "foaf" ;
+	vann:preferredNamespaceUri "http://xmlns.com/foaf/0.1/" .
+
+_:node17ruj928vx16 vann:preferredNamespacePrefix "void" ;
+	vann:preferredNamespaceUri "http://rdfs.org/ns/void#" .
+
+_:node17ruj928vx17 vann:preferredNamespacePrefix "doap" ;
+	vann:preferredNamespaceUri "http://usefulinc.com/ns/doap#" .
+
+_:node17ruj928vx18 vann:preferredNamespacePrefix "scovo" ;
+	vann:preferredNamespaceUri "http://purl.org/NET/scovo#" .
+
+_:node17ruj928vx19 vann:preferredNamespacePrefix "qb" ;
+	vann:preferredNamespaceUri "http://purl.org/linked-data/cube#" .
+
+_:node17ruj928vx20 vann:preferredNamespacePrefix "vann" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/vann/" .
+
+_:node17ruj928vx21 vann:preferredNamespacePrefix "frbrcore" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/frbr/core#" .
+
+_:node17ruj928vx22 vann:preferredNamespacePrefix "coin" ;
+	vann:preferredNamespaceUri "http://purl.org/court/def/2009/coin#" .
+
+_:node17ruj928vx23 vann:preferredNamespacePrefix "dfw_lake_samples" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/" .
+
+_:node17ruj928vx24 vann:preferredNamespacePrefix "aeap_nys_vocab" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/vocab/" .
+
+_:node17ruj928vx25 vann:preferredNamespacePrefix "base_vocab" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/vocab/" .
+
+_:node17ruj928vx26 vann:preferredNamespacePrefix "dfw_lake_samples_vocab" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/" .
+
+_:node17ruj928vx27 vann:preferredNamespacePrefix "raw" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/" .
+
+_:node17ruj928vx28 vann:preferredNamespacePrefix "e1" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/" .
+
+_:node17ruj928vx29 vann:preferredNamespacePrefix "" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/version/2013-April-24/" .
+
+_:node17ruj928vx30 vann:preferredNamespacePrefix "_global_value" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/" .
+
+_:node17ruj928vx31 vann:preferredNamespacePrefix "sioc" ;
+	vann:preferredNamespaceUri "http://rdfs.org/sioc/ns#" .
+
+_:node17ruj928vx32 vann:preferredNamespacePrefix "con" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/10/swap/pim/contact#" .
+
+_:node17ruj928vx33 vann:preferredNamespacePrefix "todo" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
+
+_:node17ruj928vx34 vann:preferredNamespacePrefix "nfo" ;
+	vann:preferredNamespaceUri "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#" .
+
+_:node17ruj928vx35 vann:preferredNamespacePrefix "sio" ;
+	vann:preferredNamespaceUri "http://semanticscience.org/resource/" .
+
+_:node17ruj928vx36 vann:preferredNamespacePrefix "time" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2006/time#" .
+
+_:node17ruj928vx37 vann:preferredNamespacePrefix "frbr" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/frbr/core#" .
+
+_:node17ruj928vx38 vann:preferredNamespacePrefix "dbpediaowl" ;
+	vann:preferredNamespaceUri "http://dbpedia.org/ontology/" .
+
+_:node17ruj928vx39 vann:preferredNamespacePrefix "prov" ;
+	vann:preferredNamespaceUri "http://www.w3.org/ns/prov#" .
+
+_:node17ruj928vx40 vann:preferredNamespacePrefix "dgtwc" ;
+	vann:preferredNamespaceUri "http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#" .
+
+_:node17ruj928vx41 vann:preferredNamespacePrefix "wgs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2003/01/geo/wgs84_pos#" .
+
+_:node17ruj928vx42 vann:preferredNamespacePrefix "govtrackusgov" ;
+	vann:preferredNamespaceUri "http://www.rdfabout.com/rdf/usgov/geo/us/" .
+
+_:node17ruj928vx43 vann:preferredNamespacePrefix "geonamesid" ;
+	vann:preferredNamespaceUri "http://sws.geonames.org/" .
+
+_:node17ruj928vx44 vann:preferredNamespacePrefix "bibo" ;
+	vann:preferredNamespaceUri "http://purl.org/ontology/bibo/" .
+
+_:node17ruj928vx45 vann:preferredNamespacePrefix "geonames" ;
+	vann:preferredNamespaceUri "http://www.geonames.org/ontology#" .
+
+_:node17ruj928vx46 vann:preferredNamespacePrefix "vs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2003/06/sw-vocab-status/ns#" .
+
+_:node17ruj928vx47 vann:preferredNamespacePrefix "skos" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2004/02/skos/core#" .
+
+_:node17ruj928vx48 vann:preferredNamespacePrefix "muo" ;
+	vann:preferredNamespaceUri "http://purl.oclc.org/NET/muo/muo#" .
+
+_:node17ruj928vx49 vann:preferredNamespacePrefix "dbpedia" ;
+	vann:preferredNamespaceUri "http://dbpedia.org/resource/" .
+
+_:node17ruj928vx50 vann:preferredNamespacePrefix "dbpediaprop" ;
+	vann:preferredNamespaceUri "http://dbpedia.org/property/" .
+
+_:node17ruj928vx1 rdfs:seeAlso _:node17ruj928vx2 , _:node17ruj928vx3 , _:node17ruj928vx4 , _:node17ruj928vx5 , _:node17ruj928vx6 , _:node17ruj928vx7 , _:node17ruj928vx8 , _:node17ruj928vx9 , _:node17ruj928vx10 , _:node17ruj928vx11 , _:node17ruj928vx12 , _:node17ruj928vx13 , _:node17ruj928vx14 , _:node17ruj928vx15 , _:node17ruj928vx16 , _:node17ruj928vx17 , _:node17ruj928vx18 , _:node17ruj928vx19 , _:node17ruj928vx20 , _:node17ruj928vx21 , _:node17ruj928vx22 , _:node17ruj928vx23 , _:node17ruj928vx24 , _:node17ruj928vx25 , _:node17ruj928vx26 , _:node17ruj928vx27 , _:node17ruj928vx28 , _:node17ruj928vx29 , _:node17ruj928vx30 , _:node17ruj928vx31 , _:node17ruj928vx32 , _:node17ruj928vx33 , _:node17ruj928vx34 , _:node17ruj928vx35 , _:node17ruj928vx36 , _:node17ruj928vx37 , _:node17ruj928vx38 , _:node17ruj928vx39 , _:node17ruj928vx40 , _:node17ruj928vx41 , _:node17ruj928vx42 , _:node17ruj928vx43 , _:node17ruj928vx44 , _:node17ruj928vx45 , _:node17ruj928vx46 , _:node17ruj928vx47 , _:node17ruj928vx48 , _:node17ruj928vx49 , _:node17ruj928vx50 .
+
+provenance_1:nodeset_1 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24> ;
+	pmlj:isConsequentOf provenance_1:infstep_1 .
+
+provenance_1:nodeset_2 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.e1> ;
+	pmlj:isConsequentOf provenance_1:infstep_1 .
+
+provenance_1:nodeset_3 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.e1.sample.ttl> ;
+	pmlj:isConsequentOf provenance_1:infstep_1 .
+
+provenance_1:infstep_1 a pmlj:InferenceStep ;
+	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_383025bc5d2760793ff770a7c534207c ;
+	pmlj:hasAntecedentList _:node17ruj928vx51 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node17ruj928vx53 , _:node17ruj928vx52 .
+
+<http://purl.org/twc/id/software/csv2rdf4lod> con:preferredURI tw_converter:csv2rdf4lod_383025bc5d2760793ff770a7c534207c .
+
+<http://data.lod2.eu/2011/tools/CSV2RDF4LOD> con:preferredURI tw_converter:csv2rdf4lod_383025bc5d2760793ff770a7c534207c .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> con:preferredURI tw_converter:csv2rdf4lod_383025bc5d2760793ff770a7c534207c .
+
+tw_converter:csv2rdf4lod_383025bc5d2760793ff770a7c534207c a pmlp:InferenceEngine , doap:Version ;
+	dcterms:identifier "csv2rdf4lod_383025bc5d2760793ff770a7c534207c" ;
+	dcterms:version "2013-Jan-16" ;
+	doap:revision "2013-Jan-16" ;
+	doap:platform "Java" ;
+	prov:specializationOf <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> .
+
+<http://purl.org/twc/id/software/csv2rdf4lod> rdfs:seeAlso <https://github.com/timrdf/csv2rdf4lod-automation/wiki> .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> a doap:Project ;
+	doap:implements <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/URI_design_for_RDF_conversion_of_CSV-based_data> , <http://purl.org/twc/vocab/conversion/> ;
+	dcterms:author <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:developer <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/GregoryToddWilliams> , <http://kasei.us/about/foaf.xrdf#greg> , <http://tw.rpi.edu/instances/JamesMcCusker> , <http://tw.rpi.edu/instances/ZhenningShangguan> ;
+	doap:maintainer <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:documenter <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/JohannaFlores> , <http://tw.rpi.edu/instances/LiDing> , <http://tw.rpi.edu/instances/GinoGervasio> ;
+	doap:helper <http://tw.rpi.edu/instances/AlvaroGraves> , <http://tw.rpi.edu/instances/DominicDiFranzo> , <http://tw.rpi.edu/instances/GinoGervasio> , <http://tw.rpi.edu/instances/PingWang> , <http://tw.rpi.edu/instances/XianLi> , <http://tw.rpi.edu/instances/JamesMcCusker> , <http://www.w3.org/People/Eric/ericP-foaf#ericP> , <http://tw.rpi.edu/instances/AnkitSrivastava> , <http://purl.org/twc/id/person/Maryam_Fazel-Zarandi> , <http://tw.rpi.edu/instances/AlexanderLahuerta> ;
+	doap:homepage <https://github.com/timrdf/csv2rdf4lod-automation/wiki> ;
+	doap:audience "Data modelers and architects that need (potentially non-RDB) tabular data encoded within the Resource Description Framework." ;
+	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
+	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
+
+_:node17ruj928vx54 a doap:GitRepository ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
+	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
+
+<http://tw.rpi.edu/instances/GregoryToddWilliams> con:preferredURI <http://kasei.us/about/foaf.xrdf#greg> .
+
+<http://tw.rpi.edu/instances/AlvaroGraves> con:preferredURI <http://alvaro.graves.cl> .
+
+<http://purl.org/twc/id/person/TimLebo> con:preferredURI <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://tw.rpi.edu/wiki/Special:URIResolver/Tim_Lebo> con:preferredURI <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://www.cs.rpi.edu/~weavej3/r/Tim_Lebo> con:preferredURI <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://purl.org/twc/id/person/Maryam_Fazel-Zarandi> con:preferredURI <http://tw.rpi.edu/instances/MaryamFazel-Zarandi> .
+
+_:node17ruj928vx51 a rdf:List ;
+	rdf:first provenance_1:nodeset_4 .
+
+provenance_1:nodeset_4 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://purl.org/twc/semmdd/source/aeap_nys/filedfw_lake_samples/version/2013-April-24/manual/AEAP_rotifers_web.csv> .
+
+_:node17ruj928vx51 rdf:rest _:node17ruj928vx55 .
+
+_:node17ruj928vx55 a rdf:List ;
+	rdf:first provenance_1:nodeset_5 .
+
+provenance_1:nodeset_5 a pmlj:NodeSet ;
+	pmlj:hasConclusion <http://purl.org/twc/semmdd/source/aeap_nys/filedfw_lake_samples/version/2013-April-24/manual/AEAP_rotifers_web.csv.e1.params.ttl> .
+
+_:node17ruj928vx55 rdf:rest rdf:nil .
+
+_:node17ruj928vx53 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://purl.org/twc/semmdd/source/aeap_nys/filedfw_lake_samples/version/2013-April-24/manual/AEAP_rotifers_web.csv.e1.params.ttl> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
+
+_:node17ruj928vx52 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <http://purl.org/twc/semmdd/source/aeap_nys/filedfw_lake_samples/version/2013-April-24/manual/AEAP_rotifers_web.csv> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/filedfw_lake_samples/version/2013-April-24/manual/AEAP_rotifers_web.csv> a pmlp:Information ;
+	pmlp:hasFormat <http://iw.cs.utep.edu/registry/FMT/text/CSV.owl#CSV> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/filedfw_lake_samples/version/2013-April-24/manual/AEAP_rotifers_web.csv.e1.params.ttl> a pmlp:Information ;
+	pmlp:hasFormat <http://inference-web.org/registry/FMT/RDFAbstractSyntax.owl#RDFAbstractSyntax> .
+
+conversion:SameAsDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_class rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:has_version rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:MetaDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:num_triples rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhances rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhancement_layer rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:DatasetSample rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:source_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:VersionedDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:LayerDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:base_uri rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_predicate rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:interpretation rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:symbol rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:dataset_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:conversion_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:AbstractDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:null rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:subject_discriminator rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:Dataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:version_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+<http://tw.rpi.edu/instances/BrendanAshby> dcterms:identifier "ashbyb" .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> conversion:base_uri "http://purl.org/twc/semmdd"^^xsd:anyURI .
+
+_:node17ruj92amx1 a conversion:EnhancementConversionProcess ;
+	conversion:enhancement_identifier "1" ;
+	conversion:subject_discriminator "aeap-rotifers-web" .
+
+_:node17ruj92amx2 a foaf:OnlineAccount ;
+	foaf:accountName "ashbyb" ;
+	sioc:account_of <http://tw.rpi.edu/instances/BrendanAshby> .
+
+_:node17ruj92amx1 dcterms:creator _:node17ruj92amx2 ;
+	dcterms:created "2013-05-28T17:30:09+00:00"^^xsd:dateTime ;
+	conversion:delimits_cell "," .
+
+_:node17ruj92amx3 ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "Lake Name" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx3 .
+
+_:node17ruj92amx4 ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "Date" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx4 .
+
+_:node17ruj92amx5 ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "Anuraeopsis fissa Gosse 1851" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx5 .
+
+_:node17ruj92amx6 ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "Anuraeopsis navicula?Rousselet, 1911" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx6 .
+
+_:node17ruj92amx7 ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "Ascomorpha ecaudas Perty 1850" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx7 .
+
+_:node17ruj92amx8 ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "Ascomorpha ovalis Bergendal 1892" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx8 .
+
+_:node17ruj92amx9 ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "Ascomorpha saltans Bartsch 1870" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx9 .
+
+_:node17ruj92amx10 ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "Asplanchna herricki De Guerne 1888" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx10 .
+
+_:node17ruj92amx11 ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "Asplanchna priodonta Gosse 1850" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx11 .
+
+_:node17ruj92amx12 ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "Cephalodella gibba Ehrbg. 1832" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx12 .
+
+_:node17ruj92amx13 ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "Collotheca mutabilis Hudson 1885" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx13 .
+
+_:node17ruj92amx14 ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "Collurella ucinata Muller 1773" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx14 .
+
+_:node17ruj92amx15 ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "Conochiloides dossaurius Hudson 1885" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx15 .
+
+_:node17ruj92amx16 ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "Conochilus unicornis Rousselet 1892" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx16 .
+
+_:node17ruj92amx17 ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "Encentrum species" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx17 .
+
+_:node17ruj92amx18 ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "Euchlanis pellucida Harring 1921" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx18 .
+
+_:node17ruj92amx19 ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "Filinia terminalis Platte 1886" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx19 .
+
+_:node17ruj92amx20 ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "Gastropus stylifer Imhoff 1891" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx20 .
+
+_:node17ruj92amx21 ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "Hexarthra mira Hudson 1871" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx21 .
+
+_:node17ruj92amx22 ov:csvCol "20"^^xsd:integer ;
+	ov:csvHeader "Kellicottia bostonensis Rousselet 1892" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx22 .
+
+_:node17ruj92amx23 ov:csvCol "21"^^xsd:integer ;
+	ov:csvHeader "Kellicottia longispina Kelicott 1879" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx23 .
+
+_:node17ruj92amx24 ov:csvCol "22"^^xsd:integer ;
+	ov:csvHeader "Keratella cochlearis Gosse 1851" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx24 .
+
+_:node17ruj92amx25 ov:csvCol "23"^^xsd:integer ;
+	ov:csvHeader "Keratella crassa Ahlstrom 1943" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx25 .
+
+_:node17ruj92amx26 ov:csvCol "24"^^xsd:integer ;
+	ov:csvHeader "Keratella earlinae Ahlstrom 1943" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx26 .
+
+_:node17ruj92amx27 ov:csvCol "25"^^xsd:integer ;
+	ov:csvHeader "Keratella hiemalis Carlin 1943" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx27 .
+
+_:node17ruj92amx28 ov:csvCol "26"^^xsd:integer ;
+	ov:csvHeader "Keratella serrulata Rylov 1926" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx28 .
+
+_:node17ruj92amx29 ov:csvCol "27"^^xsd:integer ;
+	ov:csvHeader "Keratella taurocephala Meyers 1938" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx29 .
+
+_:node17ruj92amx30 ov:csvCol "28"^^xsd:integer ;
+	ov:csvHeader "Keratella tecta Gosse 1841" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx30 .
+
+_:node17ruj92amx31 ov:csvCol "29"^^xsd:integer ;
+	ov:csvHeader "Lapdella sp" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx31 .
+
+_:node17ruj92amx32 ov:csvCol "30"^^xsd:integer ;
+	ov:csvHeader "Lecane crepida  Harring 1914" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx32 .
+
+_:node17ruj92amx33 ov:csvCol "31"^^xsd:integer ;
+	ov:csvHeader "Lecane flexilis Gosse 1886" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx33 .
+
+_:node17ruj92amx34 ov:csvCol "32"^^xsd:integer ;
+	ov:csvHeader "Lecane luna Muller 1776" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx34 .
+
+_:node17ruj92amx35 ov:csvCol "33"^^xsd:integer ;
+	ov:csvHeader "Lecane mira Murray 1913" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx35 .
+
+_:node17ruj92amx36 ov:csvCol "34"^^xsd:integer ;
+	ov:csvHeader "Lecane mucronata Harring & Meyers 1926" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx36 .
+
+_:node17ruj92amx37 ov:csvCol "35"^^xsd:integer ;
+	ov:csvHeader "Lecane species" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx37 .
+
+_:node17ruj92amx38 ov:csvCol "36"^^xsd:integer ;
+	ov:csvHeader "Lecane tenuisetta  Harring 1914" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx38 .
+
+_:node17ruj92amx39 ov:csvCol "37"^^xsd:integer ;
+	ov:csvHeader "lecane tudicola Harring & Meyers 1926" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx39 .
+
+_:node17ruj92amx40 ov:csvCol "38"^^xsd:integer ;
+	ov:csvHeader "Manfredium eudactylotum Gosse 1886" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx40 .
+
+_:node17ruj92amx41 ov:csvCol "39"^^xsd:integer ;
+	ov:csvHeader "Microcodon clavus" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx41 .
+
+_:node17ruj92amx42 ov:csvCol "40"^^xsd:integer ;
+	ov:csvHeader "Monostyla closterocerca Schmarda 1895" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx42 .
+
+_:node17ruj92amx43 ov:csvCol "41"^^xsd:integer ;
+	ov:csvHeader "Monostyla copeis Harring & Meyers 1926" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx43 .
+
+_:node17ruj92amx44 ov:csvCol "42"^^xsd:integer ;
+	ov:csvHeader "Monostyla lunaris Ehrbg. 1882" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx44 .
+
+_:node17ruj92amx45 ov:csvCol "43"^^xsd:integer ;
+	ov:csvHeader "Monostyla obtusa Murray 1913" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx45 .
+
+_:node17ruj92amx46 ov:csvCol "44"^^xsd:integer ;
+	ov:csvHeader "Ploesoma truncatum Levander 1894" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx46 .
+
+_:node17ruj92amx47 ov:csvCol "45"^^xsd:integer ;
+	ov:csvHeader "Polyarthra euryptera Wierzejski 1893" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx47 .
+
+_:node17ruj92amx48 ov:csvCol "46"^^xsd:integer ;
+	ov:csvHeader "Polyarthra major Burckhardt 1900" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx48 .
+
+_:node17ruj92amx49 ov:csvCol "47"^^xsd:integer ;
+	ov:csvHeader "Polyarthra remata Skorikov 1896" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx49 .
+
+_:node17ruj92amx50 ov:csvCol "48"^^xsd:integer ;
+	ov:csvHeader "Polyarthra vulgaris Carlin 1943" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx50 .
+
+_:node17ruj92amx51 ov:csvCol "49"^^xsd:integer ;
+	ov:csvHeader "remove" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx51 .
+
+_:node17ruj92amx52 ov:csvCol "50"^^xsd:integer ;
+	ov:csvHeader "Synchaeta pectinata Ehrbg.  1892" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx52 .
+
+_:node17ruj92amx53 ov:csvCol "51"^^xsd:integer ;
+	ov:csvHeader "Total Rotifers" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx53 .
+
+_:node17ruj92amx54 ov:csvCol "52"^^xsd:integer ;
+	ov:csvHeader "Trichocerca cyclindrica Imhoff 1981" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx54 .
+
+_:node17ruj92amx55 ov:csvCol "53"^^xsd:integer ;
+	ov:csvHeader "Trichocerca elongata Gosse 1886" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx55 .
+
+_:node17ruj92amx56 ov:csvCol "54"^^xsd:integer ;
+	ov:csvHeader "Trichocerca insignis Herrick 1885" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx56 .
+
+_:node17ruj92amx57 ov:csvCol "55"^^xsd:integer ;
+	ov:csvHeader "Trichocerca multicrinis Kelicott 1897" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx57 .
+
+_:node17ruj92amx58 ov:csvCol "56"^^xsd:integer ;
+	ov:csvHeader "Trichocerca porcellus Gosse 1886" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx58 .
+
+_:node17ruj92amx59 ov:csvCol "57"^^xsd:integer ;
+	ov:csvHeader "Trichocerca pusilla Jennings 1993" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx59 .
+
+_:node17ruj92amx60 ov:csvCol "58"^^xsd:integer ;
+	ov:csvHeader "Trichocerca rousseleti Voight 1901" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx60 .
+
+_:node17ruj92amx61 ov:csvCol "59"^^xsd:integer ;
+	ov:csvHeader "Trichocerca sp" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx61 .
+
+_:node17ruj92amx62 ov:csvCol "60"^^xsd:integer ;
+	ov:csvHeader "Trichotria tetractis tetractis (Ehrenberg, 1830) " ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx62 .
+
+_:node17ruj92amx63 ov:csvCol "61"^^xsd:integer ;
+	ov:csvHeader "Unknown one toe" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17ruj92amx1 conversion:enhance _:node17ruj92amx63 .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1> conversion:conversion_process _:node17ruj92amx1 .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/subset/meta> a aeap_nys_vocab:Dataset , conversion:Dataset , conversion:MetaDataset , void:Dataset ;
+	conversion:base_uri "http://purl.org/twc/semmdd" ;
+	conversion:source_identifier "aeap_nys" ;
+	conversion:dataset_identifier "dfw_lake_samples" ;
+	dcterms:modified "2013-06-01T00:48:02.555-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <http://purl.org/twc/semmdd/source/aeap_nys/dataset_page/dfw_lake_samples/subset/meta> ;
+	void:dataDump <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.void> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/version/2013-April-24/conversion/enhancement/1> conversion:num_triples "69988"^^xsd:integer ;
+	void:triples "69988"^^xsd:integer ;
+	prov:wasGeneratedBy provenance_1:translationActivity_da81bd1a-bbd8-4cd3-bdf9-c4a5150b8710 .
+
+provenance_1:translationActivity_da81bd1a-bbd8-4cd3-bdf9-c4a5150b8710 a prov:Activity , <http://provenanceweb.org/ns/pml#TranslationActivity> ;
+	conversion:triples_per_minute "1513799.5674116798"^^xsd:double ;
+	prov:used e1:lake_name , ov:csvRow , e1:lecane_crepida_harring_1914 , ov:subjectDiscriminator , e1:lecane_luna_muller_1776 , e1:trichocerca_cyclindrica_imhoff_1981 , e1:filinia_terminalis_platte_1886 , e1:lecane_mucronata_harring_meyers_1926 , e1:trichocerca_pusilla_jennings_1993 , e1:trichocerca_multicrinis_kelicott_1897 , e1:anuraeopsis_navicula_rousselet_1911 , e1:gastropus_stylifer_imhoff_1891 , e1:keratella_earlinae_ahlstrom_1943 , e1:anuraeopsis_fissa_gosse_1851 , e1:trichocerca_rousseleti_voight_1901 , e1:collurella_ucinata_muller_1773 , e1:asplanchna_priodonta_gosse_1850 , e1:keratella_serrulata_rylov_1926 , e1:monostyla_copeis_harring_meyers_1926 , e1:ascomorpha_ovalis_bergendal_1892 , e1:lecane_tenuisetta_harring_1914 , e1:monostyla_lunaris_ehrbg_1882 , e1:date , e1:synchaeta_pectinata_ehrbg_1892 , e1:polyarthra_euryptera_wierzejski_1893 , e1:microcodon_clavus , e1:euchlanis_pellucida_harring_1921 , e1:lecane_mira_murray_1913 , e1:keratella_hiemalis_carlin_1943 , e1:lapdella_sp , e1:trichocerca_porcellus_gosse_1886 , e1:trichotria_tetractis_tetractis_ehrenberg_1830 , void:inDataset , e1:polyarthra_major_burckhardt_1900 , e1:keratella_cochlearis_gosse_1851 , dcterms:isReferencedBy , e1:polyarthra_vulgaris_carlin_1943 , e1:ploesoma_truncatum_levander_1894 , e1:ascomorpha_ecaudas_perty_1850 , e1:keratella_taurocephala_meyers_1938 , e1:lecane_tudicola_harring_meyers_1926 , e1:conochilus_unicornis_rousselet_1892 , e1:cephalodella_gibba_ehrbg_1832 , e1:kellicottia_longispina_kelicott_1879 , e1:monostyla_obtusa_murray_1913 , e1:conochiloides_dossaurius_hudson_1885 , e1:trichocerca_elongata_gosse_1886 , e1:total_rotifers , e1:monostyla_closterocerca_schmarda_1895 , e1:encentrum_species , e1:polyarthra_remata_skorikov_1896 , e1:manfredium_eudactylotum_gosse_1886 , e1:unknown_one_toe , e1:lecane_flexilis_gosse_1886 , e1:kellicottia_bostonensis_rousselet_1892 , e1:hexarthra_mira_hudson_1871 , e1:asplanchna_herricki_de_guerne_1888 , e1:lecane_species , e1:trichocerca_insignis_herrick_1885 , e1:collotheca_mutabilis_hudson_1885 , e1:remove , e1:ascomorpha_saltans_bartsch_1870 , e1:keratella_tecta_gosse_1841 , e1:trichocerca_sp , e1:keratella_crassa_ahlstrom_1943 ;
+	void:vocabulary <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/> , <http://open.vocab.org/terms/> , <http://rdfs.org/ns/void#> , <http://purl.org/dc/terms/> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/subset/meta> conversion:uses_predicate ov:csvRow , <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> , void:dataDump , conversion:VersionedDataset , rdfs:label , foaf:topic , foaf:isPrimaryTopicOf , dcterms:author , doap:implements , pmlj:hasInferenceEngine , dcterms:identifier , doap:revision , dcterms:modified , conversion:enhancement_layer , vann:preferredNamespaceUri , rdfs:isDefinedBy , doap:helper , conversion:uses_predicate , ov:csvCol , doap:audience , doap:description , dcterms:format , doap:documenter , conversion:conversion_identifier , rdfs:range , conversion:version_identifier , pmlp:hasFormat , doap:homepage , conversion:num_triples , doap:shortdesc , pmlj:hasConclusion , dcterms:isReferencedBy , pmlj:hasAntecedentList , foaf:primaryTopic , conversion:base_uri , <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> , void:exampleResource , conversion:dataset_identifier , conversion:enhancement_identifier , rdf:type , void:subset , con:preferredURI , void:triples , doap:browse , doap:developer , ov:csvHeader , rdfs:seeAlso , doap:maintainer , conversion:enhances , conversion:source_identifier , conversion:LayerDataset , dcterms:contributor , doap:platform , vann:preferredNamespacePrefix , pmlj:isConsequentOf , <http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> , void:vocabulary , conversion:subject_discriminator , dcterms:version ;
+	void:vocabulary <http://open.vocab.org/terms/> , <http://inference-web.org/2.1exper/pml-provenance.owl#> , <http://rdfs.org/ns/void#> , <http://purl.org/twc/vocab/conversion/> , <http://www.w3.org/2000/01/rdf-schema#> , <http://xmlns.com/foaf/0.1/> , <http://purl.org/dc/terms/> , <http://usefulinc.com/ns/doap#> , <http://inference-web.org/2.0/pml-justification.owl#> , <http://purl.org/vocab/vann/> , <http://inference-web.org/2.0/pml-provenance.owl#> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#> , <http://www.w3.org/2000/10/swap/pim/contact#> .
+
+<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> rdfs:isDefinedBy <http://inference-web.org/2.1exper/pml-provenance.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+void:dataDump rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+conversion:VersionedDataset prov:wasAttributedTo <http://purl.org/twc> .
+
+rdfs:label rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	prov:wasAttributedTo <http://www.w3.org> .
+
+foaf:topic rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	prov:wasAttributedTo <http://xmlns.com> .
+
+foaf:isPrimaryTopicOf rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	prov:wasAttributedTo <http://xmlns.com> .
+
+dcterms:author rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+doap:implements rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+pmlj:hasInferenceEngine rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+dcterms:identifier rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+doap:revision rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+dcterms:modified rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+conversion:enhancement_layer prov:wasAttributedTo <http://purl.org/twc> .
+
+vann:preferredNamespaceUri rdfs:isDefinedBy <http://purl.org/vocab/vann/> ;
+	prov:wasAttributedTo <http://purl.org/vocab> .
+
+rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	prov:wasAttributedTo <http://www.w3.org> .
+
+doap:helper rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+conversion:uses_predicate prov:wasAttributedTo <http://purl.org/twc> .
+
+ov:csvCol rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	prov:wasAttributedTo <http://open.vocab.org> .
+
+doap:audience rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+doap:description rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+dcterms:format rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+doap:documenter rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+conversion:conversion_identifier prov:wasAttributedTo <http://purl.org/twc> .
+
+rdfs:range rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	prov:wasAttributedTo <http://www.w3.org> .
+
+conversion:version_identifier prov:wasAttributedTo <http://purl.org/twc> .
+
+pmlp:hasFormat rdfs:isDefinedBy <http://inference-web.org/2.0/pml-provenance.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+doap:homepage rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+conversion:num_triples prov:wasAttributedTo <http://purl.org/twc> .
+
+doap:shortdesc rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+pmlj:hasConclusion rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+pmlj:hasAntecedentList rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+foaf:primaryTopic rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	prov:wasAttributedTo <http://xmlns.com> .
+
+conversion:base_uri prov:wasAttributedTo <http://purl.org/twc> .
+
+<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> rdfs:isDefinedBy <http://inference-web.org/2.1exper/pml-provenance.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+void:exampleResource rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+conversion:dataset_identifier prov:wasAttributedTo <http://purl.org/twc> .
+
+conversion:enhancement_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+rdf:type rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+	prov:wasAttributedTo <http://www.w3.org> .
+
+void:subset rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+con:preferredURI rdfs:isDefinedBy <http://www.w3.org/2000/10/swap/pim/contact#> ;
+	prov:wasAttributedTo <http://www.w3.org> .
+
+void:triples rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+doap:browse rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+doap:developer rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+ov:csvHeader rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	prov:wasAttributedTo <http://open.vocab.org> .
+
+rdfs:seeAlso rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	prov:wasAttributedTo <http://www.w3.org> .
+
+doap:maintainer rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+conversion:enhances prov:wasAttributedTo <http://purl.org/twc> .
+
+conversion:source_identifier prov:wasAttributedTo <http://purl.org/twc> .
+
+conversion:LayerDataset prov:wasAttributedTo <http://purl.org/twc> .
+
+dcterms:contributor rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+doap:platform rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	prov:wasAttributedTo <http://usefulinc.com> .
+
+vann:preferredNamespacePrefix rdfs:isDefinedBy <http://purl.org/vocab/vann/> ;
+	prov:wasAttributedTo <http://purl.org/vocab> .
+
+pmlj:isConsequentOf rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> rdfs:isDefinedBy <http://inference-web.org/2.1exper/pml-provenance.owl#> ;
+	prov:wasAttributedTo <http://inference-web.org> .
+
+void:vocabulary rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+conversion:subject_discriminator prov:wasAttributedTo <http://purl.org/twc> .
+
+dcterms:version rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	prov:wasAttributedTo <http://purl.org/dc> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/subset/meta> conversion:uses_class void:Dataset , foaf:Agent , conversion:MetaDataset , aeap_nys_vocab:Dataset , conversion:DatasetSample , conversion:AbstractDataset , void:DatasetDescription , conversion:Dataset ;
+	void:vocabulary <http://purl.org/twc/semmdd/source/aeap_nys/vocab/> .
+
+void:Dataset rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+foaf:Agent rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	prov:wasAttributedTo <http://xmlns.com> .
+
+conversion:MetaDataset prov:wasAttributedTo <http://purl.org/twc> .
+
+aeap_nys_vocab:Dataset rdfs:isDefinedBy <http://purl.org/twc/semmdd/source/aeap_nys/vocab/> ;
+	prov:wasAttributedTo <http://purl.org/twc> .
+
+conversion:DatasetSample prov:wasAttributedTo <http://purl.org/twc> .
+
+conversion:AbstractDataset prov:wasAttributedTo <http://purl.org/twc> .
+
+void:DatasetDescription rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	prov:wasAttributedTo <http://rdfs.org> .
+
+conversion:Dataset prov:wasAttributedTo <http://purl.org/twc> .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/version/2013-April-24/conversion/enhancement/1> rdfs:comment "hash: 88e961dbf4c6d8a789ee636aaa08e5eeb681336ef38a" .
