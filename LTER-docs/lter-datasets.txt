@@ -1,0 +1,80 @@
+GV201:
+webpage:
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.4005
+EML:
+http://metacat.lternet.edu/knb/metacat?action=read&qformat=xml&docid=knb-lter-sbc.4005
+(look for distribution->online->download)
+data files references in EML:
+http://sbc.lternet.edu/external/Land/Protocols/Precipitation/SBCLTER_Precipitation_Measurement_2009.pdf
+http://sbc.lternet.edu/external/Land/Data/Precipitation//GV201_precip_allyears.txt
+
+GV202:
+webpage:
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.4006
+EML:
+http://metacat.lternet.edu/knb/metacat?action=read&qformat=xml&docid=knb-lter-sbc.4006
+data files referenced in EML:
+http://sbc.lternet.edu/external/Land/Protocols/Precipitation/SBCLTER_Precipitation_Measurement_2009.pdf
+http://sbc.lternet.edu/external/Land/Data/Precipitation//GV202_precip_allyears_2012-03-03.txt
+
+HO201
+webpage:
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.4007
+EML:
+http://metacat.lternet.edu/knb/metacat?action=read&qformat=xml&docid=knb-lter-sbc.4007
+data files rferenced in EML:
+http://sbc.lternet.edu/external/Land/Protocols/Precipitation/SBCLTER_Precipitation_Measurement_2009.pdf
+http://sbc.lternet.edu/external/Land/Data/Precipitation//HO201_precip_allyears_2012-03-03.txt
+
+HO202
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.4008
+
+Stream flow
+GV01
+webpage:
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.3007
+EML:
+http://metacat.lternet.edu/knb/metacat?action=read&qformat=xml&docid=knb-lter-sbc.3007
+data file references in EML:
+http://sbc.lternet.edu/external/Land/Protocols/Stream_Discharge/Melack_20090529_SBCLTER_Stream_Discharge_Measurement.pdf
+http://sbc.lternet.edu/external/Land/Protocols/Stream_Discharge/Melack_20090529_SBCLTER_Stream_Discharge_Data_Processing.pdf
+http://sbc.lternet.edu/external/Land/Data/Stream_Discharge//GV01_allyears_2012-03-03.txt
+
+water chemistry
+webpage:
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.6
+EML:
+http://metacat.lternet.edu/knb/metacat?action=read&qformat=xml&docid=knb-lter-sbc.6
+data files referenced in EML:
+http://sbc.lternet.edu/external/Land/Protocols/Stream_Chemistry/Melack_20090526_SBCLTER_Stream_Chemistry_Sample_Collection.pdf
+http://sbc.lternet.edu/external/Land/Protocols/Stream_Chemistry/Melack_Schimel_20090529_SBCLTER_Laboratory_Analyses.pdf
+http://sbc.lternet.edu/external/Land/Data/Stream_Chemistry/sbclter_stream_chemistry_allyears_registered_stations_20120229.csv
+http://sbc.lternet.edu/external/Land/Data/Stream_Chemistry/sbclter_stream_chemistry_allyears_non_registered_stations_20120229.csv
+
+
+
+
+--------------------
+precip data
+
+GV201
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.4005
+GV202
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.4006
+HO201
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.4007
+HO202
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.4008
+
+Stream flow
+GV01
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.3007
+ON02
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.3010
+HO00
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.3008
+
+
+water chemistry
+http://sbc.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-sbc.6
+

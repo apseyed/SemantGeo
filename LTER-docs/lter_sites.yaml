@@ -1,0 +1,125 @@
+AND
+  -Andrews Forest LTER
+  -HJ Andrews Experimental Forest (organization) 
+ARC
+  -Arctic LTER
+  -Toolik Lake
+BES
+  -Baltimore Ecosystem Study
+BNZ
+  -Bonanza Creek LTER
+CCE
+  -California Current Ecosystem LTER
+CDR
+  -Cedar Creek LTER
+  -Cedar Creek Ecosystem Science Reserve
+CAP
+  -Central Arizona - Phoenix LTER
+CWT
+  -Coweeta LTER
+  -The Coweeta Hydorlogic Laboratory
+FCE
+  -Florida Coastal Everglades LTER
+GCE
+  -Georgia Coastal Ecosystems LTER
+  -Sapelo
+HFR
+  -Harvard Forest LTER
+HBR
+  -Hubbard Brook LTER
+  -Hubbard Brook Ecosystem Study
+JRN
+  -Jornada Basin LTER
+  -Jornada Experimental Range
+KBS
+  -Kellogg Biological Station LTER
+KNZ
+  -Konza Prairie LTER
+LUQ
+  -Luquillo LTER
+  -Luquillo Experimental Forest
+MCM
+- McMurdo Dry Valleys LTER
+MCR
+  -Moorea Coral Reef LTER
+NWT
+  -Niwot Ridge LTER
+NTL
+  -North Temperate Lakes LTER
+PAL
+  -Palmer Antarctica LTER
+PIE
+  -Plum Island Ecosystems LTER
+SBC
+  -Santa Barbara Coastal LTER
+SEV
+  -Sevilleta LTER
+SGS
+  -Shortgrass Steppe
+VCR
+  -Virginia Coast Reserve LTER
+  -Virginia Coastal Reserve LTER (erroneous)
+NIN
+  -North Inlet LTER
+  
+  
+  Administrative Organization.
+  Field Site (Field Station and GeoLocation)
+  
+  "has field site".  
+
+  
+  
+  
+  (organizations that have a boundry and those that don't)
+  
+  
+  (Toolik Lake is a field station that Artic LTER does there studies at.
+  Toolik Lake is also a lake that the LTER studies are pooled from.
+  )
+  
+  
+  does this also refer to Cedar Creek LTER.
+  
+  
+  from LTER ^ sapelo -> GeoCoastal Ecosystem 
+  
+  look at paper "Converting and Annotating Quantitative Data Tables"
+  paper SKOS hidden label for wrong terms.
+  http://www.w3.org/TR/2009/NOTE-skos-primer-20090818/#sechidden
+  
+  ex:animals rdf:type skos:Concept;
+  skos:prefLabel "animaux"@fr;
+  skos:altLabel "bêtes"@fr;
+  skos:hiddenLabel "betes"@fr.
+
+
+:Andrews_Forest_LTER a <http://www.w3.org/ns/org#Organization> ;
+     rdfs:label "Andrews Forest LTER" ;
+     rdfs:label "AND" ;
+     skos:confused_with "HJ Andrews Experimental Forest" ;
+     :has_field_site :HJ_Andrews_Experimental_Forest .
+
+:HJ_Andrews_Experimental_Forest a bfo:site ;
+     rdfs:label "HJ Andrews Experimental Forest" .
+     
+     
+     skos:confused_with rdfs:subPropertyOf skos:hidden_label .
+     
+     try to use confused_with as an object property!
+     what does that buy us?
+     
+     
+     
+     
+     
+     :mass 
+   patrice:confused_with :weight; 
+   rdfs:label "mass" . 
+
+:weight rdfs:label "weight" ."
+     
+     
+     
+     
+     organization ontology: http://www.w3.org/TR/vocab-org/
