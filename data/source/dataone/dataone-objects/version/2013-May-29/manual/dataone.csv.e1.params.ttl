@@ -339,24 +339,25 @@
          conversion:range   todo:Literal;
       ];
       conversion:enhance [
-         ov:csvCol          37;
+         #ov:csvCol          37;
          ov:csvHeader       "isSpatial";
          #conversion:label   "isSpatial";
          conversion:comment "";
          conversion:range   todo:Literal;
       ];
       conversion:enhance [
-         ov:csvCol          38;
+         #ov:csvCol          38;
          ov:csvHeader       "keyConcept";
          #conversion:label   "keyConcept";
          conversion:comment "";
          conversion:range   todo:Literal;
       ];
       conversion:enhance [
-         ov:csvCol          39;
+         ov:csvCol          38;
          ov:csvHeader       "keywords";
          #conversion:label   "keywords";
          conversion:comment "";
+         conversion:delimits_object ",\\s*";
          conversion:range   todo:Literal;
       ];
       conversion:enhance [
