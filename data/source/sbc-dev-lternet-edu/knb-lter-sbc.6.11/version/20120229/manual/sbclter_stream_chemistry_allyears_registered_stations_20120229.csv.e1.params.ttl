@@ -97,7 +97,7 @@
          ov:csvHeader       "site_code";
          conversion:bundled_by :a_sample;
          conversion:label   "Site";
-         #conversion:equivalent_property dcterms:identifier;
+         conversion:equivalent_property prov:hadLocation;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
          #conversion:range_template  "[/sd]thing[.]";
