@@ -5,20 +5,23 @@ http://localhost:8888/testGet.html
 
 3) copy the html file to a new name and have it make the GET request using the skipper kogen appropriate (described below).
 
-
 4) Once that is complete you are ready to begin the project!
 The goal is to take as input a text string, and call two different services with that string for query expansion.
 
-you will expand based on topics:
+you will expand a search term based on topics:
 http://alchemist.nceas.ucsb.edu/tmosearch/get_results_topic_expansion.php?q=insect%20herbivore
 
-and also expand based on taxonomic classification:
+and also expand a search term based on taxonomic classification:
 http://data1.tw.rpi.edu/tomcat/VocabularyServer/ServeSparql?term=passeriformes&Submit=Submit&domain=organism&getTree=true&upward=true&level=1
  
-
-Once expansion is doing the terms are fed into the service:
+Once expansion is done the terms are fed into the service:
 http://cn-orc-1.dataone.org/cn/v1/query/solr/?
 
+as shown in the current testGet.html, you will output the different result sets in different tables. However, what we want to see if the results that the topic based expansion provides that the taxonomic classication does not, and vice versa. The primary task is to output those as two different result sets. However you implement the calculations of these difference set is up to you, but please do so efficiently. 
+
+
+
+--------------------------------------
 
 There is a inherent access issue with calling remote webpages from within javascript.
 Typically you get an error:
