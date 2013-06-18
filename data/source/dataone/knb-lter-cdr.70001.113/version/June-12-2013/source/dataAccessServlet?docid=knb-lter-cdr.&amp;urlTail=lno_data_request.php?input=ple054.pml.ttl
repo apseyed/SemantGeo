@@ -1,0 +1,135 @@
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:    <http://purl.org/dc/terms/> .
+@prefix pmlp:       <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj:       <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix foaf:       <http://xmlns.com/foaf/0.1/> .
+@prefix sioc:       <http://rdfs.org/sioc/ns#> .
+@prefix oboro:      <http://obofoundry.org/ro/ro.owl#> .
+@prefix oprov:      <http://openprovenance.org/ontology#> .
+@prefix hartigprov: <http://purl.org/net/provenance/ns#> .
+@prefix irw:        <http://www.ontologydesignpatterns.org/ont/web/irw.owl#> .
+@prefix nfo:        <http://www.semanticdesktop.org/ontologies/nfo/#> .
+@prefix conv:       <http://purl.org/twc/vocab/conversion/> .
+@prefix httphead:   <http://inference-web.org/registry/MPR/HTTP_1_1_HEAD.owl#> .
+@prefix httpget:    <http://inference-web.org/registry/MPR/HTTP_1_1_GET.owl#> .
+@prefix httppost:   <http://inference-web.org/registry/MPR/HTTP_1_1_POST.owl#> .
+@prefix prov:       <http://www.w3.org/ns/prov#> .
+
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix sioc:    <http://rdfs.org/sioc/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+
+
+<http://metacat.lternet.edu/das/dataAccessServlet?docid=knb-lter-cdr.&amp;urlTail=lno_data_request.php?input=ple054>
+   a pmlp:Source, prov:Entity;
+.
+
+<http://metacat.lternet.edu/das/dataAccessServlet?docid=knb-lter-cdr.&amp;urlTail=lno_data_request.php?input=ple054>
+   a pmlp:Source, prov:Entity;
+.
+
+<dataAccessServlet?docid=knb-lter-cdr.&amp;urlTail=lno_data_request.php?input=ple054>
+   a nfo:FileDataObject, prov:Entity, pmlp:Information;
+   prov:wasQuotedFrom      <http://metacat.lternet.edu/das/dataAccessServlet?docid=knb-lter-cdr.&amp;urlTail=lno_data_request.php?input=ple054>;
+   prov:qualifiedQuotation <quotation_d779ba3b-80fe-46b7-a4fc-361613dd42c9>;
+   pmlp:hasReferenceSourceUsage <sourceUsaged779ba3b-80fe-46b7-a4fc-361613dd42c9_content>;
+.
+<dataAccessServlet?docid=knb-lter-cdr.&amp;urlTail=lno_data_request.php?input=ple054>
+   a nfo:FileDataObject;
+   nfo:fileName "dataAccessServlet?docid=knb-lter-cdr.&amp;urlTail=lno_data_request.php?input=ple054";
+   nfo:hasHash <md5_30f25fce3b31726e210c71c50190cac1_time_1371107242>;
+.
+<md5_30f25fce3b31726e210c71c50190cac1_time_1371107242>
+   a nfo:FileHash; 
+   dcterms:date      "2013-06-13T03:07:22-04:00"^^xsd:dateTime;
+   nfo:hashAlgorithm "md5";
+   nfo:hashValue     "30f25fce3b31726e210c71c50190cac1";
+.
+
+<nodeSetd779ba3b-80fe-46b7-a4fc-361613dd42c9_content>
+   a pmlj:NodeSet;
+   pmlj:hasConclusion <dataAccessServlet?docid=knb-lter-cdr.&amp;urlTail=lno_data_request.php?input=ple054>;
+   pmlj:isConsequentOf <inferenceStepd779ba3b-80fe-46b7-a4fc-361613dd42c9_content>;
+.
+<inferenceStepd779ba3b-80fe-46b7-a4fc-361613dd42c9_content>
+   a pmlj:InferenceStep;
+   pmlj:hasIndex 0;
+   pmlj:hasAntecedentList ();
+   pmlj:hasSourceUsage     <sourceUsaged779ba3b-80fe-46b7-a4fc-361613dd42c9_content>;
+   pmlj:hasInferenceEngine conv:curl_md5_2f4b3a60d162200a14892361aaefd4df;
+   pmlj:hasInferenceRule   httpget:HTTP_1_1_GET;
+   oboro:has_agent          [ a foaf:OnlineAccount; foaf:accountName "apseyed" ];
+   hartigprov:involvedActor [ a foaf:OnlineAccount; foaf:accountName "apseyed" ];
+.
+
+<quotation_d779ba3b-80fe-46b7-a4fc-361613dd42c9>
+   a prov:Quotation;
+   prov:entity <http://metacat.lternet.edu/das/dataAccessServlet?docid=knb-lter-cdr.&amp;urlTail=lno_data_request.php?input=ple054>;
+   prov:atTime "2013-06-13T03:07:05-04:00"^^xsd:dateTime;
+.
+
+<sourceUsaged779ba3b-80fe-46b7-a4fc-361613dd42c9_content>
+   a pmlp:SourceUsage;
+   pmlp:hasSource        <http://metacat.lternet.edu/das/dataAccessServlet?docid=knb-lter-cdr.&amp;urlTail=lno_data_request.php?input=ple054>;
+   pmlp:hasUsageDateTime "2013-06-13T03:07:05-04:00"^^xsd:dateTime;
+.
+
+<wasControlledByd779ba3b-80fe-46b7-a4fc-361613dd42c9_content>
+   a oprov:WasControlledBy;
+   oprov:cause  [ a foaf:OnlineAccount; foaf:accountName "apseyed" ];
+   oprov:effect <inferenceStepd779ba3b-80fe-46b7-a4fc-361613dd42c9_content>;
+   oprov:endTime "2013-06-13T03:07:05-04:00"^^xsd:dateTime;
+.
+ 
+<infod779ba3b-80fe-46b7-a4fc-361613dd42c9_url_header>
+   a pmlp:Information, conv:HTTPHeader;
+   pmlp:hasRawString """HTTP/1.1 200 OK
+Date: Thu, 13 Jun 2013 07:05:39 GMT
+Server: Apache/2.2.14 (Ubuntu)
+Content-Disposition: attachment; filename=knb-lter-cdr._1371107140273
+Content-Length: 602391
+Content-Type: application/notepad
+""";
+   pmlp:hasReferenceSourceUsage <sourceUsaged779ba3b-80fe-46b7-a4fc-361613dd42c9_url_header>;
+.
+ 
+<nodeSetd779ba3b-80fe-46b7-a4fc-361613dd42c9_url_header>
+   a pmlj:NodeSet;
+   pmlj:hasConclusion <infod779ba3b-80fe-46b7-a4fc-361613dd42c9_url_header>;
+   pmlj:isConsequentOf <inferenceStepd779ba3b-80fe-46b7-a4fc-361613dd42c9_url_header>;
+.
+<inferenceStepd779ba3b-80fe-46b7-a4fc-361613dd42c9_url_header>
+   a pmlj:InferenceStep;
+   pmlj:hasIndex 0;
+   pmlj:hasAntecedentList ();
+   pmlj:hasSourceUsage     <sourceUsaged779ba3b-80fe-46b7-a4fc-361613dd42c9_url_header>;
+   pmlj:hasInferenceEngine conv:curl_md5_2f4b3a60d162200a14892361aaefd4df;
+   pmlj:hasInferenceRule   httphead:HTTP_1_1_HEAD;
+   oboro:has_agent          [ a foaf:OnlineAccount; foaf:accountName "apseyed" ];
+   hartigprov:involvedActor [ a foaf:OnlineAccount; foaf:accountName "apseyed" ];
+.
+
+<sourceUsaged779ba3b-80fe-46b7-a4fc-361613dd42c9_url_header>
+   a pmlp:SourceUsage;
+   pmlp:hasSource        <http://metacat.lternet.edu/das/dataAccessServlet?docid=knb-lter-cdr.&amp;urlTail=lno_data_request.php?input=ple054>;
+   pmlp:hasUsageDateTime "2013-06-13T03:07:05-04:00"^^xsd:dateTime;
+.
+<wasControlledByd779ba3b-80fe-46b7-a4fc-361613dd42c9_url_header>
+   a oprov:WasControlledBy;
+   oprov:cause  [ a foaf:OnlineAccount; foaf:accountName "apseyed" ];
+   oprov:effect <nodeSetd779ba3b-80fe-46b7-a4fc-361613dd42c9_url_header>;
+   oprov:endTime "2013-06-13T03:07:05-04:00"^^xsd:dateTime;
+.
+
+
+conv:curl_md5_2f4b3a60d162200a14892361aaefd4df
+   a prov:Agent, pmlp:InferenceEngine, conv:Curl;
+   dcterms:identifier "md5_2f4b3a60d162200a14892361aaefd4df";
+   dcterms:description """curl 7.29.0 (x86_64-apple-darwin11.4.2) libcurl/7.29.0 OpenSSL/1.0.1e zlib/1.2.8 libidn/1.25
+Protocols: dict file ftp ftps gopher http https imap imaps pop3 pop3s rtsp smtp smtps telnet tftp 
+Features: IDN IPv6 Largefile NTLM NTLM_WB SSL libz TLS-SRP """;
+.
+
+conv:Curl rdfs:subClassOf pmlp:InferenceEngine .
