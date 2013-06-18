@@ -1,0 +1,40 @@
+
+<html>
+<head>
+    <title>Testing Queries for Patrice</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+</head>
+<body>
+
+
+<script>
+    var serverEndpoint = "http://cn-orc-1.dataone.org/cn/v1/query/solr/?";
+    <!-- var query = "http://cn-orc-1.dataone.org/cn/v1/query/solr/?q=keywords:*ecology*&wt=json&rows=100"; -->
+    <!-- var query = 'http://whateverorigin.org/get?url=' + encodeURIComponent('http://cn-orc-1.dataone.org/cn/v1/query/solr/?q=keywords:*ecology*&wt=json&rows=100') + '&callback=?' -->
+var query = "http://localhost:8888/proxy.php?" + "url=" + encodeURIComponent('http://cn-orc-1.dataone.org/cn/v1/query/solr/?q=keywords:*ecology*&wt=json&rows=20');
+    //   { q: "keywords: \"*ecology*\"", wt: "json", ident: true, rows: 100 },
+      var table='<table border="1">';
+	table+= '<tr><td>Title</td><td>Abstract</td><td>Keywords</td></tr>';
+    $(document).ready(function(){
+        $.getJSON(query, function (data) {
+console.log(data);
+	data = data.response.docs;
+	 $.each( data, function( index, item){
+
+table+='<tr><td>'+item.title+'</td><td>' + 
+item.abstract + '</td><td> ' + 
+item.keywords +  '</td></tr>';       
+
+      });
+	<!-- $('#outTable').replaceWith(outTable); -->
+      table+='</table>';
+$('#outTable').replaceWith(table);
+        });
+    });
+
+
+</script>
+<div id="outTable">
+</div>
+</body>
+</html>
