@@ -17,6 +17,14 @@ http://data1.tw.rpi.edu/tomcat/VocabularyServer/ServeSparql?term=passeriformes&S
 Once expansion is done the terms are fed into the service:
 http://cn-orc-1.dataone.org/cn/v1/query/solr/?
 
+For example if you search the abstract field just for the term ecology:
+https://cn-orc-1.dataone.org/cn/v1/query/solr/?q=abstract:ecology&wt=json&rows=100
+you get 4817 results.
+
+if you search the abstract field for ecology or hydrology:
+https://cn-orc-1.dataone.org/cn/v1/query/solr/?q=abstract:ecology+OR+hydrology&wt=json&rows=100
+you get 13269 results.
+
 as shown in the current testGet.html, you will output the different result sets in different tables. However, what we want to see if the results that the topic based expansion provides that the taxonomic classication does not, and vice versa. The primary task is to output those as two different result sets. However you implement the calculations of these difference set is up to you, but please do so efficiently. 
 
 
