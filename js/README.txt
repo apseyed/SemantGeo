@@ -25,6 +25,9 @@ if you search the abstract field for ecology or hydrology:
 https://cn-orc-1.dataone.org/cn/v1/query/solr/?q=abstract:ecology+OR+hydrology&wt=json&rows=100
 you get 13269 results.
 
+see Lucene documentation for more details:
+http://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html
+
 as shown in the current testGet.html, you will output the different result sets in different tables. However, what we want to see if the results that the topic based expansion provides that the taxonomic classication does not, and vice versa. The primary task is to output those as two different result sets. However you implement the calculations of these difference set is up to you, but please do so efficiently. 
 
 
