@@ -1,0 +1,605 @@
+2013-05-28T18:51:15+00:00
+2008 rows in manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv
+E1 CONVERSION
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-Jan-16 initiated:
+fileName:                     manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv
+sampleLimit:                  2
+enhancementParametersURL:     manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv.e1.params.ttl
+outputFileName:               automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.e1.sample.ttl
+converterIdentifier:          csv2rdf4lod_383025bc5d2760793ff770a7c534207c
+==============================
+BaseURIQuerylet(*) .http://purl.org/twc/semantgeo.
+SourceIdentifierQuerylet(*) .source.
+DatasetIdentifierQuerylet(*) .dfwi-aeap-nyserda.
+VersionIdentifierQuerylet(*) .2013-mar-22.
+SubjectTypeQuerylet(*) .Sample.
+CellBasedQuerylet(10) .null. (will use header value to name 'up object')
+CellBasedQuerylet(11) .null. (will use header value to name 'up object')
+CellBasedQuerylet(12) .null. (will use header value to name 'up object')
+CellBasedQuerylet(13) .null. (will use header value to name 'up object')
+CellBasedQuerylet(14) .null. (will use header value to name 'up object')
+CellBasedQuerylet(15) .null. (will use header value to name 'up object')
+CellBasedQuerylet(17) .null. (will use header value to name 'up object')
+CellBasedQuerylet(16) .null. (will use header value to name 'up object')
+CellBasedQuerylet(19) .null. (will use header value to name 'up object')
+CellBasedQuerylet(18) .null. (will use header value to name 'up object')
+CellBasedQuerylet(21) .null. (will use header value to name 'up object')
+CellBasedQuerylet(20) .null. (will use header value to name 'up object')
+CellBasedQuerylet(23) .null. (will use header value to name 'up object')
+CellBasedQuerylet(22) .null. (will use header value to name 'up object')
+CellBasedQuerylet(25) .null. (will use header value to name 'up object')
+CellBasedQuerylet(24) .null. (will use header value to name 'up object')
+CellBasedQuerylet(27) .null. (will use header value to name 'up object')
+CellBasedQuerylet(26) .null. (will use header value to name 'up object')
+CellBasedQuerylet(29) .null. (will use header value to name 'up object')
+CellBasedQuerylet(28) .null. (will use header value to name 'up object')
+CellBasedQuerylet(31) .null. (will use header value to name 'up object')
+CellBasedQuerylet(30) .null. (will use header value to name 'up object')
+CellBasedQuerylet(34) .null. (will use header value to name 'up object')
+CellBasedQuerylet(35) .null. (will use header value to name 'up object')
+CellBasedQuerylet(32) .null. (will use header value to name 'up object')
+CellBasedQuerylet(33) .null. (will use header value to name 'up object')
+CellBasedQuerylet(38) .null. (will use header value to name 'up object')
+CellBasedQuerylet(39) .null. (will use header value to name 'up object')
+CellBasedQuerylet(36) .null. (will use header value to name 'up object')
+CellBasedQuerylet(37) .null. (will use header value to name 'up object')
+CellBasedQuerylet(42) .null. (will use header value to name 'up object')
+CellBasedQuerylet(43) .null. (will use header value to name 'up object')
+CellBasedQuerylet(40) .null. (will use header value to name 'up object')
+CellBasedQuerylet(41) .null. (will use header value to name 'up object')
+CellBasedQuerylet(46) .null. (will use header value to name 'up object')
+CellBasedQuerylet(44) .null. (will use header value to name 'up object')
+CellBasedQuerylet(45) .null. (will use header value to name 'up object')
+InterpretedAsNullQuerylet(*) ..
+
+subjectNS:   dfwi-aeap-nyserda:  http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/version/2013-mar-22/
+predicateNS: e1:  http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/
+objectNS:    dfwi-aeap-nyserda_global_value:  http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/
+
+CellDelimiterQuerylet(*) .,.
+headers present at row 1: Accession Code (sample#),Lake Name, DEC Code,Date,Z max (m),Sample Type,Sample Z (m),Sample Layer,Secchi (m),Conductivity (umhos),pH air eq,ANC (ueq/L),NH4-N (ug N/L),NH4+ (mg/L),NH4+ (ueq/L),DIC (mg/L),DOC (mg/L),F (mg/L),Cl (mg/L),Cl (ueq/L),NO3-N (mg N/L),NO3- (mg/L),NO3- (ueq/L),SO4-S (mg S/L),SO4-- (mg/L),SO4-- (ueq/L),Total P (ug/L),MRP    (ug P/L),TFP (ug/L),TN (mg/L),Chla (ug/L),Si (mg/l),Dissolved Silica SiO2 (mg/l),Na (mg/L),Na (ueq/L),K (mg/L),K (ueq/L),Fe (mg/L),Mg (mg/L),Mg (ueq/L),Ca (mg/L),Ca (ueq/L),Total Al (ug/L),Total mono Al (ug/L),Nonlabile mono Al (ug/L),Labile mono Ali (ug/L),Hydrologic Type,Watershed,Watershed area (ha),lake volume (m3),WA/SA ratio,surface area (ha),surface area (m2),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+       ColumnCommentQuerylet(1) .A unique numeric reference to a specific water sample taken ....
+1: "Accession Code (sample#)" -> "Accession Code sample#" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/accession_code_sample (xsd:integer)
+----------------------------------------------------------------------------------------------------
+       EquivalentPropertyQuerylet(2) .http://xmlns.com/foaf/0.1/isPrimaryTopicOf.
+       ColumnCommentQuerylet(2) .The name of the lake the sample is from....
+2: "Lake Name" -> "Lake Name" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/lake_name (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(3) .A numeric reference to a lake in the DEC registry, unique to....
+3: "DEC Code" -> "DEC Code" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/dec_code (xsd:integer)
+----------------------------------------------------------------------------------------------------
+size: 0
+       ColumnCommentQuerylet(4) .The date the sample was taken from the lake....
+4: "Date" -> "Date" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/date (xsd:date)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(5) .The maximum depth to the lake floor at the site where the sa....
+5: "Z max (m)" -> "Z max m" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/z_max_m (xsd:decimal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(6) .I represents ?Integrated? sample which is a mixed sample rep....
+6: "Sample Type" -> "Sample Type" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/sample_type (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(7) .TODO....
+7: "Sample Z (m)" -> "Sample Z m" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/sample_z_m (xsd:decimal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(8) .TODO....
+8: "Sample Layer" -> "Sample Layer" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/sample_layer (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(9) .TODO: has to do with how clear the water is....
+9: "Secchi (m)" -> "Secchi m" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/secchi_m (xsd:decimal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(10) .TODO: pretty self explanatory....
+10: "Conductivity (umhos)" -> "Conductivity umhos" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/conductivity_umhos (xsd:decimal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(11) .The pH reading for the sample. TODO: requires telling how th....
+11: "pH air eq" -> "pH air eq" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/ph_air_eq (xsd:decimal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(12) .The acid neutralizing capacity of a lake. TODO: expand this....
+12: "ANC (ueq/L)" -> "ANC ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/anc_ueq_l (xsd:decimal)
+----------------------------------------------------------------------------------------------------
+13: "NH4-N (ug N/L)" -> "NH4-N ug N/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/nh4_n_ug_n_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+14: "NH4+ (mg/L)" -> "NH4+ mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/nh4_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+15: "NH4+ (ueq/L)" -> "NH4+ ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/nh4_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+16: "DIC (mg/L)" -> "DIC mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/dic_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+17: "DOC (mg/L)" -> "DOC mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/doc_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+18: "F (mg/L)" -> "F mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/f_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+19: "Cl (mg/L)" -> "Cl mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/cl_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+20: "Cl (ueq/L)" -> "Cl ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/cl_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+21: "NO3-N (mg N/L)" -> "NO3-N mg N/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/no3_n_mg_n_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+22: "NO3- (mg/L)" -> "NO3- mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/no3_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+23: "NO3- (ueq/L)" -> "NO3- ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/no3_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+24: "SO4-S (mg S/L)" -> "SO4-S mg S/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/so4_s_mg_s_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+25: "SO4-- (mg/L)" -> "SO4-- mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/so4_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+26: "SO4-- (ueq/L)" -> "SO4-- ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/so4_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+27: "Total P (ug/L)" -> "Total P ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/total_p_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+28: "MRP    (ug P/L)" -> "MRP    ug P/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/mrp_ug_p_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+29: "TFP (ug/L)" -> "TFP ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/tfp_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+30: "TN (mg/L)" -> "TN mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/tn_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+31: "Chla (ug/L)" -> "Chla ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/chla_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+32: "Si (mg/l)" -> "Si mg/l" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/si_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+33: "Dissolved Silica SiO2 (mg/l)" -> "Dissolved Silica SiO2 mg/l" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/dissolved_silica_sio2_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+34: "Na (mg/L)" -> "Na mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/na_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+35: "Na (ueq/L)" -> "Na ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/na_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+36: "K (mg/L)" -> "K mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/k_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+37: "K (ueq/L)" -> "K ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/k_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+38: "Fe (mg/L)" -> "Fe mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/fe_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+39: "Mg (mg/L)" -> "Mg mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/mg_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+40: "Mg (ueq/L)" -> "Mg ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/mg_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+41: "Ca (mg/L)" -> "Ca mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/ca_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+42: "Ca (ueq/L)" -> "Ca ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/ca_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+43: "Total Al (ug/L)" -> "Total Al ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/total_al_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+44: "Total mono Al (ug/L)" -> "Total mono Al ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/total_mono_al_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+45: "Nonlabile mono Al (ug/L)" -> "Nonlabile mono Al ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/nonlabile_mono_al_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+46: "Labile mono Ali (ug/L)" -> "Labile mono Ali ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/labile_mono_ali_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+47: "Hydrologic Type" -> "Hydrologic Type" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/hydrologic_type (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+48: "Watershed" -> "Watershed" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/watershed (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+49: "Watershed area (ha)" -> "Watershed area ha" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/watershed_area_ha (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+50: "lake volume (m3)" -> "lake volume m3" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/lake_volume_m3 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+51: "WA/SA ratio" -> "WA/SA ratio" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/wa_sa_ratio (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+52: "surface area (ha)" -> "surface area ha" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/surface_area_ha (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+53: "surface area (m2)" -> "surface area m2" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/surface_area_m2 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+54: "" -> "column_54" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_54 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+55: "" -> "column_55" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_55 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+56: "" -> "column_56" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_56 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+57: "" -> "column_57" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_57 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+58: "" -> "column_58" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_58 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+59: "" -> "column_59" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_59 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+60: "" -> "column_60" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_60 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+61: "" -> "column_61" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_61 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+62: "" -> "column_62" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_62 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+63: "" -> "column_63" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_63 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+64: "" -> "column_64" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_64 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+65: "" -> "column_65" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_65 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+66: "" -> "column_66" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_66 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+67: "" -> "column_67" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_67 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+68: "" -> "column_68" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_68 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+69: "" -> "column_69" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_69 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+70: "" -> "column_70" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_70 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+71: "" -> "column_71" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_71 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+72: "" -> "column_72" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_72 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+73: "" -> "column_73" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_73 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+74: "" -> "column_74" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_74 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+75: "" -> "column_75" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_75 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+76: "" -> "column_76" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_76 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+77: "" -> "column_77" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_77 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+78: "" -> "column_78" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_78 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+79: "" -> "column_79" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_79 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+80: "" -> "column_80" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_80 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+81: "" -> "column_81" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_81 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+82: "" -> "column_82" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_82 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+83: "" -> "column_83" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_83 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+84: "" -> "column_84" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_84 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+85: "" -> "column_85" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_85 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+86: "" -> "column_86" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_86 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+87: "" -> "column_87" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_87 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+88: "" -> "column_88" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_88 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+89: "" -> "column_89" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_89 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+90: "" -> "column_90" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_90 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+91: "" -> "column_91" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_91 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+92: "" -> "column_92" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_92 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+93: "" -> "column_93" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_93 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+94: "" -> "column_94" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_94 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+95: "" -> "column_95" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_95 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+96: "" -> "column_96" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_96 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+97: "" -> "column_97" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_97 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+98: "" -> "column_98" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_98 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+99: "" -> "column_99" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_99 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+
+
+   date stumbled: "30-Jun-94" !~ "M-d-yy" @ :sample 2 10 :date
+   date stumbled: "30-Jun-94" !~ "M/d/yy" @ :sample 2 10 :date
+   date stumbled: "30-Jun-94" !~ "yyyy-MM-dd" @ :sample 2 10 :date
+DATE FAILED: "30-Jun-94" !~ 3 patterns @ :sample_2_10 :date
+   date stumbled: "30-Jun-94" !~ "M-d-yy" @ :sample 2 11 :date
+   date stumbled: "30-Jun-94" !~ "M/d/yy" @ :sample 2 11 :date
+   date stumbled: "30-Jun-94" !~ "yyyy-MM-dd" @ :sample 2 11 :date
+DATE FAILED: "30-Jun-94" !~ 3 patterns @ :sample_2_11 :date
+DATE FAILED: "30-Jun-94" !~ 3 patterns @ :sample_2_12 :date
+DATE FAILED: "30-Jun-94" !~ 3 patterns @ :sample_2_13 :date
+DATE FAILED: "30-Jun-94" !~ 3 patterns @ :sample_2_14 :date
+DATE FAILED: "30-Jun-94" !~ 3 patterns @ :sample_2_15 :date
+TODO: add dcterms format for extension 
+TODO: add dcterms format for extension 
+LayerDatasetDescriptionsQuerylet(D) .http://purl.org/twc/vocab/conversion/enhancement_identifier. ."1".
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://purl.org/twc/vocab/conversion/LayerDataset.
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+TODO: add dcterms format for extension 
+TODO: add dcterms format for extension 
+Resulting size: 2712 triples
+Generated 2712 triples in 0 min. ( 108480 triples/min )
+May 28, 2013 6:51:20 PM edu.rpi.tw.data.csv.CSVtoRDF toRDF
+INFO: writing metadata to same file as data automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.e1.sample.ttl
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+Finished converting -sample 2 sample rows.
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-Jan-16 initiated:
+fileName:                     manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv
+enhancementParametersURL:     manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv.e1.params.ttl
+outputFileName:               automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.e1.ttl
+metaOutputFileName:           automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.e1.void.ttl
+converterIdentifier:          csv2rdf4lod_383025bc5d2760793ff770a7c534207c
+==============================
+BaseURIQuerylet(*) .http://purl.org/twc/semantgeo.
+SourceIdentifierQuerylet(*) .source.
+DatasetIdentifierQuerylet(*) .dfwi-aeap-nyserda.
+VersionIdentifierQuerylet(*) .2013-mar-22.
+SubjectTypeQuerylet(*) .Sample.
+CellBasedQuerylet(10) .null. (will use header value to name 'up object')
+CellBasedQuerylet(11) .null. (will use header value to name 'up object')
+CellBasedQuerylet(12) .null. (will use header value to name 'up object')
+CellBasedQuerylet(13) .null. (will use header value to name 'up object')
+CellBasedQuerylet(14) .null. (will use header value to name 'up object')
+CellBasedQuerylet(15) .null. (will use header value to name 'up object')
+CellBasedQuerylet(17) .null. (will use header value to name 'up object')
+CellBasedQuerylet(16) .null. (will use header value to name 'up object')
+CellBasedQuerylet(19) .null. (will use header value to name 'up object')
+CellBasedQuerylet(18) .null. (will use header value to name 'up object')
+CellBasedQuerylet(21) .null. (will use header value to name 'up object')
+CellBasedQuerylet(20) .null. (will use header value to name 'up object')
+CellBasedQuerylet(23) .null. (will use header value to name 'up object')
+CellBasedQuerylet(22) .null. (will use header value to name 'up object')
+CellBasedQuerylet(25) .null. (will use header value to name 'up object')
+CellBasedQuerylet(24) .null. (will use header value to name 'up object')
+CellBasedQuerylet(27) .null. (will use header value to name 'up object')
+CellBasedQuerylet(26) .null. (will use header value to name 'up object')
+CellBasedQuerylet(29) .null. (will use header value to name 'up object')
+CellBasedQuerylet(28) .null. (will use header value to name 'up object')
+CellBasedQuerylet(31) .null. (will use header value to name 'up object')
+CellBasedQuerylet(30) .null. (will use header value to name 'up object')
+CellBasedQuerylet(34) .null. (will use header value to name 'up object')
+CellBasedQuerylet(35) .null. (will use header value to name 'up object')
+CellBasedQuerylet(32) .null. (will use header value to name 'up object')
+CellBasedQuerylet(33) .null. (will use header value to name 'up object')
+CellBasedQuerylet(38) .null. (will use header value to name 'up object')
+CellBasedQuerylet(39) .null. (will use header value to name 'up object')
+CellBasedQuerylet(36) .null. (will use header value to name 'up object')
+CellBasedQuerylet(37) .null. (will use header value to name 'up object')
+CellBasedQuerylet(42) .null. (will use header value to name 'up object')
+CellBasedQuerylet(43) .null. (will use header value to name 'up object')
+CellBasedQuerylet(40) .null. (will use header value to name 'up object')
+CellBasedQuerylet(41) .null. (will use header value to name 'up object')
+CellBasedQuerylet(46) .null. (will use header value to name 'up object')
+CellBasedQuerylet(44) .null. (will use header value to name 'up object')
+CellBasedQuerylet(45) .null. (will use header value to name 'up object')
+InterpretedAsNullQuerylet(*) ..
+
+subjectNS:   dfwi-aeap-nyserda:  http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/version/2013-mar-22/
+predicateNS: e1:  http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/
+objectNS:    dfwi-aeap-nyserda_global_value:  http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/
+
+CellDelimiterQuerylet(*) .,.
+headers present at row 1: Accession Code (sample#),Lake Name, DEC Code,Date,Z max (m),Sample Type,Sample Z (m),Sample Layer,Secchi (m),Conductivity (umhos),pH air eq,ANC (ueq/L),NH4-N (ug N/L),NH4+ (mg/L),NH4+ (ueq/L),DIC (mg/L),DOC (mg/L),F (mg/L),Cl (mg/L),Cl (ueq/L),NO3-N (mg N/L),NO3- (mg/L),NO3- (ueq/L),SO4-S (mg S/L),SO4-- (mg/L),SO4-- (ueq/L),Total P (ug/L),MRP    (ug P/L),TFP (ug/L),TN (mg/L),Chla (ug/L),Si (mg/l),Dissolved Silica SiO2 (mg/l),Na (mg/L),Na (ueq/L),K (mg/L),K (ueq/L),Fe (mg/L),Mg (mg/L),Mg (ueq/L),Ca (mg/L),Ca (ueq/L),Total Al (ug/L),Total mono Al (ug/L),Nonlabile mono Al (ug/L),Labile mono Ali (ug/L),Hydrologic Type,Watershed,Watershed area (ha),lake volume (m3),WA/SA ratio,surface area (ha),surface area (m2),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+       ColumnCommentQuerylet(1) .A unique numeric reference to a specific water sample taken ....
+1: "Accession Code (sample#)" -> "Accession Code sample#" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/accession_code_sample (xsd:integer)
+----------------------------------------------------------------------------------------------------
+       EquivalentPropertyQuerylet(2) .http://xmlns.com/foaf/0.1/isPrimaryTopicOf.
+       ColumnCommentQuerylet(2) .The name of the lake the sample is from....
+2: "Lake Name" -> "Lake Name" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/lake_name (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(3) .A numeric reference to a lake in the DEC registry, unique to....
+3: "DEC Code" -> "DEC Code" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/dec_code (xsd:integer)
+----------------------------------------------------------------------------------------------------
+size: 0
+       ColumnCommentQuerylet(4) .The date the sample was taken from the lake....
+4: "Date" -> "Date" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/date (xsd:date)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(5) .The maximum depth to the lake floor at the site where the sa....
+5: "Z max (m)" -> "Z max m" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/z_max_m (xsd:decimal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(6) .I represents ?Integrated? sample which is a mixed sample rep....
+6: "Sample Type" -> "Sample Type" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/sample_type (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(7) .TODO....
+7: "Sample Z (m)" -> "Sample Z m" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/sample_z_m (xsd:decimal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(8) .TODO....
+8: "Sample Layer" -> "Sample Layer" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/sample_layer (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(9) .TODO: has to do with how clear the water is....
+9: "Secchi (m)" -> "Secchi m" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/secchi_m (xsd:decimal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(10) .TODO: pretty self explanatory....
+10: "Conductivity (umhos)" -> "Conductivity umhos" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/conductivity_umhos (xsd:decimal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(11) .The pH reading for the sample. TODO: requires telling how th....
+11: "pH air eq" -> "pH air eq" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/ph_air_eq (xsd:decimal)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(12) .The acid neutralizing capacity of a lake. TODO: expand this....
+12: "ANC (ueq/L)" -> "ANC ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/anc_ueq_l (xsd:decimal)
+----------------------------------------------------------------------------------------------------
+13: "NH4-N (ug N/L)" -> "NH4-N ug N/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/nh4_n_ug_n_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+14: "NH4+ (mg/L)" -> "NH4+ mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/nh4_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+15: "NH4+ (ueq/L)" -> "NH4+ ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/nh4_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+16: "DIC (mg/L)" -> "DIC mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/dic_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+17: "DOC (mg/L)" -> "DOC mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/doc_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+18: "F (mg/L)" -> "F mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/f_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+19: "Cl (mg/L)" -> "Cl mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/cl_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+20: "Cl (ueq/L)" -> "Cl ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/cl_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+21: "NO3-N (mg N/L)" -> "NO3-N mg N/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/no3_n_mg_n_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+22: "NO3- (mg/L)" -> "NO3- mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/no3_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+23: "NO3- (ueq/L)" -> "NO3- ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/no3_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+24: "SO4-S (mg S/L)" -> "SO4-S mg S/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/so4_s_mg_s_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+25: "SO4-- (mg/L)" -> "SO4-- mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/so4_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+26: "SO4-- (ueq/L)" -> "SO4-- ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/so4_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+27: "Total P (ug/L)" -> "Total P ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/total_p_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+28: "MRP    (ug P/L)" -> "MRP    ug P/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/mrp_ug_p_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+29: "TFP (ug/L)" -> "TFP ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/tfp_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+30: "TN (mg/L)" -> "TN mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/tn_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+31: "Chla (ug/L)" -> "Chla ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/chla_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+32: "Si (mg/l)" -> "Si mg/l" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/si_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+33: "Dissolved Silica SiO2 (mg/l)" -> "Dissolved Silica SiO2 mg/l" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/dissolved_silica_sio2_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+34: "Na (mg/L)" -> "Na mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/na_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+35: "Na (ueq/L)" -> "Na ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/na_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+36: "K (mg/L)" -> "K mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/k_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+37: "K (ueq/L)" -> "K ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/k_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+38: "Fe (mg/L)" -> "Fe mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/fe_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+39: "Mg (mg/L)" -> "Mg mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/mg_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+40: "Mg (ueq/L)" -> "Mg ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/mg_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+41: "Ca (mg/L)" -> "Ca mg/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/ca_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+42: "Ca (ueq/L)" -> "Ca ueq/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/ca_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+43: "Total Al (ug/L)" -> "Total Al ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/total_al_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+44: "Total mono Al (ug/L)" -> "Total mono Al ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/total_mono_al_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+45: "Nonlabile mono Al (ug/L)" -> "Nonlabile mono Al ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/nonlabile_mono_al_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+46: "Labile mono Ali (ug/L)" -> "Labile mono Ali ug/L" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/labile_mono_ali_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+47: "Hydrologic Type" -> "Hydrologic Type" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/hydrologic_type (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+48: "Watershed" -> "Watershed" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/watershed (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+49: "Watershed area (ha)" -> "Watershed area ha" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/watershed_area_ha (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+50: "lake volume (m3)" -> "lake volume m3" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/lake_volume_m3 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+51: "WA/SA ratio" -> "WA/SA ratio" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/wa_sa_ratio (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+52: "surface area (ha)" -> "surface area ha" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/surface_area_ha (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+53: "surface area (m2)" -> "surface area m2" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/surface_area_m2 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+54: "" -> "column_54" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_54 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+55: "" -> "column_55" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_55 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+56: "" -> "column_56" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_56 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+57: "" -> "column_57" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_57 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+58: "" -> "column_58" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_58 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+59: "" -> "column_59" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_59 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+60: "" -> "column_60" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_60 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+61: "" -> "column_61" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_61 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+62: "" -> "column_62" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_62 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+63: "" -> "column_63" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_63 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+64: "" -> "column_64" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_64 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+65: "" -> "column_65" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_65 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+66: "" -> "column_66" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_66 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+67: "" -> "column_67" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_67 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+68: "" -> "column_68" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_68 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+69: "" -> "column_69" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_69 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+70: "" -> "column_70" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_70 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+71: "" -> "column_71" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_71 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+72: "" -> "column_72" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_72 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+73: "" -> "column_73" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_73 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+74: "" -> "column_74" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_74 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+75: "" -> "column_75" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_75 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+76: "" -> "column_76" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_76 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+77: "" -> "column_77" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_77 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+78: "" -> "column_78" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_78 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+79: "" -> "column_79" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_79 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+80: "" -> "column_80" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_80 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+81: "" -> "column_81" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_81 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+82: "" -> "column_82" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_82 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+83: "" -> "column_83" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_83 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+84: "" -> "column_84" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_84 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+85: "" -> "column_85" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_85 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+86: "" -> "column_86" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_86 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+87: "" -> "column_87" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_87 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+88: "" -> "column_88" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_88 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+89: "" -> "column_89" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_89 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+90: "" -> "column_90" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_90 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+91: "" -> "column_91" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_91 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+92: "" -> "column_92" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_92 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+93: "" -> "column_93" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_93 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+94: "" -> "column_94" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_94 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+95: "" -> "column_95" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_95 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+96: "" -> "column_96" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_96 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+97: "" -> "column_97" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_97 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+98: "" -> "column_98" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_98 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+99: "" -> "column_99" -> http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/vocab/enhancement/1/column_99 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+
+
+   date stumbled: "30-Jun-94" !~ "M-d-yy" @ :sample 2 10 :date
+   date stumbled: "30-Jun-94" !~ "M/d/yy" @ :sample 2 10 :date
+   date stumbled: "30-Jun-94" !~ "yyyy-MM-dd" @ :sample 2 10 :date
+DATE FAILED: "30-Jun-94" !~ 3 patterns @ :sample_2_10 :date
+   date stumbled: "30-Jun-94" !~ "M-d-yy" @ :sample 2 11 :date
+   date stumbled: "30-Jun-94" !~ "M/d/yy" @ :sample 2 11 :date
+   date stumbled: "30-Jun-94" !~ "yyyy-MM-dd" @ :sample 2 11 :date
+DATE FAILED: "30-Jun-94" !~ 3 patterns @ :sample_2_11 :date
+DATE FAILED: "30-Jun-94" !~ 3 patterns @ :sample_2_12 :date
+DATE FAILED: "30-Jun-94" !~ 3 patterns @ :sample_2_13 :date
+DATE FAILED: "30-Jun-94" !~ 3 patterns @ :sample_2_14 :date
+DATE FAILED: "30-Jun-94" !~ 3 patterns @ :sample_2_15 :date
+Processed 815 rows in 0 min. Flushing 678258 + 29520 triples as ttl.
+IntegerMultiplierValueHandler FAILED: "X" !~ 1 patterns @ :sample_1475_10 :dec_code
+IntegerMultiplierValueHandler FAILED: "X" !~ 1 patterns @ :sample_1475_11 :dec_code
+IntegerMultiplierValueHandler FAILED: "X" !~ 1 patterns @ :sample_1475_12 :dec_code
+IntegerMultiplierValueHandler FAILED: "X" !~ 1 patterns @ :sample_1475_13 :dec_code
+IntegerMultiplierValueHandler FAILED: "X" !~ 1 patterns @ :sample_1475_14 :dec_code
+IntegerMultiplierValueHandler FAILED: "X" !~ 1 patterns @ :sample_1475_15 :dec_code
+Processed 1628 rows in 0 min. Flushing 677963 + 29595 triples as ttl.
+TODO: add dcterms format for extension 
+TODO: add dcterms format for extension 
+LayerDatasetDescriptionsQuerylet(D) .http://purl.org/twc/vocab/conversion/enhancement_identifier. ."1".
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://purl.org/twc/vocab/conversion/LayerDataset.
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+TODO: add dcterms format for extension 
+TODO: add dcterms format for extension 
+Resulting size: 1746337 triples
+Generated 1746337 triples in 1 min. ( 1816735.5 triples/min )
+May 28, 2013 6:52:21 PM edu.rpi.tw.data.csv.CSVtoRDF toRDF
+INFO: writing metadata to separate file from data automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.e1.void.ttl
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+   convert.sh done

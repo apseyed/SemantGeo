@@ -1,0 +1,30 @@
+2013-05-28T18:52:23+00:00
+   convert.sh done
+publish/aeap_nys-dfw_lake_samples-2013-April-24.raw.ttl
+publish/aeap_nys-dfw_lake_samples-2013-April-24.raw.sample.ttl
+publish/aeap_nys-dfw_lake_samples-2013-April-24.e1.ttl
+publish/aeap_nys-dfw_lake_samples-2013-April-24.e1.sample.ttl
+publish/aeap_nys-dfw_lake_samples-2013-April-24.pml.ttl
+  (including manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv.pml.ttl)
+publish/aeap_nys-dfw_lake_samples-2013-April-24.void.ttl
+  (including automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.e1.void.ttl)
+  (including automatic/AEAP_crust_web_v3.csv.e1.void.ttl)
+  (including automatic/AEAP_crust_web_v3.csv.raw.void.ttl)
+  (including automatic/AEAP_rotifers_web.csv.e1.void.ttl)
+  (including automatic/AEAP_rotifers_web.csv.raw.void.ttl)
+  (including automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.raw.void.ttl)
+  (including publish/aeap_nys-dfw_lake_samples-2013-April-24.pml.ttl)
+publish/aeap_nys-dfw_lake_samples-2013-April-24.ttl (will delete at end of processing because $CSV2RDF4LOD_PUBLISH_TTL=.)
+  (including publish/aeap_nys-dfw_lake_samples-2013-April-24.e1.ttl)
+  (including publish/aeap_nys-dfw_lake_samples-2013-April-24.raw.ttl)
+  (including publish/aeap_nys-dfw_lake_samples-2013-April-24.void.ttl)
+publish/aeap_nys-dfw_lake_samples-2013-April-24.nt - skipping; set CSV2RDF4LOD_PUBLISH_NT=true in source-me.sh to publish N-Triples.
+publish/aeap_nys-dfw_lake_samples-2013-April-24.sameas.nt - skipping; set CSV2RDF4LOD_PUBLISH_SUBSET_SAMEAS=true in source-me.sh to publish sameas subset.
+publish/aeap_nys-dfw_lake_samples-2013-April-24.rdf - skipping; set CSV2RDF4LOD_PUBLISH_RDFXML=true in source-me.sh to publish RDF/XML.
+publish/bin/ln-to-www-root-aeap_nys-dfw_lake_samples-2013-April-24.sh
+ - skipping. Set CSV2RDF4LOD_PUBLISH_VARWWW_DUMP_FILES=true and CSV2RDF4LOD_PUBLISH_LOD_MATERIALIZATION_WWW_ROOT to /var/www
+publish/tdb/     - skipping; set CSV2RDF4LOD_PUBLISH_TDB=true in source-me.sh to load conversions into publish/tdb/.
+                 - or run publish/bin/tdbloader-aeap_nys-dfw_lake_samples-2013-April-24.sh.
+                 - then run $TDBROOT/bin/rdfserver with publish/bin/joseki-config-anterior-aeap_nys-dfw_lake_samples-2013-April-24.ttl.
+publish/lod-mat/ - skipping; set CSV2RDF4LOD_PUBLISH_LOD_MATERIALIZATION=true in source-me.sh to load conversions into publish/lod-mat/,
+                 - or run automatic/lod-materialize-aeap_nys-dfw_lake_samples-2013-April-24.sh.

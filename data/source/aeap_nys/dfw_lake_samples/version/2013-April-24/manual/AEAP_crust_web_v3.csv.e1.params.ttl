@@ -1,0 +1,476 @@
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix todo:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix vann:          <http://purl.org/vocab/vann/> .
+@prefix skos:          <http://www.w3.org/2004/02/skos/core#> .
+@prefix time:          <http://www.w3.org/2006/time#> .
+@prefix wgs:           <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geonames:      <http://www.geonames.org/ontology#> .
+@prefix geonamesid:    <http://sws.geonames.org/> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix dbpedia:       <http://dbpedia.org/resource/> .
+@prefix dbpediaprop:   <http://dbpedia.org/property/> .
+@prefix dbpediaowl:    <http://dbpedia.org/ontology/> .
+@prefix con:           <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix muo:           <http://purl.oclc.org/NET/muo/muo#> .
+@prefix vs:            <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix frbr:          <http://purl.org/vocab/frbr/core#> .
+@prefix bibo:          <http://purl.org/ontology/bibo/> .
+@prefix prov:          <http://www.w3.org/ns/prov#> .
+@prefix doap:          <http://usefulinc.com/ns/doap#> .
+@prefix nfo:           <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix sio:           <http://semanticscience.org/resource/> .
+@prefix qb:            <http://purl.org/linked-data/cube#> .
+@prefix dgtwc:         <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix dcterms:       <http://purl.org/dc/terms/> .
+@prefix void:          <http://rdfs.org/ns/void#> .
+@prefix scovo:         <http://purl.org/NET/scovo#> .
+@prefix sioc:          <http://rdfs.org/sioc/ns#> .
+@prefix foaf:          <http://xmlns.com/foaf/0.1/> .
+@prefix ov:            <http://open.vocab.org/terms/> .
+@prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
+@prefix :              <http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/params/enhancement/1/> .
+
+<http://tw.rpi.edu/instances/BrendanAshby> dcterms:identifier "ashbyb" .
+
+#:a_bundle
+#   a conversion:ImplicitBundle;
+#   conversion:property_name "a_property"; # Can also be a URI, e.g. dcterms:title.
+#   #conversion:type_name     "My Class";   # Can also be a URI, e.g. foaf:Person.
+#.
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1>
+   a conversion:LayerDataset, void:Dataset;
+
+   conversion:base_uri           "http://purl.org/twc/semmdd"^^xsd:anyURI;
+   conversion:source_identifier  "aeap_nys";
+   conversion:dataset_identifier "dfw_lake_samples";
+   conversion:version_identifier "2013-April-24";
+   conversion:enhancement_identifier "1";
+
+   conversion:conversion_process [
+      a conversion:EnhancementConversionProcess;
+      conversion:enhancement_identifier "1";
+      conversion:subject_discriminator  "aeap-crust-web-v3";
+
+      dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "ashbyb";
+                        sioc:account_of <http://tw.rpi.edu/instances/BrendanAshby> ];
+      dcterms:created "2013-05-28T17:30:00+00:00"^^xsd:dateTime;
+
+      conversion:delimits_cell ",";
+      #conversion:delimits_cell "	"; # tab
+      #conversion:delimits_cell "|";   # pipe
+      #conversion:delimits_cell ",";   # comma
+
+      #conversion:interpret [
+      #   conversion:symbol        "";
+      #   conversion:interpretation conversion:null; 
+      #];
+      #conversion:enhance [
+      #   conversion:domain_template "thing_[r]";
+      #   conversion:domain_name     "Thing";
+      #];
+      #conversion:enhance [
+      #   conversion:class_name "Thing";
+      #   conversion:subclass_of <http://purl.org/...>;
+      #];
+      conversion:enhance [
+         ov:csvCol          1;
+         ov:csvHeader       "lake Name";
+         #conversion:label   "lake Name";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          2;
+         ov:csvHeader       "DATE";
+         #conversion:label   "DATE";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          3;
+         ov:csvHeader       "YEAR";
+         #conversion:label   "YEAR";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          4;
+         ov:csvHeader       "COL #";
+         #conversion:label   "COL #";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          5;
+         ov:csvHeader       "Unknown cyclopoid Total";
+         #conversion:label   "Unknown cyclopoid Total";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          6;
+         ov:csvHeader       "Unknown cyclopoid Adult";
+         #conversion:label   "Unknown cyclopoid Adult";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          7;
+         ov:csvHeader       "Cyclopoid Unknown-Immature";
+         #conversion:label   "Cyclopoid Unknown-Immature";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          8;
+         ov:csvHeader       "Cyclops scutifer Total";
+         #conversion:label   "Cyclops scutifer Total";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          9;
+         ov:csvHeader       "Cyclops scutifer Adult";
+         #conversion:label   "Cyclops scutifer Adult";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          10;
+         ov:csvHeader       "Cyclops scutifer Immature";
+         #conversion:label   "Cyclops scutifer Immature";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          11;
+         ov:csvHeader       "Tropocyclops extensus Total";
+         #conversion:label   "Tropocyclops extensus Total";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          12;
+         ov:csvHeader       "Tropocyclops extensus Adult";
+         #conversion:label   "Tropocyclops extensus Adult";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          13;
+         ov:csvHeader       "Tropocyclops extensus Immature";
+         #conversion:label   "Tropocyclops extensus Immature";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          14;
+         ov:csvHeader       "Mesocyclops edax Total";
+         #conversion:label   "Mesocyclops edax Total";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          15;
+         ov:csvHeader       "Mesocyclops edax";
+         #conversion:label   "Mesocyclops edax";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          16;
+         ov:csvHeader       "Mesocyclops edax Immature";
+         #conversion:label   "Mesocyclops edax Immature";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          17;
+         ov:csvHeader       "Orthocyclops modesti Total";
+         #conversion:label   "Orthocyclops modesti Total";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          18;
+         ov:csvHeader       "Orthocyclops modesti Adults";
+         #conversion:label   "Orthocyclops modesti Adults";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          19;
+         ov:csvHeader       "Orthocyclops modesti Immature";
+         #conversion:label   "Orthocyclops modesti Immature";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          20;
+         ov:csvHeader       "Cyclopoid copepidids";
+         #conversion:label   "Cyclopoid copepidids";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          21;
+         ov:csvHeader       "CYCOPEP";
+         #conversion:label   "CYCOPEP";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          22;
+         ov:csvHeader       "Leptodiaptomus minutus Total";
+         #conversion:label   "Leptodiaptomus minutus Total";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          23;
+         ov:csvHeader       "Leptodiaptomus minutus";
+         #conversion:label   "Leptodiaptomus minutus";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          24;
+         ov:csvHeader       "Leptodiaptomus minutus Immature";
+         #conversion:label   "Leptodiaptomus minutus Immature";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          25;
+         ov:csvHeader       "Aglaodiaptomus leptopus Total";
+         #conversion:label   "Aglaodiaptomus leptopus Total";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          26;
+         ov:csvHeader       "Aglaodiaptomus leptopus Adult";
+         #conversion:label   "Aglaodiaptomus leptopus Adult";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          27;
+         ov:csvHeader       "Aglaodiaptomus leptopus Immature";
+         #conversion:label   "Aglaodiaptomus leptopus Immature";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          28;
+         ov:csvHeader       "Skistidiaptomus oregonensis-Adult";
+         #conversion:label   "Skistidiaptomus oregonensis-Adult";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          29;
+         ov:csvHeader       "Skistidiaptomus oregonensis-Immature";
+         #conversion:label   "Skistidiaptomus oregonensis-Immature";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          30;
+         ov:csvHeader       "Skistodiaptomus oregonensis Total";
+         #conversion:label   "Skistodiaptomus oregonensis Total";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          31;
+         ov:csvHeader       "Skistodiaptomus oregonensis Adult";
+         #conversion:label   "Skistodiaptomus oregonensis Adult";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          32;
+         ov:csvHeader       "Skistodiaptomus oregonensis Immature";
+         #conversion:label   "Skistodiaptomus oregonensis Immature";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          33;
+         ov:csvHeader       "Epischura lacustris Total";
+         #conversion:label   "Epischura lacustris Total";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          34;
+         ov:csvHeader       "Epischura lacustris Adult";
+         #conversion:label   "Epischura lacustris Adult";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          35;
+         ov:csvHeader       "Epischura lacustris Immature";
+         #conversion:label   "Epischura lacustris Immature";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          36;
+         ov:csvHeader       "Daphnia mendotae";
+         #conversion:label   "Daphnia mendotae";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          37;
+         ov:csvHeader       "Daphnia pulicaria";
+         #conversion:label   "Daphnia pulicaria";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          38;
+         ov:csvHeader       "Daphnia retrocurva";
+         #conversion:label   "Daphnia retrocurva";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          39;
+         ov:csvHeader       "Daphnia dubia";
+         #conversion:label   "Daphnia dubia";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          40;
+         ov:csvHeader       "Daphnia catawba";
+         #conversion:label   "Daphnia catawba";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          41;
+         ov:csvHeader       "Daphnia ambigua";
+         #conversion:label   "Daphnia ambigua";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          42;
+         ov:csvHeader       "Daphnia pulex";
+         #conversion:label   "Daphnia pulex";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          43;
+         ov:csvHeader       "Daphnia parvula";
+         #conversion:label   "Daphnia parvula";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          44;
+         ov:csvHeader       "Bosmina longirostris";
+         #conversion:label   "Bosmina longirostris";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          45;
+         ov:csvHeader       "Eubosmina";
+         #conversion:label   "Eubosmina";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          46;
+         ov:csvHeader       "Diaphanosoma brachyurum";
+         #conversion:label   "Diaphanosoma brachyurum";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          47;
+         ov:csvHeader       "Diaphanosoma bergei";
+         #conversion:label   "Diaphanosoma bergei";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          48;
+         ov:csvHeader       "Holopedium gibberum";
+         #conversion:label   "Holopedium gibberum";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          49;
+         ov:csvHeader       "Polyphemus pediculus";
+         #conversion:label   "Polyphemus pediculus";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          50;
+         ov:csvHeader       "Ceriodaphnia quadrangular";
+         #conversion:label   "Ceriodaphnia quadrangular";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          51;
+         ov:csvHeader       "Chydoris species";
+         #conversion:label   "Chydoris species";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          52;
+         ov:csvHeader       "Leptodora kindti";
+         #conversion:label   "Leptodora kindti";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          53;
+         ov:csvHeader       "Alona sp.";
+         #conversion:label   "Alona sp.";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          54;
+         ov:csvHeader       "Sida crystallina";
+         #conversion:label   "Sida crystallina";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          55;
+         ov:csvHeader       "";
+         #conversion:label   "";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          56;
+         ov:csvHeader       "";
+         #conversion:label   "";
+         conversion:comment "";
+         conversion:range   todo:Literal;
+      ];
+      #conversion:enhance [            
+      #   ov:csvRow 3,4,5;             
+      #   a conversion:ExampleResource;
+      #];                              
+   ];
+.

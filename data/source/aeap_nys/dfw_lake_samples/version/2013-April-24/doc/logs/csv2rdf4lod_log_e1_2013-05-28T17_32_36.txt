@@ -1,0 +1,341 @@
+2013-05-28T17:32:36+00:00
+1053 rows in manual/AEAP_rotifers_web.csv
+E1 CONVERSION
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-Jan-16 initiated:
+fileName:                     manual/AEAP_rotifers_web.csv
+sampleLimit:                  2
+enhancementParametersURL:     manual/AEAP_rotifers_web.csv.e1.params.ttl
+outputFileName:               automatic/AEAP_rotifers_web.csv.e1.sample.ttl
+converterIdentifier:          csv2rdf4lod_383025bc5d2760793ff770a7c534207c
+==============================
+BaseURIQuerylet(*) .http://purl.org/twc/semmdd.
+SourceIdentifierQuerylet(*) .aeap_nys.
+DatasetIdentifierQuerylet(*) .dfw_lake_samples.
+VersionIdentifierQuerylet(*) .2013-April-24.
+
+subjectNS:   :  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/version/2013-April-24/
+predicateNS: e1:  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/
+objectNS:    _global_value:  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/
+
+CellDelimiterQuerylet(*) .,.
+headers present at row 1: Lake Name,Date,Anuraeopsis fissa Gosse 1851,"Anuraeopsis navicula?Rousselet, 1911",Ascomorpha ecaudas Perty 1850,Ascomorpha ovalis Bergendal 1892,Ascomorpha saltans Bartsch 1870,Asplanchna herricki De Guerne 1888,Asplanchna priodonta Gosse 1850,Cephalodella gibba Ehrbg. 1832,Collotheca mutabilis Hudson 1885,Collurella ucinata Muller 1773,Conochiloides dossaurius Hudson 1885,Conochilus unicornis Rousselet 1892,Encentrum species,Euchlanis pellucida Harring 1921,Filinia terminalis Platte 1886,Gastropus stylifer Imhoff 1891,Hexarthra mira Hudson 1871,Kellicottia bostonensis Rousselet 1892,Kellicottia longispina Kelicott 1879,Keratella cochlearis Gosse 1851,Keratella crassa Ahlstrom 1943,Keratella earlinae Ahlstrom 1943,Keratella hiemalis Carlin 1943,Keratella serrulata Rylov 1926,Keratella taurocephala Meyers 1938,Keratella tecta Gosse 1841,Lapdella sp,Lecane crepida  Harring 1914,Lecane flexilis Gosse 1886,Lecane luna Muller 1776,Lecane mira Murray 1913,Lecane mucronata Harring & Meyers 1926,Lecane species,Lecane tenuisetta  Harring 1914,lecane tudicola Harring & Meyers 1926,Manfredium eudactylotum Gosse 1886,Microcodon clavus,Monostyla closterocerca Schmarda 1895,Monostyla copeis Harring & Meyers 1926,Monostyla lunaris Ehrbg. 1882,Monostyla obtusa Murray 1913,Ploesoma truncatum Levander 1894,Polyarthra euryptera Wierzejski 1893,Polyarthra major Burckhardt 1900,Polyarthra remata Skorikov 1896,Polyarthra vulgaris Carlin 1943,remove,Synchaeta pectinata Ehrbg.  1892,Total Rotifers,Trichocerca cyclindrica Imhoff 1981,Trichocerca elongata Gosse 1886,Trichocerca insignis Herrick 1885,Trichocerca multicrinis Kelicott 1897,Trichocerca porcellus Gosse 1886,Trichocerca pusilla Jennings 1993,Trichocerca rousseleti Voight 1901,Trichocerca sp,"Trichotria tetractis tetractis (Ehrenberg, 1830) ",Unknown one toe
+
+1: "Lake Name" -> "Lake Name" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lake_name (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+2: "Date" -> "Date" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/date (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+3: "Anuraeopsis fissa Gosse 1851" -> "Anuraeopsis fissa Gosse 1851" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/anuraeopsis_fissa_gosse_1851 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+4: "Anuraeopsis navicula?Rousselet, 1911" -> "Anuraeopsis navicula?Rousselet, 1911" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/anuraeopsis_navicula_rousselet_1911 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+5: "Ascomorpha ecaudas Perty 1850" -> "Ascomorpha ecaudas Perty 1850" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/ascomorpha_ecaudas_perty_1850 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+6: "Ascomorpha ovalis Bergendal 1892" -> "Ascomorpha ovalis Bergendal 1892" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/ascomorpha_ovalis_bergendal_1892 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+7: "Ascomorpha saltans Bartsch 1870" -> "Ascomorpha saltans Bartsch 1870" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/ascomorpha_saltans_bartsch_1870 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+8: "Asplanchna herricki De Guerne 1888" -> "Asplanchna herricki De Guerne 1888" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/asplanchna_herricki_de_guerne_1888 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+9: "Asplanchna priodonta Gosse 1850" -> "Asplanchna priodonta Gosse 1850" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/asplanchna_priodonta_gosse_1850 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+10: "Cephalodella gibba Ehrbg. 1832" -> "Cephalodella gibba Ehrbg. 1832" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/cephalodella_gibba_ehrbg_1832 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+11: "Collotheca mutabilis Hudson 1885" -> "Collotheca mutabilis Hudson 1885" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/collotheca_mutabilis_hudson_1885 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+12: "Collurella ucinata Muller 1773" -> "Collurella ucinata Muller 1773" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/collurella_ucinata_muller_1773 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+13: "Conochiloides dossaurius Hudson 1885" -> "Conochiloides dossaurius Hudson 1885" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/conochiloides_dossaurius_hudson_1885 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+14: "Conochilus unicornis Rousselet 1892" -> "Conochilus unicornis Rousselet 1892" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/conochilus_unicornis_rousselet_1892 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+15: "Encentrum species" -> "Encentrum species" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/encentrum_species (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+16: "Euchlanis pellucida Harring 1921" -> "Euchlanis pellucida Harring 1921" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/euchlanis_pellucida_harring_1921 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+17: "Filinia terminalis Platte 1886" -> "Filinia terminalis Platte 1886" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/filinia_terminalis_platte_1886 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+18: "Gastropus stylifer Imhoff 1891" -> "Gastropus stylifer Imhoff 1891" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/gastropus_stylifer_imhoff_1891 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+19: "Hexarthra mira Hudson 1871" -> "Hexarthra mira Hudson 1871" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/hexarthra_mira_hudson_1871 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+20: "Kellicottia bostonensis Rousselet 1892" -> "Kellicottia bostonensis Rousselet 1892" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/kellicottia_bostonensis_rousselet_1892 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+21: "Kellicottia longispina Kelicott 1879" -> "Kellicottia longispina Kelicott 1879" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/kellicottia_longispina_kelicott_1879 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+22: "Keratella cochlearis Gosse 1851" -> "Keratella cochlearis Gosse 1851" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_cochlearis_gosse_1851 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+23: "Keratella crassa Ahlstrom 1943" -> "Keratella crassa Ahlstrom 1943" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_crassa_ahlstrom_1943 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+24: "Keratella earlinae Ahlstrom 1943" -> "Keratella earlinae Ahlstrom 1943" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_earlinae_ahlstrom_1943 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+25: "Keratella hiemalis Carlin 1943" -> "Keratella hiemalis Carlin 1943" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_hiemalis_carlin_1943 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+26: "Keratella serrulata Rylov 1926" -> "Keratella serrulata Rylov 1926" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_serrulata_rylov_1926 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+27: "Keratella taurocephala Meyers 1938" -> "Keratella taurocephala Meyers 1938" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_taurocephala_meyers_1938 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+28: "Keratella tecta Gosse 1841" -> "Keratella tecta Gosse 1841" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_tecta_gosse_1841 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+29: "Lapdella sp" -> "Lapdella sp" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lapdella_sp (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+30: "Lecane crepida  Harring 1914" -> "Lecane crepida  Harring 1914" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_crepida_harring_1914 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+31: "Lecane flexilis Gosse 1886" -> "Lecane flexilis Gosse 1886" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_flexilis_gosse_1886 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+32: "Lecane luna Muller 1776" -> "Lecane luna Muller 1776" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_luna_muller_1776 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+33: "Lecane mira Murray 1913" -> "Lecane mira Murray 1913" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_mira_murray_1913 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+34: "Lecane mucronata Harring & Meyers 1926" -> "Lecane mucronata Harring & Meyers 1926" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_mucronata_harring_meyers_1926 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+35: "Lecane species" -> "Lecane species" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_species (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+36: "Lecane tenuisetta  Harring 1914" -> "Lecane tenuisetta  Harring 1914" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_tenuisetta_harring_1914 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+37: "lecane tudicola Harring & Meyers 1926" -> "lecane tudicola Harring & Meyers 1926" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_tudicola_harring_meyers_1926 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+38: "Manfredium eudactylotum Gosse 1886" -> "Manfredium eudactylotum Gosse 1886" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/manfredium_eudactylotum_gosse_1886 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+39: "Microcodon clavus" -> "Microcodon clavus" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/microcodon_clavus (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+40: "Monostyla closterocerca Schmarda 1895" -> "Monostyla closterocerca Schmarda 1895" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/monostyla_closterocerca_schmarda_1895 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+41: "Monostyla copeis Harring & Meyers 1926" -> "Monostyla copeis Harring & Meyers 1926" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/monostyla_copeis_harring_meyers_1926 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+42: "Monostyla lunaris Ehrbg. 1882" -> "Monostyla lunaris Ehrbg. 1882" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/monostyla_lunaris_ehrbg_1882 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+43: "Monostyla obtusa Murray 1913" -> "Monostyla obtusa Murray 1913" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/monostyla_obtusa_murray_1913 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+44: "Ploesoma truncatum Levander 1894" -> "Ploesoma truncatum Levander 1894" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/ploesoma_truncatum_levander_1894 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+45: "Polyarthra euryptera Wierzejski 1893" -> "Polyarthra euryptera Wierzejski 1893" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/polyarthra_euryptera_wierzejski_1893 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+46: "Polyarthra major Burckhardt 1900" -> "Polyarthra major Burckhardt 1900" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/polyarthra_major_burckhardt_1900 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+47: "Polyarthra remata Skorikov 1896" -> "Polyarthra remata Skorikov 1896" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/polyarthra_remata_skorikov_1896 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+48: "Polyarthra vulgaris Carlin 1943" -> "Polyarthra vulgaris Carlin 1943" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/polyarthra_vulgaris_carlin_1943 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+49: "remove" -> "remove" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/remove (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+50: "Synchaeta pectinata Ehrbg.  1892" -> "Synchaeta pectinata Ehrbg.  1892" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/synchaeta_pectinata_ehrbg_1892 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+51: "Total Rotifers" -> "Total Rotifers" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/total_rotifers (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+52: "Trichocerca cyclindrica Imhoff 1981" -> "Trichocerca cyclindrica Imhoff 1981" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_cyclindrica_imhoff_1981 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+53: "Trichocerca elongata Gosse 1886" -> "Trichocerca elongata Gosse 1886" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_elongata_gosse_1886 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+54: "Trichocerca insignis Herrick 1885" -> "Trichocerca insignis Herrick 1885" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_insignis_herrick_1885 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+55: "Trichocerca multicrinis Kelicott 1897" -> "Trichocerca multicrinis Kelicott 1897" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_multicrinis_kelicott_1897 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+56: "Trichocerca porcellus Gosse 1886" -> "Trichocerca porcellus Gosse 1886" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_porcellus_gosse_1886 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+57: "Trichocerca pusilla Jennings 1993" -> "Trichocerca pusilla Jennings 1993" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_pusilla_jennings_1993 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+58: "Trichocerca rousseleti Voight 1901" -> "Trichocerca rousseleti Voight 1901" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_rousseleti_voight_1901 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+59: "Trichocerca sp" -> "Trichocerca sp" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_sp (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+60: "Trichotria tetractis tetractis (Ehrenberg, 1830) " -> "Trichotria tetractis tetractis Ehrenberg, 1830" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichotria_tetractis_tetractis_ehrenberg_1830 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+61: "Unknown one toe" -> "Unknown one toe" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/unknown_one_toe (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+
+
+TODO: add dcterms format for extension 
+TODO: add dcterms format for extension 
+LayerDatasetDescriptionsQuerylet(D) .http://purl.org/twc/vocab/conversion/enhancement_identifier. ."1".
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://purl.org/twc/vocab/conversion/LayerDataset.
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+TODO: add dcterms format for extension 
+Resulting size: 688 triples
+Generated 688 triples in 0 min. ( 59481.3 triples/min )
+May 28, 2013 5:32:39 PM edu.rpi.tw.data.csv.CSVtoRDF toRDF
+INFO: writing metadata to same file as data automatic/AEAP_rotifers_web.csv.e1.sample.ttl
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+Finished converting -sample 2 sample rows.
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-Jan-16 initiated:
+fileName:                     manual/AEAP_rotifers_web.csv
+enhancementParametersURL:     manual/AEAP_rotifers_web.csv.e1.params.ttl
+outputFileName:               automatic/AEAP_rotifers_web.csv.e1.ttl
+metaOutputFileName:           automatic/AEAP_rotifers_web.csv.e1.void.ttl
+converterIdentifier:          csv2rdf4lod_383025bc5d2760793ff770a7c534207c
+==============================
+BaseURIQuerylet(*) .http://purl.org/twc/semmdd.
+SourceIdentifierQuerylet(*) .aeap_nys.
+DatasetIdentifierQuerylet(*) .dfw_lake_samples.
+VersionIdentifierQuerylet(*) .2013-April-24.
+
+subjectNS:   :  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/version/2013-April-24/
+predicateNS: e1:  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/
+objectNS:    _global_value:  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-rotifers-web/
+
+CellDelimiterQuerylet(*) .,.
+headers present at row 1: Lake Name,Date,Anuraeopsis fissa Gosse 1851,"Anuraeopsis navicula?Rousselet, 1911",Ascomorpha ecaudas Perty 1850,Ascomorpha ovalis Bergendal 1892,Ascomorpha saltans Bartsch 1870,Asplanchna herricki De Guerne 1888,Asplanchna priodonta Gosse 1850,Cephalodella gibba Ehrbg. 1832,Collotheca mutabilis Hudson 1885,Collurella ucinata Muller 1773,Conochiloides dossaurius Hudson 1885,Conochilus unicornis Rousselet 1892,Encentrum species,Euchlanis pellucida Harring 1921,Filinia terminalis Platte 1886,Gastropus stylifer Imhoff 1891,Hexarthra mira Hudson 1871,Kellicottia bostonensis Rousselet 1892,Kellicottia longispina Kelicott 1879,Keratella cochlearis Gosse 1851,Keratella crassa Ahlstrom 1943,Keratella earlinae Ahlstrom 1943,Keratella hiemalis Carlin 1943,Keratella serrulata Rylov 1926,Keratella taurocephala Meyers 1938,Keratella tecta Gosse 1841,Lapdella sp,Lecane crepida  Harring 1914,Lecane flexilis Gosse 1886,Lecane luna Muller 1776,Lecane mira Murray 1913,Lecane mucronata Harring & Meyers 1926,Lecane species,Lecane tenuisetta  Harring 1914,lecane tudicola Harring & Meyers 1926,Manfredium eudactylotum Gosse 1886,Microcodon clavus,Monostyla closterocerca Schmarda 1895,Monostyla copeis Harring & Meyers 1926,Monostyla lunaris Ehrbg. 1882,Monostyla obtusa Murray 1913,Ploesoma truncatum Levander 1894,Polyarthra euryptera Wierzejski 1893,Polyarthra major Burckhardt 1900,Polyarthra remata Skorikov 1896,Polyarthra vulgaris Carlin 1943,remove,Synchaeta pectinata Ehrbg.  1892,Total Rotifers,Trichocerca cyclindrica Imhoff 1981,Trichocerca elongata Gosse 1886,Trichocerca insignis Herrick 1885,Trichocerca multicrinis Kelicott 1897,Trichocerca porcellus Gosse 1886,Trichocerca pusilla Jennings 1993,Trichocerca rousseleti Voight 1901,Trichocerca sp,"Trichotria tetractis tetractis (Ehrenberg, 1830) ",Unknown one toe
+
+1: "Lake Name" -> "Lake Name" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lake_name (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+2: "Date" -> "Date" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/date (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+3: "Anuraeopsis fissa Gosse 1851" -> "Anuraeopsis fissa Gosse 1851" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/anuraeopsis_fissa_gosse_1851 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+4: "Anuraeopsis navicula?Rousselet, 1911" -> "Anuraeopsis navicula?Rousselet, 1911" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/anuraeopsis_navicula_rousselet_1911 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+5: "Ascomorpha ecaudas Perty 1850" -> "Ascomorpha ecaudas Perty 1850" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/ascomorpha_ecaudas_perty_1850 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+6: "Ascomorpha ovalis Bergendal 1892" -> "Ascomorpha ovalis Bergendal 1892" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/ascomorpha_ovalis_bergendal_1892 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+7: "Ascomorpha saltans Bartsch 1870" -> "Ascomorpha saltans Bartsch 1870" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/ascomorpha_saltans_bartsch_1870 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+8: "Asplanchna herricki De Guerne 1888" -> "Asplanchna herricki De Guerne 1888" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/asplanchna_herricki_de_guerne_1888 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+9: "Asplanchna priodonta Gosse 1850" -> "Asplanchna priodonta Gosse 1850" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/asplanchna_priodonta_gosse_1850 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+10: "Cephalodella gibba Ehrbg. 1832" -> "Cephalodella gibba Ehrbg. 1832" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/cephalodella_gibba_ehrbg_1832 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+11: "Collotheca mutabilis Hudson 1885" -> "Collotheca mutabilis Hudson 1885" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/collotheca_mutabilis_hudson_1885 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+12: "Collurella ucinata Muller 1773" -> "Collurella ucinata Muller 1773" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/collurella_ucinata_muller_1773 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+13: "Conochiloides dossaurius Hudson 1885" -> "Conochiloides dossaurius Hudson 1885" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/conochiloides_dossaurius_hudson_1885 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+14: "Conochilus unicornis Rousselet 1892" -> "Conochilus unicornis Rousselet 1892" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/conochilus_unicornis_rousselet_1892 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+15: "Encentrum species" -> "Encentrum species" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/encentrum_species (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+16: "Euchlanis pellucida Harring 1921" -> "Euchlanis pellucida Harring 1921" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/euchlanis_pellucida_harring_1921 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+17: "Filinia terminalis Platte 1886" -> "Filinia terminalis Platte 1886" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/filinia_terminalis_platte_1886 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+18: "Gastropus stylifer Imhoff 1891" -> "Gastropus stylifer Imhoff 1891" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/gastropus_stylifer_imhoff_1891 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+19: "Hexarthra mira Hudson 1871" -> "Hexarthra mira Hudson 1871" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/hexarthra_mira_hudson_1871 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+20: "Kellicottia bostonensis Rousselet 1892" -> "Kellicottia bostonensis Rousselet 1892" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/kellicottia_bostonensis_rousselet_1892 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+21: "Kellicottia longispina Kelicott 1879" -> "Kellicottia longispina Kelicott 1879" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/kellicottia_longispina_kelicott_1879 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+22: "Keratella cochlearis Gosse 1851" -> "Keratella cochlearis Gosse 1851" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_cochlearis_gosse_1851 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+23: "Keratella crassa Ahlstrom 1943" -> "Keratella crassa Ahlstrom 1943" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_crassa_ahlstrom_1943 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+24: "Keratella earlinae Ahlstrom 1943" -> "Keratella earlinae Ahlstrom 1943" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_earlinae_ahlstrom_1943 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+25: "Keratella hiemalis Carlin 1943" -> "Keratella hiemalis Carlin 1943" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_hiemalis_carlin_1943 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+26: "Keratella serrulata Rylov 1926" -> "Keratella serrulata Rylov 1926" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_serrulata_rylov_1926 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+27: "Keratella taurocephala Meyers 1938" -> "Keratella taurocephala Meyers 1938" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_taurocephala_meyers_1938 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+28: "Keratella tecta Gosse 1841" -> "Keratella tecta Gosse 1841" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/keratella_tecta_gosse_1841 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+29: "Lapdella sp" -> "Lapdella sp" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lapdella_sp (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+30: "Lecane crepida  Harring 1914" -> "Lecane crepida  Harring 1914" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_crepida_harring_1914 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+31: "Lecane flexilis Gosse 1886" -> "Lecane flexilis Gosse 1886" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_flexilis_gosse_1886 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+32: "Lecane luna Muller 1776" -> "Lecane luna Muller 1776" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_luna_muller_1776 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+33: "Lecane mira Murray 1913" -> "Lecane mira Murray 1913" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_mira_murray_1913 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+34: "Lecane mucronata Harring & Meyers 1926" -> "Lecane mucronata Harring & Meyers 1926" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_mucronata_harring_meyers_1926 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+35: "Lecane species" -> "Lecane species" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_species (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+36: "Lecane tenuisetta  Harring 1914" -> "Lecane tenuisetta  Harring 1914" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_tenuisetta_harring_1914 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+37: "lecane tudicola Harring & Meyers 1926" -> "lecane tudicola Harring & Meyers 1926" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lecane_tudicola_harring_meyers_1926 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+38: "Manfredium eudactylotum Gosse 1886" -> "Manfredium eudactylotum Gosse 1886" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/manfredium_eudactylotum_gosse_1886 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+39: "Microcodon clavus" -> "Microcodon clavus" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/microcodon_clavus (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+40: "Monostyla closterocerca Schmarda 1895" -> "Monostyla closterocerca Schmarda 1895" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/monostyla_closterocerca_schmarda_1895 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+41: "Monostyla copeis Harring & Meyers 1926" -> "Monostyla copeis Harring & Meyers 1926" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/monostyla_copeis_harring_meyers_1926 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+42: "Monostyla lunaris Ehrbg. 1882" -> "Monostyla lunaris Ehrbg. 1882" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/monostyla_lunaris_ehrbg_1882 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+43: "Monostyla obtusa Murray 1913" -> "Monostyla obtusa Murray 1913" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/monostyla_obtusa_murray_1913 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+44: "Ploesoma truncatum Levander 1894" -> "Ploesoma truncatum Levander 1894" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/ploesoma_truncatum_levander_1894 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+45: "Polyarthra euryptera Wierzejski 1893" -> "Polyarthra euryptera Wierzejski 1893" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/polyarthra_euryptera_wierzejski_1893 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+46: "Polyarthra major Burckhardt 1900" -> "Polyarthra major Burckhardt 1900" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/polyarthra_major_burckhardt_1900 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+47: "Polyarthra remata Skorikov 1896" -> "Polyarthra remata Skorikov 1896" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/polyarthra_remata_skorikov_1896 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+48: "Polyarthra vulgaris Carlin 1943" -> "Polyarthra vulgaris Carlin 1943" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/polyarthra_vulgaris_carlin_1943 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+49: "remove" -> "remove" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/remove (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+50: "Synchaeta pectinata Ehrbg.  1892" -> "Synchaeta pectinata Ehrbg.  1892" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/synchaeta_pectinata_ehrbg_1892 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+51: "Total Rotifers" -> "Total Rotifers" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/total_rotifers (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+52: "Trichocerca cyclindrica Imhoff 1981" -> "Trichocerca cyclindrica Imhoff 1981" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_cyclindrica_imhoff_1981 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+53: "Trichocerca elongata Gosse 1886" -> "Trichocerca elongata Gosse 1886" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_elongata_gosse_1886 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+54: "Trichocerca insignis Herrick 1885" -> "Trichocerca insignis Herrick 1885" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_insignis_herrick_1885 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+55: "Trichocerca multicrinis Kelicott 1897" -> "Trichocerca multicrinis Kelicott 1897" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_multicrinis_kelicott_1897 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+56: "Trichocerca porcellus Gosse 1886" -> "Trichocerca porcellus Gosse 1886" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_porcellus_gosse_1886 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+57: "Trichocerca pusilla Jennings 1993" -> "Trichocerca pusilla Jennings 1993" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_pusilla_jennings_1993 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+58: "Trichocerca rousseleti Voight 1901" -> "Trichocerca rousseleti Voight 1901" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_rousseleti_voight_1901 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+59: "Trichocerca sp" -> "Trichocerca sp" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichocerca_sp (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+60: "Trichotria tetractis tetractis (Ehrenberg, 1830) " -> "Trichotria tetractis tetractis Ehrenberg, 1830" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/trichotria_tetractis_tetractis_ehrenberg_1830 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+61: "Unknown one toe" -> "Unknown one toe" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/unknown_one_toe (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+
+
+TODO: add dcterms format for extension 
+TODO: add dcterms format for extension 
+LayerDatasetDescriptionsQuerylet(D) .http://purl.org/twc/vocab/conversion/enhancement_identifier. ."1".
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://purl.org/twc/vocab/conversion/LayerDataset.
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+TODO: add dcterms format for extension 
+Resulting size: 69988 triples
+Generated 69988 triples in 0 min. ( 1477059.4 triples/min )
+May 28, 2013 5:32:45 PM edu.rpi.tw.data.csv.CSVtoRDF toRDF
+INFO: writing metadata to separate file from data automatic/AEAP_rotifers_web.csv.e1.void.ttl
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+   convert.sh done
+publish/aeap_nys-dfw_lake_samples-2013-April-24.raw.ttl
+publish/aeap_nys-dfw_lake_samples-2013-April-24.raw.sample.ttl
+publish/aeap_nys-dfw_lake_samples-2013-April-24.e1.ttl
+publish/aeap_nys-dfw_lake_samples-2013-April-24.e1.sample.ttl
+publish/aeap_nys-dfw_lake_samples-2013-April-24.pml.ttl
+  (including automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.pml.ttl)
+publish/aeap_nys-dfw_lake_samples-2013-April-24.void.ttl
+  (including automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.e1.void.ttl)
+  (including automatic/AEAP_crust_web_v3.csv.e1.void.ttl)
+  (including automatic/AEAP_crust_web_v3.csv.raw.void.ttl)
+  (including automatic/AEAP_rotifers_web.csv.e1.void.ttl)
+  (including automatic/AEAP_rotifers_web.csv.raw.void.ttl)
+  (including automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.raw.void.ttl)
+  (including publish/aeap_nys-dfw_lake_samples-2013-April-24.pml.ttl)
+publish/aeap_nys-dfw_lake_samples-2013-April-24.ttl (will delete at end of processing because $CSV2RDF4LOD_PUBLISH_TTL=.)
+  (including publish/aeap_nys-dfw_lake_samples-2013-April-24.e1.ttl)
+  (including publish/aeap_nys-dfw_lake_samples-2013-April-24.raw.ttl)
+  (including publish/aeap_nys-dfw_lake_samples-2013-April-24.void.ttl)
+publish/aeap_nys-dfw_lake_samples-2013-April-24.nt - skipping; set CSV2RDF4LOD_PUBLISH_NT=true in source-me.sh to publish N-Triples.
+publish/aeap_nys-dfw_lake_samples-2013-April-24.sameas.nt - skipping; set CSV2RDF4LOD_PUBLISH_SUBSET_SAMEAS=true in source-me.sh to publish sameas subset.
+publish/aeap_nys-dfw_lake_samples-2013-April-24.rdf - skipping; set CSV2RDF4LOD_PUBLISH_RDFXML=true in source-me.sh to publish RDF/XML.
+publish/bin/ln-to-www-root-aeap_nys-dfw_lake_samples-2013-April-24.sh
+ - skipping. Set CSV2RDF4LOD_PUBLISH_VARWWW_DUMP_FILES=true and CSV2RDF4LOD_PUBLISH_LOD_MATERIALIZATION_WWW_ROOT to /var/www
+publish/tdb/     - skipping; set CSV2RDF4LOD_PUBLISH_TDB=true in source-me.sh to load conversions into publish/tdb/.
+                 - or run publish/bin/tdbloader-aeap_nys-dfw_lake_samples-2013-April-24.sh.
+                 - then run $TDBROOT/bin/rdfserver with publish/bin/joseki-config-anterior-aeap_nys-dfw_lake_samples-2013-April-24.ttl.
+publish/lod-mat/ - skipping; set CSV2RDF4LOD_PUBLISH_LOD_MATERIALIZATION=true in source-me.sh to load conversions into publish/lod-mat/,
+                 - or run automatic/lod-materialize-aeap_nys-dfw_lake_samples-2013-April-24.sh.

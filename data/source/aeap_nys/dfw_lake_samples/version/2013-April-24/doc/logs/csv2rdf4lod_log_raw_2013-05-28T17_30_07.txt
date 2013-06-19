@@ -1,0 +1,69 @@
+2013-05-28T17:30:07+00:00
+E1 enhancement parameters missing; creating default template.
+Edit manual/AEAP_phyto_web.csv.e1.params.ttl and rerun to produce E1 enhancement.
+966 rows in manual/AEAP_phyto_web.csv
+RAW CONVERSION
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-Jan-16 initiated:
+fileName:                     manual/AEAP_phyto_web.csv
+sampleLimit:                  2
+enhancementParametersURL:     automatic/AEAP_phyto_web.csv.raw.params.ttl
+outputFileName:               automatic/AEAP_phyto_web.csv.raw.sample.ttl
+converterIdentifier:          csv2rdf4lod_383025bc5d2760793ff770a7c534207c
+==============================
+automatic/AEAP_phyto_web.csv.raw.params.ttl
+org.openrdf.rio.RDFParseException: Expected ']', found 'a' [line 1480]
+	at org.openrdf.rio.helpers.RDFParserBase.reportError(RDFParserBase.java:464)
+	at org.openrdf.rio.turtle.TurtleParser.reportError(TurtleParser.java:1093)
+	at org.openrdf.rio.turtle.TurtleParser.verifyCharacter(TurtleParser.java:996)
+	at org.openrdf.rio.turtle.TurtleParser.parseImplicitBlank(TurtleParser.java:502)
+	at org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:408)
+	at org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:337)
+	at org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:330)
+	at org.openrdf.rio.turtle.TurtleParser.parseImplicitBlank(TurtleParser.java:497)
+	at org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:408)
+	at org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:337)
+	at org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:330)
+	at org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:299)
+	at org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:206)
+	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:184)
+	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:129)
+	at org.openrdf.repository.base.RepositoryConnectionBase.addInputStreamOrReader(RepositoryConnectionBase.java:354)
+	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:243)
+	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:203)
+	at edu.rpi.tw.data.rdf.utils.pipes.starts.Cat.load(Cat.java:175)
+	at edu.rpi.tw.data.rdf.utils.pipes.starts.Cat.load(Cat.java:124)
+	at edu.rpi.tw.data.csv.CSVtoRDF.main(CSVtoRDF.java:429)
+ERROR; invalid RDF syntax in automatic/AEAP_phyto_web.csv.raw.params.ttl
+Finished converting -sample 2 sample rows.
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-Jan-16 initiated:
+fileName:                     manual/AEAP_phyto_web.csv
+enhancementParametersURL:     automatic/AEAP_phyto_web.csv.raw.params.ttl
+outputFileName:               automatic/AEAP_phyto_web.csv.raw.ttl
+metaOutputFileName:           automatic/AEAP_phyto_web.csv.raw.void.ttl
+converterIdentifier:          csv2rdf4lod_383025bc5d2760793ff770a7c534207c
+==============================
+automatic/AEAP_phyto_web.csv.raw.params.ttl
+org.openrdf.rio.RDFParseException: Expected ']', found 'a' [line 1480]
+	at org.openrdf.rio.helpers.RDFParserBase.reportError(RDFParserBase.java:464)
+	at org.openrdf.rio.turtle.TurtleParser.reportError(TurtleParser.java:1093)
+	at org.openrdf.rio.turtle.TurtleParser.verifyCharacter(TurtleParser.java:996)
+	at org.openrdf.rio.turtle.TurtleParser.parseImplicitBlank(TurtleParser.java:502)
+	at org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:408)
+	at org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:337)
+	at org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:330)
+	at org.openrdf.rio.turtle.TurtleParser.parseImplicitBlank(TurtleParser.java:497)
+	at org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:408)
+	at org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:337)
+	at org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:330)
+	at org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:299)
+	at org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:206)
+	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:184)
+	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:129)
+	at org.openrdf.repository.base.RepositoryConnectionBase.addInputStreamOrReader(RepositoryConnectionBase.java:354)
+	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:243)
+	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:203)
+	at edu.rpi.tw.data.rdf.utils.pipes.starts.Cat.load(Cat.java:175)
+	at edu.rpi.tw.data.rdf.utils.pipes.starts.Cat.load(Cat.java:124)
+	at edu.rpi.tw.data.csv.CSVtoRDF.main(CSVtoRDF.java:429)
+ERROR; invalid RDF syntax in automatic/AEAP_phyto_web.csv.raw.params.ttl
+   convert.sh done

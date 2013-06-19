@@ -1,0 +1,815 @@
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix todo:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix vann:          <http://purl.org/vocab/vann/> .
+@prefix skos:          <http://www.w3.org/2004/02/skos/core#> .
+@prefix time:          <http://www.w3.org/2006/time#> .
+@prefix wgs:           <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geonames:      <http://www.geonames.org/ontology#> .
+@prefix geonamesid:    <http://sws.geonames.org/> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix dbpedia:       <http://dbpedia.org/resource/> .
+@prefix dbpediaprop:   <http://dbpedia.org/property/> .
+@prefix dbpediaowl:    <http://dbpedia.org/ontology/> .
+@prefix con:           <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix muo:           <http://purl.oclc.org/NET/muo/muo#> .
+@prefix vs:            <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix frbr:          <http://purl.org/vocab/frbr/core#> .
+@prefix bibo:          <http://purl.org/ontology/bibo/> .
+@prefix prov:          <http://www.w3.org/ns/prov#> .
+@prefix doap:          <http://usefulinc.com/ns/doap#> .
+@prefix nfo:           <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix sio:           <http://semanticscience.org/resource/> .
+@prefix org:           <http://www.w3.org/ns/org#> .
+@prefix vsr:           <http://purl.org/twc/vocab/vsr#> .
+@prefix dcat:          <http://www.w3.org/ns/dcat#> .
+@prefix qb:            <http://purl.org/linked-data/cube#> .
+@prefix pml:           <http://provenanceweb.org/ns/pml#> .
+@prefix dgtwc:         <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix dcterms:       <http://purl.org/dc/terms/> .
+@prefix void:          <http://rdfs.org/ns/void#> .
+@prefix scovo:         <http://purl.org/NET/scovo#> .
+@prefix sioc:          <http://rdfs.org/sioc/ns#> .
+@prefix foaf:          <http://xmlns.com/foaf/0.1/> .
+@prefix ov:            <http://open.vocab.org/terms/> .
+@prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
+# Added by brendan
+@prefix pollution:     <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#> .
+@prefix query_ns:      <http://aquarius.tw.rpi.edu/projects/semantaqua/data-source/query-variable/> .
+@prefix water_ns:      <http://escience.rpi.edu/ontology/semanteco/2/0/water.owl#> .
+@prefix :              <http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/version/2013-mar-22/params/enhancement/1/> .
+
+
+:a_location_bundle
+   a conversion:ImplicitBundle;
+   conversion:property_name <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#hasContext>; # Can also be a URI, e.g. dcterms:title.
+   conversion:name_template "[/sd]sampleLocation/[r]";
+   conversion:type_name     prov:Location;   # Can also be a URI, e.g. foaf:Person.
+.
+
+<http://purl.org/twc/semantgeo/source/source/dataset/dfwi-aeap-nyserda/version/2013-mar-22/conversion/enhancement/1>
+   a conversion:LayerDataset, void:Dataset;
+
+   conversion:base_uri           "http://purl.org/twc/semantgeo"^^xsd:anyURI;
+   conversion:source_identifier  "source";
+   conversion:dataset_identifier "dfwi-aeap-nyserda";
+   conversion:version_identifier "2013-mar-22";
+   conversion:enhancement_identifier "1";
+
+   conversion:conversion_process [
+      a conversion:EnhancementConversionProcess;
+      conversion:enhancement_identifier "1";
+
+      dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "bashby" ];
+      dcterms:created "2013-05-10T02:50:53-04:00"^^xsd:dateTime;
+
+
+      #conversion:enhance [
+      #   ov:csvRow 2;
+      #   a conversion:DataStartRow;
+      #];
+
+      conversion:delimits_cell ",";
+      #conversion:delimits_cell "	"; # tab
+      #conversion:delimits_cell "|";   # pipe
+      #conversion:delimits_cell ",";   # comma
+
+      conversion:interpret [
+         conversion:symbol        "","N/A";
+         conversion:interpretation conversion:null; 
+      ];
+      conversion:enhance [
+      #   conversion:domain_template "thing_[r]";
+      #   conversion:domain_name     "Thing";
+          conversion:domain_name "WaterMeasurement";
+      ];
+      conversion:enhance [
+         conversion:class_name "WaterMeasurement";
+         conversion:subclass_of <http://escience.rpi.edu/ontology/semanteco/2/0/water.owl#WaterMeasurement>;
+      ];
+      conversion:enhance [ # Multi line n-ary assignment           
+         ov:csvCol 10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46;             
+         a qb:Observation;
+         rdf:type           water_ns:WaterMeasurement;
+         prov:atLocation query_ns:site;
+         # "of entity"
+         # measurement to sample: http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#ofEntity
+         # fixing odd structure
+         conversion:equivalent_property <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#hasCharacteristic>;
+      ];   
+
+      #final Variable measurement = query.getVariable(VAR_NS+"measurement");
+      #final QueryResource polHasCounty = query.getResource(POL_NS+"hasCounty");
+      #final QueryResource polHasState = query.getResource(POL_NS+"hasState");
+      #final QueryResource polHasCharacteristic = query.getResource(POL_NS+"hasCharacteristic");
+      #final QueryResource polHasValue = query.getResource(POL_NS+"hasValue");
+      ##final QueryResource airAirMeasurement = query.getResource(AIR_NS+"AirMeasurement");
+      #final Variable unit = query.getVariable(QUERY_NS+"unit");
+      #final Variable value = query.getVariable(QUERY_NS+"value");
+      #final Variable site = query.getVariable(QUERY_NS+"site");
+      #final Variable element = query.getVariable(QUERY_NS+"element");
+      #final QueryResource unitHasUnit = query.getResource(UNIT_NS+"hasUnit");
+      #final QueryResource atLocation = query.getResource(PROV_NS+"atLocation");
+      #final QueryResource hasMeasurement = query.getResource(POL_NS +"hasMeasurement");
+
+      # Talk about how I am doing these:
+      # cell based conversion
+      # explicit bundle
+      # forcing new triples (aserting new triples with a new block)
+      #  Column 10, we added new triples based off the column. overrode what the cell-based conversion would have done. The up part. We didn't want that, so we edited the object and predicate with the newly made block.
+      #  Pattern for new triples. "subjectAnnotation". Applies to cell or row based, not just one or the other.
+      # implicit bundles
+      # Little small one: default for cell is rdf:value, we overrode this as rdf:hasValue. uses semantEco's vocabulary for measurements.
+      
+      conversion:enhance [
+         ov:csvCol          1;
+         ov:csvHeader       "Accession Code (sample#)";
+         conversion:label   "Accession Code (sample#)";
+         a conversion:DataStartRow;
+         conversion:comment "A unique numeric reference to a specific water sample taken from a lake";
+         conversion:range   rdfs:Resource;
+         conversion:range_name  "WaterSample";
+         # Explicit bundling: bind sesson code and lake name.
+         # Implicit bundle: "tim lebo has two columns"
+         conversion:equivalent_property <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#ofEntity>;
+      ];
+      conversion:enhance [
+         ov:csvCol          2;
+         ov:csvHeader       "Lake Name";
+         conversion:label   "Lake Name";
+         conversion:equivalent_property rdfs:Label;
+         conversion:comment "The name of the lake the sample is from";
+         conversion:range   rdfs:Literal;
+         # is bundled by column 3
+         conversion:bundled_by [ ov:csvCol 3 ];
+      ];
+      conversion:enhance [
+         ov:csvCol          3;
+         ov:csvHeader       "DEC Code";
+         conversion:label   "DEC Code";
+         conversion:comment "A numeric reference to a lake in the DEC registry, unique to a specific lake";
+         conversion:range   rdfs:Resource;
+         conversion:range_name  "Lake";
+         # 'relation between sample and lake'
+         conversion:equivalent_property <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#hasContext>;
+         conversion:bundled_by [ ov:csvCol 1 ];
+      ];
+      conversion:enhance [
+         ov:csvCol          4;
+         ov:csvHeader       "Date";
+         conversion:label   "Date";
+         conversion:comment "The date the sample was taken from the lake";
+         conversion:range   xsd:date;
+      ];
+      conversion:enhance [
+         ov:csvCol          5;
+         ov:csvHeader       "Z max (m)";
+         conversion:label   "Z max (m)";
+         conversion:comment "The maximum depth to the lake floor at the site where the sample was taken";
+         conversion:range   xsd:double;
+         conversion:bundled_by :a_location_bundle;
+      ];
+      conversion:enhance [
+         ov:csvCol          6;
+         ov:csvHeader       "Sample Type";
+         conversion:label   "Sample Type";
+         conversion:comment "I represents 'Integrated' sample which is a mixed sample representing several meters from the surface to the top of the thermocline.  G represents a 'Grab' sample at a specific depth.";
+         conversion:range   rdfs:Literal;
+         conversion:bundled_by :a_location_bundle;
+      ];
+      conversion:enhance [
+         ov:csvCol          7;
+         ov:csvHeader       "Sample Z (m)";
+         conversion:label   "Sample Z (m)";
+         conversion:comment "TODO";
+         conversion:range   xsd:double;
+         conversion:bundled_by :a_location_bundle;
+      ];
+      conversion:enhance [
+         ov:csvCol          8;
+         ov:csvHeader       "Sample Layer";
+         conversion:label   "Sample Layer";
+         conversion:comment "TODO";
+         conversion:range   rdfs:Literal;
+         conversion:bundled_by :a_location_bundle;
+      ];
+      conversion:enhance [
+         ov:csvCol          9;
+         ov:csvHeader       "Secchi (m)";
+         conversion:label   "Secchi (m)";
+         conversion:comment "TODO: has to do with how clear the water is";
+         conversion:range   xsd:double;
+         conversion:bundled_by :a_location_bundle;
+      ];
+      conversion:enhance [
+         ov:csvCol          10;
+         ov:csvHeader       "Conductivity (umhos)";
+         # hiccup of the implementation. "to change what the object of the triple of the attribute header resource"
+         a qb:Observation;
+         conversion:label   "Conductivity (umhos)";
+         conversion:comment "TODO: pretty self explanatory";
+         conversion:range   xsd:double;
+         #conversion:interpret [
+         #   conversion:symbol        "Conductivity (umhos)";
+         #   conversion:interpretation <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#Conductivity>; 
+         #];
+         conversion:object <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#Conductivity>;
+      ];
+      conversion:enhance [
+         ov:csvCol          10;
+         a conversion:SubjectAnnotation;
+         # conversion:object is taken in main declaration above so to do this other object, we do another block
+         conversion:predicate <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#hasUnit>;
+         conversion:object    <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#UMHOS>; # TODO: FINDINPOLLUTIONOWLFILE
+      ];
+      conversion:enhance [
+         ov:csvCol          11;
+         ov:csvHeader       "pH air eq";
+         conversion:label   "pH air eq";
+         conversion:comment "The pH reading for the sample. TODO: requires telling how the ph was taken not at the lake itself";
+         conversion:range   xsd:double;
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          12;
+         ov:csvHeader       "ANC (ueq/L)";
+         conversion:label   "ANC (ueq/L)";
+         conversion:comment "The acid neutralizing capacity of a lake. TODO: expand this";
+         conversion:range   xsd:double;
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          13;
+         ov:csvHeader       "NH4-N (ug N/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "NH4-N (ug N/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          14;
+         ov:csvHeader       "NH4+ (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "NH4+ (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          15;
+         ov:csvHeader       "NH4+ (ueq/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "NH4+ (ueq/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          16;
+         ov:csvHeader       "DIC (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "DIC (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          17;
+         ov:csvHeader       "DOC (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "DOC (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          18;
+         ov:csvHeader       "F (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "F (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          19;
+         ov:csvHeader       "Cl (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Cl (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          20;
+         ov:csvHeader       "Cl (ueq/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Cl (ueq/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          21;
+         ov:csvHeader       "NO3-N (mg N/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "NO3-N (mg N/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          22;
+         ov:csvHeader       "NO3- (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "NO3- (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          23;
+         ov:csvHeader       "NO3- (ueq/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "NO3- (ueq/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          24;
+         ov:csvHeader       "SO4-S (mg S/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "SO4-S (mg S/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          25;
+         ov:csvHeader       "SO4-- (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "SO4-- (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          26;
+         ov:csvHeader       "SO4-- (ueq/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "SO4-- (ueq/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          27;
+         ov:csvHeader       "Total P (ug/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Total P (ug/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          28;
+         ov:csvHeader       "MRP    (ug P/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "MRP    (ug P/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          29;
+         ov:csvHeader       "TFP (ug/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "TFP (ug/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          30;
+         ov:csvHeader       "TN (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "TN (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          31;
+         ov:csvHeader       "Chla (ug/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Chla (ug/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          32;
+         ov:csvHeader       "Si (mg/l)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Si (mg/l)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          33;
+         ov:csvHeader       "Dissolved Silica SiO2 (mg/l)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Dissolved Silica SiO2 (mg/l)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          34;
+         ov:csvHeader       "Na (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Na (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          35;
+         ov:csvHeader       "Na (ueq/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Na (ueq/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          36;
+         ov:csvHeader       "K (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "K (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          37;
+         ov:csvHeader       "K (ueq/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "K (ueq/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          38;
+         ov:csvHeader       "Fe (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Fe (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          39;
+         ov:csvHeader       "Mg (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Mg (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          40;
+         ov:csvHeader       "Mg (ueq/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Mg (ueq/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          41;
+         ov:csvHeader       "Ca (mg/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Ca (mg/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          42;
+         ov:csvHeader       "Ca (ueq/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Ca (ueq/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          43;
+         ov:csvHeader       "Total Al (ug/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Total Al (ug/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          44;
+         ov:csvHeader       "Total mono Al (ug/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Total mono Al (ug/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          45;
+         ov:csvHeader       "Nonlabile mono Al (ug/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Nonlabile mono Al (ug/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          46;
+         ov:csvHeader       "Labile mono Ali (ug/L)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Labile mono Ali (ug/L)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+         # fixing quirk by saying this explicitly as well
+         a qb:Observation;
+      ];
+      conversion:enhance [
+         ov:csvCol          47;
+         ov:csvHeader       "Hydrologic Type";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Hydrologic Type";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          48;
+         ov:csvHeader       "Watershed";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Watershed";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          49;
+         ov:csvHeader       "Watershed area (ha)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Watershed area (ha)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          50;
+         ov:csvHeader       "lake volume (m3)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "lake volume (m3)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          51;
+         ov:csvHeader       "WA/SA ratio";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "WA/SA ratio";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          52;
+         ov:csvHeader       "surface area (ha)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "surface area (ha)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          53;
+         ov:csvHeader       "surface area (m2)";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "surface area (m2)";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];     
+      #conversion:enhance [ # Multi line n-ary assignment           
+      #   ov:csvColumn 4,4,5;             
+      #   a qb:Observation;
+      #];
+
+   ];
+.
+
+# http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#hasValue                         
+# outside and not connected to anything
+rdf:value conversion:equivalent_property <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#hasValue> .

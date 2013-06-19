@@ -1,0 +1,84 @@
+@base <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/manual/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <../../../../../../../../../dc/terms/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix oboro: <http://obofoundry.org/ro/ro.owl#> .
+@prefix oprov: <http://openprovenance.org/ontology#> .
+@prefix hartigprov: <../../../../../../../../../net/provenance/ns#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/nfo/#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix conv: <../../../../../../../../vocab/conversion/> .
+@prefix irw: <http://www.ontologydesignpatterns.org/ont/web/irw.owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<AEAP_NYSERDA_Chem_94-12_v9_web.csv>
+    pmlp:hasModificationDateTime "2013-05-03T11:29:48-04:00"^^xsd:dateTime ;
+    nfo:fileName "AEAP_NYSERDA_Chem_94-12_v9_web.csv" ;
+    nfo:hasHash <md5_04b0c0893256b6f2ee7ece6a97d3892f_time_1368168592> ;
+    a pmlp:Information, nfo:FileDataObject .
+
+<inferenceStep>
+    pmlj:hasAntecedentList (<nodeSet_antecedent>
+    ) ;
+    pmlj:hasIndex 0 ;
+    pmlj:hasInferenceEngine <ms-excel-xls-convert-to-csv> ;
+    pmlj:hasInferenceRule conv:ms-excel-xls-convert-to-csv_Method ;
+    oboro:has_agent [
+        a foaf:OnlineAccount ;
+        foaf:accountName "bashby"
+    ] ;
+    hartigprov:involvedActor [
+        a foaf:OnlineAccount ;
+        foaf:accountName "bashby"
+    ] ;
+    a pmlj:InferenceStep .
+
+<md5_04b0c0893256b6f2ee7ece6a97d3892f_time_1368168592>
+    dcterms:date "2013-05-10T02:49:52-04:00"^^xsd:dateTime ;
+    nfo:hashAlgorithm "md5" ;
+    nfo:hashValue "04b0c0893256b6f2ee7ece6a97d3892f" ;
+    a nfo:FileHash .
+
+<md5_07447b052ee9132e542108e2bc77b483_time_1368168592>
+    dcterms:date "2013-05-10T02:49:52-04:00"^^xsd:dateTime ;
+    nfo:hashAlgorithm "md5" ;
+    nfo:hashValue "07447b052ee9132e542108e2bc77b483" ;
+    a nfo:FileHash .
+
+<ms-excel-xls-convert-to-csv>
+    dcterms:identifier "ms-excel-xls-convert-to-csv" ;
+    a pmlp:InferenceEngine, conv:Ms-excel-xls-convert-to-csv_Engine .
+
+<nodeSet>
+    pmlj:hasConclusion <AEAP_NYSERDA_Chem_94-12_v9_web.csv> ;
+    pmlj:isConsequentOf <inferenceStep> ;
+    a pmlj:NodeSet .
+
+<nodeSet_antecedent>
+    pmlj:hasConclusion <../source/AEAP_NYSERDA_Chem_94-12_v9_web.xls> ;
+    a pmlj:NodeSet .
+
+<wasControlled>
+    oprov:cause [
+        a foaf:OnlineAccount ;
+        foaf:accountName "bashby"
+    ] ;
+    oprov:effect <inferenceStep> ;
+    oprov:endTime "2013-05-10T02:49:51-04:00"^^xsd:dateTime ;
+    a oprov:WasControlledBy .
+
+<../source/AEAP_NYSERDA_Chem_94-12_v9_web.xls>
+    pmlp:hasModificationDateTime "2013-05-03T11:29:48-04:00"^^xsd:dateTime ;
+    nfo:fileName "../source/AEAP_NYSERDA_Chem_94-12_v9_web.xls" ;
+    nfo:hasHash <md5_07447b052ee9132e542108e2bc77b483_time_1368168592> ;
+    a pmlp:Information, nfo:FileDataObject .
+
+conv:Ms-excel-xls-convert-to-csv_Engine
+    rdfs:subClassOf pmlp:InferenceEngine .
+
+<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24> <http://purl.org/dc/terms/source> <AEAP_NYSERDA_Chem_94-12_v9_web.csv> .
+
