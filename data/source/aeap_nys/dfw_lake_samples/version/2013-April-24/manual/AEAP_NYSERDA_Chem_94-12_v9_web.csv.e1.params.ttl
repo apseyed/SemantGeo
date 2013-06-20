@@ -171,7 +171,7 @@
          ov:csvHeader       "Z max (m)";
          conversion:label   "Z max (m)";
          conversion:comment "The maximum depth to the lake floor at the site where the sample was taken";
-         conversion:range   xsd:double;
+         conversion:range   xsd:decimal;
          conversion:bundled_by :a_location_bundle;
       ];
       conversion:enhance [
@@ -187,7 +187,7 @@
          ov:csvHeader       "Sample Z (m)";
          conversion:label   "Sample Z (m)";
          conversion:comment "TODO";
-         conversion:range   xsd:double;
+         conversion:range   xsd:decimal;
          conversion:bundled_by :a_location_bundle;
       ];
       conversion:enhance [
@@ -203,7 +203,7 @@
          ov:csvHeader       "Secchi (m)";
          conversion:label   "Secchi (m)";
          conversion:comment "TODO: has to do with how clear the water is";
-         conversion:range   xsd:double;
+         conversion:range   xsd:decimal;
          conversion:bundled_by :a_location_bundle;
       ];
       conversion:enhance [
@@ -213,7 +213,7 @@
          a qb:Observation;
          conversion:label   "Conductivity (umhos)";
          conversion:comment "TODO: pretty self explanatory";
-         conversion:range   xsd:double;
+         conversion:range   xsd:decimal;
          #conversion:interpret [
          #   conversion:symbol        "Conductivity (umhos)";
          #   conversion:interpretation <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#Conductivity>; 
@@ -235,16 +235,18 @@
          ov:csvHeader       "pH air eq";
          conversion:label   "pH air eq";
          conversion:comment "The pH reading for the sample. TODO: requires telling how the ph was taken not at the lake itself";
-         conversion:range   xsd:double;
+         conversion:range   xsd:decimal;
          # fixing quirk by saying this explicitly as well
          a qb:Observation;
+         # Link triple to Characteristic
+         conversion:object <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#PH>;
       ];
       conversion:enhance [
          ov:csvCol          12;
          ov:csvHeader       "ANC (ueq/L)";
          conversion:label   "ANC (ueq/L)";
          conversion:comment "The acid neutralizing capacity of a lake. TODO: expand this";
-         conversion:range   xsd:double;
+         conversion:range   xsd:decimal;
          # fixing quirk by saying this explicitly as well
          a qb:Observation;
       ];

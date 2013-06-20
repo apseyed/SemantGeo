@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY time "http://www.w3.org/2006/time" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY chem "http://sweet.jpl.nasa.gov/2.1/matr.owl#" >
+    <!ENTITY geo "http://www.w3.org/2003/01/geo/wgs84_pos#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY elem "http://sweet.jpl.nasa.gov/2.1/matrElement.owl#" >
+    <!ENTITY comp "http://sweet.jpl.nasa.gov/2.1/matrCompound.owl#" >
+    <!ENTITY body "http://sweet.jpl.nasa.gov/2.1/realmHydroBody.owl#" >
+    <!ENTITY pmlp "http://inferenceweb.stanford.edu/2006/06/pml-provenance.owl#" >
+    <!ENTITY pol "http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#" >
+    <!ENTITY epa "http://escience.rpi.edu/ontology/semanteco/2/0/EPA-regulation.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://escience.rpi.edu/ontology/semanteco/2/0/EPA-regulation.owl#"
+     xml:base="http://escience.rpi.edu/ontology/semanteco/2/0/EPA-regulation.owl"
+     xmlns:body="http://sweet.jpl.nasa.gov/2.1/realmHydroBody.owl#"
+     xmlns:comp="http://sweet.jpl.nasa.gov/2.1/matrCompound.owl#"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:epa="http://escience.rpi.edu/ontology/semanteco/2/0/EPA-regulation.owl#"
+     xmlns:elem="http://sweet.jpl.nasa.gov/2.1/matrElement.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time"
+     xmlns:chem="http://sweet.jpl.nasa.gov/2.1/matr.owl#"
+     xmlns:pol="http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:pmlp="http://inferenceweb.stanford.edu/2006/06/pml-provenance.owl#">
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#hasCharacteristic -->
+
+    <owl:ObjectProperty rdf:about="&pol;hasCharacteristic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="&pol;hasValue"/>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/2.1/reprSciUnits.owl#hasUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://sweet.jpl.nasa.gov/2.1/reprSciUnits.owl#hasUnit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#ExcessiveAquaticLifeToxicityMeasurement -->
+
+    <owl:Class rdf:about="&pol;ExcessiveAquaticLifeToxicityMeasurement">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://escience.rpi.edu/ontology/semanteco/2/0/water.owl#WaterMeasurement"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&pol;hasCharacteristic"/>
+                        <owl:hasValue rdf:resource="&pol;PH"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&pol;hasValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="&xsd;decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="&xsd;decimal">5.50</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&pol;RegulationViolation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#RegulationViolation -->
+
+    <owl:Class rdf:about="&pol;RegulationViolation"/>
+    
+
+
+    <!-- http://escience.rpi.edu/ontology/semanteco/2/0/water.owl#WaterMeasurement -->
+
+    <owl:Class rdf:about="http://escience.rpi.edu/ontology/semanteco/2/0/water.owl#WaterMeasurement"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#PH -->
+
+    <owl:NamedIndividual rdf:about="&pol;PH"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
