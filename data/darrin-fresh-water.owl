@@ -113,6 +113,10 @@
                             </rdfs:Datatype>
                         </owl:someValuesFrom>
                     </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sweet.jpl.nasa.gov/2.1/reprSciUnits.owl#hasUnit"/>
+                        <owl:hasValue>SU</owl:hasValue>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
