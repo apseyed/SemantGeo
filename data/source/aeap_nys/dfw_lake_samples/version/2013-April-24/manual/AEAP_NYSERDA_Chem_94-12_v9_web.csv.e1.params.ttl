@@ -38,13 +38,14 @@
 @prefix query:         <http://aquarius.tw.rpi.edu/projects/semantaqua/data-source/query-variable/> .
 @prefix water:         <http://escience.rpi.edu/ontology/semanteco/2/0/water.owl#> .
 @prefix units:         <http://sweet.jpl.nasa.gov/2.1/reprSciUnits.owl#> .
+@prefix oboe:          <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#> .
 
 
 <http://tw.rpi.edu/instances/BrendanAshby> dcterms:identifier "ashbyb" .
 
 :a_location_bundle
    a conversion:ImplicitBundle;
-   conversion:property_name <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#hasContext>; # Can also be a URI, e.g. dcterms:title.
+   conversion:property_name oboe:hasContext; # Can also be a URI, e.g. dcterms:title.
    conversion:name_template "[/sd]sampleLocation/[r]";
    conversion:type_name     prov:Location;   # Can also be a URI, e.g. foaf:Person.
 .
@@ -91,7 +92,7 @@
          rdf:type           water:WaterMeasurement;
          prov:atLocation query:site;
          # "of entity"
-         # measurement to sample: http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#ofEntity
+         # measurement to sample: oboe:ofEntity
          # fixing odd structure
          conversion:equivalent_property <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#hasCharacteristic>;
       ];   
@@ -129,7 +130,7 @@
          conversion:range_name  "WaterSample";
          # Explicit bundling: bind sesson code and lake name.
          # Implicit bundle: "tim lebo has two columns"
-         conversion:equivalent_property <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#ofEntity>;
+         conversion:equivalent_property oboe:ofEntity;
       ];
       conversion:enhance [
          ov:csvCol          2;
@@ -149,7 +150,7 @@
          conversion:range   rdfs:Resource;
          conversion:range_name  "Lake";
          # 'relation between sample and lake'
-         conversion:equivalent_property <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#hasContext>;
+         conversion:equivalent_property oboe:hasContext;
          conversion:bundled_by [ ov:csvCol 1 ];
          # Rebuild our references
          conversion:range_template "[/sd]typed/lake/[.]";
