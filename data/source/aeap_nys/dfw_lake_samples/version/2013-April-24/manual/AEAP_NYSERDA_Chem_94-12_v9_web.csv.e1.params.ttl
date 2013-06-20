@@ -59,6 +59,8 @@
    conversion:version_identifier "2013-April-24";
    conversion:enhancement_identifier "1";
 
+   foaf:page <http://www.rpi.edu/dept/DFWI/research/aeap/aeap_research.html>;
+
    conversion:conversion_process [
       a conversion:EnhancementConversionProcess;
       conversion:enhancement_identifier "1";
