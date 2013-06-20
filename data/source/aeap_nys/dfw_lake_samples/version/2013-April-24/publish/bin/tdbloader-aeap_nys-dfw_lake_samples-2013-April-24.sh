@@ -43,7 +43,7 @@ if [[ ${#load_file} -eq 0 ]]; then
    echo "[ERROR] `basename $0 `could not find dump file to load."
    exit 1
 fi
-echo `basename $load_file` into publish/tdb as http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24 >> publish/ng.info
+echo `basename $load_file` into publish/tdb as http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24 >> publish/ng.info
 
 #if [[ ! `which tdbloader` ]]; then
 #   echo "ERROR: tdbloader not found."

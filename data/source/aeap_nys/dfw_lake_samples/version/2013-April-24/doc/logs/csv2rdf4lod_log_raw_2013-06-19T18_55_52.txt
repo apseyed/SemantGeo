@@ -1,0 +1,295 @@
+2013-06-19T18:55:52-04:00
+1065 rows in manual/AEAP_crust_web_v3.csv
+RAW CONVERSION
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-June-12 initiated:
+fileName:                     manual/AEAP_crust_web_v3.csv
+sampleLimit:                  10
+enhancementParametersURL:     automatic/AEAP_crust_web_v3.csv.raw.params.ttl
+VoIDDumpExtensions:           ttl.gz
+outputFileName:               automatic/AEAP_crust_web_v3.csv.raw.sample.ttl
+converterIdentifier:          csv2rdf4lod_
+==============================
+BaseURIQuerylet(*) .http://purl.org/twc/semmdd.
+SourceIdentifierQuerylet(*) .aeap_nys.
+DatasetIdentifierQuerylet(*) .dfw_lake_samples.
+VersionIdentifierQuerylet(*) .2013-April-24.
+
+subjectNS:   :  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/
+predicateNS: raw:  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/
+objectNS:    _global_value:  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/
+
+CellDelimiterQuerylet(*) .,.
+headers present at row 1: lake Name,DATE,YEAR,COL #,Unknown cyclopoid Total,Unknown cyclopoid Adult,Cyclopoid Unknown-Immature,Cyclops scutifer Total,Cyclops scutifer Adult,Cyclops scutifer Immature,Tropocyclops extensus Total,Tropocyclops extensus Adult,Tropocyclops extensus Immature,Mesocyclops edax Total,Mesocyclops edax,Mesocyclops edax Immature,Orthocyclops modesti Total,Orthocyclops modesti Adults,Orthocyclops modesti Immature,Cyclopoid copepidids,CYCOPEP ,Leptodiaptomus minutus Total,Leptodiaptomus minutus,Leptodiaptomus minutus Immature,Aglaodiaptomus leptopus Total,Aglaodiaptomus leptopus Adult,Aglaodiaptomus leptopus Immature,Skistidiaptomus oregonensis-Adult,Skistidiaptomus oregonensis-Immature,Skistodiaptomus oregonensis Total,Skistodiaptomus oregonensis Adult,Skistodiaptomus oregonensis Immature,Epischura lacustris Total,Epischura lacustris Adult,Epischura lacustris Immature,Daphnia mendotae,Daphnia pulicaria,Daphnia retrocurva,Daphnia dubia,Daphnia catawba,Daphnia ambigua,Daphnia pulex,Daphnia parvula,Bosmina longirostris,Eubosmina ,Diaphanosoma brachyurum,Diaphanosoma bergei,Holopedium gibberum,Polyphemus pediculus,Ceriodaphnia quadrangular,Chydoris species,Leptodora kindti,Alona sp.,Sida crystallina,,
+
+1: "lake Name" -> "lake Name" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/lake_name (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+2: "DATE" -> "DATE" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/date (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+3: "YEAR" -> "YEAR" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/year (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+4: "COL #" -> "COL #" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/col (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+5: "Unknown cyclopoid Total" -> "Unknown cyclopoid Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/unknown_cyclopoid_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+6: "Unknown cyclopoid Adult" -> "Unknown cyclopoid Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/unknown_cyclopoid_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+7: "Cyclopoid Unknown-Immature" -> "Cyclopoid Unknown-Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cyclopoid_unknown_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+8: "Cyclops scutifer Total" -> "Cyclops scutifer Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cyclops_scutifer_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+9: "Cyclops scutifer Adult" -> "Cyclops scutifer Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cyclops_scutifer_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+10: "Cyclops scutifer Immature" -> "Cyclops scutifer Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cyclops_scutifer_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+11: "Tropocyclops extensus Total" -> "Tropocyclops extensus Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/tropocyclops_extensus_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+12: "Tropocyclops extensus Adult" -> "Tropocyclops extensus Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/tropocyclops_extensus_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+13: "Tropocyclops extensus Immature" -> "Tropocyclops extensus Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/tropocyclops_extensus_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+14: "Mesocyclops edax Total" -> "Mesocyclops edax Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/mesocyclops_edax_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+15: "Mesocyclops edax" -> "Mesocyclops edax" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/mesocyclops_edax (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+16: "Mesocyclops edax Immature" -> "Mesocyclops edax Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/mesocyclops_edax_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+17: "Orthocyclops modesti Total" -> "Orthocyclops modesti Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/orthocyclops_modesti_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+18: "Orthocyclops modesti Adults" -> "Orthocyclops modesti Adults" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/orthocyclops_modesti_adults (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+19: "Orthocyclops modesti Immature" -> "Orthocyclops modesti Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/orthocyclops_modesti_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+20: "Cyclopoid copepidids" -> "Cyclopoid copepidids" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cyclopoid_copepidids (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+21: "CYCOPEP" -> "CYCOPEP" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cycopep (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+22: "Leptodiaptomus minutus Total" -> "Leptodiaptomus minutus Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/leptodiaptomus_minutus_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+23: "Leptodiaptomus minutus" -> "Leptodiaptomus minutus" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/leptodiaptomus_minutus (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+24: "Leptodiaptomus minutus Immature" -> "Leptodiaptomus minutus Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/leptodiaptomus_minutus_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+25: "Aglaodiaptomus leptopus Total" -> "Aglaodiaptomus leptopus Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/aglaodiaptomus_leptopus_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+26: "Aglaodiaptomus leptopus Adult" -> "Aglaodiaptomus leptopus Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/aglaodiaptomus_leptopus_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+27: "Aglaodiaptomus leptopus Immature" -> "Aglaodiaptomus leptopus Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/aglaodiaptomus_leptopus_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+28: "Skistidiaptomus oregonensis-Adult" -> "Skistidiaptomus oregonensis-Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/skistidiaptomus_oregonensis_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+29: "Skistidiaptomus oregonensis-Immature" -> "Skistidiaptomus oregonensis-Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/skistidiaptomus_oregonensis_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+30: "Skistodiaptomus oregonensis Total" -> "Skistodiaptomus oregonensis Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/skistodiaptomus_oregonensis_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+31: "Skistodiaptomus oregonensis Adult" -> "Skistodiaptomus oregonensis Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/skistodiaptomus_oregonensis_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+32: "Skistodiaptomus oregonensis Immature" -> "Skistodiaptomus oregonensis Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/skistodiaptomus_oregonensis_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+33: "Epischura lacustris Total" -> "Epischura lacustris Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/epischura_lacustris_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+34: "Epischura lacustris Adult" -> "Epischura lacustris Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/epischura_lacustris_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+35: "Epischura lacustris Immature" -> "Epischura lacustris Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/epischura_lacustris_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+36: "Daphnia mendotae" -> "Daphnia mendotae" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_mendotae (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+37: "Daphnia pulicaria" -> "Daphnia pulicaria" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_pulicaria (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+38: "Daphnia retrocurva" -> "Daphnia retrocurva" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_retrocurva (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+39: "Daphnia dubia" -> "Daphnia dubia" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_dubia (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+40: "Daphnia catawba" -> "Daphnia catawba" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_catawba (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+41: "Daphnia ambigua" -> "Daphnia ambigua" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_ambigua (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+42: "Daphnia pulex" -> "Daphnia pulex" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_pulex (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+43: "Daphnia parvula" -> "Daphnia parvula" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_parvula (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+44: "Bosmina longirostris" -> "Bosmina longirostris" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/bosmina_longirostris (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+45: "Eubosmina" -> "Eubosmina" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/eubosmina (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+46: "Diaphanosoma brachyurum" -> "Diaphanosoma brachyurum" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/diaphanosoma_brachyurum (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+47: "Diaphanosoma bergei" -> "Diaphanosoma bergei" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/diaphanosoma_bergei (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+48: "Holopedium gibberum" -> "Holopedium gibberum" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/holopedium_gibberum (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+49: "Polyphemus pediculus" -> "Polyphemus pediculus" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/polyphemus_pediculus (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+50: "Ceriodaphnia quadrangular" -> "Ceriodaphnia quadrangular" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/ceriodaphnia_quadrangular (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+51: "Chydoris species" -> "Chydoris species" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/chydoris_species (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+52: "Leptodora kindti" -> "Leptodora kindti" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/leptodora_kindti (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+53: "Alona sp." -> "Alona sp." -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/alona_sp (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+54: "Sida crystallina" -> "Sida crystallina" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/sida_crystallina (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+55: "" -> "column_55" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_55 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+56: "" -> "column_56" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_56 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+
+
+TODO: add dcterms format for extension .ttl.gz
+TODO: add dcterms format for extension .ttl.gz
+LayerDatasetDescriptionsQuerylet(D) .http://purl.org/twc/vocab/conversion/conversion_identifier. ."raw".
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://purl.org/twc/vocab/conversion/LayerDataset.
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+TODO: add dcterms format for extension .ttl.gz
+Resulting size: 1009 triples
+Generated 1009 triples in 0 min. ( 85872.3 triples/min )
+Jun 19, 2013 6:55:54 PM edu.rpi.tw.data.csv.CSVtoRDF toRDF
+INFO: writing metadata to same file as data automatic/AEAP_crust_web_v3.csv.raw.sample.ttl
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+Finished converting -sample 10 sample rows.
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-June-12 initiated:
+fileName:                     manual/AEAP_crust_web_v3.csv
+enhancementParametersURL:     automatic/AEAP_crust_web_v3.csv.raw.params.ttl
+VoIDDumpExtensions:           ttl.gz
+outputFileName:               automatic/AEAP_crust_web_v3.csv.raw.ttl
+metaOutputFileName:           automatic/AEAP_crust_web_v3.csv.raw.void.ttl
+converterIdentifier:          csv2rdf4lod_
+==============================
+BaseURIQuerylet(*) .http://purl.org/twc/semmdd.
+SourceIdentifierQuerylet(*) .aeap_nys.
+DatasetIdentifierQuerylet(*) .dfw_lake_samples.
+VersionIdentifierQuerylet(*) .2013-April-24.
+
+subjectNS:   :  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/version/2013-April-24/
+predicateNS: raw:  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/
+objectNS:    _global_value:  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-crust-web-v3/
+
+CellDelimiterQuerylet(*) .,.
+headers present at row 1: lake Name,DATE,YEAR,COL #,Unknown cyclopoid Total,Unknown cyclopoid Adult,Cyclopoid Unknown-Immature,Cyclops scutifer Total,Cyclops scutifer Adult,Cyclops scutifer Immature,Tropocyclops extensus Total,Tropocyclops extensus Adult,Tropocyclops extensus Immature,Mesocyclops edax Total,Mesocyclops edax,Mesocyclops edax Immature,Orthocyclops modesti Total,Orthocyclops modesti Adults,Orthocyclops modesti Immature,Cyclopoid copepidids,CYCOPEP ,Leptodiaptomus minutus Total,Leptodiaptomus minutus,Leptodiaptomus minutus Immature,Aglaodiaptomus leptopus Total,Aglaodiaptomus leptopus Adult,Aglaodiaptomus leptopus Immature,Skistidiaptomus oregonensis-Adult,Skistidiaptomus oregonensis-Immature,Skistodiaptomus oregonensis Total,Skistodiaptomus oregonensis Adult,Skistodiaptomus oregonensis Immature,Epischura lacustris Total,Epischura lacustris Adult,Epischura lacustris Immature,Daphnia mendotae,Daphnia pulicaria,Daphnia retrocurva,Daphnia dubia,Daphnia catawba,Daphnia ambigua,Daphnia pulex,Daphnia parvula,Bosmina longirostris,Eubosmina ,Diaphanosoma brachyurum,Diaphanosoma bergei,Holopedium gibberum,Polyphemus pediculus,Ceriodaphnia quadrangular,Chydoris species,Leptodora kindti,Alona sp.,Sida crystallina,,
+
+1: "lake Name" -> "lake Name" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/lake_name (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+2: "DATE" -> "DATE" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/date (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+3: "YEAR" -> "YEAR" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/year (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+4: "COL #" -> "COL #" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/col (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+5: "Unknown cyclopoid Total" -> "Unknown cyclopoid Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/unknown_cyclopoid_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+6: "Unknown cyclopoid Adult" -> "Unknown cyclopoid Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/unknown_cyclopoid_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+7: "Cyclopoid Unknown-Immature" -> "Cyclopoid Unknown-Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cyclopoid_unknown_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+8: "Cyclops scutifer Total" -> "Cyclops scutifer Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cyclops_scutifer_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+9: "Cyclops scutifer Adult" -> "Cyclops scutifer Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cyclops_scutifer_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+10: "Cyclops scutifer Immature" -> "Cyclops scutifer Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cyclops_scutifer_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+11: "Tropocyclops extensus Total" -> "Tropocyclops extensus Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/tropocyclops_extensus_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+12: "Tropocyclops extensus Adult" -> "Tropocyclops extensus Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/tropocyclops_extensus_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+13: "Tropocyclops extensus Immature" -> "Tropocyclops extensus Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/tropocyclops_extensus_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+14: "Mesocyclops edax Total" -> "Mesocyclops edax Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/mesocyclops_edax_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+15: "Mesocyclops edax" -> "Mesocyclops edax" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/mesocyclops_edax (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+16: "Mesocyclops edax Immature" -> "Mesocyclops edax Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/mesocyclops_edax_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+17: "Orthocyclops modesti Total" -> "Orthocyclops modesti Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/orthocyclops_modesti_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+18: "Orthocyclops modesti Adults" -> "Orthocyclops modesti Adults" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/orthocyclops_modesti_adults (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+19: "Orthocyclops modesti Immature" -> "Orthocyclops modesti Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/orthocyclops_modesti_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+20: "Cyclopoid copepidids" -> "Cyclopoid copepidids" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cyclopoid_copepidids (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+21: "CYCOPEP" -> "CYCOPEP" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cycopep (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+22: "Leptodiaptomus minutus Total" -> "Leptodiaptomus minutus Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/leptodiaptomus_minutus_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+23: "Leptodiaptomus minutus" -> "Leptodiaptomus minutus" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/leptodiaptomus_minutus (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+24: "Leptodiaptomus minutus Immature" -> "Leptodiaptomus minutus Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/leptodiaptomus_minutus_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+25: "Aglaodiaptomus leptopus Total" -> "Aglaodiaptomus leptopus Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/aglaodiaptomus_leptopus_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+26: "Aglaodiaptomus leptopus Adult" -> "Aglaodiaptomus leptopus Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/aglaodiaptomus_leptopus_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+27: "Aglaodiaptomus leptopus Immature" -> "Aglaodiaptomus leptopus Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/aglaodiaptomus_leptopus_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+28: "Skistidiaptomus oregonensis-Adult" -> "Skistidiaptomus oregonensis-Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/skistidiaptomus_oregonensis_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+29: "Skistidiaptomus oregonensis-Immature" -> "Skistidiaptomus oregonensis-Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/skistidiaptomus_oregonensis_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+30: "Skistodiaptomus oregonensis Total" -> "Skistodiaptomus oregonensis Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/skistodiaptomus_oregonensis_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+31: "Skistodiaptomus oregonensis Adult" -> "Skistodiaptomus oregonensis Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/skistodiaptomus_oregonensis_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+32: "Skistodiaptomus oregonensis Immature" -> "Skistodiaptomus oregonensis Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/skistodiaptomus_oregonensis_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+33: "Epischura lacustris Total" -> "Epischura lacustris Total" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/epischura_lacustris_total (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+34: "Epischura lacustris Adult" -> "Epischura lacustris Adult" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/epischura_lacustris_adult (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+35: "Epischura lacustris Immature" -> "Epischura lacustris Immature" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/epischura_lacustris_immature (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+36: "Daphnia mendotae" -> "Daphnia mendotae" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_mendotae (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+37: "Daphnia pulicaria" -> "Daphnia pulicaria" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_pulicaria (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+38: "Daphnia retrocurva" -> "Daphnia retrocurva" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_retrocurva (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+39: "Daphnia dubia" -> "Daphnia dubia" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_dubia (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+40: "Daphnia catawba" -> "Daphnia catawba" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_catawba (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+41: "Daphnia ambigua" -> "Daphnia ambigua" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_ambigua (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+42: "Daphnia pulex" -> "Daphnia pulex" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_pulex (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+43: "Daphnia parvula" -> "Daphnia parvula" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/daphnia_parvula (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+44: "Bosmina longirostris" -> "Bosmina longirostris" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/bosmina_longirostris (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+45: "Eubosmina" -> "Eubosmina" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/eubosmina (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+46: "Diaphanosoma brachyurum" -> "Diaphanosoma brachyurum" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/diaphanosoma_brachyurum (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+47: "Diaphanosoma bergei" -> "Diaphanosoma bergei" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/diaphanosoma_bergei (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+48: "Holopedium gibberum" -> "Holopedium gibberum" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/holopedium_gibberum (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+49: "Polyphemus pediculus" -> "Polyphemus pediculus" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/polyphemus_pediculus (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+50: "Ceriodaphnia quadrangular" -> "Ceriodaphnia quadrangular" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/ceriodaphnia_quadrangular (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+51: "Chydoris species" -> "Chydoris species" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/chydoris_species (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+52: "Leptodora kindti" -> "Leptodora kindti" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/leptodora_kindti (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+53: "Alona sp." -> "Alona sp." -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/alona_sp (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+54: "Sida crystallina" -> "Sida crystallina" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/sida_crystallina (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+55: "" -> "column_55" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_55 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+56: "" -> "column_56" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_56 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+
+
+TODO: add dcterms format for extension .ttl.gz
+TODO: add dcterms format for extension .ttl.gz
+LayerDatasetDescriptionsQuerylet(D) .http://purl.org/twc/vocab/conversion/conversion_identifier. ."raw".
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://purl.org/twc/vocab/conversion/LayerDataset.
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+TODO: add dcterms format for extension .ttl.gz
+Resulting size: 65303 triples
+Generated 65303 triples in 0 min. ( 1470236.4 triples/min )
+Jun 19, 2013 6:55:59 PM edu.rpi.tw.data.csv.CSVtoRDF toRDF
+INFO: writing metadata to separate file from data automatic/AEAP_crust_web_v3.csv.raw.void.ttl
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+   convert.sh done

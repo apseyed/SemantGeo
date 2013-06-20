@@ -45,6 +45,19 @@ file="file"
 ##################################################
 # Link all INPUT CSV files from the /file/ directory structure to the web directory.
 # (this could be from manual/ or source/
+if [ -e "manual/AEAP-Locations.csv" ]; then 
+   wwwfile="$wwwroot/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/manual/AEAP-Locations.csv"
+   if [ -e "$wwwfile" ]; then 
+      $sudo rm -f "$wwwfile"
+   else
+      $sudo mkdir -p `dirname "$wwwfile"`
+   fi
+   echo "  $wwwfile"
+   $sudo ln $symbolic "${pwd}manual/AEAP-Locations.csv" "$wwwfile"
+else
+   echo "  -- manual/AEAP-Locations.csv omitted --"
+fi
+
 if [ -e "manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv" ]; then 
    wwwfile="$wwwroot/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv"
    if [ -e "$wwwfile" ]; then 
@@ -100,6 +113,19 @@ fi
 ##################################################
 # Link all raw and enhancement PARAMETERS from the file directory structure to the web directory.
 #
+if [ -e "automatic/AEAP-Locations.csv.raw.params.ttl" ]; then 
+   wwwfile="$wwwroot/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/automatic/AEAP-Locations.csv.raw.params.ttl"
+   if [ -e "$wwwfile" ]; then 
+     $sudo rm -f "$wwwfile"
+   else
+     $sudo mkdir -p `dirname "$wwwfile"`
+   fi
+   echo "  $wwwfile"
+   $sudo ln $symbolic "${pwd}automatic/AEAP-Locations.csv.raw.params.ttl" "$wwwfile"
+else
+   echo "  -- automatic/AEAP-Locations.csv.raw.params.ttl omitted --"
+fi
+
 if [ -e "automatic/AEAP_crust_web_v3.csv.raw.params.ttl" ]; then 
    wwwfile="$wwwroot/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/automatic/AEAP_crust_web_v3.csv.raw.params.ttl"
    if [ -e "$wwwfile" ]; then 
@@ -126,6 +152,19 @@ else
    echo "  -- automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.raw.params.ttl omitted --"
 fi
 
+if [ -e "automatic/AEAP_phyto_web.csv.raw.params.ttl" ]; then 
+   wwwfile="$wwwroot/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/automatic/AEAP_phyto_web.csv.raw.params.ttl"
+   if [ -e "$wwwfile" ]; then 
+     $sudo rm -f "$wwwfile"
+   else
+     $sudo mkdir -p `dirname "$wwwfile"`
+   fi
+   echo "  $wwwfile"
+   $sudo ln $symbolic "${pwd}automatic/AEAP_phyto_web.csv.raw.params.ttl" "$wwwfile"
+else
+   echo "  -- automatic/AEAP_phyto_web.csv.raw.params.ttl omitted --"
+fi
+
 if [ -e "automatic/AEAP_rotifers_web.csv.raw.params.ttl" ]; then 
    wwwfile="$wwwroot/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/automatic/AEAP_rotifers_web.csv.raw.params.ttl"
    if [ -e "$wwwfile" ]; then 
@@ -139,17 +178,17 @@ else
    echo "  -- automatic/AEAP_rotifers_web.csv.raw.params.ttl omitted --"
 fi
 
-if [ -e "automatic/AEAP_phyto_web.csv.raw.params.ttl" ]; then 
-   wwwfile="$wwwroot/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/automatic/AEAP_phyto_web.csv.raw.params.ttl"
+if [ -e "manual/AEAP-Locations.csv.e1.params.ttl" ]; then 
+   wwwfile="$wwwroot/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/manual/AEAP-Locations.csv.e1.params.ttl"
    if [ -e "$wwwfile" ]; then 
      $sudo rm -f "$wwwfile"
    else
      $sudo mkdir -p `dirname "$wwwfile"`
    fi
    echo "  $wwwfile"
-   $sudo ln $symbolic "${pwd}automatic/AEAP_phyto_web.csv.raw.params.ttl" "$wwwfile"
+   $sudo ln $symbolic "${pwd}manual/AEAP-Locations.csv.e1.params.ttl" "$wwwfile"
 else
-   echo "  -- automatic/AEAP_phyto_web.csv.raw.params.ttl omitted --"
+   echo "  -- manual/AEAP-Locations.csv.e1.params.ttl omitted --"
 fi
 
 if [ -e "manual/AEAP_crust_web_v3.csv.e1.params.ttl" ]; then 
@@ -178,6 +217,19 @@ else
    echo "  -- manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv.e1.params.ttl omitted --"
 fi
 
+if [ -e "manual/AEAP_phyto_web.csv.e1.params.ttl" ]; then 
+   wwwfile="$wwwroot/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/manual/AEAP_phyto_web.csv.e1.params.ttl"
+   if [ -e "$wwwfile" ]; then 
+     $sudo rm -f "$wwwfile"
+   else
+     $sudo mkdir -p `dirname "$wwwfile"`
+   fi
+   echo "  $wwwfile"
+   $sudo ln $symbolic "${pwd}manual/AEAP_phyto_web.csv.e1.params.ttl" "$wwwfile"
+else
+   echo "  -- manual/AEAP_phyto_web.csv.e1.params.ttl omitted --"
+fi
+
 if [ -e "manual/AEAP_rotifers_web.csv.e1.params.ttl" ]; then 
    wwwfile="$wwwroot/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/manual/AEAP_rotifers_web.csv.e1.params.ttl"
    if [ -e "$wwwfile" ]; then 
@@ -191,17 +243,17 @@ else
    echo "  -- manual/AEAP_rotifers_web.csv.e1.params.ttl omitted --"
 fi
 
-if [ -e "manual/AEAP_phyto_web.csv.e1.params.ttl" ]; then 
-   wwwfile="$wwwroot/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/manual/AEAP_phyto_web.csv.e1.params.ttl"
+if [ -e "manual/phyto-class.csv.e1.params.ttl" ]; then 
+   wwwfile="$wwwroot/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/manual/phyto-class.csv.e1.params.ttl"
    if [ -e "$wwwfile" ]; then 
      $sudo rm -f "$wwwfile"
    else
      $sudo mkdir -p `dirname "$wwwfile"`
    fi
    echo "  $wwwfile"
-   $sudo ln $symbolic "${pwd}manual/AEAP_phyto_web.csv.e1.params.ttl" "$wwwfile"
+   $sudo ln $symbolic "${pwd}manual/phyto-class.csv.e1.params.ttl" "$wwwfile"
 else
-   echo "  -- manual/AEAP_phyto_web.csv.e1.params.ttl omitted --"
+   echo "  -- manual/phyto-class.csv.e1.params.ttl omitted --"
 fi
 
 ##################################################

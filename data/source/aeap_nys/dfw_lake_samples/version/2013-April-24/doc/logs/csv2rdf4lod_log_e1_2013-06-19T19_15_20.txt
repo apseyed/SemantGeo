@@ -1,0 +1,181 @@
+2013-06-19T19:15:20-04:00
+2008 rows in manual/AEAP-Locations.csv
+E1 CONVERSION
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-June-12 initiated:
+fileName:                     manual/AEAP-Locations.csv
+sampleLimit:                  10
+enhancementParametersURL:     manual/AEAP-Locations.csv.e1.params.ttl
+VoIDDumpExtensions:           ttl.gz
+outputFileName:               automatic/AEAP-Locations.csv.e1.sample.ttl
+converterIdentifier:          csv2rdf4lod_
+==============================
+BaseURIQuerylet(*) .http://purl.org/twc/semantgeo.
+SourceIdentifierQuerylet(*) .aeap_nys.
+DatasetIdentifierQuerylet(*) .dfw_lake_samples.
+VersionIdentifierQuerylet(*) .2013-April-24.
+SubClassOfQuerylet(*) .Lake. -> .http://escience.rpi.edu/ontology/semanteco/2/0/water.owl#WaterSite.
+ExistingBundleQuerylet: 1 bundled by [4]
+ExistingBundleQuerylet: 2 bundled by [4]
+ExistingBundleQuerylet: 3 bundled by [4]
+ObjectTemplateQuerylet(4) .[/sd]typed/lake/[.].
+TypedResourcePromotionQuerylet(4) .Lake.
+ExistingBundleQuerylet: 5 bundled by [4]
+ExistingBundleQuerylet: 6 bundled by [4]
+ExistingBundleQuerylet: 7 bundled by [4]
+ExistingBundleQuerylet: 8 bundled by [4]
+InterpretedAsNullQuerylet(*) ..
+
+subjectNS:   dfw_lake_samples:  http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/
+predicateNS: e1:  http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/
+objectNS:    dfw_lake_samples_global_value:  http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/
+
+CellDelimiterQuerylet(*) .,.
+headers present at row 1: Lake,Lat,Long,DEC Code,County Name,County Code,State,Country
+
+       EquivalentPropertyQuerylet(1) .http://www.w3.org/2000/01/rdf-schema#label.
+       ColumnCommentQuerylet(1) .The name of the lake the sample is from....
+1: "Lake" -> "Lake" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lake (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       EquivalentPropertyQuerylet(2) .http://www.w3.org/2003/01/geo/wgs84_pos#lat.
+       ColumnCommentQuerylet(2) .The latitude value of the sample location of a lake in the s....
+2: "Lat" -> "Lat" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lat (xsd:double)
+----------------------------------------------------------------------------------------------------
+       EquivalentPropertyQuerylet(3) .http://www.w3.org/2003/01/geo/wgs84_pos#long.
+       ColumnCommentQuerylet(3) .The longitude value of the sample location of a lake in the ....
+3: "Long" -> "Long" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/long (xsd:double)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(4) .A numeric reference to a lake in the DEC registry, unique to....
+4: "DEC Code" -> "DEC Code" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/dec_code (rdfs:Resource)
+----------------------------------------------------------------------------------------------------
+5: "County Name" -> "County Name" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/county_name (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       EquivalentPropertyQuerylet(6) .http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#hasCountyCode.
+6: "County Code" -> "County Code" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/county_code (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       EquivalentPropertyQuerylet(7) .http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#hasStateCode.
+7: "State" -> "State" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/state (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       ObjectSameAsLinksQuerylet(8): http://logd.tw.rpi.edu/source/twc-rpi-edu/file/instance-hub-countries/version/2012-May-09/conversion/twc-rpi-edu-instance-hub-countries-2012-May-09.e1.ttl
+       collecting SOs from http://logd.tw.rpi.edu/source/twc-rpi-edu/file/instance-hub-countries/version/2012-May-09/conversion/twc-rpi-edu-instance-hub-countries-2012-May-09.e1.ttl col 8 (size: 1764)
+8: "Country" -> "Country" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/country (rdfs:Resource)
+----------------------------------------------------------------------------------------------------
+
+
+TODO: add dcterms format for extension .ttl.gz
+TODO: add dcterms format for extension .ttl.gz
+LayerDatasetDescriptionsQuerylet(D) .http://purl.org/twc/vocab/conversion/enhancement_identifier. ."1".
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://purl.org/twc/vocab/conversion/LayerDataset.
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+TODO: add dcterms format for extension .ttl.gz
+TODO: add dcterms format for extension .ttl.gz
+Resulting size: 239 triples
+Generated 239 triples in 0 min. ( 18843.6 triples/min )
+Jun 19, 2013 7:15:22 PM edu.rpi.tw.data.csv.CSVtoRDF toRDF
+INFO: writing metadata to same file as data automatic/AEAP-Locations.csv.e1.sample.ttl
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+Finished converting -sample 10 sample rows.
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-June-12 initiated:
+fileName:                     manual/AEAP-Locations.csv
+enhancementParametersURL:     manual/AEAP-Locations.csv.e1.params.ttl
+VoIDDumpExtensions:           ttl.gz
+outputFileName:               automatic/AEAP-Locations.csv.e1.ttl
+metaOutputFileName:           automatic/AEAP-Locations.csv.e1.void.ttl
+converterIdentifier:          csv2rdf4lod_
+==============================
+BaseURIQuerylet(*) .http://purl.org/twc/semantgeo.
+SourceIdentifierQuerylet(*) .aeap_nys.
+DatasetIdentifierQuerylet(*) .dfw_lake_samples.
+VersionIdentifierQuerylet(*) .2013-April-24.
+SubClassOfQuerylet(*) .Lake. -> .http://escience.rpi.edu/ontology/semanteco/2/0/water.owl#WaterSite.
+ExistingBundleQuerylet: 1 bundled by [4]
+ExistingBundleQuerylet: 2 bundled by [4]
+ExistingBundleQuerylet: 3 bundled by [4]
+ObjectTemplateQuerylet(4) .[/sd]typed/lake/[.].
+TypedResourcePromotionQuerylet(4) .Lake.
+ExistingBundleQuerylet: 5 bundled by [4]
+ExistingBundleQuerylet: 6 bundled by [4]
+ExistingBundleQuerylet: 7 bundled by [4]
+ExistingBundleQuerylet: 8 bundled by [4]
+InterpretedAsNullQuerylet(*) ..
+
+subjectNS:   dfw_lake_samples:  http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/
+predicateNS: e1:  http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/
+objectNS:    dfw_lake_samples_global_value:  http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/
+
+CellDelimiterQuerylet(*) .,.
+headers present at row 1: Lake,Lat,Long,DEC Code,County Name,County Code,State,Country
+
+       EquivalentPropertyQuerylet(1) .http://www.w3.org/2000/01/rdf-schema#label.
+       ColumnCommentQuerylet(1) .The name of the lake the sample is from....
+1: "Lake" -> "Lake" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lake (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       EquivalentPropertyQuerylet(2) .http://www.w3.org/2003/01/geo/wgs84_pos#lat.
+       ColumnCommentQuerylet(2) .The latitude value of the sample location of a lake in the s....
+2: "Lat" -> "Lat" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/lat (xsd:double)
+----------------------------------------------------------------------------------------------------
+       EquivalentPropertyQuerylet(3) .http://www.w3.org/2003/01/geo/wgs84_pos#long.
+       ColumnCommentQuerylet(3) .The longitude value of the sample location of a lake in the ....
+3: "Long" -> "Long" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/long (xsd:double)
+----------------------------------------------------------------------------------------------------
+       ColumnCommentQuerylet(4) .A numeric reference to a lake in the DEC registry, unique to....
+4: "DEC Code" -> "DEC Code" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/dec_code (rdfs:Resource)
+----------------------------------------------------------------------------------------------------
+5: "County Name" -> "County Name" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/county_name (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       EquivalentPropertyQuerylet(6) .http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#hasCountyCode.
+6: "County Code" -> "County Code" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/county_code (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       EquivalentPropertyQuerylet(7) .http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#hasStateCode.
+7: "State" -> "State" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/state (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+       ObjectSameAsLinksQuerylet(8): http://logd.tw.rpi.edu/source/twc-rpi-edu/file/instance-hub-countries/version/2012-May-09/conversion/twc-rpi-edu-instance-hub-countries-2012-May-09.e1.ttl
+       collecting SOs from http://logd.tw.rpi.edu/source/twc-rpi-edu/file/instance-hub-countries/version/2012-May-09/conversion/twc-rpi-edu-instance-hub-countries-2012-May-09.e1.ttl col 8 (size: 1764)
+8: "Country" -> "Country" -> http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/vocab/enhancement/1/country (rdfs:Resource)
+----------------------------------------------------------------------------------------------------
+
+
+TODO: add dcterms format for extension .ttl.gz
+TODO: add dcterms format for extension .ttl.gz
+LayerDatasetDescriptionsQuerylet(D) .http://purl.org/twc/vocab/conversion/enhancement_identifier. ."1".
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://purl.org/twc/vocab/conversion/LayerDataset.
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+TODO: add dcterms format for extension .ttl.gz
+TODO: add dcterms format for extension .ttl.gz
+Resulting size: 6530 triples
+Generated 6530 triples in 0 min. ( 232522.3 triples/min )
+Jun 19, 2013 7:15:25 PM edu.rpi.tw.data.csv.CSVtoRDF toRDF
+INFO: writing metadata to separate file from data automatic/AEAP-Locations.csv.e1.void.ttl
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+   convert.sh done
+convert-aggregate.sh publishing raw and enhancements.
+publish/aeap_nys-dfw_lake_samples-2013-April-24.raw.ttl
+publish/aeap_nys-dfw_lake_samples-2013-April-24.raw.sample.ttl
+publish/aeap_nys-dfw_lake_samples-2013-April-24.e1.ttl
+publish/aeap_nys-dfw_lake_samples-2013-April-24.e1.sample.ttl
+publish/aeap_nys-dfw_lake_samples-2013-April-24.pml.ttl
+  (including manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv.pml.ttl)
+publish/aeap_nys-dfw_lake_samples-2013-April-24.void.ttl
+  (including automatic/AEAP-Locations.csv.e1.void.ttl)
+  (including automatic/AEAP-Locations.csv.raw.void.ttl)
+  (including automatic/AEAP_crust_web_v3.csv.raw.void.ttl)
+  (including automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.raw.void.ttl)
+  (including automatic/AEAP_rotifers_web.csv.raw.void.ttl)
+  (including publish/aeap_nys-dfw_lake_samples-2013-April-24.pml.ttl)
+publish/aeap_nys-dfw_lake_samples-2013-April-24.ttl
+  (including publish/aeap_nys-dfw_lake_samples-2013-April-24.e1.ttl)
+  (including publish/aeap_nys-dfw_lake_samples-2013-April-24.raw.ttl)
+  (including publish/aeap_nys-dfw_lake_samples-2013-April-24.void.ttl)
+publish/aeap_nys-dfw_lake_samples-2013-April-24.nt - skipping; set CSV2RDF4LOD_PUBLISH_NT=true in source-me.sh to publish N-Triples.
+publish/aeap_nys-dfw_lake_samples-2013-April-24.sameas.nt - skipping; no owl:sameAs in publish/aeap_nys-dfw_lake_samples-2013-April-24.ttl.
+publish/aeap_nys-dfw_lake_samples-2013-April-24.rdf - skipping; set CSV2RDF4LOD_PUBLISH_RDFXML=true in source-me.sh to publish RDF/XML.
+publish/aeap_nys-dfw_lake_samples-2013-April-24.e1.ttl.gz (will delete uncompressed version at end of processing)
+publish/aeap_nys-dfw_lake_samples-2013-April-24.ttl.gz (will delete uncompressed version at end of processing)
+publish/bin/ln-to-www-root-aeap_nys-dfw_lake_samples-2013-April-24.sh
+ - skipping. Set CSV2RDF4LOD_PUBLISH_VARWWW_DUMP_FILES=true and CSV2RDF4LOD_PUBLISH_LOD_MATERIALIZATION_WWW_ROOT to /var/www
+publish/tdb/     - skipping; set CSV2RDF4LOD_PUBLISH_TDB=true in source-me.sh to load conversions into publish/tdb/.
+                 - or run publish/bin/tdbloader-aeap_nys-dfw_lake_samples-2013-April-24.sh.
+                 - then run $TDBROOT/bin/rdfserver with publish/bin/joseki-config-anterior-aeap_nys-dfw_lake_samples-2013-April-24.ttl.
+publish/lod-mat/ - skipping; set CSV2RDF4LOD_PUBLISH_LOD_MATERIALIZATION=true in source-me.sh to load conversions into publish/lod-mat/,
+                 - or run automatic/lod-materialize-aeap_nys-dfw_lake_samples-2013-April-24.sh.
+publish/aeap_nys-dfw_lake_samples-2013-April-24.e1.ttl - removed b/c $CSV2RDF4LOD_PUBLISH_COMPRESS="true"
+publish/aeap_nys-dfw_lake_samples-2013-April-24.ttl - removed b/c $CSV2RDF4LOD_PUBLISH_COMPRESS="true"

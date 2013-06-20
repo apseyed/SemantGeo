@@ -3,8 +3,8 @@
 # run publish/bin/virtuoso-load-aeap_nys-dfw_lake_samples-2013-April-24.sh
 # from source/aeap_nys/dfw_lake_samples/version/2013-April-24/
 #
-# graph was http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24 during conversion
-# metadataset graph was  during conversion
+# graph was http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24 during conversion
+# metadataset graph was auto during conversion
 #
 #        $CSV2RDF4LOD_PUBLISH_METADATASET_GRAPH_NAME            # <---- Loads into this with param --as-metadatset
 #
@@ -89,7 +89,7 @@ fi
 
 
 dump='publish/aeap_nys-dfw_lake_samples-2013-April-24.nt'
-url='http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.nt'
+url='http://purl.org/twc/semantgeo/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.nt'
 if [ -e $dump ]; then
    echo pvload.sh $url -ng $graph
    ${CSV2RDF4LOD_HOME}/bin/util/pvload.sh $url -ng $graph
@@ -101,7 +101,7 @@ elif [ -e $dump.gz ]; then
 fi
 
 dump='publish/aeap_nys-dfw_lake_samples-2013-April-24.ttl'
-url='http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.ttl'
+url='http://purl.org/twc/semantgeo/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.ttl'
 if [ -e $dump ]; then
    echo pvload.sh $url -ng $graph
    ${CSV2RDF4LOD_HOME}/bin/util/pvload.sh $url -ng $graph
@@ -113,7 +113,7 @@ elif [ -e $dump.gz ]; then
 fi
 
 dump='publish/aeap_nys-dfw_lake_samples-2013-April-24.rdf'
-url='http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.rdf'
+url='http://purl.org/twc/semantgeo/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/conversion/aeap_nys-dfw_lake_samples-2013-April-24.rdf'
 if [ -e $dump ]; then
    ${CSV2RDF4LOD_HOME}/bin/util/pvload.sh $url -ng $graph
    exit 1
@@ -121,6 +121,6 @@ elif [ -e $dump.gz ]; then
    ${CSV2RDF4LOD_HOME}/bin/util/pvload.sh $url.gz -ng $graph
    exit 1
 fi
-#3> <> prov:wasAttributedTo <http://purl.org/twc/semmdd/id/csv2rdf4lod/61ae7d27a6560ad9bab88907945c08bc> .
-#3> <> prov:generatedAtTime "2013-05-28T18:52:25+00:00"^^xsd:dateTime .
-#3> <http://purl.org/twc/semmdd/id/csv2rdf4lod/61ae7d27a6560ad9bab88907945c08bc> foaf:name "convert-dfw_lake_samples.sh" .
+#3> <> prov:wasAttributedTo <http://purl.org/twc/semantgeo/id/csv2rdf4lod/3cc1b24f1600849e2a91c1f53648861e> .
+#3> <> prov:generatedAtTime "2013-06-19T19:15:27-04:00"^^xsd:dateTime .
+#3> <http://purl.org/twc/semantgeo/id/csv2rdf4lod/3cc1b24f1600849e2a91c1f53648861e> foaf:name "convert-dfw_lake_samples.sh" .

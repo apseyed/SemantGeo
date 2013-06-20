@@ -1,4 +1,4 @@
-@base <http://purl.org/twc/semmdd/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/manual/> .
+@base <http://purl.org/twc/semantgeo/source/aeap_nys/file/dfw_lake_samples/version/2013-April-24/manual/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -80,5 +80,5 @@
 conv:Ms-excel-xls-convert-to-csv_Engine
     rdfs:subClassOf pmlp:InferenceEngine .
 
-<http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24> <http://purl.org/dc/terms/source> <AEAP_NYSERDA_Chem_94-12_v9_web.csv> .
+<http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24> <http://purl.org/dc/terms/source> <AEAP_NYSERDA_Chem_94-12_v9_web.csv> .
 

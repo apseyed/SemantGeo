@@ -1,0 +1,467 @@
+2013-06-19T18:55:41-04:00
+2008 rows in manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv
+RAW CONVERSION
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-June-12 initiated:
+fileName:                     manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv
+sampleLimit:                  10
+enhancementParametersURL:     automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.raw.params.ttl
+VoIDDumpExtensions:           ttl.gz
+outputFileName:               automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.raw.sample.ttl
+converterIdentifier:          csv2rdf4lod_
+==============================
+BaseURIQuerylet(*) .http://purl.org/twc/semmdd.
+SourceIdentifierQuerylet(*) .aeap_nys.
+DatasetIdentifierQuerylet(*) .dfw_lake_samples.
+VersionIdentifierQuerylet(*) .2013-April-24.
+
+subjectNS:   :  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-nyserda-chem-94-12-v9-web/version/2013-April-24/
+predicateNS: raw:  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/
+objectNS:    _global_value:  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-nyserda-chem-94-12-v9-web/
+
+CellDelimiterQuerylet(*) .,.
+headers present at row 1: Accession Code (sample#),Lake Name, DEC Code,Date,Z max (m),Sample Type,Sample Z (m),Sample Layer,Secchi (m),Conductivity (umhos),pH air eq,ANC (ueq/L),NH4-N (ug N/L),NH4+ (mg/L),NH4+ (ueq/L),DIC (mg/L),DOC (mg/L),F (mg/L),Cl (mg/L),Cl (ueq/L),NO3-N (mg N/L),NO3- (mg/L),NO3- (ueq/L),SO4-S (mg S/L),SO4-- (mg/L),SO4-- (ueq/L),Total P (ug/L),MRP    (ug P/L),TFP (ug/L),TN (mg/L),Chla (ug/L),Si (mg/l),Dissolved Silica SiO2 (mg/l),Na (mg/L),Na (ueq/L),K (mg/L),K (ueq/L),Fe (mg/L),Mg (mg/L),Mg (ueq/L),Ca (mg/L),Ca (ueq/L),Total Al (ug/L),Total mono Al (ug/L),Nonlabile mono Al (ug/L),Labile mono Ali (ug/L),Hydrologic Type,Watershed,Watershed area (ha),lake volume (m3),WA/SA ratio,surface area (ha),surface area (m2),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+1: "Accession Code (sample#)" -> "Accession Code sample#" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/accession_code_sample (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+2: "Lake Name" -> "Lake Name" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/lake_name (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+3: "DEC Code" -> "DEC Code" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/dec_code (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+4: "Date" -> "Date" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/date (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+5: "Z max (m)" -> "Z max m" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/z_max_m (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+6: "Sample Type" -> "Sample Type" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/sample_type (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+7: "Sample Z (m)" -> "Sample Z m" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/sample_z_m (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+8: "Sample Layer" -> "Sample Layer" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/sample_layer (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+9: "Secchi (m)" -> "Secchi m" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/secchi_m (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+10: "Conductivity (umhos)" -> "Conductivity umhos" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/conductivity_umhos (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+11: "pH air eq" -> "pH air eq" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/ph_air_eq (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+12: "ANC (ueq/L)" -> "ANC ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/anc_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+13: "NH4-N (ug N/L)" -> "NH4-N ug N/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/nh4_n_ug_n_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+14: "NH4+ (mg/L)" -> "NH4+ mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/nh4_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+15: "NH4+ (ueq/L)" -> "NH4+ ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/nh4_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+16: "DIC (mg/L)" -> "DIC mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/dic_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+17: "DOC (mg/L)" -> "DOC mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/doc_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+18: "F (mg/L)" -> "F mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/f_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+19: "Cl (mg/L)" -> "Cl mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cl_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+20: "Cl (ueq/L)" -> "Cl ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cl_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+21: "NO3-N (mg N/L)" -> "NO3-N mg N/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/no3_n_mg_n_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+22: "NO3- (mg/L)" -> "NO3- mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/no3_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+23: "NO3- (ueq/L)" -> "NO3- ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/no3_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+24: "SO4-S (mg S/L)" -> "SO4-S mg S/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/so4_s_mg_s_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+25: "SO4-- (mg/L)" -> "SO4-- mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/so4_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+26: "SO4-- (ueq/L)" -> "SO4-- ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/so4_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+27: "Total P (ug/L)" -> "Total P ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/total_p_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+28: "MRP    (ug P/L)" -> "MRP    ug P/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/mrp_ug_p_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+29: "TFP (ug/L)" -> "TFP ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/tfp_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+30: "TN (mg/L)" -> "TN mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/tn_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+31: "Chla (ug/L)" -> "Chla ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/chla_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+32: "Si (mg/l)" -> "Si mg/l" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/si_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+33: "Dissolved Silica SiO2 (mg/l)" -> "Dissolved Silica SiO2 mg/l" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/dissolved_silica_sio2_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+34: "Na (mg/L)" -> "Na mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/na_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+35: "Na (ueq/L)" -> "Na ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/na_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+36: "K (mg/L)" -> "K mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/k_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+37: "K (ueq/L)" -> "K ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/k_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+38: "Fe (mg/L)" -> "Fe mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/fe_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+39: "Mg (mg/L)" -> "Mg mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/mg_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+40: "Mg (ueq/L)" -> "Mg ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/mg_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+41: "Ca (mg/L)" -> "Ca mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/ca_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+42: "Ca (ueq/L)" -> "Ca ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/ca_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+43: "Total Al (ug/L)" -> "Total Al ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/total_al_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+44: "Total mono Al (ug/L)" -> "Total mono Al ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/total_mono_al_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+45: "Nonlabile mono Al (ug/L)" -> "Nonlabile mono Al ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/nonlabile_mono_al_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+46: "Labile mono Ali (ug/L)" -> "Labile mono Ali ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/labile_mono_ali_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+47: "Hydrologic Type" -> "Hydrologic Type" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/hydrologic_type (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+48: "Watershed" -> "Watershed" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/watershed (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+49: "Watershed area (ha)" -> "Watershed area ha" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/watershed_area_ha (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+50: "lake volume (m3)" -> "lake volume m3" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/lake_volume_m3 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+51: "WA/SA ratio" -> "WA/SA ratio" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/wa_sa_ratio (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+52: "surface area (ha)" -> "surface area ha" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/surface_area_ha (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+53: "surface area (m2)" -> "surface area m2" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/surface_area_m2 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+54: "" -> "column_54" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_54 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+55: "" -> "column_55" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_55 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+56: "" -> "column_56" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_56 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+57: "" -> "column_57" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_57 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+58: "" -> "column_58" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_58 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+59: "" -> "column_59" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_59 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+60: "" -> "column_60" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_60 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+61: "" -> "column_61" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_61 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+62: "" -> "column_62" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_62 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+63: "" -> "column_63" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_63 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+64: "" -> "column_64" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_64 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+65: "" -> "column_65" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_65 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+66: "" -> "column_66" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_66 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+67: "" -> "column_67" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_67 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+68: "" -> "column_68" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_68 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+69: "" -> "column_69" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_69 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+70: "" -> "column_70" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_70 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+71: "" -> "column_71" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_71 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+72: "" -> "column_72" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_72 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+73: "" -> "column_73" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_73 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+74: "" -> "column_74" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_74 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+75: "" -> "column_75" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_75 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+76: "" -> "column_76" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_76 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+77: "" -> "column_77" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_77 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+78: "" -> "column_78" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_78 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+79: "" -> "column_79" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_79 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+80: "" -> "column_80" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_80 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+81: "" -> "column_81" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_81 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+82: "" -> "column_82" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_82 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+83: "" -> "column_83" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_83 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+84: "" -> "column_84" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_84 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+85: "" -> "column_85" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_85 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+86: "" -> "column_86" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_86 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+87: "" -> "column_87" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_87 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+88: "" -> "column_88" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_88 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+89: "" -> "column_89" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_89 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+90: "" -> "column_90" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_90 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+91: "" -> "column_91" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_91 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+92: "" -> "column_92" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_92 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+93: "" -> "column_93" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_93 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+94: "" -> "column_94" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_94 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+95: "" -> "column_95" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_95 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+96: "" -> "column_96" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_96 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+97: "" -> "column_97" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_97 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+98: "" -> "column_98" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_98 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+99: "" -> "column_99" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_99 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+
+
+TODO: add dcterms format for extension .ttl.gz
+TODO: add dcterms format for extension .ttl.gz
+LayerDatasetDescriptionsQuerylet(D) .http://purl.org/twc/vocab/conversion/conversion_identifier. ."raw".
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://purl.org/twc/vocab/conversion/LayerDataset.
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+TODO: add dcterms format for extension .ttl.gz
+Resulting size: 1740 triples
+Generated 1740 triples in 0 min. ( 119587.6 triples/min )
+Jun 19, 2013 6:55:44 PM edu.rpi.tw.data.csv.CSVtoRDF toRDF
+INFO: writing metadata to same file as data automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.raw.sample.ttl
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+Finished converting -sample 10 sample rows.
+========== edu.rpi.tw.data.csv.CSVtoRDF version 2013-June-12 initiated:
+fileName:                     manual/AEAP_NYSERDA_Chem_94-12_v9_web.csv
+enhancementParametersURL:     automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.raw.params.ttl
+VoIDDumpExtensions:           ttl.gz
+outputFileName:               automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.raw.ttl
+metaOutputFileName:           automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.raw.void.ttl
+converterIdentifier:          csv2rdf4lod_
+==============================
+BaseURIQuerylet(*) .http://purl.org/twc/semmdd.
+SourceIdentifierQuerylet(*) .aeap_nys.
+DatasetIdentifierQuerylet(*) .dfw_lake_samples.
+VersionIdentifierQuerylet(*) .2013-April-24.
+
+subjectNS:   :  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-nyserda-chem-94-12-v9-web/version/2013-April-24/
+predicateNS: raw:  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/
+objectNS:    _global_value:  http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/aeap-nyserda-chem-94-12-v9-web/
+
+CellDelimiterQuerylet(*) .,.
+headers present at row 1: Accession Code (sample#),Lake Name, DEC Code,Date,Z max (m),Sample Type,Sample Z (m),Sample Layer,Secchi (m),Conductivity (umhos),pH air eq,ANC (ueq/L),NH4-N (ug N/L),NH4+ (mg/L),NH4+ (ueq/L),DIC (mg/L),DOC (mg/L),F (mg/L),Cl (mg/L),Cl (ueq/L),NO3-N (mg N/L),NO3- (mg/L),NO3- (ueq/L),SO4-S (mg S/L),SO4-- (mg/L),SO4-- (ueq/L),Total P (ug/L),MRP    (ug P/L),TFP (ug/L),TN (mg/L),Chla (ug/L),Si (mg/l),Dissolved Silica SiO2 (mg/l),Na (mg/L),Na (ueq/L),K (mg/L),K (ueq/L),Fe (mg/L),Mg (mg/L),Mg (ueq/L),Ca (mg/L),Ca (ueq/L),Total Al (ug/L),Total mono Al (ug/L),Nonlabile mono Al (ug/L),Labile mono Ali (ug/L),Hydrologic Type,Watershed,Watershed area (ha),lake volume (m3),WA/SA ratio,surface area (ha),surface area (m2),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+1: "Accession Code (sample#)" -> "Accession Code sample#" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/accession_code_sample (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+2: "Lake Name" -> "Lake Name" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/lake_name (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+3: "DEC Code" -> "DEC Code" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/dec_code (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+4: "Date" -> "Date" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/date (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+5: "Z max (m)" -> "Z max m" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/z_max_m (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+6: "Sample Type" -> "Sample Type" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/sample_type (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+7: "Sample Z (m)" -> "Sample Z m" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/sample_z_m (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+8: "Sample Layer" -> "Sample Layer" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/sample_layer (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+9: "Secchi (m)" -> "Secchi m" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/secchi_m (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+10: "Conductivity (umhos)" -> "Conductivity umhos" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/conductivity_umhos (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+11: "pH air eq" -> "pH air eq" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/ph_air_eq (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+12: "ANC (ueq/L)" -> "ANC ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/anc_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+13: "NH4-N (ug N/L)" -> "NH4-N ug N/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/nh4_n_ug_n_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+14: "NH4+ (mg/L)" -> "NH4+ mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/nh4_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+15: "NH4+ (ueq/L)" -> "NH4+ ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/nh4_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+16: "DIC (mg/L)" -> "DIC mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/dic_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+17: "DOC (mg/L)" -> "DOC mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/doc_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+18: "F (mg/L)" -> "F mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/f_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+19: "Cl (mg/L)" -> "Cl mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cl_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+20: "Cl (ueq/L)" -> "Cl ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/cl_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+21: "NO3-N (mg N/L)" -> "NO3-N mg N/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/no3_n_mg_n_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+22: "NO3- (mg/L)" -> "NO3- mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/no3_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+23: "NO3- (ueq/L)" -> "NO3- ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/no3_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+24: "SO4-S (mg S/L)" -> "SO4-S mg S/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/so4_s_mg_s_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+25: "SO4-- (mg/L)" -> "SO4-- mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/so4_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+26: "SO4-- (ueq/L)" -> "SO4-- ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/so4_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+27: "Total P (ug/L)" -> "Total P ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/total_p_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+28: "MRP    (ug P/L)" -> "MRP    ug P/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/mrp_ug_p_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+29: "TFP (ug/L)" -> "TFP ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/tfp_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+30: "TN (mg/L)" -> "TN mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/tn_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+31: "Chla (ug/L)" -> "Chla ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/chla_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+32: "Si (mg/l)" -> "Si mg/l" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/si_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+33: "Dissolved Silica SiO2 (mg/l)" -> "Dissolved Silica SiO2 mg/l" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/dissolved_silica_sio2_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+34: "Na (mg/L)" -> "Na mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/na_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+35: "Na (ueq/L)" -> "Na ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/na_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+36: "K (mg/L)" -> "K mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/k_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+37: "K (ueq/L)" -> "K ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/k_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+38: "Fe (mg/L)" -> "Fe mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/fe_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+39: "Mg (mg/L)" -> "Mg mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/mg_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+40: "Mg (ueq/L)" -> "Mg ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/mg_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+41: "Ca (mg/L)" -> "Ca mg/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/ca_mg_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+42: "Ca (ueq/L)" -> "Ca ueq/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/ca_ueq_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+43: "Total Al (ug/L)" -> "Total Al ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/total_al_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+44: "Total mono Al (ug/L)" -> "Total mono Al ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/total_mono_al_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+45: "Nonlabile mono Al (ug/L)" -> "Nonlabile mono Al ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/nonlabile_mono_al_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+46: "Labile mono Ali (ug/L)" -> "Labile mono Ali ug/L" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/labile_mono_ali_ug_l (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+47: "Hydrologic Type" -> "Hydrologic Type" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/hydrologic_type (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+48: "Watershed" -> "Watershed" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/watershed (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+49: "Watershed area (ha)" -> "Watershed area ha" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/watershed_area_ha (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+50: "lake volume (m3)" -> "lake volume m3" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/lake_volume_m3 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+51: "WA/SA ratio" -> "WA/SA ratio" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/wa_sa_ratio (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+52: "surface area (ha)" -> "surface area ha" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/surface_area_ha (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+53: "surface area (m2)" -> "surface area m2" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/surface_area_m2 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+54: "" -> "column_54" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_54 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+55: "" -> "column_55" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_55 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+56: "" -> "column_56" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_56 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+57: "" -> "column_57" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_57 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+58: "" -> "column_58" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_58 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+59: "" -> "column_59" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_59 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+60: "" -> "column_60" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_60 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+61: "" -> "column_61" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_61 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+62: "" -> "column_62" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_62 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+63: "" -> "column_63" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_63 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+64: "" -> "column_64" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_64 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+65: "" -> "column_65" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_65 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+66: "" -> "column_66" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_66 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+67: "" -> "column_67" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_67 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+68: "" -> "column_68" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_68 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+69: "" -> "column_69" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_69 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+70: "" -> "column_70" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_70 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+71: "" -> "column_71" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_71 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+72: "" -> "column_72" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_72 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+73: "" -> "column_73" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_73 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+74: "" -> "column_74" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_74 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+75: "" -> "column_75" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_75 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+76: "" -> "column_76" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_76 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+77: "" -> "column_77" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_77 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+78: "" -> "column_78" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_78 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+79: "" -> "column_79" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_79 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+80: "" -> "column_80" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_80 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+81: "" -> "column_81" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_81 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+82: "" -> "column_82" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_82 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+83: "" -> "column_83" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_83 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+84: "" -> "column_84" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_84 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+85: "" -> "column_85" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_85 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+86: "" -> "column_86" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_86 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+87: "" -> "column_87" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_87 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+88: "" -> "column_88" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_88 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+89: "" -> "column_89" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_89 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+90: "" -> "column_90" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_90 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+91: "" -> "column_91" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_91 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+92: "" -> "column_92" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_92 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+93: "" -> "column_93" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_93 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+94: "" -> "column_94" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_94 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+95: "" -> "column_95" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_95 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+96: "" -> "column_96" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_96 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+97: "" -> "column_97" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_97 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+98: "" -> "column_98" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_98 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+99: "" -> "column_99" -> http://purl.org/twc/semmdd/source/aeap_nys/dataset/dfw_lake_samples/vocab/raw/column_99 (rdfs:Literal)
+----------------------------------------------------------------------------------------------------
+
+
+TODO: add dcterms format for extension .ttl.gz
+TODO: add dcterms format for extension .ttl.gz
+LayerDatasetDescriptionsQuerylet(D) .http://purl.org/twc/vocab/conversion/conversion_identifier. ."raw".
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://purl.org/twc/vocab/conversion/LayerDataset.
+LayerDatasetDescriptionsQuerylet(D) .http://www.w3.org/1999/02/22-rdf-syntax-ns#type. .http://rdfs.org/ns/void#Dataset.
+TODO: add dcterms format for extension .ttl.gz
+Resulting size: 209428 triples
+Generated 209428 triples in 0.1 min. ( 3384239.2 triples/min )
+Jun 19, 2013 6:55:51 PM edu.rpi.tw.data.csv.CSVtoRDF toRDF
+INFO: writing metadata to separate file from data automatic/AEAP_NYSERDA_Chem_94-12_v9_web.csv.raw.void.ttl
+========== edu.rpi.tw.data.csv.CSVtoRDF complete. ==========
+   convert.sh done
