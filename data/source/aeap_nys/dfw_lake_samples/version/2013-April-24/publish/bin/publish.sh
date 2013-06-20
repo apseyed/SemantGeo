@@ -6,7 +6,7 @@ CSV2RDF4LOD_HOME=${CSV2RDF4LOD_HOME:?"not set; source csv2rdf4lod/source-me.sh o
 #versionID="2013-April-24"
 eID="1"
 
-#graph="https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24"
+#graph="http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24"
 
 export CSV2RDF4LOD_FORCE_PUBLISH="true"
 source $CSV2RDF4LOD_HOME/bin/convert-aggregate.sh
