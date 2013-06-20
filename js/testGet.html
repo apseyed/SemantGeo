@@ -11,7 +11,7 @@
     var serverEndpoint = "http://cn-orc-1.dataone.org/cn/v1/query/solr/?";
     <!-- var query = "http://cn-orc-1.dataone.org/cn/v1/query/solr/?q=keywords:*ecology*&wt=json&rows=100"; -->
     <!-- var query = 'http://whateverorigin.org/get?url=' + encodeURIComponent('http://cn-orc-1.dataone.org/cn/v1/query/solr/?q=keywords:*ecology*&wt=json&rows=100') + '&callback=?' -->
-var query = "http://localhost:8888/proxy.php?" + "url=" + encodeURIComponent('http://cn-orc-1.dataone.org/cn/v1/query/solr/?q=keywords:*ecology*&wt=json&rows=20');
+var query = "http://localhost:80/proxy.php?" + "url=" + encodeURIComponent('http://cn-orc-1.dataone.org/cn/v1/query/solr/?q=keywords:*ecology*&wt=json&rows=20');
     //   { q: "keywords: \"*ecology*\"", wt: "json", ident: true, rows: 100 },
       var table='<table border="1">';
 	table+= '<tr><td>Title</td><td>Abstract</td><td>Keywords</td></tr>';
