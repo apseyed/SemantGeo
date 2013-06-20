@@ -242,6 +242,16 @@
          conversion:object <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#PH>;
       ];
       conversion:enhance [
+         ov:csvCol          11;
+         a conversion:SubjectAnnotation;
+         # conversion:object is taken in main declaration above so to do this other object, we do another block
+         conversion:predicate <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#hasUnit>;
+         
+         # Testing some new URI structure for units
+         #conversion:object    <http://escience.rpi.edu/ontology/semanteco/2/0/pollution.owl#UMHOS>; # TODO: FINDINPOLLUTIONOWLFILE
+         conversion:object    "SU";
+      ];
+      conversion:enhance [
          ov:csvCol          12;
          ov:csvHeader       "ANC (ueq/L)";
          conversion:label   "ANC (ueq/L)";
