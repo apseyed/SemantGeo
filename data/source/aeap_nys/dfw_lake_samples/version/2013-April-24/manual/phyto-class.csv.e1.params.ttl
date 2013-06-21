@@ -98,6 +98,7 @@
          conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "";
+         conversion:range   rdfs:Resource;
          #conversion:range_template  "[/sd]thing[.]";
          #conversion:range   owl:Class;
          #conversion:range_name  "Thing";
@@ -112,7 +113,9 @@
          #conversion:range_template  "[/sd]thing[.]";
          conversion:range   rdfs:Resource;
          #conversion:range_name  "Thing";
-         conversion:links_via <https://raw.github.com/ashbyb/semantgeo/master/data/source/aeap_nys/dfw_lake_samples/version/2013-April-24/manual/example-link-link-file.ttl>;
+	 conversion:bundled_by [ ov:csvCol 1 ];
+conversion:links_via <http://dataone.tw.rpi.edu/ncbi-taxonomy.owl>;
+conversion:subject_of rdfs:label;
       ];
       #conversion:enhance [            
       #   ov:csvRow 3,4,5;             
