@@ -122,6 +122,7 @@
          conversion:range_name  "Lake";
          # Rebuild uri
          conversion:range_template "[/sd]typed/lake/[.]";
+         a conversion:Unlabeled;
          
          # Trying to bring the definition of a lake to something that spans files
          #conversion:domain_template "[/sd]lake/[r]";
