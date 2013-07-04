@@ -8,18 +8,26 @@
 # dfw_lake_samples 2013-April-24 ()
 #--------------------------------------------------------------
 
-CSV2RDF4LOD_HOME=${CSV2RDF4LOD_HOME:?"not set; source my-csv2rdf4lod-source-me.sh or see https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD-not-set"}
+see="https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD-not-set"
+CSV2RDF4LOD_HOME=${CSV2RDF4LOD_HOME:?"not set; source my-csv2rdf4lod-source-me.sh or see \$see"}
 
 # The identifiers used to name the dataset that will be converted.
 #            (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-process-phase:-name)
-surrogate="https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#" # Came from $CSV2RDF4LOD_BASE_URI when cr-create-convert-sh.sh created this script.
+surrogate="http://was.tw.rpi.edu" # Came from $CSV2RDF4LOD_BASE_URI when cr-create-convert-sh.sh created this script.
 sourceID="aeap_nys"               # Came from directory name ../../../ (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Directory-Conventions)
 datasetID="dfw_lake_samples"             # Came from directory name ../../ (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Directory-Conventions)
 datasetVersion="2013-April-24"        # DEPRECATED
 versionID="2013-April-24"             # Came from directory name ../ (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Directory-Conventions) renaming datasetVersion (deprecating datasetVersion)
 eID="1"                             # enhancement identifier
-if [[ ${1:-"."} == "-e" && $# -ge 2 ]]; then
+if [[ "$1" == "-e" && $# -ge 2 ]]; then
    eID="$2" # see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Generating-enhancement-parameters
+   shift 2
+fi
+
+cr_justdoit="no"
+if [[ "$1" == "--force" ]]; then
+   cr_justdoit="yes" # see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger#--force
+   shift
 fi
 
 if [ -d doc/logs ]; then
@@ -31,9 +39,9 @@ destDir="automatic"                 # convention has led to always be 'automatic
 
 
 #-----------------------------------
-# manual/AEAP-Locations.csv
-sourceDir="manual"
-datafile="AEAP-Locations.csv"
+# source/AEAP_phyto_web.csv
+sourceDir="source"
+datafile="AEAP_phyto_web.csv"
 data="$sourceDir/$datafile"
 # Bootstrap conversion parameters (see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-trigger):
 subjectDiscriminator=""             # Additional part of URI for subjects created; must be URI-ready (e.g., no spaces).

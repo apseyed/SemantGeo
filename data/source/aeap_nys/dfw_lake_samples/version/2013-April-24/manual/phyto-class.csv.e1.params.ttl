@@ -114,8 +114,11 @@
          conversion:range   rdfs:Resource;
          #conversion:range_name  "Thing";
 	 conversion:bundled_by [ ov:csvCol 1 ];
-conversion:links_via <http://dataone.tw.rpi.edu/ncbi-taxonomy.owl>;
+#conversion:links_via <http://dataone.tw.rpi.edu/ncbi-taxonomy.owl>;
 conversion:subject_of rdfs:label;
+	#in kingdom plantae
+	 conversion:predicate rdfs:subClassOf;
+         conversion:object    <http://darrin-taxonomy>;
       ];
       #conversion:enhance [            
       #   ov:csvRow 3,4,5;             
