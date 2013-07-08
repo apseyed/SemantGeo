@@ -26,10 +26,10 @@ cd /d %tomcat%bin\
 call startup.bat
 
 :: Wait for server to start before calling deploy
-echo ==================================================================
-echo = Starting Tomcat Server. Wait until it starts, then press a key =
-echo ==================================================================
-pause
+echo =======================================================================
+echo = Starting Tomcat Server. I will wait for 5 seconds and then continue =
+echo =======================================================================
+ping 192.0.2.2 -n 1 -w 5000 > nul
 
 :: Deploy our built project as a servlet to the Tomcat server
 cd /d %semantaqua%webapp\
