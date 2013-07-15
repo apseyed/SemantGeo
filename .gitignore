@@ -17,3 +17,5 @@ data/source/aeap_nys/dfw_lake_samples/version/2013-April-24/source/~$AEAP_phyto_
 
 data/source/sbc-dev-lternet-edu/knb-lter-sbc.6.11/version/20120229/automatic
 data/source/sbc-dev-lternet-edu/knb-lter-sbc.6.11/version/20120229/publish
+
+*.swo
