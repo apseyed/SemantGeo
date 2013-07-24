@@ -1,6 +1,7 @@
 @ECHO off
 
 :: Change these variables to reflect your system
+set semantecoannotator=C:\Users\student\Documents\GitHub\SemantEco\facets\annotator\
 set semantaqua=C:\Users\student\Documents\GitHub\SemantEco\
 set tomcat=C:\Users\student\Desktop\apache-tomcat-7.0.37\
 
@@ -13,8 +14,8 @@ cd /d %tomcat%bin\
 call shutdown.bat
 
 :: Build using maven
-cd /d %semantaqua%
-call mvn clean install -U -fail-fast -DskipTests
+cd /d %semantecoannotator%
+call mvn clean install -fail-fast -DskipTests
 if not "%ERRORLEVEL%" == "0" (
 	cd /d %~dp0
 	echo .
@@ -56,8 +57,8 @@ if not "%ERRORLEVEL%" == "0" (
 :: Return to original directory (for conveinence)
 cd /d %~dp0
 
-:: Start up webview
-start http://localhost:8080/semanteco/
+:: Start up webview for the annotator
+start http://localhost:8080/semanteco/resources/annotator/SemantEcoAnnotator.html
 
 :: Echo out that we are done
 echo.
