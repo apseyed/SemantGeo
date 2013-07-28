@@ -30,6 +30,15 @@ ping 192.0.2.2 -n 1 -w 5000 > nul
 :: Deploy our built project as a servlet to the Tomcat server
 cd /d %semantaqua%webapp\
 call mvn clean tomcat7:deploy -DskipTests
+if not "%ERRORLEVEL%" == "0" (
+	cd /d %~dp0
+	echo .
+	echo ====================================
+	echo = !!!!!!!! DEPLOY FAILURE !!!!!!!! =
+	echo ====================================
+	pause > nul
+	exit /b
+)
 
 :: Return to original directory (for conveinence)
 cd /d %~dp0
