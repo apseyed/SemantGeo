@@ -1,0 +1,205 @@
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix todo:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix vann:          <http://purl.org/vocab/vann/> .
+@prefix skos:          <http://www.w3.org/2004/02/skos/core#> .
+@prefix time:          <http://www.w3.org/2006/time#> .
+@prefix wgs:           <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geonames:      <http://www.geonames.org/ontology#> .
+@prefix geonamesid:    <http://sws.geonames.org/> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix dbpedia:       <http://dbpedia.org/resource/> .
+@prefix dbpediaprop:   <http://dbpedia.org/property/> .
+@prefix dbpediaowl:    <http://dbpedia.org/ontology/> .
+@prefix con:           <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix muo:           <http://purl.oclc.org/NET/muo/muo#> .
+@prefix vs:            <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix frbr:          <http://purl.org/vocab/frbr/core#> .
+@prefix bibo:          <http://purl.org/ontology/bibo/> .
+@prefix prov:          <http://www.w3.org/ns/prov#> .
+@prefix doap:          <http://usefulinc.com/ns/doap#> .
+@prefix nfo:           <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix sio:           <http://semanticscience.org/resource/> .
+@prefix org:           <http://www.w3.org/ns/org#> .
+@prefix vsr:           <http://purl.org/twc/vocab/vsr#> .
+@prefix dcat:          <http://www.w3.org/ns/dcat#> .
+@prefix qb:            <http://purl.org/linked-data/cube#> .
+@prefix pml:           <http://provenanceweb.org/ns/pml#> .
+@prefix dgtwc:         <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix dcterms:       <http://purl.org/dc/terms/> .
+@prefix void:          <http://rdfs.org/ns/void#> .
+@prefix scovo:         <http://purl.org/NET/scovo#> .
+@prefix sioc:          <http://rdfs.org/sioc/ns#> .
+@prefix foaf:          <http://xmlns.com/foaf/0.1/> .
+@prefix ov:            <http://open.vocab.org/terms/> .
+@prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
+@prefix geo:           <http://www.opengis.net/ont/geosparql#> .
+@prefix :              <http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/params/enhancement/1/> .
+
+<http://tw.rpi.edu/instances/TimLebo> foaf:holdsAccount <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot> .
+<http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot>
+   a foaf:OnlineAccount;
+   foaf:accountName "lebot";
+   dcterms:isPartOf <http://purl.org/twc/id/machine/lebot/MacBookPro6_2>;
+   sioc:account_of  <http://tw.rpi.edu/instances/TimLebo>;
+.
+
+#:a_bundle
+#   a conversion:ImplicitBundle;
+#   conversion:property_name "a_property"; # Can also be a URI, e.g. dcterms:title.
+#   conversion:name_template "[/sd]company/[#2]/[r]";
+#   #conversion:type_name     "My Class";   # Can also be a URI, e.g. foaf:Person.
+#.
+
+<http://purl.org/twc/semantgeo/source/aeap_nys/dataset/dfw_lake_samples/version/2013-April-24/conversion/enhancement/1>
+   a conversion:LayerDataset, void:Dataset;
+
+   conversion:base_uri           "http://purl.org/twc/semantgeo"^^xsd:anyURI;
+   conversion:source_identifier  "aeap_nys";
+   conversion:dataset_identifier "dfw_lake_samples";
+   conversion:version_identifier "2013-April-24";
+   conversion:enhancement_identifier "1";
+
+   conversion:conversion_process [
+      a conversion:EnhancementConversionProcess;
+      conversion:enhancement_identifier "1";
+
+      dcterms:creator <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot>;
+      dcterms:created "2013-07-29T12:27:03-04:00"^^xsd:dateTime;
+
+
+      #conversion:enhance [
+      #   ov:csvRow 2;
+      #   a conversion:DataStartRow;
+      #];
+
+      conversion:delimits_cell ",";
+      #conversion:delimits_cell "	"; # tab
+      #conversion:delimits_cell "|";   # pipe
+      #conversion:delimits_cell ",";   # comma
+
+      #conversion:interpret [
+      #   conversion:symbol        "";
+      #   conversion:interpretation conversion:null; 
+      #];
+      conversion:enhance [
+         conversion:domain_template "[/s]lake/[#4]";
+         conversion:domain_name     "Lake";
+      ];
+      #conversion:enhance [
+      #   conversion:class_name "Thing";
+      #   conversion:subclass_of <http://purl.org/...>;
+      #];
+      conversion:enhance [
+         ov:csvCol          1;
+         ov:csvHeader       "Lake";
+         a conversion:Only_if_column;
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "Lake";
+         conversion:equivalent_property dcterms:title;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          2;
+         ov:csvHeader       "Lat";
+         #conversion:label   "Lat";
+         conversion:equivalent_property wgs:lat;
+         conversion:comment "";
+         conversion:range   xsd:decimal;
+         conversion:object_search [
+            rdfs:comment "We want a value: geo:asWKT 'POINT(-77.03524. 38.889468)'^^sf:wktLiteral. ";
+            conversion:regex     "^(.*)$";
+            conversion:predicate <http://www.opengis.net/ont/geosparql#asWKT>;
+            conversion:object    "POINT([#3] [#2])"^^geo:wktLiteral;
+         ];
+      ];
+      conversion:enhance [
+         ov:csvCol          3;
+         ov:csvHeader       "Long";
+         #conversion:label   "Long";
+         conversion:equivalent_property wgs:long;
+         conversion:comment "";
+         conversion:range   xsd:decimal;
+      ];
+      conversion:enhance [
+         ov:csvCol          4;
+         ov:csvHeader       "DEC Code";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "DEC Code";
+         conversion:equivalent_property dcterms:identifier;
+         conversion:subproperty_of      "[/s]vocab/dec_code";
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   rdfs:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          5;
+         ov:csvHeader       "County Name";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "County Name";
+         conversion:equivalent_property geonames:parentFeature;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         conversion:range_template  "http://logd.tw.rpi.edu/id/us/state/New_York/county/[.]";
+         conversion:range   rdfs:Resource;
+         conversion:range_name  "County";
+         rdfs:seeAlso <http://logd.tw.rpi.edu/id/us/state/New_York/county/Fulton>,
+                      <http://logd.tw.rpi.edu/id/us/state/New_York/county/Hamilton>,
+                      <http://logd.tw.rpi.edu/id/us/state/New_York/county/Herkimer>,
+                      <http://logd.tw.rpi.edu/id/us/state/New_York/county/Lewis>,
+                      <http://logd.tw.rpi.edu/id/us/state/New_York/county/Warren>;
+      ];
+      conversion:enhance [
+         ov:csvCol          6;
+         ov:csvHeader       "County Code";
+         conversion:bundled_by [ ov:csvCol 5 ];
+         #conversion:label   "County Code";
+         conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   rdfs:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          7;
+         ov:csvHeader       "State";
+         conversion:bundled_by [ ov:csvCol 5 ];
+         #conversion:label   "State";
+         conversion:equivalent_property geonames:parentFeature;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   rdfs:Resource;
+         #conversion:range_name  "Thing";
+         conversion:links_via <http://logd.tw.rpi.edu/source/twc-rpi-edu/file/instance-hub-us-states-and-territories/version/2011-Apr-09/conversion/instance-hub-us-states-and-territories.csv.e1.ttl>;
+      ];
+      conversion:enhance [
+         ov:csvCol          8;
+         ov:csvHeader       "Country";
+         conversion:bundled_by [ ov:csvCol 7 ];
+         #conversion:label   "Country";
+         conversion:interpret [
+            conversion:symbol        "US";
+            conversion:interpretation <http://logd.tw.rpi.edu/id/country/United_States>; 
+         ];
+         conversion:equivalent_property geonames:parentFeature;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   rdfs:Resource;
+         #conversion:range_name  "Thing";
+      ];
+      #conversion:enhance [            
+      #   ov:csvRow 3,4,5;             
+      #   a conversion:ExampleResource;
+      #];                              
+   ];
+.
