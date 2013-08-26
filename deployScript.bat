@@ -1,8 +1,12 @@
 @ECHO off
 
-:: Change these variables to reflect your system
-set semantaqua=C:\Users\student\Documents\GitHub\SemantEco\
-set tomcat=C:\Users\student\Desktop\apache-tomcat-7.0.37\
+:: Change these variables to reflect your file system (note the final backslash)
+set semanteco=C:\Users\student\Documents\GitHub\SemantEco\
+set tomcat=C:\Users\student\Documents\apache-tomcat-7.0.37\
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:: You should not need to change anything below this point ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 echo ==========================================
 echo = Running Deploy Script - Skipping Tests =
@@ -13,8 +17,8 @@ cd /d %tomcat%bin\
 call shutdown.bat
 
 :: Build using maven
-cd /d %semantaqua%
-call mvn clean install -U -fail-fast -DskipTests
+cd /d %semanteco%\
+call mvn clean install -U
 if not "%ERRORLEVEL%" == "0" (
 	cd /d %~dp0
 	echo .
@@ -28,7 +32,9 @@ if not "%ERRORLEVEL%" == "0" (
 :: Delete old compiled servlet
 cd /d %tomcat%webapps\
 rmdir semanteco /s /q
+rmdir annotator /s /q
 del semanteco.war /F
+del annotator.war /F
 
 :: Initiate tomcat server so we can push new servlet to it
 cd /d %tomcat%bin\
@@ -41,8 +47,8 @@ echo =======================================================================
 ping 192.0.2.2 -n 1 -w 5000 > nul
 
 :: Deploy our built project as a servlet to the Tomcat server
-cd /d %semantaqua%webapp\
-call mvn clean tomcat7:deploy -DskipTests
+cd /d %semanteco%webapp\
+call mvn clean tomcat7:deploy
 if not "%ERRORLEVEL%" == "0" (
 	cd /d %~dp0
 	echo .
@@ -56,7 +62,8 @@ if not "%ERRORLEVEL%" == "0" (
 :: Return to original directory (for conveinence)
 cd /d %~dp0
 
-:: Start up webview
+:: Start up webview for the annotator
+::start http://localhost:8080/semanteco/resources/annotator/SemantEcoAnnotator.html
 start http://localhost:8080/semanteco/
 
 :: Echo out that we are done
