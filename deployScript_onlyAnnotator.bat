@@ -2,6 +2,7 @@
 
 :: Change these variables to reflect your file system
 set semantecoannotator=C:\Users\student\Documents\GitHub\SemantEco\annotator-webapp
+set semantecoannotatorfacet=C:\Users\student\Documents\GitHub\SemantEco\facets\annotator
 set tomcat=C:\Users\student\Documents\apache-tomcat-7.0.37\
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -16,8 +17,21 @@ echo ==========================================
 cd /d %tomcat%bin\
 call shutdown.bat
 
-:: Build using maven
+:: Build using maven (js, css, etc)
 cd /d %semantecoannotator%
+call mvn clean install -fail-fast -DskipTests
+if not "%ERRORLEVEL%" == "0" (
+	cd /d %~dp0
+	echo .
+	echo =====================================
+	echo = !!!!!!!! COMPILE FAILURE !!!!!!!! =
+	echo =====================================
+	pause > nul
+	exit /b
+)
+
+:: Build using maven (index.jsp)
+cd /d %semantecoannotatorfacet%
 call mvn clean install -fail-fast -DskipTests
 if not "%ERRORLEVEL%" == "0" (
 	cd /d %~dp0
